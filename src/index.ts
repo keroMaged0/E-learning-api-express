@@ -1,8 +1,5 @@
 /* eslint-disable indent */
-import https from 'https';
 import http from 'http';
-import path from 'path';
-import fs from 'fs';
 
 import { connectMongoDB } from './config/mongoConnect';
 import { mailTransporter } from './utils/mail';
@@ -18,16 +15,7 @@ const start = async () => {
     mailTransporter.verifyTransporter();
 
     // create server 
-    const server =
-        env.environment === 'production'
-            ? https.createServer(
-                {
-                    cert: fs.readFileSync(path.resolve('/app/fullchain.pem')),
-                    key: fs.readFileSync(path.resolve('/app/privkey.pem')),
-                },
-                app
-            )
-            : http.createServer(app);
+    const server = http.createServer(app);
 
     // start server
     server.listen(env.port, () => {

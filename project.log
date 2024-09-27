@@ -25802,3 +25802,12 @@ Error: Not Found
     at trim_prefix (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\index.js:328:13)
     at D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\index.js:286:9
     at param (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\index.js:365:14)
+2024-09-27T02:14:25.718Z [INFO]: Connected to Redis
+2024-09-27T02:14:26.310Z [INFO]: email transporter verified
+2024-09-27T02:14:26.688Z [INFO]: Connected to MongoDB
+2024-09-27T02:16:11.688Z [ERROR]: Not Found
+Error: Not Found
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\auth\signIn.controller.ts:38:32
+    at Generator.next (<anonymous>)
+    at fulfilled (D:\cours node.js\My-Github\E-Learning-API\src\controllers\auth\signIn.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
