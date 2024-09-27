@@ -25811,3 +25811,31 @@ Error: Not Found
     at Generator.next (<anonymous>)
     at fulfilled (D:\cours node.js\My-Github\E-Learning-API\src\controllers\auth\signIn.controller.ts:5:58)
     at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-09-27T12:58:27.007Z [INFO]: Connected to Redis
+2024-09-27T12:58:27.209Z [INFO]: Connected to Redis
+2024-09-27T12:58:27.438Z [INFO]: Connected to Redis
+2024-09-27T12:58:27.551Z [INFO]: email transporter verified
+2024-09-27T12:58:27.721Z [INFO]: Connected to Redis
+2024-09-27T12:58:28.052Z [INFO]: Connected to MongoDB
+2024-09-27T12:58:28.174Z [INFO]: Connected to Redis
+2024-09-27T12:58:28.575Z [INFO]: Connected to Redis
+2024-09-27T12:58:28.635Z [INFO]: read ECONNRESET
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+2024-09-27T12:58:29.013Z [INFO]: Connected to Redis
+2024-09-27T12:58:29.505Z [INFO]: Connected to Redis
+2024-09-27T12:58:30.036Z [INFO]: Connected to Redis
+2024-09-27T12:58:30.096Z [INFO]: read ECONNRESET
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+2024-09-27T12:58:30.618Z [INFO]: Connected to Redis
+2024-09-27T12:58:31.253Z [INFO]: Connected to Redis
+2024-09-27T12:58:31.962Z [INFO]: Connected to Redis
+2024-09-27T12:58:32.021Z [INFO]: read ECONNRESET
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+2024-09-27T12:58:32.690Z [INFO]: Connected to Redis
+2024-09-27T12:58:33.580Z [INFO]: Connected to Redis
+2024-09-27T13:02:01.415Z [INFO]: Connected to Redis
+2024-09-27T13:02:01.939Z [INFO]: email transporter verified
+2024-09-27T13:02:02.405Z [INFO]: Connected to MongoDB

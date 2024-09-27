@@ -6,6 +6,8 @@ import { logger } from './logger';
 const client = new Redis({
     host: env.redis.host,
     port: env.redis.port,
+    password:env.redis.password,
+    tls: {} 
 });
 
 client.on('error', (err) => {
