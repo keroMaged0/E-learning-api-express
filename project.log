@@ -25839,3 +25839,6 @@ Error: read ECONNRESET
 2024-09-27T13:02:01.415Z [INFO]: Connected to Redis
 2024-09-27T13:02:01.939Z [INFO]: email transporter verified
 2024-09-27T13:02:02.405Z [INFO]: Connected to MongoDB
+2024-09-27T17:49:51.187Z [INFO]: Connected to Redis
+2024-09-27T17:49:51.497Z [INFO]: email transporter verified
+2024-09-27T17:49:52.048Z [INFO]: Connected to MongoDB
