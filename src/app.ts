@@ -17,7 +17,7 @@ export const app = express();
 // Add CORS policy
 app.use(
     cors({
-        origin: env.frontUrl,
+        origin: '*',
         credentials: true,
     }),
 );
