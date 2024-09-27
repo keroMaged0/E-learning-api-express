@@ -18,7 +18,7 @@ export const env = {
         sourceToken: process.env.SOURCE_TOKEN,
         sourceId: process.env.SOURCE_ID
     },
-    mail: {
+    mail: { 
         host: process.env.MAIL_HOST,
         service: process.env.MAIL_SERVICE,
         port: +(process.env.MAIL_PORT || 1) as number,
@@ -45,28 +45,24 @@ export const env = {
         cacheTempKey: process.env.CACHE_TEMPORARY_TOKEN_PREFIX,
         cacheTempExpire: + (process.env.CACHE_TEMPORARY_TOKEN_EXPIRE || 3600) as number
     },
-    stripe: {
-        client_id: process.env.STRIPE_PUBLISH_KEY,
-        client_secret: process.env.STRIPE_SECRET_KEY,
-    }
 }
 
 
 export const checkEnvVariables = () => {
-    if (!env.mongoDb.url) throw new Error('env:MONGO_URI must be defined');
-    if (!env.bcrypt.salt) throw new Error('env:BCRYPT_SALT must be defined');
-    if (!Number.isInteger(env.bcrypt.salt)) throw new Error('env:BCRYPT_SALT must be integer');
-    if (!env.jwt.accessTokenSecret) throw new Error('env:JWT_ACCESS_TOKEN_SECRET must be defined');
-    if (!env.jwt.refreshTokenSecret) throw new Error('env:JWT_REFRESH_TOKEN_SECRET must be defined');
-    if (!env.mail.port) throw new Error('env:MAIL_PORT must be defined');
-    if (!Number.isInteger(env.mail.port)) throw new Error('env:MAIL_PORT must be integer');
-    if (!env.mail.driver) throw new Error('env:MAIL_DRIVER must be defined');
-    if (!env.mail.user) throw new Error('env:MAIL_USER must be defined');
-    if (!env.mail.pass) throw new Error('env:MAIL_PASS must be defined');
-    if (!env.apiUrl) throw new Error('env:API_URL must be defined');
-    if (!env.cloudinary.cloudinaryApiKey) throw new Error('env:Cloudinary API key must be defined');
-    if (!env.cloudinary.cloudinaryName) throw new Error('env:Cloudinary name must be defined');
-    if (!env.cloudinary.cloudinaryApiSecret) throw new Error('env:Cloudinary API secret must be defined');
+    // if (!env.mongoDb.url) throw new Error('env:MONGO_URI must be defined');
+    // if (!env.bcrypt.salt) throw new Error('env:BCRYPT_SALT must be defined');
+    // if (!Number.isInteger(env.bcrypt.salt)) throw new Error('env:BCRYPT_SALT must be integer');
+    // if (!env.jwt.accessTokenSecret) throw new Error('env:JWT_ACCESS_TOKEN_SECRET must be defined');
+    // if (!env.jwt.refreshTokenSecret) throw new Error('env:JWT_REFRESH_TOKEN_SECRET must be defined');
+    // if (!env.mail.port) throw new Error('env:MAIL_PORT must be defined');
+    // if (!Number.isInteger(env.mail.port)) throw new Error('env:MAIL_PORT must be integer');
+    // if (!env.mail.driver) throw new Error('env:MAIL_DRIVER must be defined');
+    // if (!env.mail.user) throw new Error('env:MAIL_USER must be defined');
+    // if (!env.mail.pass) throw new Error('env:MAIL_PASS must be defined');
+    // if (!env.apiUrl) throw new Error('env:API_URL must be defined');
+    // if (!env.cloudinary.cloudinaryApiKey) throw new Error('env:Cloudinary API key must be defined');
+    // if (!env.cloudinary.cloudinaryName) throw new Error('env:Cloudinary name must be defined');
+    // if (!env.cloudinary.cloudinaryApiSecret) throw new Error('env:Cloudinary API secret must be defined');
 
     // if (!env.firebase.projectId) throw new Error('env:FB_PROJECTID must be defined');
     // if (!env.firebase.clientEmail) throw new Error('env:FB_CLIENTEMAIL must be defined');
