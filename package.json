@@ -6,7 +6,7 @@
   "scripts": {
     "start": "ts-node src/index.ts",
     "nodemon": "ts-node src/index.ts",
-    "dev": "nodemon -r ts-node/register src/index.ts",
+    "dev": "nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -21,15 +21,17 @@
     "@types/multer": "^1.4.12",
     "@types/nodemailer": "^6.4.15",
     "i": "^0.3.7",
-    "nodemon": "^3.1.4",
+    "nodemon": "^3.1.7",
     "npm": "^10.8.3",
     "ts-node": "^10.9.2",
     "typescript": "^5.6.2"
   },
   "dependencies": {
+    "@google-cloud/storage": "^7.13.0",
     "@logtail/node": "^0.5.0",
     "@logtail/winston": "^0.5.0",
     "@types/redis": "^4.0.11",
+    "axios": "^1.7.7",
     "bcrypt": "^5.1.1",
     "bcryptjs": "^2.4.3",
     "cloudinary": "^2.4.0",
@@ -37,6 +39,7 @@
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "express-validator": "^7.2.0",
+    "firebase-admin": "^12.5.0",
     "http": "^0.0.1-security",
     "https": "^1.0.0",
     "ioredis": "^5.4.1",
@@ -44,11 +47,15 @@
     "mongoose": "^8.6.1",
     "morgan": "^1.10.0",
     "multer": "^1.4.5-lts.1",
+    "nanoid": "^5.0.7",
     "nodemailer": "^6.9.15",
     "otplib": "^12.0.1",
+    "paypal-rest-sdk": "^1.8.1",
     "qrcode": "^1.5.4",
     "redis": "^4.7.0",
+    "stream": "^0.0.3",
     "streamifier": "^0.1.1",
+    "stripe": "^16.12.0",
     "uuid": "^10.0.0",
     "winston": "^3.14.2"
   }

@@ -1,0 +1,6 @@
+export * from './confirmDeleteLessons.controller'
+export * from './getLessonsById.controller'
+export * from './createLessons.controller'
+export * from './deleteLessons.controller'
+export * from './getAllLessons.controller'
+export * from './updateLesson.controller'

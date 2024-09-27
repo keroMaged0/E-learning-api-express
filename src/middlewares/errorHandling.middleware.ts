@@ -1,5 +1,5 @@
 import { ErrorRequestHandler } from "express";
-import { MulterError } from 'multer';
+import multer, { MulterError } from 'multer';
 
 import { ErrorResponse } from "../types/response";
 import { env } from "../config/env";
@@ -46,6 +46,16 @@ export const ErrorHandlerMiddleware: ErrorRequestHandler<unknown, ErrorResponse>
             data: {},
         });
 
+
+    if (err instanceof multer.MulterError)
+        return res.status(400).json({
+            status: false,
+            code: 400,
+            message: "فشل رفع الفيديو",
+            data: {}
+        });
+
+
     // JWT expired token
     if (err.name === 'TokenExpiredError')
         return res.status(401).json({
@@ -55,6 +65,8 @@ export const ErrorHandlerMiddleware: ErrorRequestHandler<unknown, ErrorResponse>
             data: {},
         });
 
+
+
     // unHandled error
     res.status(500).json({
         status: false,
@@ -62,6 +74,8 @@ export const ErrorHandlerMiddleware: ErrorRequestHandler<unknown, ErrorResponse>
         message: 'Internal server error',
         data: {},
     });
+
+
 
     next();
 }

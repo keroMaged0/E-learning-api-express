@@ -40,6 +40,23 @@ const deleteData = async (key: string): Promise<void> => {
     }
 }
 
+
+/******************** delete all course cache keys ********************/
+export const deleteAllCacheKeys = async (cacheKey): Promise<void> => {
+    try {
+        const keys = await client.keys(cacheKey);
+        if (keys.length > 0) {
+            await client.del(keys);
+            logger.info(`Deleted ${keys.length} cache keys related to courses`);
+        } else {
+            logger.warn('No course-related cache keys found to delete');
+        }
+    } catch (error) {
+        logger.error(`Error deleting course cache keys - ${error}`);
+        throw error;
+    }
+};
+
 export {
     setCache,
     getData,

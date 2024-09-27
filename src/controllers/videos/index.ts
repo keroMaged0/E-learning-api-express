@@ -1,0 +1,6 @@
+export * from './confirmDeleteVideos.controller'
+export * from './getVideosById.controller'
+export * from './createVideos.controller'
+export * from './deleteVideos.controller'
+export * from './getAllVideos.controller'
+export * from './updateVideos.controller'

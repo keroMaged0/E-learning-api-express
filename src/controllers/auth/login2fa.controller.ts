@@ -34,7 +34,6 @@ export const login2faHandler: RequestHandler<
 
         user.accessToken = accessToken
         user.refreshToken = refreshToken
-        user.isLogin = true;
 
         await user.save()
 

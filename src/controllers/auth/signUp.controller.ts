@@ -28,7 +28,6 @@ export const signUpHandler: RequestHandler<
 
         const hashedPassword = await hashPassword(req.body.password);  // Hash the password
 
-
         const user = await Users.create({
             _id: userId,
             ...req.body,
@@ -42,7 +41,7 @@ export const signUpHandler: RequestHandler<
 
         await mailTransporter.sendMail({
             to: user.email,
-            subject: 'Verify your 8aya account',
+            subject: 'Verify your account to login',
             html: `Verification code: <strong>${code}</strong>`,  // Send verification email
         });
 

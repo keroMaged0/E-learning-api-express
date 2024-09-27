@@ -7,6 +7,8 @@ export enum MODELS {
     lesson = 'lesson',
     video = 'video',
     review = 'review',
+    payment = 'payment',
+    enrolledCourse = 'enrolledCourse',
 }
 
 

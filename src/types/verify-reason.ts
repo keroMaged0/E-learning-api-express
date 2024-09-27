@@ -4,4 +4,8 @@ export enum VerifyReason {
   updatePassword = 'update-password',
   updatePasswordVerified = 'update-password-verified',
   updatePhoneNumber = 'update-phone-number',
+  deleteCourse = 'delete-course',
+  deleteLesson = 'delete-lesson',
+  deleteVideo= 'delete-video',
+
 }

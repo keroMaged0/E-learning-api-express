@@ -61,7 +61,6 @@ export const signInHandler: RequestHandler<
 
         user.accessToken = accessToken;
         user.refreshToken = refreshToken;
-        user.isLogin = true;
 
         await user.save();
 

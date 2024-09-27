@@ -27,8 +27,8 @@ export const env = {
         pass: process.env.MAIL_PASS!,
     },
     jwt: {
-        accessTokensecret: process.env.JWT_ACCESS_SECRET as string,
-        refreshTokensecret: process.env.JWT_REFRESH_SECRET as string,
+        accessTokenSecret: process.env.JWT_ACCESS_SECRET as string,
+        refreshTokenSecret: process.env.JWT_REFRESH_SECRET as string,
         accessExpireIn: +(process.env.JWT_ACCESS_EXPIRE_IN || 24 * 60 * 60) as number,
         refreshExpireIn: +(process.env.JWT_REFRESH_EXPIRE_IN || 12 * 30 * 24 * 60 * 60) as number,
     },
@@ -44,6 +44,10 @@ export const env = {
         password: process.env.REDIS_PASSWORD,
         cacheTempKey: process.env.CACHE_TEMPORARY_TOKEN_PREFIX,
         cacheTempExpire: + (process.env.CACHE_TEMPORARY_TOKEN_EXPIRE || 3600) as number
+    },
+    stripe: {
+        client_id: process.env.STRIPE_PUBLISH_KEY,
+        client_secret: process.env.STRIPE_SECRET_KEY,
     }
 }
 
@@ -52,8 +56,8 @@ export const checkEnvVariables = () => {
     if (!env.mongoDb.url) throw new Error('env:MONGO_URI must be defined');
     if (!env.bcrypt.salt) throw new Error('env:BCRYPT_SALT must be defined');
     if (!Number.isInteger(env.bcrypt.salt)) throw new Error('env:BCRYPT_SALT must be integer');
-    if (!env.jwt.accessTokensecret) throw new Error('env:JWT_ACCESS_TOKEN_SECRET must be defined');
-    if (!env.jwt.refreshTokensecret) throw new Error('env:JWT_REFRESH_TOKEN_SECRET must be defined');
+    if (!env.jwt.accessTokenSecret) throw new Error('env:JWT_ACCESS_TOKEN_SECRET must be defined');
+    if (!env.jwt.refreshTokenSecret) throw new Error('env:JWT_REFRESH_TOKEN_SECRET must be defined');
     if (!env.mail.port) throw new Error('env:MAIL_PORT must be defined');
     if (!Number.isInteger(env.mail.port)) throw new Error('env:MAIL_PORT must be integer');
     if (!env.mail.driver) throw new Error('env:MAIL_DRIVER must be defined');

@@ -8,7 +8,6 @@ import { NotAllowedError } from "../../errors/notAllowedError";
 import { SystemRoles } from "../../types/roles";
 import { generateAccessToken } from "../../utils/token";
 import { VerifyReason } from "../../types/verify-reason";
-import { log } from "winston";
 
 const isExpired = (date: Date) => {
     const currentTime = Date.now();
@@ -36,7 +35,8 @@ export const verifyEmailHandler: RequestHandler<
         let responsedData: any = {};
 
         if (user.verificationCode?.reason === 'signup') {
-            user.role = SystemRoles.student;
+            if (user.role === SystemRoles.admin)
+                user.role = SystemRoles.student;
 
             const token = generateAccessToken();
             user.verificationCode.code = null;

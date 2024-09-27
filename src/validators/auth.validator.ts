@@ -1,22 +1,39 @@
 import { body } from "express-validator"
 
 import { validatorMiddleware } from "../middlewares/validator.middleware"
+import { SystemRoles } from "../types/roles"
 
 /*************** Sign up Validator ***************/
 const signupValidator = [
-    body('name').isString().bail().trim(),
+    body('name')
+        .isString().
+        bail().
+        trim(),
+
     body('email')
         .notEmpty().withMessage('Email is required')
         .isEmail().withMessage('Invalid email format'),
-    body('password').isString().bail().isStrongPassword({
-        minLength: 8,
-        minLowercase: 0,
-        minSymbols: 0,
-        minUppercase: 0,
-        minNumbers: 0,
-    }).withMessage('Weak password'),
-    body('phoneNumber').isString().isMobilePhone('ar-EG').withMessage('must be a valid number'),
-    body('gender').optional().isIn(['male', 'female']),
+
+    body('password')
+        .isString().
+        bail()
+        .isStrongPassword({
+            minLength: 8,
+            minLowercase: 0,
+            minSymbols: 0,
+            minUppercase: 0,
+            minNumbers: 0,
+        }).withMessage('Weak password'),
+
+    body('phoneNumber')
+        .isString()
+        .isMobilePhone('ar-EG')
+        .withMessage('must be a valid number'),
+
+    body('gender')
+        .optional()
+        .isIn(['male', 'female']),
+
     body('bornAt')
         .isDate({
             strictMode: true,
@@ -26,6 +43,13 @@ const signupValidator = [
             (el) =>
                 new Date(el)
         ),
+
+    body('role')
+        .optional()
+        .isIn(Object.values(SystemRoles))
+        .withMessage('Role must be one of the predefined roles (admin, student, teacher).'),
+    
+
     validatorMiddleware
 ]
 

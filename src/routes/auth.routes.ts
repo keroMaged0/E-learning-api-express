@@ -1,24 +1,21 @@
 import { Router } from 'express';
 
 import { isAuthenticated } from '../guards/isAuthenticated.guard';
-import { isauthorized } from '../guards/isAuthorized.guard';
+import { isAuthorized } from '../guards/isAuthorized.guard';
 import * as validation from '../validators/auth.validator'
 import * as controller from '../controllers/auth'
 import { SystemRoles } from '../types/roles';
-// import { uploadMemoryStorage } from '../middlewares/multer.middleware';
 
-// const uploadProfileImage = uploadMemoryStorage().single('profileImage')
-// uploadProfileImage,  // Multer middleware for profile image upload
 
 const router = Router();
 
-// Mock route for user registration
+// route for user registration
 router.post('/signUp',
     validation.signupValidator,
     controller.signUpHandler,
 );
 
-// Mock route for user login
+// route for user login
 router.post('/signIn',
     validation.signinValidator,
     controller.signInHandler
@@ -39,14 +36,14 @@ router.post('/verificationCode/resend',
 // two factor authentication route handlers
 router.get('/2fa/generate',
     isAuthenticated,
-    isauthorized(SystemRoles.student, SystemRoles.teacher),
+    isAuthorized(SystemRoles.student, SystemRoles.teacher),
     controller.generate2faHandler,
 )
 
 // enable two factor authentication route handlers
 router.post('/2fa/enable',
     isAuthenticated,
-    isauthorized(SystemRoles.student, SystemRoles.teacher),
+    isAuthorized(SystemRoles.student, SystemRoles.teacher),
     validation.enable2faValidator,
     controller.enable2faHandler,
 )
@@ -66,7 +63,7 @@ router.post('/refreshToken',
 // change password route handlers
 router.patch('/password',
     isAuthenticated,
-    isauthorized(SystemRoles.student, SystemRoles.teacher),
+    isAuthorized(SystemRoles.student, SystemRoles.teacher),
     validation.updatePasswordValidator,
     controller.updatePasswordHandler,
 )
@@ -86,7 +83,7 @@ router.route('/forgetPassword')
 // logout route handlers
 router.get('/logout',
     isAuthenticated,
-    isauthorized(SystemRoles.student, SystemRoles.teacher),
+    isAuthorized(SystemRoles.student, SystemRoles.teacher),
     controller.logoutHandler,
 )
 
