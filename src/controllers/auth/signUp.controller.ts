@@ -21,7 +21,8 @@ export const signUpHandler: RequestHandler<
     unknown,
     SuccessResponse<{ verificationCode: any }>
 > = catchError(
-    async (req, res, next) => {
+    async (req, res, next) => {        
+
         const code = generateCode();  // Generate verification code
 
         const userId = new mongoose.Types.ObjectId().toHexString();  // Generate user ID
