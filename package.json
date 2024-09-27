@@ -4,7 +4,7 @@
   "description": "\"# E-Learning-API\"",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node src/index.ts",
+    "start": "node dist/index.js",
     "nodemon": "ts-node src/index.ts",
     "dev": "nodemon",
     "build": "tsc",
@@ -13,7 +13,7 @@
   "keywords": [],
   "author": "",
   "engines": {
-    "node": "18.16.1"
+    "node": "14.x"
   },
   "license": "ISC",
   "devDependencies": {
