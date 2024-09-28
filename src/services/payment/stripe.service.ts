@@ -22,7 +22,7 @@ export class StripePayment {
                     },
                 ],
                 mode: 'payment',
-                success_url: `${env.frontUrl}/success?session_id={CHECKOUT_SESSION_ID}`,
+                success_url: `${env.frontUrl}/success`,
                 cancel_url: `${env.frontUrl}/cancel`,
                 metadata: {
                     paymentId: paymentId,
