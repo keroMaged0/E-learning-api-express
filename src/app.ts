@@ -52,18 +52,6 @@ app.post('/webhook',
     }
 );
 
-app.get('/success', (req, res) => {
-    const { session_id } = req.query;
-    console.log('====================================');
-    console.log("session_id:", session_id);
-    console.log('====================================');
-    
-    if (!session_id) {
-        return res.status(400).send('Session ID is missing');
-    }
-
-    res.send('Payment successful!');
-})
 
 // Add CORS policy
 app.use(
@@ -99,6 +87,21 @@ if (env.environment === 'development') {
 }
 
 app.use(authenticationMiddleware);
+
+
+app.get('/success', (req, res) => {
+    const { session_id } = req.query;
+    console.log('====================================');
+    console.log("session_id:", session_id);
+    console.log('====================================');
+
+    if (!session_id) {
+        return res.status(400).send('Session ID is missing');
+    }
+
+    res.send('Payment successful!');
+})
+
 
 // API routes
 app.use('/api/v1', apiRoutes);
