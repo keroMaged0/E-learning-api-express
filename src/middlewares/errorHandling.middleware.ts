@@ -2,9 +2,9 @@ import { ErrorRequestHandler } from "express";
 import multer, { MulterError } from 'multer';
 
 import { ErrorResponse } from "../types/response";
-import { env } from "../config/env";
-import { logger } from "../config/logger";
 import { AppError } from "../errors/appError";
+import { logger } from "../config/logger";
+import { env } from "../config/env";
 
 
 /******************** Error handling middleware ********************/
@@ -14,7 +14,6 @@ export const ErrorHandlerMiddleware: ErrorRequestHandler<unknown, ErrorResponse>
     res,
     next,
 ) => {
-
     // check if error 
     logger.error(err)
     if (env.environment === 'development') console.log(err);
@@ -46,7 +45,7 @@ export const ErrorHandlerMiddleware: ErrorRequestHandler<unknown, ErrorResponse>
             data: {},
         });
 
-
+    // multer error
     if (err instanceof multer.MulterError)
         return res.status(400).json({
             status: false,
@@ -54,7 +53,6 @@ export const ErrorHandlerMiddleware: ErrorRequestHandler<unknown, ErrorResponse>
             message: "multer error",
             data: {}
         });
-
 
     // JWT expired token
     if (err.name === 'TokenExpiredError')
@@ -65,8 +63,6 @@ export const ErrorHandlerMiddleware: ErrorRequestHandler<unknown, ErrorResponse>
             data: {},
         });
 
-
-
     // unHandled error
     res.status(500).json({
         status: false,
@@ -74,8 +70,6 @@ export const ErrorHandlerMiddleware: ErrorRequestHandler<unknown, ErrorResponse>
         message: 'Internal server error',
         data: {},
     });
-
-
 
     next();
 }
@@ -87,6 +81,5 @@ export const catchError = (fn) => {
         fn(req, res, next).catch((err) =>
             next(err)
         );
-
     };
 }

@@ -8,11 +8,49 @@ import { ErrorHandlerMiddleware } from './middlewares/errorHandling.middleware';
 import { checkEnvVariables, env } from './config/env';
 import { apiRoutes } from './routes';
 import './config/redisClient.config'
+import Stripe from 'stripe';
 
 checkEnvVariables();
 
 // Initialize Express app
 export const app = express();
+
+app.post('/webhook',
+    express.raw({ type: 'application/json' }),
+    (request, response) => {
+        const sig = request.headers['stripe-signature'];
+        if (!sig) {
+            return response.status(400).send('Missing Stripe signature');
+        }
+
+        let event;
+
+        try {
+            event = Stripe.webhooks.constructEvent(
+                request.body,
+                sig,
+                env.stripe.webhookSecret as string
+            );
+        } catch (err: any) {
+            response.status(400).send(`Webhook Error: ${err.message}`);
+            return;
+        }
+
+        // Handle the event
+        switch (event.type) {
+            case 'checkout.session.completed':
+                const data = event.data.object;
+                console.log(data);
+                break;
+            default:
+                console.log(`Unhandled event type ${event.type}`);
+        }
+
+        // Return a 200 response to acknowledge receipt of the event
+        response.send();
+    }
+);
+
 
 // Add CORS policy
 app.use(
@@ -21,7 +59,6 @@ app.use(
         credentials: true,
     }),
 );
-
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
@@ -49,7 +86,6 @@ if (env.environment === 'development') {
 }
 
 app.use(authenticationMiddleware);
-
 
 // API routes
 app.use('/api/v1', apiRoutes);

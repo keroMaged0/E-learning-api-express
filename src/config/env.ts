@@ -45,6 +45,11 @@ export const env = {
         cacheTempKey: process.env.CACHE_TEMPORARY_TOKEN_PREFIX,
         cacheTempExpire: + (process.env.CACHE_TEMPORARY_TOKEN_EXPIRE || 3600) as number
     },
+    stripe:{
+        secretKey: process.env.STRIPE_SECRET_KEY,
+        publicKey: process.env.STRIPE_PUBLISH_KEY,
+        webhookSecret: process.env.STRIPE_WEBHOOK_SECRET
+    }
 }
 
 

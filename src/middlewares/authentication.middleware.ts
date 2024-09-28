@@ -1,14 +1,13 @@
 import { RequestHandler } from "express";
 import { Types } from "mongoose";
 
-import { Users } from "../models/user.models";
-import { isValidAccessToken } from "../utils/token";
 import { NotAllowedError } from "../errors/notAllowedError";
+import { isValidAccessToken } from "../utils/token";
+import { Users } from "../models/user.models";
 
 
 /******************** Authentication middleware ********************/
 export const authenticationMiddleware: RequestHandler = async (req, res, next) => {
-
     // destruct token from headers
     const token = req.headers.authorization
     if (!token) return next();
