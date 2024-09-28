@@ -99,7 +99,7 @@ app.get('/success', (req, res) => {
         return res.status(400).send('Session ID is missing');
     }
 
-    res.send('Payment successful!');
+    res.status(200).json({ message: 'Payment successful' });
 })
 
 
