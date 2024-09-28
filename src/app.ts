@@ -9,6 +9,7 @@ import { checkEnvVariables, env } from './config/env';
 import { apiRoutes } from './routes';
 import './config/redisClient.config'
 import Stripe from 'stripe';
+import { log } from 'winston';
 
 checkEnvVariables();
 
@@ -51,6 +52,18 @@ app.post('/webhook',
     }
 );
 
+app.get('/success', (req, res) => {
+    const { session_id } = req.query;
+    console.log('====================================');
+    console.log("session_id:", session_id);
+    console.log('====================================');
+    
+    if (!session_id) {
+        return res.status(400).send('Session ID is missing');
+    }
+
+    res.send('Payment successful!');
+})
 
 // Add CORS policy
 app.use(
