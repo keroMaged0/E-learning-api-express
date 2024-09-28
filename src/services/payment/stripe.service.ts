@@ -39,4 +39,5 @@ export class StripePayment {
             throw new Error('Failed to create payment');
         }
     }
+
 }

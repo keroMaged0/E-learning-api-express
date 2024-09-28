@@ -5,52 +5,17 @@ import cors from 'cors'
 import { authenticationMiddleware } from './middlewares/authentication.middleware';
 import { routeNotFoundMiddleware } from './middlewares/routeNotFound.middleware';
 import { ErrorHandlerMiddleware } from './middlewares/errorHandling.middleware';
+import { handleWebhook } from './controllers/payment/handleWebhook.controller';
 import { checkEnvVariables, env } from './config/env';
 import { apiRoutes } from './routes';
 import './config/redisClient.config'
-import Stripe from 'stripe';
 
 checkEnvVariables();
 
 // Initialize Express app
 export const app = express();
 
-app.post('/webhook',
-    express.raw({ type: 'application/json' }),
-    (request, response) => {
-        const sig = request.headers['stripe-signature'];
-        if (!sig) {
-            return response.status(400).send('Missing Stripe signature');
-        }
-
-        let event;
-
-        try {
-            event = Stripe.webhooks.constructEvent(
-                request.body,
-                sig,
-                env.stripe.webhookSecret as string
-            );
-        } catch (err: any) {
-            response.status(400).send(`Webhook Error: ${err.message}`);
-            return;
-        }
-
-        // Handle the event
-        switch (event.type) {
-            case 'checkout.session.completed':
-                const data = event.data.object;
-                console.log(data);
-                break;
-            default:
-                console.log(`Unhandled event type ${event.type}`);
-        }
-
-        // Return a 200 response to acknowledge receipt of the event
-        response.send();
-    }
-);
-
+app.post('/webhook', express.raw({ type: 'application/json' }), handleWebhook);
 
 // Add CORS policy
 app.use(
@@ -90,9 +55,6 @@ app.use(authenticationMiddleware);
 
 app.get('/success', (req, res) => {
     const { session_id } = req.query;
-    console.log('====================================');
-    console.log("session_id:", session_id);
-    console.log('====================================');
 
     if (!session_id) {
         return res.status(400).send('Session ID is missing');

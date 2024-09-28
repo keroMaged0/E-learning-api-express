@@ -7,7 +7,7 @@ export interface IPayment extends ICommonModel {
     amount: number;
     status: 'successful' | 'failed' | 'pending';
     paymentMethod: 'paypal' | 'stripe' | 'paymob';
-    transactionId?: string;
+    transactionId: string;
 }
 
 export const paymentSchema = new Schema<IPayment>({
@@ -36,7 +36,8 @@ export const paymentSchema = new Schema<IPayment>({
         required: true
     },
     transactionId: {
-        type: String
+        type: String,
+        default: ''
     },
 })
 
