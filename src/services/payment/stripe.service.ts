@@ -22,8 +22,8 @@ export class StripePayment {
                     },
                 ],
                 mode: 'payment',
-                success_url: `${env.frontUrl}/success?session_id={CHECKOUT_SESSION_ID}`,
-                cancel_url: `${env.frontUrl}/cancel`,
+                success_url: `${env.apiUrl}/success?session_id={CHECKOUT_SESSION_ID}`,
+                cancel_url: `${env.apiUrl}/cancel`,
                 metadata: {
                     paymentId: paymentId,
                     userId: userId,
