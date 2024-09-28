@@ -9,7 +9,6 @@ import { checkEnvVariables, env } from './config/env';
 import { apiRoutes } from './routes';
 import './config/redisClient.config'
 import Stripe from 'stripe';
-import { log } from 'winston';
 
 checkEnvVariables();
 

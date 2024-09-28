@@ -53,29 +53,29 @@ export const env = {
 }
 
 
-export const checkEnvVariables = () => {
-    // if (!env.mongoDb.url) throw new Error('env:MONGO_URI must be defined');
-    // if (!env.bcrypt.salt) throw new Error('env:BCRYPT_SALT must be defined');
-    // if (!Number.isInteger(env.bcrypt.salt)) throw new Error('env:BCRYPT_SALT must be integer');
-    // if (!env.jwt.accessTokenSecret) throw new Error('env:JWT_ACCESS_TOKEN_SECRET must be defined');
-    // if (!env.jwt.refreshTokenSecret) throw new Error('env:JWT_REFRESH_TOKEN_SECRET must be defined');
-    // if (!env.mail.port) throw new Error('env:MAIL_PORT must be defined');
-    // if (!Number.isInteger(env.mail.port)) throw new Error('env:MAIL_PORT must be integer');
-    // if (!env.mail.driver) throw new Error('env:MAIL_DRIVER must be defined');
-    // if (!env.mail.user) throw new Error('env:MAIL_USER must be defined');
-    // if (!env.mail.pass) throw new Error('env:MAIL_PASS must be defined');
-    // if (!env.apiUrl) throw new Error('env:API_URL must be defined');
-    // if (!env.cloudinary.cloudinaryApiKey) throw new Error('env:Cloudinary API key must be defined');
-    // if (!env.cloudinary.cloudinaryName) throw new Error('env:Cloudinary name must be defined');
-    // if (!env.cloudinary.cloudinaryApiSecret) throw new Error('env:Cloudinary API secret must be defined');
+const requiredEnvVars = [
+    { key: 'MONGO_URI', value: env.mongoDb.url },
+    { key: 'BCRYPT_SALT', value: env.bcrypt.salt, validate: (val: number) => Number.isInteger(val) },
+    { key: 'JWT_ACCESS_SECRET', value: env.jwt.accessTokenSecret },
+    { key: 'JWT_REFRESH_SECRET', value: env.jwt.refreshTokenSecret },
+    { key: 'MAIL_PORT', value: env.mail.port, validate: (val: number) => Number.isInteger(val) },
+    { key: 'MAIL_DRIVER', value: env.mail.driver },
+    { key: 'MAIL_USER', value: env.mail.user },
+    { key: 'MAIL_PASS', value: env.mail.pass },
+    { key: 'API_URL', value: env.apiUrl },
+    { key: 'CLOUDINARY_API_KEY', value: env.cloudinary.cloudinaryApiKey },
+    { key: 'CLOUDINARY_CLOUD_NAME', value: env.cloudinary.cloudinaryName },
+    { key: 'CLOUDINARY_API_SECRET', value: env.cloudinary.cloudinaryApiSecret },
+    // Uncomment the following lines if you are using Firebase
+];
 
-    // if (!env.firebase.projectId) throw new Error('env:FB_PROJECTID must be defined');
-    // if (!env.firebase.clientEmail) throw new Error('env:FB_CLIENTEMAIL must be defined');
-    // if (!env.firebase.privateKey) throw new Error('env:FB_PRIVATEKEY must be defined');
-    // if (!env.firebase.storageBucket) throw new Error('env:FB_STORAGEBUCKET must be defined');
-    // if (!env.firebase.apiKey) throw new Error('env:FB_APIKEY must be defined');
-    // if (!env.firebase.authDomain) throw new Error('env:FB_AUTHDOMAIN must be defined');
-    // if (!env.firebase.messagingSenderId) throw new Error('env:FB_MESSAGINGSENDERID must be defined');
-    // if (!env.firebase.appId) throw new Error('env:FB_APPID must be defined');
-    // if (!env.firebase.bucketUrl) throw new Error('env:BUCKET_URL must be defined');
+export const checkEnvVariables = () => {
+    requiredEnvVars.forEach(({ key, value, validate }) => {
+        if (!value) {
+            throw new Error(`env:${key} must be defined`);
+        }
+        if (validate && !validate(value)) {
+            throw new Error(`env:${key} must be an integer`);
+        }
+    });
 };

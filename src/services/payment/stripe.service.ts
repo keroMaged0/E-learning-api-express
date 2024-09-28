@@ -22,8 +22,8 @@ export class StripePayment {
                     },
                 ],
                 mode: 'payment',
-                success_url: `${env.apiUrl}/success?session_id={CHECKOUT_SESSION_ID}`,
-                cancel_url: `${env.apiUrl}/cancel`,
+                success_url: `https://e-learning-api-ruddy.vercel.app/success?session_id={CHECKOUT_SESSION_ID}`,
+                cancel_url: `https://e-learning-api-ruddy.vercel.app/cancel`,
                 metadata: {
                     paymentId: paymentId,
                     userId: userId,
