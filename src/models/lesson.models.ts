@@ -12,7 +12,7 @@ export interface ILesson extends ICommonModel {
     imageCover: IImageCover;
     folderId: string;
     instructorId: mongoose.Schema.Types.ObjectId;
-    resources: string[];
+    resourses: string[];
 }
 
 export const lessonsSchema = new Schema<ILesson>(
@@ -53,7 +53,7 @@ export const lessonsSchema = new Schema<ILesson>(
             type: String,
             trim: true
         },
-        resources: [{
+        resourses: [{
             type: String,
             trim: true
         }]

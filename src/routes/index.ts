@@ -1,5 +1,6 @@
 import { Router } from 'express';
 
+import { enrolledCourseRouter } from './enrolledCourse.routes';
 import { paymentsRoutes } from './payment.routes';
 import { lessonsRoutes } from './lessons.routes';
 import { coursesRoutes } from './courses.routes';
@@ -11,6 +12,7 @@ import { authRoutes } from './auth.routes';
 const router = Router();
 
 /*************** routes handlers ***************/
+router.use('/enrolledCourse', enrolledCourseRouter);
 router.use('/payment', paymentsRoutes);
 router.use('/courses', coursesRoutes);
 router.use('/lessons', lessonsRoutes);

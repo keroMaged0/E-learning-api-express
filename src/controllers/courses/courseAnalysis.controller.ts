@@ -6,7 +6,7 @@ import { Courses } from "../../models/course.models";
 import { Lessons } from "../../models/lesson.models";
 import Reviews from "../../models/review.models";
 import { Videos } from "../../models/video.models";
-import { EnrolledCourse } from "../../models/EnrolledCourse.models";
+import { EnrolledCourse } from "../../models/enrolledCourse.models";
 
 /**
  * Handler to retrieve statistics for a specific course.

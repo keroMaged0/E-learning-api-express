@@ -1,7 +1,11 @@
+import winston from 'winston';
+
+import { env } from "./env";
+
 import { LogtailTransport } from "@logtail/winston";
 import { Logtail } from "@logtail/node";
-import winston from 'winston';
-import { env } from "./env";
+
+
 
 
 const { combine, timestamp, simple, errors, printf } = winston.format;

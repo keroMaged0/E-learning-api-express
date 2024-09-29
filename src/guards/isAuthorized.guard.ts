@@ -1,6 +1,7 @@
 import { RequestHandler } from "express";
-import { SystemRoles } from "../types/roles";
+
 import { UnauthorizedError } from "../errors/UnauthorizedError";
+import { SystemRoles } from "../types/roles";
 
 export const isAuthorized = (...roles: SystemRoles[]) => <RequestHandler>(
     async (req, res, next) => {

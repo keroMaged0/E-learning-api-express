@@ -20,11 +20,11 @@ const createLessonsValidator = [
         .notEmpty()
         .withMessage('Course ID is required'),
 
-    body('resources')
+    body('resourses')
         .isArray()
-        .withMessage('Resources should be an array')
+        .withMessage('Resourses should be an array')
         .custom((arr) => arr.every(item => typeof item === 'string'))
-        .withMessage('Each resource should be a string')
+        .withMessage('Each resourse should be a string')
         .optional(),
     validatorMiddleware
 ]

@@ -5,7 +5,7 @@ import { SuccessResponse } from "../../types/response";
 import { Users } from "../../models/user.models";
 import { NotFoundError } from "../../errors/notFoundError";
 import { Courses } from "../../models/course.models";
-import { EnrolledCourse } from "../../models/EnrolledCourse.models";
+import { EnrolledCourse } from "../../models/enrolledCourse.models";
 import { PaymentGateway } from "../../services/PaymentGateway";
 import { Payment } from "../../models/payment.models";
 
@@ -25,7 +25,9 @@ export const initiatePaymentHandler: RequestHandler<unknown, SuccessResponse> = 
         const { _id } = req.loggedUser;
 
         // Check if the user has already made a successful payment for the course
-        const paymentExist = await Payment.findOne({ courseId, userId: _id, status: 'successful' });
+        const paymentExist = await Payment.findOne({ courseId, userId: _id });
+        if (paymentExist && paymentExist.status === 'successful') return res.status(400).json({ message: "Payment already processed" });
+        if (paymentExist && paymentExist.status === 'pending') return res.status(400).json({ message: "Payment already initiated " });
         if (paymentExist) return res.status(400).json({ message: "Payment already processed" });
 
         // Verify the user exists and is verified
@@ -40,6 +42,7 @@ export const initiatePaymentHandler: RequestHandler<unknown, SuccessResponse> = 
         // Verify if the user is already enrolled in the course
         const enrolledCourse = await EnrolledCourse.findOne({ userId: user._id, courseId });
         if (enrolledCourse) return next(new NotFoundError('User already enrolled in this course'));
+
 
         // Validate payment method
         if (paymentMethod !== 'stripe') {

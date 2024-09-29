@@ -1,4 +1,5 @@
 import { RequestHandler } from "express";
+
 import { UnauthenticatedError } from "../errors/UnauthenticatedError";
 
 export const isAuthenticated: RequestHandler = async (req, res, next) => {    
