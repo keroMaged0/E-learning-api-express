@@ -1,6 +1,7 @@
 import { body, param } from "express-validator"
 import { validatorMiddleware } from "../middlewares/validator.middleware";
 
+/*************** Create lesson validator ***************/
 const createLessonsValidator = [
     body('title')
         .isString()
@@ -28,7 +29,8 @@ const createLessonsValidator = [
         .optional(),
     validatorMiddleware
 ]
-
+    
+/*************** Update lesson validator ***************/
 const updateLessonsValidator = [
     param('lessonId')
         .isMongoId()

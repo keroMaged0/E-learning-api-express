@@ -11,8 +11,9 @@ import { Payment } from "../../models/payment.models";
 
 /**
  * Handler function to initiate payment for a course enrollment.
- * This function checks if the user is verified and has not already made a successful payment,
- * creates a payment record, and initiates the payment process through the specified payment gateway.
+ * Checks user verification, payment status, and course enrollment status
+ * before creating a payment record and initiating the payment process.
+ * 
  * @param {Request} req - The request object containing courseId and paymentMethod.
  * @param {Response} res - The response object used to send a response.
  * @param {NextFunction} next - The next middleware function in the stack.

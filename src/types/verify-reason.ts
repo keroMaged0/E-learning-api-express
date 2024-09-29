@@ -7,5 +7,6 @@ export enum VerifyReason {
   deleteCourse = 'delete-course',
   deleteLesson = 'delete-lesson',
   deleteVideo= 'delete-video',
+  deleteReview = 'delete-review',
 
 }

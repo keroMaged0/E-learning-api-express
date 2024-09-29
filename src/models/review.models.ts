@@ -1,24 +1,41 @@
 // models/Review.ts
 
 import mongoose, { Schema } from 'mongoose';
-import { ICommonModel } from '../types/modelNames';
+import { ICommonModel, MODELS } from '../types/modelNames';
 
 interface IReview extends ICommonModel {
-    entityType: 'course' | 'lesson'; // نوع الكيان
-    entityId: string; // ID للدورة أو الدرس
+    entityType: MODELS.course | MODELS.video;
+    entityId: string;
     userId: string;
-    rating: number; // تقييم من 1 إلى 5
+    rating: number;
     comment: string;
 }
 
 const ReviewSchema: Schema = new Schema({
-    entityType: { type: String, enum: ['course', 'lesson'], required: true },
-    entityId: { type: Schema.Types.ObjectId, required: true },
-    userId: { type: Schema.Types.ObjectId, ref: 'User', required: true },
-    rating: { type: Number, required: true, min: 1, max: 5 },
-    comment: { type: String, required: true },
+    entityType: {
+        type: String,
+        enum: [MODELS.course, MODELS.video],
+        required: true
+    },
+    entityId: {
+        type: Schema.Types.ObjectId,
+        required: true
+    },
+    userId: {
+        type: Schema.Types.ObjectId,
+        ref: MODELS.users,
+        required: true
+    },
+    rating: {
+        type: Number,
+        min: [1, ' rating must be between 1 and 5'],
+        max: [5, 'rating must be between 1 and 5'],
+    },
+    comment: {
+        type: String,
+        required: true
+    },
 }, { timestamps: true });
 
-const Reviews = mongoose.model<IReview>('Review', ReviewSchema);
+export const Reviews = mongoose.model<IReview>(MODELS.review, ReviewSchema);
 
-export default Reviews;

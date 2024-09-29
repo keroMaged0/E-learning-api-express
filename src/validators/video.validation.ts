@@ -1,6 +1,7 @@
 import { body, param } from "express-validator"
 import { validatorMiddleware } from "../middlewares/validator.middleware"
 
+/*************** Create video validator ***************/
 const createVideosValidator = [
 
     body('title')
@@ -19,6 +20,7 @@ const createVideosValidator = [
     validatorMiddleware
 ]
 
+/*************** Update video validator ***************/
 const updateVideosValidator = [
     param('videoId')
         .isMongoId()

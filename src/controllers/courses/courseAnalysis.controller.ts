@@ -4,9 +4,9 @@ import { NotFoundError } from "../../errors/notFoundError";
 import { SuccessResponse } from "../../types/response";
 import { Courses } from "../../models/course.models";
 import { Lessons } from "../../models/lesson.models";
-import Reviews from "../../models/review.models";
 import { Videos } from "../../models/video.models";
 import { EnrolledCourse } from "../../models/enrolledCourse.models";
+import { Reviews } from "../../models/review.models";
 
 /**
  * Handler to retrieve statistics for a specific course.

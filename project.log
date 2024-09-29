@@ -26558,3 +26558,1096 @@ Error: Course not found
 2024-09-29T09:25:45.124Z [INFO]: Connected to Redis
 2024-09-29T09:25:45.522Z [INFO]: email transporter verified
 2024-09-29T09:25:45.855Z [INFO]: Connected to MongoDB
+2024-09-29T09:25:58.657Z [INFO]: Connected to Redis
+2024-09-29T09:25:59.022Z [INFO]: email transporter verified
+2024-09-29T09:25:59.411Z [INFO]: Connected to MongoDB
+2024-09-29T09:31:27.820Z [INFO]: Connected to Redis
+2024-09-29T09:31:28.270Z [INFO]: email transporter verified
+2024-09-29T09:31:28.556Z [INFO]: Connected to MongoDB
+2024-09-29T09:31:37.196Z [INFO]: Connected to Redis
+2024-09-29T09:31:37.617Z [INFO]: email transporter verified
+2024-09-29T09:32:10.972Z [INFO]: Connected to Redis
+2024-09-29T09:32:11.310Z [INFO]: email transporter verified
+2024-09-29T09:32:11.787Z [INFO]: Connected to MongoDB
+2024-09-29T10:06:40.478Z [INFO]: Connected to Redis
+2024-09-29T10:06:40.809Z [INFO]: email transporter verified
+2024-09-29T10:06:41.370Z [INFO]: Connected to MongoDB
+2024-09-29T10:07:28.542Z [INFO]: Connected to Redis
+2024-09-29T10:07:32.065Z [INFO]: Connected to Redis
+2024-09-29T10:07:32.531Z [INFO]: email transporter verified
+2024-09-29T10:07:32.883Z [INFO]: Connected to MongoDB
+2024-09-29T10:07:51.893Z [INFO]: Connected to Redis
+2024-09-29T10:07:52.252Z [INFO]: email transporter verified
+2024-09-29T10:07:52.756Z [INFO]: Connected to MongoDB
+2024-09-29T10:08:13.700Z [INFO]: Connected to Redis
+2024-09-29T10:08:14.058Z [INFO]: email transporter verified
+2024-09-29T10:08:14.543Z [INFO]: Connected to MongoDB
+2024-09-29T12:41:17.749Z [INFO]: Connected to Redis
+2024-09-29T12:41:18.050Z [INFO]: email transporter verified
+2024-09-29T12:41:18.554Z [INFO]: Connected to MongoDB
+2024-09-29T12:41:51.260Z [ERROR]: unauthenticated
+Error: unauthenticated
+    at D:\cours node.js\My-Github\E-Learning-API\src\guards\isAuthenticated.guard.ts:6:43
+    at Generator.next (<anonymous>)
+    at D:\cours node.js\My-Github\E-Learning-API\src\guards\isAuthenticated.guard.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (D:\cours node.js\My-Github\E-Learning-API\src\guards\isAuthenticated.guard.ts:4:12)
+    at isAuthenticated (D:\cours node.js\My-Github\E-Learning-API\src\guards\isAuthenticated.guard.ts:5:73)
+    at Layer.handle [as handle_request] (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\layer.js:95:5)
+2024-09-29T12:44:07.187Z [ERROR]: unauthenticated
+Error: unauthenticated
+    at D:\cours node.js\My-Github\E-Learning-API\src\guards\isAuthenticated.guard.ts:6:43
+    at Generator.next (<anonymous>)
+    at D:\cours node.js\My-Github\E-Learning-API\src\guards\isAuthenticated.guard.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (D:\cours node.js\My-Github\E-Learning-API\src\guards\isAuthenticated.guard.ts:4:12)
+    at isAuthenticated (D:\cours node.js\My-Github\E-Learning-API\src\guards\isAuthenticated.guard.ts:5:73)
+    at Layer.handle [as handle_request] (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\layer.js:95:5)
+2024-09-29T12:44:08.723Z [ERROR]: unauthenticated
+Error: unauthenticated
+    at D:\cours node.js\My-Github\E-Learning-API\src\guards\isAuthenticated.guard.ts:6:43
+    at Generator.next (<anonymous>)
+    at D:\cours node.js\My-Github\E-Learning-API\src\guards\isAuthenticated.guard.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (D:\cours node.js\My-Github\E-Learning-API\src\guards\isAuthenticated.guard.ts:4:12)
+    at isAuthenticated (D:\cours node.js\My-Github\E-Learning-API\src\guards\isAuthenticated.guard.ts:5:73)
+    at Layer.handle [as handle_request] (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\layer.js:95:5)
+2024-09-29T12:44:23.701Z [ERROR]: Invalid entity type
+Error: Invalid entity type
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\createReview.controller.ts:17:25
+    at Generator.next (<anonymous>)
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\createReview.controller.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\createReview.controller.ts:4:12)
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\createReview.controller.ts:12:30
+    at D:\cours node.js\My-Github\E-Learning-API\src\middlewares\errorHandling.middleware.ts:81:9
+    at Layer.handle [as handle_request] (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\route.js:149:13)
+    at validatorMiddleware (D:\cours node.js\My-Github\E-Learning-API\src\middlewares\validator.middleware.ts:14:5)
+2024-09-29T12:44:56.994Z [ERROR]: Invalid entity type
+Error: Invalid entity type
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\createReview.controller.ts:17:25
+    at Generator.next (<anonymous>)
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\createReview.controller.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\createReview.controller.ts:4:12)
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\createReview.controller.ts:12:30
+    at D:\cours node.js\My-Github\E-Learning-API\src\middlewares\errorHandling.middleware.ts:81:9
+    at Layer.handle [as handle_request] (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\route.js:149:13)
+    at validatorMiddleware (D:\cours node.js\My-Github\E-Learning-API\src\middlewares\validator.middleware.ts:14:5)
+2024-09-29T12:44:58.201Z [ERROR]: Invalid entity type
+Error: Invalid entity type
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\createReview.controller.ts:17:25
+    at Generator.next (<anonymous>)
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\createReview.controller.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\createReview.controller.ts:4:12)
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\createReview.controller.ts:12:30
+    at D:\cours node.js\My-Github\E-Learning-API\src\middlewares\errorHandling.middleware.ts:81:9
+    at Layer.handle [as handle_request] (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\route.js:149:13)
+    at validatorMiddleware (D:\cours node.js\My-Github\E-Learning-API\src\middlewares\validator.middleware.ts:14:5)
+2024-09-29T12:44:59.364Z [ERROR]: Invalid entity type
+Error: Invalid entity type
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\createReview.controller.ts:17:25
+    at Generator.next (<anonymous>)
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\createReview.controller.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\createReview.controller.ts:4:12)
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\createReview.controller.ts:12:30
+    at D:\cours node.js\My-Github\E-Learning-API\src\middlewares\errorHandling.middleware.ts:81:9
+    at Layer.handle [as handle_request] (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\route.js:149:13)
+    at validatorMiddleware (D:\cours node.js\My-Github\E-Learning-API\src\middlewares\validator.middleware.ts:14:5)
+2024-09-29T12:45:16.392Z [INFO]: Connected to Redis
+2024-09-29T12:45:16.780Z [INFO]: email transporter verified
+2024-09-29T12:45:17.354Z [INFO]: Connected to MongoDB
+2024-09-29T12:45:19.501Z [ERROR]: Invalid entity type
+Error: Invalid entity type
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\createReview.controller.ts:17:25
+    at Generator.next (<anonymous>)
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\createReview.controller.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\createReview.controller.ts:4:12)
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\createReview.controller.ts:12:30
+    at D:\cours node.js\My-Github\E-Learning-API\src\middlewares\errorHandling.middleware.ts:81:9
+    at Layer.handle [as handle_request] (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\route.js:149:13)
+    at validatorMiddleware (D:\cours node.js\My-Github\E-Learning-API\src\middlewares\validator.middleware.ts:14:5)
+2024-09-29T12:45:29.877Z [INFO]: Connected to Redis
+2024-09-29T12:45:30.323Z [INFO]: email transporter verified
+2024-09-29T12:45:30.601Z [INFO]: Connected to MongoDB
+2024-09-29T12:45:30.693Z [ERROR]: Invalid entity type
+Error: Invalid entity type
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\createReview.controller.ts:17:25
+    at Generator.next (<anonymous>)
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\createReview.controller.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\createReview.controller.ts:4:12)
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\createReview.controller.ts:12:30
+    at D:\cours node.js\My-Github\E-Learning-API\src\middlewares\errorHandling.middleware.ts:81:9
+    at Layer.handle [as handle_request] (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\route.js:149:13)
+    at validatorMiddleware (D:\cours node.js\My-Github\E-Learning-API\src\middlewares\validator.middleware.ts:14:5)
+2024-09-29T12:45:37.604Z [INFO]: Connected to Redis
+2024-09-29T12:45:38.010Z [INFO]: email transporter verified
+2024-09-29T12:45:38.376Z [INFO]: Connected to MongoDB
+2024-09-29T12:45:54.715Z [INFO]: Connected to Redis
+2024-09-29T12:45:55.069Z [INFO]: email transporter verified
+2024-09-29T12:45:55.475Z [INFO]: Connected to MongoDB
+2024-09-29T12:45:56.416Z [ERROR]: Invalid entity type
+Error: Invalid entity type
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\createReview.controller.ts:17:25
+    at Generator.next (<anonymous>)
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\createReview.controller.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\createReview.controller.ts:4:12)
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\createReview.controller.ts:12:30
+    at D:\cours node.js\My-Github\E-Learning-API\src\middlewares\errorHandling.middleware.ts:81:9
+    at Layer.handle [as handle_request] (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\route.js:149:13)
+    at validatorMiddleware (D:\cours node.js\My-Github\E-Learning-API\src\middlewares\validator.middleware.ts:14:5)
+2024-09-29T12:45:56.975Z [ERROR]: Invalid entity type
+Error: Invalid entity type
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\createReview.controller.ts:17:25
+    at Generator.next (<anonymous>)
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\createReview.controller.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\createReview.controller.ts:4:12)
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\createReview.controller.ts:12:30
+    at D:\cours node.js\My-Github\E-Learning-API\src\middlewares\errorHandling.middleware.ts:81:9
+    at Layer.handle [as handle_request] (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\route.js:149:13)
+    at validatorMiddleware (D:\cours node.js\My-Github\E-Learning-API\src\middlewares\validator.middleware.ts:14:5)
+2024-09-29T12:46:15.200Z [INFO]: Connected to Redis
+2024-09-29T12:46:15.526Z [INFO]: email transporter verified
+2024-09-29T12:46:15.940Z [INFO]: Connected to MongoDB
+2024-09-29T12:46:16.034Z [ERROR]: Invalid entity type
+Error: Invalid entity type
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\createReview.controller.ts:21:25
+    at Generator.next (<anonymous>)
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\createReview.controller.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\createReview.controller.ts:4:12)
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\createReview.controller.ts:12:30
+    at D:\cours node.js\My-Github\E-Learning-API\src\middlewares\errorHandling.middleware.ts:81:9
+    at Layer.handle [as handle_request] (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\route.js:149:13)
+    at validatorMiddleware (D:\cours node.js\My-Github\E-Learning-API\src\middlewares\validator.middleware.ts:14:5)
+2024-09-29T12:46:42.052Z [INFO]: Connected to Redis
+2024-09-29T12:46:42.501Z [INFO]: email transporter verified
+2024-09-29T12:46:42.788Z [INFO]: Connected to MongoDB
+2024-09-29T12:47:07.600Z [INFO]: Connected to Redis
+2024-09-29T12:47:07.962Z [INFO]: email transporter verified
+2024-09-29T12:47:08.298Z [INFO]: Connected to MongoDB
+2024-09-29T12:47:11.462Z [ERROR]: Invalid entity type
+Error: Invalid entity type
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\createReview.controller.ts:17:25
+    at Generator.next (<anonymous>)
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\createReview.controller.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\createReview.controller.ts:4:12)
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\createReview.controller.ts:12:30
+    at D:\cours node.js\My-Github\E-Learning-API\src\middlewares\errorHandling.middleware.ts:81:9
+    at Layer.handle [as handle_request] (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\route.js:149:13)
+    at D:\cours node.js\My-Github\E-Learning-API\src\guards\isAuthorized.guard.ts:11:9
+2024-09-29T12:47:48.925Z [INFO]: Connected to Redis
+2024-09-29T12:47:49.337Z [INFO]: email transporter verified
+2024-09-29T12:48:11.710Z [INFO]: Connected to Redis
+2024-09-29T12:48:15.123Z [INFO]: Connected to Redis
+2024-09-29T12:48:15.533Z [INFO]: email transporter verified
+2024-09-29T12:48:15.917Z [INFO]: Connected to MongoDB
+2024-09-29T12:48:20.558Z [INFO]: Connected to Redis
+2024-09-29T12:48:20.974Z [INFO]: email transporter verified
+2024-09-29T12:48:21.478Z [INFO]: Connected to MongoDB
+2024-09-29T12:48:25.245Z [INFO]: Connected to Redis
+2024-09-29T12:48:25.702Z [INFO]: email transporter verified
+2024-09-29T12:48:26.063Z [INFO]: Connected to MongoDB
+2024-09-29T12:48:46.620Z [INFO]: Connected to Redis
+2024-09-29T12:48:46.982Z [INFO]: email transporter verified
+2024-09-29T12:48:47.503Z [INFO]: Connected to MongoDB
+2024-09-29T12:49:02.231Z [INFO]: Connected to Redis
+2024-09-29T12:49:02.639Z [INFO]: email transporter verified
+2024-09-29T12:49:02.962Z [INFO]: Connected to MongoDB
+2024-09-29T12:49:28.974Z [INFO]: Connected to Redis
+2024-09-29T12:49:29.347Z [INFO]: email transporter verified
+2024-09-29T12:49:29.942Z [INFO]: Connected to MongoDB
+2024-09-29T12:49:59.740Z [INFO]: Connected to Redis
+2024-09-29T12:50:00.073Z [INFO]: email transporter verified
+2024-09-29T12:50:06.715Z [INFO]: Connected to Redis
+2024-09-29T12:50:07.176Z [INFO]: email transporter verified
+2024-09-29T12:50:07.600Z [INFO]: Connected to MongoDB
+2024-09-29T12:50:13.393Z [INFO]: Connected to Redis
+2024-09-29T12:50:51.673Z [INFO]: Connected to Redis
+2024-09-29T12:50:52.026Z [INFO]: email transporter verified
+2024-09-29T12:50:52.625Z [INFO]: Connected to MongoDB
+2024-09-29T12:51:16.610Z [INFO]: Connected to Redis
+2024-09-29T12:51:16.958Z [INFO]: email transporter verified
+2024-09-29T12:51:17.361Z [INFO]: Connected to MongoDB
+2024-09-29T12:55:49.945Z [INFO]: Connected to Redis
+2024-09-29T12:55:53.359Z [INFO]: Connected to Redis
+2024-09-29T12:55:53.831Z [INFO]: email transporter verified
+2024-09-29T12:55:54.258Z [INFO]: Connected to MongoDB
+2024-09-29T12:56:12.700Z [INFO]: Connected to Redis
+2024-09-29T12:56:13.041Z [INFO]: email transporter verified
+2024-09-29T12:56:13.487Z [INFO]: Connected to MongoDB
+2024-09-29T12:56:39.386Z [INFO]: Connected to Redis
+2024-09-29T12:56:39.688Z [INFO]: email transporter verified
+2024-09-29T12:56:40.240Z [INFO]: Connected to MongoDB
+2024-09-29T12:57:05.899Z [INFO]: Connected to Redis
+2024-09-29T12:57:06.279Z [INFO]: email transporter verified
+2024-09-29T12:57:06.723Z [INFO]: Connected to MongoDB
+2024-09-29T12:57:29.389Z [INFO]: Connected to Redis
+2024-09-29T12:57:29.737Z [INFO]: email transporter verified
+2024-09-29T12:57:30.192Z [INFO]: Connected to MongoDB
+2024-09-29T12:57:34.057Z [INFO]: Connected to Redis
+2024-09-29T12:57:34.513Z [INFO]: email transporter verified
+2024-09-29T12:57:34.960Z [INFO]: Connected to MongoDB
+2024-09-29T12:58:00.906Z [INFO]: Connected to Redis
+2024-09-29T12:58:01.218Z [INFO]: email transporter verified
+2024-09-29T12:58:01.688Z [INFO]: Connected to MongoDB
+2024-09-29T12:58:08.553Z [INFO]: Connected to Redis
+2024-09-29T12:58:08.959Z [INFO]: email transporter verified
+2024-09-29T12:58:09.476Z [INFO]: Connected to MongoDB
+2024-09-29T12:58:28.565Z [INFO]: Connected to Redis
+2024-09-29T12:58:28.881Z [INFO]: email transporter verified
+2024-09-29T12:58:29.308Z [INFO]: Connected to MongoDB
+2024-09-29T13:00:23.350Z [INFO]: Connected to Redis
+2024-09-29T13:00:23.780Z [INFO]: email transporter verified
+2024-09-29T13:00:27.658Z [INFO]: Connected to Redis
+2024-09-29T13:00:36.268Z [INFO]: Connected to Redis
+2024-09-29T13:00:36.647Z [INFO]: email transporter verified
+2024-09-29T13:00:37.064Z [INFO]: Connected to MongoDB
+2024-09-29T13:00:44.258Z [INFO]: Connected to Redis
+2024-09-29T13:00:44.613Z [INFO]: email transporter verified
+2024-09-29T13:00:45.111Z [INFO]: Connected to MongoDB
+2024-09-29T13:01:02.749Z [INFO]: Connected to Redis
+2024-09-29T13:01:06.247Z [INFO]: Connected to Redis
+2024-09-29T13:01:06.641Z [INFO]: email transporter verified
+2024-09-29T13:01:07.086Z [INFO]: Connected to MongoDB
+2024-09-29T13:01:28.071Z [INFO]: Connected to Redis
+2024-09-29T13:01:28.463Z [INFO]: email transporter verified
+2024-09-29T13:01:32.001Z [INFO]: Connected to Redis
+2024-09-29T13:01:32.406Z [INFO]: email transporter verified
+2024-09-29T13:01:32.702Z [INFO]: Connected to MongoDB
+2024-09-29T13:01:37.820Z [INFO]: Connected to Redis
+2024-09-29T13:01:38.199Z [INFO]: email transporter verified
+2024-09-29T13:01:38.735Z [INFO]: Connected to MongoDB
+2024-09-29T13:01:56.660Z [ERROR]: You are not allowed to review this course
+Error: You are not allowed to review this course
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\createReview.controller.ts:39:25
+    at Generator.next (<anonymous>)
+    at fulfilled (D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\createReview.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-09-29T13:04:34.197Z [INFO]: Connected to Redis
+2024-09-29T13:04:34.563Z [INFO]: email transporter verified
+2024-09-29T13:04:34.997Z [INFO]: Connected to MongoDB
+2024-09-29T13:04:40.393Z [INFO]: Connected to Redis
+2024-09-29T13:04:40.775Z [INFO]: email transporter verified
+2024-09-29T13:04:41.289Z [INFO]: Connected to MongoDB
+2024-09-29T13:04:51.385Z [INFO]: Connected to Redis
+2024-09-29T13:04:51.736Z [INFO]: email transporter verified
+2024-09-29T13:04:52.257Z [INFO]: Connected to MongoDB
+2024-09-29T13:05:03.843Z [INFO]: Connected to Redis
+2024-09-29T13:05:04.265Z [INFO]: email transporter verified
+2024-09-29T13:05:09.162Z [INFO]: Connected to Redis
+2024-09-29T13:05:09.496Z [INFO]: email transporter verified
+2024-09-29T13:05:09.985Z [INFO]: Connected to MongoDB
+2024-09-29T13:05:25.299Z [INFO]: Connected to Redis
+2024-09-29T13:05:25.633Z [INFO]: email transporter verified
+2024-09-29T13:05:31.162Z [INFO]: Connected to MongoDB
+2024-09-29T13:06:08.966Z [INFO]: Connected to Redis
+2024-09-29T13:06:09.359Z [INFO]: email transporter verified
+2024-09-29T13:06:09.880Z [INFO]: Connected to MongoDB
+2024-09-29T13:06:33.518Z [INFO]: Connected to Redis
+2024-09-29T13:06:33.846Z [INFO]: email transporter verified
+2024-09-29T13:06:34.178Z [INFO]: Connected to MongoDB
+2024-09-29T13:06:44.545Z [INFO]: Connected to Redis
+2024-09-29T13:06:44.945Z [INFO]: email transporter verified
+2024-09-29T13:06:45.380Z [INFO]: Connected to MongoDB
+2024-09-29T13:07:07.111Z [INFO]: Connected to Redis
+2024-09-29T13:07:07.447Z [INFO]: email transporter verified
+2024-09-29T13:07:07.870Z [INFO]: Connected to MongoDB
+2024-09-29T13:07:24.868Z [INFO]: Connected to Redis
+2024-09-29T13:07:25.267Z [INFO]: email transporter verified
+2024-09-29T13:07:25.544Z [INFO]: Connected to MongoDB
+2024-09-29T13:07:39.958Z [INFO]: Connected to Redis
+2024-09-29T13:07:40.302Z [INFO]: email transporter verified
+2024-09-29T13:07:40.690Z [INFO]: Connected to MongoDB
+2024-09-29T13:08:41.433Z [INFO]: Connected to Redis
+2024-09-29T13:08:41.844Z [INFO]: email transporter verified
+2024-09-29T13:08:42.393Z [INFO]: Connected to MongoDB
+2024-09-29T13:08:55.771Z [INFO]: Connected to Redis
+2024-09-29T13:08:56.148Z [INFO]: email transporter verified
+2024-09-29T13:08:56.523Z [INFO]: Connected to MongoDB
+2024-09-29T13:09:01.596Z [INFO]: Connected to Redis
+2024-09-29T13:09:01.984Z [INFO]: email transporter verified
+2024-09-29T13:09:02.420Z [INFO]: Connected to MongoDB
+2024-09-29T13:10:44.527Z [INFO]: Connected to Redis
+2024-09-29T13:10:44.951Z [INFO]: email transporter verified
+2024-09-29T13:10:45.345Z [INFO]: Connected to MongoDB
+2024-09-29T13:10:49.779Z [INFO]: Connected to Redis
+2024-09-29T13:10:50.181Z [INFO]: email transporter verified
+2024-09-29T13:10:50.584Z [INFO]: Connected to MongoDB
+2024-09-29T13:11:11.711Z [INFO]: Connected to Redis
+2024-09-29T13:11:21.284Z [INFO]: Connected to Redis
+2024-09-29T13:11:21.701Z [INFO]: email transporter verified
+2024-09-29T13:11:22.073Z [INFO]: Connected to MongoDB
+2024-09-29T13:11:35.955Z [INFO]: Connected to Redis
+2024-09-29T13:11:36.348Z [INFO]: email transporter verified
+2024-09-29T13:11:36.898Z [INFO]: Connected to MongoDB
+2024-09-29T13:11:45.639Z [INFO]: Connected to Redis
+2024-09-29T13:11:46.059Z [INFO]: email transporter verified
+2024-09-29T13:11:46.760Z [INFO]: Connected to MongoDB
+2024-09-29T13:12:23.024Z [INFO]: Connected to Redis
+2024-09-29T13:12:23.374Z [INFO]: email transporter verified
+2024-09-29T13:12:23.703Z [INFO]: Connected to MongoDB
+2024-09-29T13:12:41.905Z [INFO]: Connected to Redis
+2024-09-29T13:12:42.358Z [INFO]: email transporter verified
+2024-09-29T13:12:42.733Z [INFO]: Connected to MongoDB
+2024-09-29T13:12:57.798Z [INFO]: Connected to Redis
+2024-09-29T13:12:58.167Z [INFO]: email transporter verified
+2024-09-29T13:12:58.636Z [INFO]: Connected to MongoDB
+2024-09-29T13:13:23.819Z [INFO]: Connected to Redis
+2024-09-29T13:13:39.049Z [INFO]: Connected to Redis
+2024-09-29T13:13:39.404Z [INFO]: email transporter verified
+2024-09-29T13:13:44.859Z [INFO]: Connected to MongoDB
+2024-09-29T13:14:25.642Z [INFO]: Connected to Redis
+2024-09-29T13:14:26.095Z [INFO]: email transporter verified
+2024-09-29T13:14:26.482Z [INFO]: Connected to MongoDB
+2024-09-29T13:14:36.815Z [INFO]: Connected to Redis
+2024-09-29T13:14:37.325Z [INFO]: email transporter verified
+2024-09-29T13:14:37.596Z [INFO]: Connected to MongoDB
+2024-09-29T13:14:51.932Z [INFO]: Connected to Redis
+2024-09-29T13:14:52.299Z [INFO]: email transporter verified
+2024-09-29T13:14:52.627Z [INFO]: Connected to MongoDB
+2024-09-29T13:14:59.244Z [INFO]: Connected to Redis
+2024-09-29T13:14:59.619Z [INFO]: email transporter verified
+2024-09-29T13:14:59.963Z [INFO]: Connected to MongoDB
+2024-09-29T13:15:52.968Z [INFO]: Connected to Redis
+2024-09-29T13:15:53.393Z [INFO]: email transporter verified
+2024-09-29T13:15:53.869Z [INFO]: Connected to MongoDB
+2024-09-29T13:17:52.322Z [INFO]: Connected to Redis
+2024-09-29T13:17:52.694Z [INFO]: email transporter verified
+2024-09-29T13:17:53.312Z [INFO]: Connected to MongoDB
+2024-09-29T13:18:06.653Z [INFO]: Connected to Redis
+2024-09-29T13:18:07.279Z [INFO]: email transporter verified
+2024-09-29T13:18:07.424Z [INFO]: Connected to MongoDB
+2024-09-29T13:18:19.832Z [INFO]: Connected to Redis
+2024-09-29T13:18:20.203Z [INFO]: email transporter verified
+2024-09-29T13:18:20.579Z [INFO]: Connected to MongoDB
+2024-09-29T13:18:49.200Z [ERROR]: You are not allowed to review this course
+Error: You are not allowed to review this course
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\createReviewSpecificCourse.controller.ts:23:25
+    at Generator.next (<anonymous>)
+    at fulfilled (D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\createReviewSpecificCourse.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-09-29T13:19:09.194Z [ERROR]: You already reviewed this course
+Error: You already reviewed this course
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\createReviewSpecificCourse.controller.ts:33:25
+    at Generator.next (<anonymous>)
+    at fulfilled (D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\createReviewSpecificCourse.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-09-29T13:22:15.966Z [INFO]: Connected to Redis
+2024-09-29T13:22:16.435Z [INFO]: email transporter verified
+2024-09-29T13:22:16.882Z [INFO]: Connected to MongoDB
+2024-09-29T13:24:52.435Z [INFO]: Connected to Redis
+2024-09-29T13:24:52.801Z [INFO]: email transporter verified
+2024-09-29T13:24:53.284Z [INFO]: Connected to MongoDB
+2024-09-29T13:24:58.306Z [INFO]: Connected to Redis
+2024-09-29T13:24:58.785Z [INFO]: email transporter verified
+2024-09-29T13:24:59.159Z [INFO]: Connected to MongoDB
+2024-09-29T15:35:26.533Z [INFO]: read ECONNRESET
+Error: read ECONNRESET
+    at TLSWrap.onStreamRead (node:internal/stream_base_commons:217:20)
+2024-09-29T15:35:28.209Z [INFO]: Connected to Redis
+2024-09-29T15:36:22.424Z [INFO]: Connected to Redis
+2024-09-29T15:36:23.131Z [INFO]: email transporter verified
+2024-09-29T15:36:23.800Z [INFO]: Connected to MongoDB
+2024-09-29T15:37:11.139Z [INFO]: Connected to Redis
+2024-09-29T15:37:11.495Z [INFO]: email transporter verified
+2024-09-29T15:37:11.886Z [INFO]: Connected to MongoDB
+2024-09-29T15:37:20.065Z [INFO]: Connected to Redis
+2024-09-29T15:37:20.494Z [INFO]: email transporter verified
+2024-09-29T15:37:20.905Z [INFO]: Connected to MongoDB
+2024-09-29T15:37:49.444Z [INFO]: Connected to Redis
+2024-09-29T15:37:49.964Z [INFO]: email transporter verified
+2024-09-29T15:37:50.316Z [INFO]: Connected to MongoDB
+2024-09-29T15:37:59.598Z [INFO]: Connected to Redis
+2024-09-29T15:38:00.046Z [INFO]: email transporter verified
+2024-09-29T15:38:00.395Z [INFO]: Connected to MongoDB
+2024-09-29T15:38:33.630Z [ERROR]: expired token or invalid
+Error: expired token or invalid
+    at D:\cours node.js\My-Github\E-Learning-API\src\middlewares\authentication.middleware.ts:17:34
+    at Generator.next (<anonymous>)
+    at D:\cours node.js\My-Github\E-Learning-API\src\middlewares\authentication.middleware.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (D:\cours node.js\My-Github\E-Learning-API\src\middlewares\authentication.middleware.ts:4:12)
+    at authenticationMiddleware (D:\cours node.js\My-Github\E-Learning-API\src\middlewares\authentication.middleware.ts:10:82)
+    at Layer.handle [as handle_request] (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\index.js:328:13)
+    at D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\index.js:346:12)
+2024-09-29T15:39:02.191Z [ERROR]: Course not found
+Error: Course not found
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\createCommentSpecificVideo.controller.ts:28:34
+    at Generator.next (<anonymous>)
+    at fulfilled (D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\createCommentSpecificVideo.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-09-29T15:39:28.843Z [ERROR]: Course not found
+Error: Course not found
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\createCommentSpecificVideo.controller.ts:28:34
+    at Generator.next (<anonymous>)
+    at fulfilled (D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\createCommentSpecificVideo.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-09-29T15:39:58.542Z [INFO]: Connected to Redis
+2024-09-29T15:39:59.055Z [INFO]: email transporter verified
+2024-09-29T15:39:59.652Z [INFO]: Connected to MongoDB
+2024-09-29T15:40:00.686Z [ERROR]: Course not found
+Error: Course not found
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\createCommentSpecificVideo.controller.ts:32:34
+    at Generator.next (<anonymous>)
+    at fulfilled (D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\createCommentSpecificVideo.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-09-29T15:40:41.816Z [ERROR]: review validation failed: rating: Path `rating` is required.
+ValidationError: review validation failed: rating: Path `rating` is required.
+    at model.Document.invalidate (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\document.js:3312:32)
+    at D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\document.js:3073:17
+    at D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\schemaType.js:1388:9
+    at processTicksAndRejections (node:internal/process/task_queues:77:11)
+2024-09-29T15:41:11.023Z [INFO]: Connected to Redis
+2024-09-29T15:41:11.381Z [INFO]: email transporter verified
+2024-09-29T15:41:11.927Z [INFO]: Connected to MongoDB
+2024-09-29T15:41:32.408Z [INFO]: Connected to Redis
+2024-09-29T15:41:33.073Z [INFO]: email transporter verified
+2024-09-29T15:41:33.541Z [INFO]: Connected to MongoDB
+2024-09-29T15:42:08.360Z [INFO]: Connected to Redis
+2024-09-29T15:42:08.742Z [INFO]: email transporter verified
+2024-09-29T15:42:09.213Z [INFO]: Connected to MongoDB
+2024-09-29T15:43:12.319Z [INFO]: Connected to Redis
+2024-09-29T15:43:12.782Z [INFO]: email transporter verified
+2024-09-29T15:43:13.098Z [INFO]: Connected to MongoDB
+2024-09-29T15:44:00.175Z [INFO]: Connected to Redis
+2024-09-29T15:44:00.543Z [INFO]: email transporter verified
+2024-09-29T15:44:01.142Z [INFO]: Connected to MongoDB
+2024-09-29T15:44:13.938Z [INFO]: Connected to Redis
+2024-09-29T15:44:14.499Z [INFO]: email transporter verified
+2024-09-29T15:44:14.837Z [INFO]: Connected to MongoDB
+2024-09-29T15:44:24.479Z [INFO]: Connected to Redis
+2024-09-29T15:44:24.883Z [INFO]: email transporter verified
+2024-09-29T15:44:25.300Z [INFO]: Connected to MongoDB
+2024-09-29T15:44:40.316Z [INFO]: Connected to Redis
+2024-09-29T15:44:40.747Z [INFO]: email transporter verified
+2024-09-29T15:44:41.160Z [INFO]: Connected to MongoDB
+2024-09-29T15:45:06.029Z [INFO]: Connected to Redis
+2024-09-29T15:45:06.494Z [INFO]: email transporter verified
+2024-09-29T15:45:07.006Z [INFO]: Connected to MongoDB
+2024-09-29T15:46:06.054Z [INFO]: Connected to Redis
+2024-09-29T15:46:06.531Z [INFO]: email transporter verified
+2024-09-29T15:46:06.969Z [INFO]: Connected to MongoDB
+2024-09-29T15:46:47.766Z [INFO]: Connected to Redis
+2024-09-29T15:46:48.108Z [INFO]: email transporter verified
+2024-09-29T15:46:48.397Z [INFO]: Connected to MongoDB
+2024-09-29T15:48:23.209Z [INFO]: Connected to Redis
+2024-09-29T15:48:23.638Z [INFO]: email transporter verified
+2024-09-29T15:48:24.174Z [INFO]: Connected to MongoDB
+2024-09-29T15:48:42.409Z [INFO]: Connected to Redis
+2024-09-29T15:48:42.820Z [INFO]: email transporter verified
+2024-09-29T15:48:43.271Z [INFO]: Connected to MongoDB
+2024-09-29T15:50:25.450Z [INFO]: Connected to Redis
+2024-09-29T15:50:25.897Z [INFO]: email transporter verified
+2024-09-29T15:50:26.309Z [INFO]: Connected to MongoDB
+2024-09-29T15:51:38.812Z [INFO]: Connected to Redis
+2024-09-29T15:51:39.229Z [INFO]: email transporter verified
+2024-09-29T15:51:39.798Z [INFO]: Connected to MongoDB
+2024-09-29T15:51:49.179Z [INFO]: Connected to Redis
+2024-09-29T15:51:49.574Z [INFO]: email transporter verified
+2024-09-29T15:51:49.933Z [INFO]: Connected to MongoDB
+2024-09-29T15:52:41.521Z [INFO]: Connected to Redis
+2024-09-29T15:52:41.845Z [INFO]: email transporter verified
+2024-09-29T15:52:42.411Z [INFO]: Connected to MongoDB
+2024-09-29T15:52:50.740Z [INFO]: Connected to Redis
+2024-09-29T15:52:51.200Z [INFO]: email transporter verified
+2024-09-29T15:52:51.573Z [INFO]: Connected to MongoDB
+2024-09-29T15:52:58.029Z [INFO]: Connected to Redis
+2024-09-29T15:52:58.376Z [INFO]: email transporter verified
+2024-09-29T15:52:58.779Z [INFO]: Connected to MongoDB
+2024-09-29T15:53:21.339Z [INFO]: Connected to Redis
+2024-09-29T15:53:21.694Z [INFO]: email transporter verified
+2024-09-29T15:53:22.248Z [INFO]: Connected to MongoDB
+2024-09-29T15:55:03.760Z [INFO]: Connected to Redis
+2024-09-29T15:55:04.205Z [INFO]: email transporter verified
+2024-09-29T15:55:04.736Z [INFO]: Connected to MongoDB
+2024-09-29T15:55:42.995Z [INFO]: Connected to Redis
+2024-09-29T15:55:43.351Z [INFO]: email transporter verified
+2024-09-29T15:55:43.816Z [INFO]: Connected to MongoDB
+2024-09-29T15:58:20.653Z [INFO]: Connected to Redis
+2024-09-29T15:58:21.453Z [INFO]: email transporter verified
+2024-09-29T15:58:22.003Z [INFO]: Connected to MongoDB
+2024-09-29T15:59:19.404Z [INFO]: Connected to Redis
+2024-09-29T15:59:19.850Z [INFO]: email transporter verified
+2024-09-29T15:59:20.264Z [INFO]: Connected to MongoDB
+2024-09-29T16:03:16.789Z [INFO]: Connected to Redis
+2024-09-29T16:03:17.311Z [INFO]: email transporter verified
+2024-09-29T16:03:17.734Z [INFO]: Connected to MongoDB
+2024-09-29T16:03:34.582Z [INFO]: Connected to Redis
+2024-09-29T16:03:34.979Z [INFO]: email transporter verified
+2024-09-29T16:03:35.915Z [INFO]: Connected to MongoDB
+2024-09-29T16:03:54.760Z [INFO]: Connected to Redis
+2024-09-29T16:03:55.142Z [INFO]: email transporter verified
+2024-09-29T16:03:55.489Z [INFO]: Connected to MongoDB
+2024-09-29T16:04:10.948Z [INFO]: Connected to Redis
+2024-09-29T16:04:11.323Z [INFO]: email transporter verified
+2024-09-29T16:04:11.738Z [INFO]: Connected to MongoDB
+2024-09-29T16:04:40.303Z [INFO]: Connected to Redis
+2024-09-29T16:04:40.803Z [INFO]: email transporter verified
+2024-09-29T16:04:41.355Z [INFO]: Connected to MongoDB
+2024-09-29T16:05:02.345Z [INFO]: Connected to Redis
+2024-09-29T16:05:02.693Z [INFO]: email transporter verified
+2024-09-29T16:05:03.049Z [INFO]: Connected to MongoDB
+2024-09-29T16:05:42.249Z [INFO]: Connected to Redis
+2024-09-29T16:05:42.687Z [INFO]: email transporter verified
+2024-09-29T16:05:43.511Z [INFO]: Connected to MongoDB
+2024-09-29T16:06:07.094Z [INFO]: Connected to Redis
+2024-09-29T16:06:07.514Z [INFO]: email transporter verified
+2024-09-29T16:07:14.109Z [INFO]: Connected to Redis
+2024-09-29T16:07:14.524Z [INFO]: email transporter verified
+2024-09-29T16:07:15.071Z [INFO]: Connected to MongoDB
+2024-09-29T16:07:53.790Z [INFO]: Connected to Redis
+2024-09-29T16:07:54.219Z [INFO]: email transporter verified
+2024-09-29T16:07:54.659Z [INFO]: Connected to MongoDB
+2024-09-29T16:08:13.735Z [INFO]: Connected to Redis
+2024-09-29T16:08:14.099Z [INFO]: email transporter verified
+2024-09-29T16:08:14.479Z [INFO]: Connected to MongoDB
+2024-09-29T16:10:09.691Z [INFO]: Connected to Redis
+2024-09-29T16:10:10.039Z [INFO]: email transporter verified
+2024-09-29T16:10:10.552Z [INFO]: Connected to MongoDB
+2024-09-29T16:10:26.929Z [INFO]: Connected to Redis
+2024-09-29T16:10:27.365Z [INFO]: email transporter verified
+2024-09-29T16:10:27.688Z [INFO]: Connected to MongoDB
+2024-09-29T16:11:27.299Z [INFO]: Connected to Redis
+2024-09-29T16:11:27.696Z [INFO]: email transporter verified
+2024-09-29T16:11:28.114Z [INFO]: Connected to MongoDB
+2024-09-29T16:11:36.634Z [INFO]: Connected to Redis
+2024-09-29T16:11:37.018Z [INFO]: email transporter verified
+2024-09-29T16:11:46.678Z [INFO]: Connected to Redis
+2024-09-29T16:11:47.059Z [INFO]: email transporter verified
+2024-09-29T16:11:47.490Z [INFO]: Connected to MongoDB
+2024-09-29T16:17:30.127Z [INFO]: Connected to Redis
+2024-09-29T16:17:30.462Z [INFO]: email transporter verified
+2024-09-29T16:17:31.070Z [INFO]: Connected to MongoDB
+2024-09-29T16:18:19.715Z [INFO]: Connected to Redis
+2024-09-29T16:18:20.197Z [INFO]: email transporter verified
+2024-09-29T16:18:20.484Z [INFO]: Connected to MongoDB
+2024-09-29T16:18:39.221Z [INFO]: Connected to Redis
+2024-09-29T16:18:39.647Z [INFO]: email transporter verified
+2024-09-29T16:18:39.945Z [INFO]: Connected to MongoDB
+2024-09-29T16:19:20.080Z [INFO]: Connected to Redis
+2024-09-29T16:19:20.455Z [INFO]: email transporter verified
+2024-09-29T16:19:20.846Z [INFO]: Connected to MongoDB
+2024-09-29T16:19:46.126Z [INFO]: Connected to Redis
+2024-09-29T16:19:46.545Z [INFO]: email transporter verified
+2024-09-29T16:19:46.993Z [INFO]: Connected to MongoDB
+2024-09-29T16:21:42.859Z [INFO]: Connected to Redis
+2024-09-29T16:21:43.266Z [INFO]: email transporter verified
+2024-09-29T16:21:43.862Z [INFO]: Connected to MongoDB
+2024-09-29T16:21:55.309Z [INFO]: Connected to Redis
+2024-09-29T16:21:55.745Z [INFO]: email transporter verified
+2024-09-29T16:21:56.456Z [INFO]: Connected to MongoDB
+2024-09-29T16:22:34.926Z [INFO]: Connected to Redis
+2024-09-29T16:22:35.181Z [INFO]: email transporter verified
+2024-09-29T16:22:35.633Z [INFO]: Connected to MongoDB
+2024-09-29T20:16:33.985Z [INFO]: read ECONNRESET
+Error: read ECONNRESET
+    at TLSWrap.onStreamRead (node:internal/stream_base_commons:217:20)
+2024-09-29T20:16:34.345Z [INFO]: Connected to Redis
+2024-09-29T20:16:59.385Z [INFO]: Connected to Redis
+2024-09-29T20:16:59.869Z [INFO]: email transporter verified
+2024-09-29T20:17:00.372Z [INFO]: Connected to MongoDB
+2024-09-29T20:17:04.104Z [INFO]: Connected to Redis
+2024-09-29T20:17:04.518Z [INFO]: email transporter verified
+2024-09-29T20:17:05.001Z [INFO]: Connected to MongoDB
+2024-09-29T20:18:47.642Z [ERROR]: expired token or invalid
+Error: expired token or invalid
+    at D:\cours node.js\My-Github\E-Learning-API\src\middlewares\authentication.middleware.ts:17:34
+    at Generator.next (<anonymous>)
+    at D:\cours node.js\My-Github\E-Learning-API\src\middlewares\authentication.middleware.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (D:\cours node.js\My-Github\E-Learning-API\src\middlewares\authentication.middleware.ts:4:12)
+    at authenticationMiddleware (D:\cours node.js\My-Github\E-Learning-API\src\middlewares\authentication.middleware.ts:10:82)
+    at Layer.handle [as handle_request] (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\index.js:328:13)
+    at D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\index.js:346:12)
+2024-09-29T20:20:46.959Z [ERROR]: Unauthorized user
+Error: Unauthorized user
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\getReviewById.controller.ts:20:34
+    at Generator.next (<anonymous>)
+    at fulfilled (D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\getReviewById.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-09-29T20:21:28.763Z [ERROR]: Unauthorized user
+Error: Unauthorized user
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\getReviewById.controller.ts:20:34
+    at Generator.next (<anonymous>)
+    at fulfilled (D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\getReviewById.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-09-29T20:22:07.015Z [INFO]: Connected to Redis
+2024-09-29T20:22:07.324Z [INFO]: email transporter verified
+2024-09-29T20:22:12.819Z [INFO]: Connected to MongoDB
+2024-09-29T20:23:00.360Z [INFO]: Connected to Redis
+2024-09-29T20:23:00.718Z [INFO]: email transporter verified
+2024-09-29T20:23:01.256Z [INFO]: Connected to MongoDB
+2024-09-29T20:23:12.404Z [INFO]: Connected to Redis
+2024-09-29T20:23:12.854Z [INFO]: email transporter verified
+2024-09-29T20:23:13.560Z [INFO]: Connected to MongoDB
+2024-09-29T20:23:18.518Z [INFO]: Connected to Redis
+2024-09-29T20:23:25.001Z [INFO]: Connected to Redis
+2024-09-29T20:23:25.394Z [INFO]: email transporter verified
+2024-09-29T20:23:25.797Z [INFO]: Connected to MongoDB
+2024-09-29T20:23:26.434Z [ERROR]: Unauthorized user
+Error: Unauthorized user
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\getReviewById.controller.ts:25:34
+    at Generator.next (<anonymous>)
+    at fulfilled (D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\getReviewById.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-09-29T20:24:04.334Z [INFO]: Connected to Redis
+2024-09-29T20:24:04.709Z [INFO]: email transporter verified
+2024-09-29T20:24:05.330Z [INFO]: Connected to MongoDB
+2024-09-29T20:24:06.671Z [ERROR]: Unauthorized user
+Error: Unauthorized user
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\getReviewById.controller.ts:25:34
+    at Generator.next (<anonymous>)
+    at fulfilled (D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\getReviewById.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-09-29T20:24:17.434Z [INFO]: Connected to Redis
+2024-09-29T20:24:17.817Z [INFO]: email transporter verified
+2024-09-29T20:24:21.940Z [INFO]: Connected to Redis
+2024-09-29T20:24:22.326Z [INFO]: email transporter verified
+2024-09-29T20:24:22.791Z [INFO]: Connected to MongoDB
+2024-09-29T20:25:21.405Z [INFO]: Connected to Redis
+2024-09-29T20:25:21.728Z [INFO]: email transporter verified
+2024-09-29T20:25:22.256Z [INFO]: Connected to MongoDB
+2024-09-29T20:25:28.248Z [INFO]: Connected to Redis
+2024-09-29T20:25:28.698Z [INFO]: email transporter verified
+2024-09-29T20:25:32.161Z [INFO]: Connected to Redis
+2024-09-29T20:25:32.549Z [INFO]: email transporter verified
+2024-09-29T20:25:32.926Z [INFO]: Connected to MongoDB
+2024-09-29T20:25:36.784Z [INFO]: Connected to Redis
+2024-09-29T20:25:37.156Z [INFO]: email transporter verified
+2024-09-29T20:25:37.618Z [INFO]: Connected to MongoDB
+2024-09-29T20:26:25.830Z [INFO]: Connected to Redis
+2024-09-29T20:26:26.154Z [INFO]: email transporter verified
+2024-09-29T20:26:26.768Z [INFO]: Connected to MongoDB
+2024-09-29T20:27:10.374Z [INFO]: Connected to Redis
+2024-09-29T20:27:10.830Z [INFO]: email transporter verified
+2024-09-29T20:27:11.274Z [INFO]: Connected to MongoDB
+2024-09-29T20:28:02.703Z [INFO]: Connected to Redis
+2024-09-29T20:28:03.273Z [INFO]: email transporter verified
+2024-09-29T20:28:25.545Z [INFO]: Connected to Redis
+2024-09-29T20:28:25.939Z [INFO]: email transporter verified
+2024-09-29T20:28:29.577Z [INFO]: Connected to Redis
+2024-09-29T20:28:30.089Z [INFO]: email transporter verified
+2024-09-29T20:28:30.552Z [INFO]: Connected to MongoDB
+2024-09-29T20:28:39.582Z [INFO]: Connected to Redis
+2024-09-29T20:28:39.955Z [INFO]: email transporter verified
+2024-09-29T20:28:40.346Z [INFO]: Connected to MongoDB
+2024-09-29T20:29:04.303Z [INFO]: Connected to Redis
+2024-09-29T20:29:04.736Z [INFO]: email transporter verified
+2024-09-29T20:29:05.448Z [INFO]: Connected to MongoDB
+2024-09-29T20:29:11.163Z [INFO]: Connected to Redis
+2024-09-29T20:29:11.532Z [INFO]: email transporter verified
+2024-09-29T20:29:12.058Z [INFO]: Connected to MongoDB
+2024-09-29T20:29:49.544Z [INFO]: Connected to Redis
+2024-09-29T20:29:49.935Z [INFO]: email transporter verified
+2024-09-29T20:29:50.273Z [INFO]: Connected to MongoDB
+2024-09-29T20:30:04.255Z [INFO]: Connected to Redis
+2024-09-29T20:30:04.620Z [INFO]: email transporter verified
+2024-09-29T20:30:05.146Z [INFO]: Connected to MongoDB
+2024-09-29T20:30:16.946Z [INFO]: Connected to Redis
+2024-09-29T20:30:17.282Z [INFO]: email transporter verified
+2024-09-29T20:30:35.583Z [INFO]: Connected to Redis
+2024-09-29T20:30:35.915Z [INFO]: email transporter verified
+2024-09-29T20:30:41.498Z [INFO]: Connected to MongoDB
+2024-09-29T20:31:20.022Z [INFO]: Connected to Redis
+2024-09-29T20:31:20.419Z [INFO]: email transporter verified
+2024-09-29T20:31:20.925Z [INFO]: Connected to MongoDB
+2024-09-29T20:31:59.176Z [INFO]: Connected to Redis
+2024-09-29T20:31:59.519Z [INFO]: email transporter verified
+2024-09-29T20:32:00.116Z [INFO]: Connected to MongoDB
+2024-09-29T20:32:22.105Z [INFO]: Connected to Redis
+2024-09-29T20:32:22.439Z [INFO]: email transporter verified
+2024-09-29T20:32:22.883Z [INFO]: Connected to MongoDB
+2024-09-29T20:33:46.603Z [ERROR]: validation error
+Error: validation error
+    at validatorMiddleware (D:\cours node.js\My-Github\E-Learning-API\src\middlewares\validator.middleware.ts:12:40)
+    at Layer.handle [as handle_request] (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\route.js:149:13)
+    at middleware (D:\cours node.js\My-Github\E-Learning-API\node_modules\express-validator\lib\middlewares\check.js:16:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-09-29T20:34:13.980Z [INFO]: Connected to Redis
+2024-09-29T20:34:14.464Z [INFO]: email transporter verified
+2024-09-29T20:34:15.019Z [INFO]: Connected to MongoDB
+2024-09-29T20:34:21.153Z [INFO]: Connected to Redis
+2024-09-29T20:34:21.560Z [INFO]: email transporter verified
+2024-09-29T20:34:22.070Z [INFO]: Connected to MongoDB
+2024-09-29T20:34:22.187Z [ERROR]: validation error
+Error: validation error
+    at validatorMiddleware (D:\cours node.js\My-Github\E-Learning-API\src\middlewares\validator.middleware.ts:12:40)
+    at Layer.handle [as handle_request] (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\route.js:149:13)
+    at middleware (D:\cours node.js\My-Github\E-Learning-API\node_modules\express-validator\lib\middlewares\check.js:16:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-09-29T20:34:22.715Z [ERROR]: validation error
+Error: validation error
+    at validatorMiddleware (D:\cours node.js\My-Github\E-Learning-API\src\middlewares\validator.middleware.ts:12:40)
+    at Layer.handle [as handle_request] (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\route.js:149:13)
+    at middleware (D:\cours node.js\My-Github\E-Learning-API\node_modules\express-validator\lib\middlewares\check.js:16:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-09-29T20:34:23.221Z [ERROR]: validation error
+Error: validation error
+    at validatorMiddleware (D:\cours node.js\My-Github\E-Learning-API\src\middlewares\validator.middleware.ts:12:40)
+    at Layer.handle [as handle_request] (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\route.js:149:13)
+    at middleware (D:\cours node.js\My-Github\E-Learning-API\node_modules\express-validator\lib\middlewares\check.js:16:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-09-29T20:35:08.644Z [ERROR]: Rating not found
+Error: Rating not found
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\updateReview.controller.ts:26:38
+    at Generator.next (<anonymous>)
+    at fulfilled (D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\updateReview.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-09-29T20:36:02.831Z [ERROR]: validation error
+Error: validation error
+    at validatorMiddleware (D:\cours node.js\My-Github\E-Learning-API\src\middlewares\validator.middleware.ts:12:40)
+    at Layer.handle [as handle_request] (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\route.js:149:13)
+    at middleware (D:\cours node.js\My-Github\E-Learning-API\node_modules\express-validator\lib\middlewares\check.js:16:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-09-29T20:36:11.743Z [ERROR]: review validation failed: rating: Path `rating` (6) is more than maximum allowed value (5).
+ValidationError: review validation failed: rating: Path `rating` (6) is more than maximum allowed value (5).
+    at model.Document.invalidate (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\document.js:3312:32)
+    at D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\document.js:3073:17
+    at D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\schemaType.js:1388:9
+    at processTicksAndRejections (node:internal/process/task_queues:77:11)
+2024-09-29T20:36:36.077Z [INFO]: Connected to Redis
+2024-09-29T20:36:36.491Z [INFO]: email transporter verified
+2024-09-29T20:36:36.851Z [INFO]: Connected to MongoDB
+2024-09-29T20:36:37.847Z [ERROR]: review validation failed: rating: Path `rating` (6) is more than maximum allowed value (5).
+ValidationError: review validation failed: rating: Path `rating` (6) is more than maximum allowed value (5).
+    at model.Document.invalidate (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\document.js:3312:32)
+    at D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\document.js:3073:17
+    at D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\schemaType.js:1388:9
+    at processTicksAndRejections (node:internal/process/task_queues:77:11)
+2024-09-29T20:37:28.577Z [INFO]: Connected to Redis
+2024-09-29T20:37:28.863Z [INFO]: email transporter verified
+2024-09-29T20:37:29.440Z [INFO]: Connected to MongoDB
+2024-09-29T20:37:37.901Z [INFO]: Connected to Redis
+2024-09-29T20:37:38.386Z [INFO]: email transporter verified
+2024-09-29T20:37:38.961Z [INFO]: Connected to MongoDB
+2024-09-29T20:37:54.562Z [INFO]: Connected to Redis
+2024-09-29T20:37:54.912Z [INFO]: email transporter verified
+2024-09-29T20:37:55.328Z [INFO]: Connected to MongoDB
+2024-09-29T20:38:14.186Z [INFO]: Connected to Redis
+2024-09-29T20:38:14.522Z [INFO]: email transporter verified
+2024-09-29T20:38:15.232Z [INFO]: Connected to MongoDB
+2024-09-29T20:38:50.055Z [INFO]: Connected to Redis
+2024-09-29T20:38:50.784Z [INFO]: email transporter verified
+2024-09-29T20:38:51.407Z [INFO]: Connected to MongoDB
+2024-09-29T20:38:52.114Z [ERROR]: review validation failed: rating: Path `rating` (6) is more than maximum allowed value (5).
+ValidationError: review validation failed: rating: Path `rating` (6) is more than maximum allowed value (5).
+    at model.Document.invalidate (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\document.js:3312:32)
+    at D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\document.js:3073:17
+    at D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\schemaType.js:1388:9
+    at processTicksAndRejections (node:internal/process/task_queues:77:11)
+2024-09-29T20:39:49.974Z [INFO]: Connected to Redis
+2024-09-29T20:39:50.427Z [INFO]: email transporter verified
+2024-09-29T20:39:50.920Z [INFO]: Connected to MongoDB
+2024-09-29T20:40:09.953Z [INFO]: Connected to Redis
+2024-09-29T20:40:10.334Z [INFO]: email transporter verified
+2024-09-29T20:40:10.682Z [INFO]: Connected to MongoDB
+2024-09-29T20:40:18.071Z [ERROR]: review validation failed: rating: Path `rating` (6) is more than maximum allowed value (5).
+ValidationError: review validation failed: rating: Path `rating` (6) is more than maximum allowed value (5).
+    at model.Document.invalidate (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\document.js:3312:32)
+    at D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\document.js:3073:17
+    at D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\schemaType.js:1388:9
+    at processTicksAndRejections (node:internal/process/task_queues:77:11)
+2024-09-29T20:40:19.384Z [ERROR]: review validation failed: rating: Path `rating` (6) is more than maximum allowed value (5).
+ValidationError: review validation failed: rating: Path `rating` (6) is more than maximum allowed value (5).
+    at model.Document.invalidate (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\document.js:3312:32)
+    at D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\document.js:3073:17
+    at D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\schemaType.js:1388:9
+    at processTicksAndRejections (node:internal/process/task_queues:77:11)
+2024-09-29T20:41:01.644Z [INFO]: Connected to Redis
+2024-09-29T20:41:01.967Z [INFO]: email transporter verified
+2024-09-29T20:41:02.409Z [INFO]: Connected to MongoDB
+2024-09-29T20:42:05.733Z [INFO]: Connected to Redis
+2024-09-29T20:42:06.136Z [INFO]: email transporter verified
+2024-09-29T20:42:06.612Z [INFO]: Connected to MongoDB
+2024-09-29T20:42:07.233Z [ERROR]: review validation failed: rating: Path `rating` (6) is more than maximum allowed value (5).
+ValidationError: review validation failed: rating: Path `rating` (6) is more than maximum allowed value (5).
+    at model.Document.invalidate (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\document.js:3312:32)
+    at D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\document.js:3073:17
+    at D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\schemaType.js:1388:9
+    at processTicksAndRejections (node:internal/process/task_queues:77:11)
+2024-09-29T20:42:34.477Z [INFO]: Connected to Redis
+2024-09-29T20:42:34.826Z [INFO]: email transporter verified
+2024-09-29T20:42:35.319Z [INFO]: Connected to MongoDB
+2024-09-29T20:42:49.205Z [INFO]: Connected to Redis
+2024-09-29T20:42:49.646Z [INFO]: email transporter verified
+2024-09-29T20:42:50.153Z [INFO]: Connected to MongoDB
+2024-09-29T20:43:14.499Z [INFO]: Connected to Redis
+2024-09-29T20:43:14.845Z [INFO]: email transporter verified
+2024-09-29T20:43:15.262Z [INFO]: Connected to MongoDB
+2024-09-29T20:43:16.490Z [ERROR]: review validation failed: rating: Path `rating` (6) is more than maximum allowed value (5).
+ValidationError: review validation failed: rating: Path `rating` (6) is more than maximum allowed value (5).
+    at model.Document.invalidate (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\document.js:3312:32)
+    at D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\document.js:3073:17
+    at D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\schemaType.js:1388:9
+    at processTicksAndRejections (node:internal/process/task_queues:77:11)
+2024-09-29T20:43:29.411Z [INFO]: Connected to Redis
+2024-09-29T20:43:29.711Z [INFO]: email transporter verified
+2024-09-29T20:43:30.332Z [INFO]: Connected to MongoDB
+2024-09-29T20:43:31.613Z [ERROR]: review validation failed: rating: Path `rating` (6) is more than maximum allowed value (5).
+ValidationError: review validation failed: rating: Path `rating` (6) is more than maximum allowed value (5).
+    at model.Document.invalidate (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\document.js:3312:32)
+    at D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\document.js:3073:17
+    at D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\schemaType.js:1388:9
+    at processTicksAndRejections (node:internal/process/task_queues:77:11)
+2024-09-29T20:43:45.304Z [INFO]: Connected to Redis
+2024-09-29T20:43:45.751Z [INFO]: email transporter verified
+2024-09-29T20:43:46.131Z [INFO]: Connected to MongoDB
+2024-09-29T20:44:27.070Z [INFO]: Connected to Redis
+2024-09-29T20:44:27.586Z [INFO]: email transporter verified
+2024-09-29T20:44:28.236Z [INFO]: Connected to MongoDB
+2024-09-29T20:44:42.795Z [INFO]: Connected to Redis
+2024-09-29T20:44:43.166Z [INFO]: email transporter verified
+2024-09-29T20:44:43.619Z [INFO]: Connected to MongoDB
+2024-09-29T20:44:48.938Z [INFO]: Connected to Redis
+2024-09-29T20:44:49.341Z [INFO]: email transporter verified
+2024-09-29T20:44:49.986Z [INFO]: Connected to MongoDB
+2024-09-29T20:44:57.549Z [INFO]: Connected to Redis
+2024-09-29T20:44:57.930Z [INFO]: email transporter verified
+2024-09-29T20:44:58.350Z [INFO]: Connected to MongoDB
+2024-09-29T20:45:03.715Z [INFO]: Connected to Redis
+2024-09-29T20:45:04.096Z [INFO]: email transporter verified
+2024-09-29T20:45:04.545Z [INFO]: Connected to MongoDB
+2024-09-29T20:45:13.644Z [INFO]: Connected to Redis
+2024-09-29T20:45:13.978Z [INFO]: email transporter verified
+2024-09-29T20:45:14.574Z [INFO]: Connected to MongoDB
+2024-09-29T20:45:26.555Z [INFO]: Connected to Redis
+2024-09-29T20:45:26.969Z [INFO]: email transporter verified
+2024-09-29T20:45:38.836Z [INFO]: Connected to Redis
+2024-09-29T20:45:39.248Z [INFO]: email transporter verified
+2024-09-29T20:45:39.714Z [INFO]: Connected to MongoDB
+2024-09-29T20:45:40.348Z [ERROR]: review validation failed: rating: rating must be between 1 and 5
+ValidationError: review validation failed: rating: rating must be between 1 and 5
+    at model.Document.invalidate (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\document.js:3312:32)
+    at D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\document.js:3073:17
+    at D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\schemaType.js:1388:9
+    at processTicksAndRejections (node:internal/process/task_queues:77:11)
+2024-09-29T20:45:41.889Z [ERROR]: review validation failed: rating: rating must be between 1 and 5
+ValidationError: review validation failed: rating: rating must be between 1 and 5
+    at model.Document.invalidate (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\document.js:3312:32)
+    at D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\document.js:3073:17
+    at D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\schemaType.js:1388:9
+    at processTicksAndRejections (node:internal/process/task_queues:77:11)
+2024-09-29T20:45:55.318Z [INFO]: Connected to Redis
+2024-09-29T20:45:55.671Z [INFO]: email transporter verified
+2024-09-29T20:45:56.174Z [INFO]: Connected to MongoDB
+2024-09-29T20:46:05.234Z [ERROR]: review validation failed: rating: rating must be between 1 and 5
+ValidationError: review validation failed: rating: rating must be between 1 and 5
+    at model.Document.invalidate (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\document.js:3312:32)
+    at D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\document.js:3073:17
+    at D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\schemaType.js:1388:9
+    at processTicksAndRejections (node:internal/process/task_queues:77:11)
+2024-09-29T20:48:01.272Z [INFO]: Connected to Redis
+2024-09-29T20:48:01.604Z [INFO]: email transporter verified
+2024-09-29T20:48:07.400Z [INFO]: Connected to MongoDB
+2024-09-29T20:48:07.516Z [ERROR]: validation error
+Error: validation error
+    at validatorMiddleware (D:\cours node.js\My-Github\E-Learning-API\src\middlewares\validator.middleware.ts:12:40)
+    at Layer.handle [as handle_request] (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\route.js:149:13)
+    at middleware (D:\cours node.js\My-Github\E-Learning-API\node_modules\express-validator\lib\middlewares\check.js:16:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-09-29T20:49:05.353Z [ERROR]: validation error
+Error: validation error
+    at validatorMiddleware (D:\cours node.js\My-Github\E-Learning-API\src\middlewares\validator.middleware.ts:12:40)
+    at Layer.handle [as handle_request] (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\route.js:149:13)
+    at middleware (D:\cours node.js\My-Github\E-Learning-API\node_modules\express-validator\lib\middlewares\check.js:16:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-09-29T20:49:06.805Z [ERROR]: validation error
+Error: validation error
+    at validatorMiddleware (D:\cours node.js\My-Github\E-Learning-API\src\middlewares\validator.middleware.ts:12:40)
+    at Layer.handle [as handle_request] (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\route.js:149:13)
+    at middleware (D:\cours node.js\My-Github\E-Learning-API\node_modules\express-validator\lib\middlewares\check.js:16:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-09-29T20:51:08.981Z [ERROR]: Invalid verification code
+Error: Invalid verification code
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\confirmDeleteReview.controller.ts:28:25
+    at Generator.next (<anonymous>)
+    at fulfilled (D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\confirmDeleteReview.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-09-29T20:51:49.747Z [ERROR]: Unauthorized user
+Error: Unauthorized user
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\getReviewById.controller.ts:20:34
+    at Generator.next (<anonymous>)
+    at fulfilled (D:\cours node.js\My-Github\E-Learning-API\src\controllers\review\getReviewById.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-09-29T20:52:43.806Z [INFO]: Connected to Redis
+2024-09-29T20:52:44.226Z [INFO]: email transporter verified
+2024-09-29T20:52:44.601Z [INFO]: Connected to MongoDB
+2024-09-29T20:53:59.711Z [INFO]: Connected to Redis
+2024-09-29T20:54:00.050Z [INFO]: email transporter verified
+2024-09-29T20:54:00.480Z [INFO]: Connected to MongoDB
+2024-09-29T20:54:32.286Z [INFO]: Connected to Redis
+2024-09-29T20:54:32.721Z [INFO]: email transporter verified
+2024-09-29T20:54:38.013Z [INFO]: Connected to MongoDB
+2024-09-29T20:54:48.366Z [INFO]: Connected to Redis
+2024-09-29T20:54:48.712Z [INFO]: email transporter verified
+2024-09-29T20:54:49.104Z [INFO]: Connected to MongoDB
+2024-09-29T20:55:04.595Z [INFO]: Connected to Redis
+2024-09-29T20:55:05.096Z [INFO]: email transporter verified
+2024-09-29T20:55:05.693Z [INFO]: Connected to MongoDB
+2024-09-29T20:55:12.580Z [INFO]: Connected to Redis
+2024-09-29T20:55:13.039Z [INFO]: email transporter verified
+2024-09-29T20:55:13.473Z [INFO]: Connected to MongoDB
+2024-09-29T20:55:31.030Z [INFO]: Connected to Redis
+2024-09-29T20:55:31.521Z [INFO]: email transporter verified
+2024-09-29T20:55:42.699Z [INFO]: Connected to Redis
+2024-09-29T20:55:43.052Z [INFO]: email transporter verified
+2024-09-29T20:55:48.503Z [INFO]: Connected to MongoDB
+2024-09-29T20:56:12.314Z [INFO]: Connected to Redis
+2024-09-29T20:56:12.650Z [INFO]: email transporter verified
+2024-09-29T20:56:13.158Z [INFO]: Connected to MongoDB
+2024-09-29T20:59:36.920Z [INFO]: Connected to Redis
+2024-09-29T20:59:37.255Z [INFO]: email transporter verified
+2024-09-29T20:59:44.024Z [INFO]: Connected to Redis
+2024-09-29T20:59:44.464Z [INFO]: email transporter verified
+2024-09-29T20:59:44.790Z [INFO]: Connected to MongoDB
+2024-09-29T21:00:15.995Z [INFO]: Connected to Redis
+2024-09-29T21:00:16.366Z [INFO]: email transporter verified
+2024-09-29T21:00:16.661Z [INFO]: Connected to MongoDB
+2024-09-29T21:00:21.454Z [INFO]: Connected to Redis
+2024-09-29T21:00:25.295Z [INFO]: Connected to Redis
+2024-09-29T21:00:25.675Z [INFO]: email transporter verified
+2024-09-29T21:00:25.997Z [INFO]: Connected to MongoDB
+2024-09-29T21:00:35.531Z [INFO]: Connected to Redis
+2024-09-29T21:00:35.855Z [INFO]: email transporter verified
+2024-09-29T21:00:36.344Z [INFO]: Connected to MongoDB
+2024-09-29T21:00:44.541Z [INFO]: Connected to Redis
+2024-09-29T21:00:45.005Z [INFO]: email transporter verified
+2024-09-29T21:00:45.310Z [INFO]: Connected to MongoDB
+2024-09-29T21:00:48.861Z [INFO]: Connected to Redis
+2024-09-29T21:00:49.265Z [INFO]: email transporter verified
+2024-09-29T21:00:49.579Z [INFO]: Connected to MongoDB
+2024-09-29T21:00:55.433Z [INFO]: Connected to Redis
+2024-09-29T21:00:55.777Z [INFO]: email transporter verified
+2024-09-29T21:00:56.339Z [INFO]: Connected to MongoDB
+2024-09-29T21:01:02.102Z [INFO]: Connected to Redis
+2024-09-29T21:01:07.009Z [INFO]: Connected to Redis
+2024-09-29T21:01:07.406Z [INFO]: email transporter verified
+2024-09-29T21:01:07.775Z [INFO]: Connected to MongoDB
+2024-09-29T21:01:54.741Z [INFO]: Connected to Redis
+2024-09-29T21:01:55.149Z [INFO]: email transporter verified
+2024-09-29T21:01:55.572Z [INFO]: Connected to MongoDB
+2024-09-29T21:02:08.243Z [INFO]: Connected to Redis
+2024-09-29T21:02:08.624Z [INFO]: email transporter verified
+2024-09-29T21:02:09.090Z [INFO]: Connected to MongoDB
+2024-09-29T21:02:16.668Z [INFO]: Connected to Redis
+2024-09-29T21:02:17.084Z [INFO]: email transporter verified
+2024-09-29T21:02:17.327Z [INFO]: Connected to MongoDB
+2024-09-29T21:02:27.139Z [INFO]: Connected to Redis
+2024-09-29T21:02:27.527Z [INFO]: email transporter verified
+2024-09-29T21:02:27.842Z [INFO]: Connected to MongoDB
+2024-09-29T21:02:31.860Z [INFO]: Connected to Redis
+2024-09-29T21:02:32.196Z [INFO]: email transporter verified
+2024-09-29T21:02:32.533Z [INFO]: Connected to MongoDB
+2024-09-29T21:02:46.509Z [INFO]: Connected to Redis
+2024-09-29T21:02:46.921Z [INFO]: email transporter verified
+2024-09-29T21:02:47.220Z [INFO]: Connected to MongoDB
+2024-09-29T21:04:31.058Z [INFO]: Connected to Redis
+2024-09-29T21:04:31.737Z [INFO]: email transporter verified
+2024-09-29T21:04:58.033Z [INFO]: Connected to Redis
+2024-09-29T21:04:58.244Z [INFO]: email transporter verified
+2024-09-29T21:04:58.912Z [INFO]: Connected to MongoDB
+2024-09-29T21:05:07.940Z [INFO]: Connected to Redis
+2024-09-29T21:05:08.348Z [INFO]: email transporter verified
+2024-09-29T21:05:08.732Z [INFO]: Connected to MongoDB
+2024-09-29T21:05:37.186Z [INFO]: Connected to Redis
+2024-09-29T21:05:37.573Z [INFO]: email transporter verified
+2024-09-29T21:05:38.034Z [INFO]: Connected to MongoDB
+2024-09-29T21:08:31.128Z [INFO]: Connected to Redis
+2024-09-29T21:08:31.634Z [INFO]: email transporter verified
+2024-09-29T21:08:32.132Z [INFO]: Connected to MongoDB
+2024-09-29T21:09:11.953Z [INFO]: Connected to Redis
+2024-09-29T21:09:12.321Z [INFO]: email transporter verified
+2024-09-29T21:09:12.859Z [INFO]: Connected to MongoDB
+2024-09-29T21:09:36.717Z [INFO]: Connected to Redis
+2024-09-29T21:09:37.120Z [INFO]: email transporter verified
+2024-09-29T21:09:38.148Z [INFO]: Connected to MongoDB
+2024-09-29T21:10:05.760Z [INFO]: Connected to Redis
+2024-09-29T21:10:06.090Z [INFO]: email transporter verified
+2024-09-29T21:10:06.688Z [INFO]: Connected to MongoDB
+2024-09-29T21:10:36.143Z [INFO]: Connected to Redis
+2024-09-29T21:10:36.564Z [INFO]: email transporter verified
+2024-09-29T21:10:36.807Z [INFO]: Connected to MongoDB
+2024-09-29T21:10:48.446Z [INFO]: Connected to Redis
+2024-09-29T21:10:48.909Z [INFO]: email transporter verified
+2024-09-29T21:10:49.220Z [INFO]: Connected to MongoDB
+2024-09-29T21:11:23.364Z [INFO]: Connected to Redis
+2024-09-29T21:11:23.776Z [INFO]: email transporter verified
+2024-09-29T21:11:24.181Z [INFO]: Connected to MongoDB
+2024-09-29T21:11:44.092Z [INFO]: Connected to Redis
+2024-09-29T21:11:44.419Z [INFO]: email transporter verified
+2024-09-29T21:11:44.964Z [INFO]: Connected to MongoDB
+2024-09-29T21:11:54.886Z [INFO]: Connected to Redis
+2024-09-29T21:11:55.370Z [INFO]: email transporter verified
+2024-09-29T21:11:56.047Z [INFO]: Connected to MongoDB
+2024-09-29T21:12:09.020Z [INFO]: Connected to Redis
+2024-09-29T21:12:09.408Z [INFO]: email transporter verified
+2024-09-29T21:12:09.927Z [INFO]: Connected to MongoDB
+2024-09-29T21:12:20.375Z [INFO]: Connected to Redis
+2024-09-29T21:12:20.753Z [INFO]: email transporter verified
+2024-09-29T21:12:21.278Z [INFO]: Connected to MongoDB
+2024-09-29T21:12:44.731Z [INFO]: Connected to Redis
+2024-09-29T21:12:45.113Z [INFO]: email transporter verified
+2024-09-29T21:12:45.671Z [INFO]: Connected to MongoDB
+2024-09-29T21:13:13.719Z [INFO]: Connected to Redis
+2024-09-29T21:13:14.129Z [INFO]: email transporter verified
+2024-09-29T21:13:14.519Z [INFO]: Connected to MongoDB
+2024-09-29T21:13:25.715Z [INFO]: Connected to Redis
+2024-09-29T21:13:26.145Z [INFO]: email transporter verified
+2024-09-29T21:13:26.626Z [INFO]: Connected to MongoDB
+2024-09-29T21:13:35.604Z [INFO]: Connected to Redis
+2024-09-29T21:13:36.109Z [INFO]: email transporter verified
+2024-09-29T21:13:36.512Z [INFO]: Connected to MongoDB
+2024-09-29T21:13:51.964Z [INFO]: Connected to Redis
+2024-09-29T21:13:52.366Z [INFO]: email transporter verified
+2024-09-29T21:13:52.853Z [INFO]: Connected to MongoDB
+2024-09-29T21:13:56.592Z [INFO]: Connected to Redis
+2024-09-29T21:13:56.973Z [INFO]: email transporter verified
+2024-09-29T21:13:57.409Z [INFO]: Connected to MongoDB
+2024-09-29T21:14:13.129Z [INFO]: Connected to Redis
+2024-09-29T21:14:13.461Z [INFO]: email transporter verified
+2024-09-29T21:14:14.001Z [INFO]: Connected to MongoDB
+2024-09-29T21:14:49.909Z [INFO]: Connected to Redis
+2024-09-29T21:14:50.362Z [INFO]: email transporter verified
+2024-09-29T21:14:50.995Z [INFO]: Connected to MongoDB
+2024-09-29T21:15:40.545Z [INFO]: Connected to Redis
+2024-09-29T21:15:40.870Z [INFO]: email transporter verified
+2024-09-29T21:15:41.358Z [INFO]: Connected to MongoDB

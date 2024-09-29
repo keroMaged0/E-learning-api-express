@@ -30,6 +30,7 @@ export const ErrorHandlerMiddleware: ErrorRequestHandler<unknown, ErrorResponse>
             data: {},
         });
 
+        
     // unhandled multer error
     if (err instanceof MulterError)
         return res.status(400).json({

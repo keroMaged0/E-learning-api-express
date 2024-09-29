@@ -7,7 +7,8 @@ import { NotFoundError } from "../../errors/notFoundError";
 
 /**
  * Handler function to check the status of a payment.
- * This function retrieves the payment information based on the payment ID provided in the request parameters.
+ * Retrieves payment information based on the provided payment ID.
+ * 
  * @param {Request} req - The request object containing the payment ID.
  * @param {Response} res - The response object used to send a response.
  * @param {NextFunction} next - The next middleware function in the stack.

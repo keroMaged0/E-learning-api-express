@@ -5,6 +5,7 @@
         "Fildes",
         "Logtail",
         "paymob",
-        "streamifier"
+        "streamifier",
+        "totp"
     ]
 }
