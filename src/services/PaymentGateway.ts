@@ -24,23 +24,23 @@ export class PaymentGateway {
                         quantity: 1,
                     },
                 ],
-                mode: 'payment', 
+                mode: 'payment',
                 success_url: `${env.frontUrl}/success?session_id={CHECKOUT_SESSION_ID}`, // URL to redirect after a successful payment
                 cancel_url: `${env.frontUrl}/cancel`, // URL to redirect if payment is canceled
                 // Include metadata to identify the payment
                 metadata: {
-                    paymentId: paymentId, 
-                    userId: userId, 
+                    paymentId: paymentId,
+                    userId: userId,
                 },
             });
 
             // Return the session ID
             return {
-                sessionId: session.id, 
+                sessionId: session,
             };
         } catch (error: any) {
             logger.error(error.message);
-            throw new Error('Failed to create payment'); 
+            throw new Error('Failed to create payment');
         }
     }
 }
