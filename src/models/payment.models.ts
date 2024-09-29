@@ -5,7 +5,7 @@ export interface IPayment extends ICommonModel {
     userId: mongoose.Types.ObjectId;
     courseId: mongoose.Types.ObjectId;
     amount: number;
-    status: 'successful' | 'failed' | 'pending';
+    status: 'successful' | 'failed' | 'pending' | 'cancelled';
     paymentMethod: 'paypal' | 'stripe' | 'paymob';
     transactionId: string;
 }
@@ -28,7 +28,7 @@ export const paymentSchema = new Schema<IPayment>({
     status: {
         type: String,
         required: true,
-        enum: ['successful', 'failed', 'pending']
+        enum: ['successful', 'failed', 'pending', 'cancelled']
     },
     paymentMethod: {
         type: String,

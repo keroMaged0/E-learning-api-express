@@ -4,9 +4,16 @@ import { catchError } from "../../middlewares/errorHandling.middleware";
 import { SuccessResponse } from "../../types/response";
 import { Payment } from "../../models/payment.models";
 import { NotFoundError } from "../../errors/notFoundError";
-import { EnrolledCorseSchema, EnrolledCourse } from "../../models/EnrolledCourse.models";
 
-
+/**
+ * Handler function to check the status of a payment.
+ * This function retrieves the payment information based on the payment ID provided in the request parameters.
+ * @param {Request} req - The request object containing the payment ID.
+ * @param {Response} res - The response object used to send a response.
+ * @param {NextFunction} next - The next middleware function in the stack.
+ * @returns {Promise<void>} - A promise that resolves to void.
+ * @throws {NotFoundError} - Throws an error if the payment is not found.
+ */
 export const checkPaymentStatusHandler: RequestHandler<unknown, SuccessResponse> = catchError(
     async (req, res, next) => {
         const { paymentId } = req.params;

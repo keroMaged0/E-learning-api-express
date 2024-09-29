@@ -5,7 +5,7 @@ import { SuccessResponse } from "../../types/response";
 
 
 
-export const updatePaymentStatusHandler: RequestHandler<unknown, SuccessResponse> = catchError(
+export const    updatePaymentStatusHandler: RequestHandler<unknown, SuccessResponse> = catchError(
     async (req, res, next) => {
 
         res.status(200).json({

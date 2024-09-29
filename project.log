@@ -25848,3 +25848,284 @@ Error: read ECONNRESET
 2024-09-27T21:40:54.554Z [INFO]: Connected to Redis
 2024-09-27T21:40:54.895Z [INFO]: email transporter verified
 2024-09-27T21:40:55.424Z [INFO]: Connected to MongoDB
+2024-09-28T22:55:44.431Z [INFO]: Connected to Redis
+2024-09-28T22:55:44.753Z [INFO]: email transporter verified
+2024-09-28T22:55:45.462Z [INFO]: Connected to MongoDB
+2024-09-28T22:55:53.253Z [INFO]: Connected to Redis
+2024-09-28T22:55:53.698Z [INFO]: email transporter verified
+2024-09-28T22:55:54.113Z [INFO]: Connected to MongoDB
+2024-09-28T22:57:48.196Z [INFO]: Connected to Redis
+2024-09-28T22:57:48.601Z [INFO]: email transporter verified
+2024-09-28T22:57:49.185Z [INFO]: Connected to MongoDB
+2024-09-28T22:58:05.854Z [INFO]: Connected to Redis
+2024-09-28T22:58:06.206Z [INFO]: email transporter verified
+2024-09-28T22:58:06.665Z [INFO]: Connected to MongoDB
+2024-09-28T22:59:13.997Z [ERROR]: Not found route
+Error: Not found route
+    at D:\cours node.js\My-Github\E-Learning-API\src\middlewares\routeNotFound.middleware.ts:6:10
+    at Generator.next (<anonymous>)
+    at D:\cours node.js\My-Github\E-Learning-API\src\middlewares\routeNotFound.middleware.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (D:\cours node.js\My-Github\E-Learning-API\src\middlewares\routeNotFound.middleware.ts:4:12)
+    at routeNotFoundMiddleware (D:\cours node.js\My-Github\E-Learning-API\src\middlewares\routeNotFound.middleware.ts:5:81)
+    at Layer.handle [as handle_request] (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\index.js:328:13)
+    at D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\index.js:286:9
+    at param (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\index.js:365:14)
+2024-09-28T23:00:28.623Z [ERROR]: Request failed with status code 401
+2024-09-28T23:00:42.986Z [INFO]: Connected to Redis
+2024-09-28T23:00:43.388Z [INFO]: email transporter verified
+2024-09-28T23:00:43.859Z [INFO]: Connected to MongoDB
+2024-09-28T23:00:47.297Z [ERROR]: Request failed with status code 401
+2024-09-28T23:01:39.096Z [INFO]: Connected to Redis
+2024-09-28T23:01:39.412Z [INFO]: email transporter verified
+2024-09-28T23:01:39.762Z [INFO]: Connected to MongoDB
+2024-09-28T23:01:42.117Z [ERROR]: Request failed with status code 401
+2024-09-28T23:02:46.345Z [INFO]: Connected to Redis
+2024-09-28T23:02:46.777Z [INFO]: email transporter verified
+2024-09-28T23:02:52.301Z [INFO]: Connected to MongoDB
+2024-09-28T23:03:28.640Z [INFO]: Connected to Redis
+2024-09-28T23:03:37.968Z [INFO]: Connected to Redis
+2024-09-28T23:03:38.429Z [INFO]: email transporter verified
+2024-09-28T23:03:38.758Z [INFO]: Connected to MongoDB
+2024-09-28T23:03:51.125Z [INFO]: Connected to Redis
+2024-09-28T23:03:51.559Z [INFO]: email transporter verified
+2024-09-28T23:04:02.838Z [INFO]: Connected to Redis
+2024-09-28T23:04:25.619Z [INFO]: Connected to Redis
+2024-09-28T23:04:26.061Z [INFO]: email transporter verified
+2024-09-28T23:04:26.427Z [INFO]: Connected to MongoDB
+2024-09-28T23:05:25.212Z [INFO]: Connected to Redis
+2024-09-28T23:05:25.558Z [INFO]: email transporter verified
+2024-09-28T23:05:26.117Z [INFO]: Connected to MongoDB
+2024-09-28T23:07:28.789Z [INFO]: Connected to Redis
+2024-09-28T23:07:29.154Z [INFO]: email transporter verified
+2024-09-28T23:07:29.477Z [INFO]: Connected to MongoDB
+2024-09-28T23:08:35.104Z [INFO]: Connected to Redis
+2024-09-28T23:08:35.490Z [INFO]: email transporter verified
+2024-09-28T23:08:36.151Z [INFO]: Connected to MongoDB
+2024-09-28T23:08:40.723Z [ERROR]: Error creating Paymob payment: Request failed with status code 401
+2024-09-28T23:08:52.065Z [INFO]: Connected to Redis
+2024-09-28T23:08:52.387Z [INFO]: email transporter verified
+2024-09-28T23:08:52.818Z [INFO]: Connected to MongoDB
+2024-09-28T23:09:25.367Z [INFO]: Connected to Redis
+2024-09-28T23:09:25.703Z [INFO]: email transporter verified
+2024-09-28T23:09:26.042Z [INFO]: Connected to MongoDB
+2024-09-28T23:09:54.471Z [INFO]: Connected to Redis
+2024-09-28T23:09:54.970Z [INFO]: email transporter verified
+2024-09-28T23:09:55.446Z [INFO]: Connected to MongoDB
+2024-09-28T23:09:59.378Z [ERROR]: Error creating Paymob payment: Request failed with status code 401
+2024-09-28T23:10:50.948Z [INFO]: Connected to Redis
+2024-09-28T23:10:51.278Z [INFO]: email transporter verified
+2024-09-28T23:10:51.837Z [INFO]: Connected to MongoDB
+2024-09-28T23:11:00.324Z [ERROR]: Error creating Paymob payment: Request failed with status code 401
+2024-09-28T23:19:30.684Z [INFO]: Connected to Redis
+2024-09-28T23:19:31.037Z [INFO]: email transporter verified
+2024-09-28T23:19:31.503Z [INFO]: Connected to MongoDB
+2024-09-28T23:19:47.648Z [ERROR]: Error creating Paymob payment: Request failed with status code 401
+2024-09-28T23:21:53.671Z [INFO]: Connected to Redis
+2024-09-28T23:21:54.066Z [INFO]: email transporter verified
+2024-09-28T23:21:54.519Z [INFO]: Connected to MongoDB
+2024-09-28T23:22:17.685Z [INFO]: Connected to Redis
+2024-09-28T23:22:18.045Z [INFO]: email transporter verified
+2024-09-28T23:22:18.353Z [INFO]: Connected to MongoDB
+2024-09-28T23:22:30.716Z [INFO]: Connected to Redis
+2024-09-28T23:22:31.170Z [INFO]: email transporter verified
+2024-09-28T23:22:31.492Z [INFO]: Connected to MongoDB
+2024-09-28T23:22:42.410Z [INFO]: Connected to Redis
+2024-09-28T23:22:42.740Z [INFO]: email transporter verified
+2024-09-28T23:22:43.099Z [INFO]: Connected to MongoDB
+2024-09-28T23:22:54.916Z [INFO]: Connected to Redis
+2024-09-28T23:22:55.483Z [INFO]: email transporter verified
+2024-09-28T23:22:55.913Z [INFO]: Connected to MongoDB
+2024-09-28T23:23:17.058Z [INFO]: Connected to Redis
+2024-09-28T23:23:20.808Z [INFO]: Connected to Redis
+2024-09-28T23:23:21.215Z [INFO]: email transporter verified
+2024-09-28T23:23:21.526Z [INFO]: Connected to MongoDB
+2024-09-28T23:23:40.011Z [INFO]: Connected to Redis
+2024-09-28T23:23:40.351Z [INFO]: email transporter verified
+2024-09-28T23:23:48.383Z [INFO]: Connected to Redis
+2024-09-28T23:23:48.839Z [INFO]: email transporter verified
+2024-09-28T23:23:54.182Z [INFO]: Connected to MongoDB
+2024-09-28T23:23:57.125Z [ERROR]: Error creating Paymob payment: Request failed with status code 401
+2024-09-28T23:23:57.126Z [ERROR]: Response data: {"detail":"incorrect credentials"}
+2024-09-28T23:23:57.127Z [ERROR]: Response status: 401
+2024-09-28T23:25:36.073Z [INFO]: Connected to Redis
+2024-09-28T23:25:36.389Z [INFO]: email transporter verified
+2024-09-28T23:25:36.901Z [INFO]: Connected to MongoDB
+2024-09-28T23:25:51.665Z [ERROR]: Error creating Paymob payment: Request failed with status code 401
+2024-09-28T23:25:51.666Z [ERROR]: Response data: {"detail":"incorrect credentials"}
+2024-09-28T23:25:51.666Z [ERROR]: Response status: 401
+2024-09-28T23:26:02.126Z [ERROR]: Error creating Paymob payment: Request failed with status code 401
+2024-09-28T23:26:02.127Z [ERROR]: Response data: {"detail":"incorrect credentials"}
+2024-09-28T23:26:02.128Z [ERROR]: Response status: 401
+2024-09-28T23:30:31.891Z [INFO]: Connected to Redis
+2024-09-28T23:30:32.336Z [INFO]: email transporter verified
+2024-09-28T23:30:32.845Z [INFO]: Connected to MongoDB
+2024-09-28T23:31:35.414Z [INFO]: Connected to Redis
+2024-09-28T23:31:35.768Z [INFO]: email transporter verified
+2024-09-28T23:31:36.126Z [INFO]: Connected to MongoDB
+2024-09-28T23:42:06.794Z [ERROR]: Error creating Paymob payment: Request failed with status code 401
+2024-09-28T23:42:06.795Z [ERROR]: Response data: {"detail":"incorrect credentials"}
+2024-09-28T23:42:06.796Z [ERROR]: Response status: 401
+2024-09-28T23:42:07.324Z [ERROR]: Error creating Paymob payment: Request failed with status code 401
+2024-09-28T23:42:07.325Z [ERROR]: Response data: {"detail":"incorrect credentials"}
+2024-09-28T23:42:07.326Z [ERROR]: Response status: 401
+2024-09-28T23:43:31.900Z [INFO]: Connected to Redis
+2024-09-28T23:43:32.293Z [INFO]: email transporter verified
+2024-09-28T23:43:32.846Z [INFO]: Connected to MongoDB
+2024-09-28T23:43:35.119Z [ERROR]: Error creating Paymob payment: Request failed with status code 401
+2024-09-28T23:43:35.120Z [ERROR]: Response data: {"detail":"incorrect credentials"}
+2024-09-28T23:43:35.120Z [ERROR]: Response status: 401
+2024-09-28T23:44:22.063Z [INFO]: Connected to Redis
+2024-09-28T23:44:22.395Z [INFO]: email transporter verified
+2024-09-28T23:44:22.748Z [INFO]: Connected to MongoDB
+2024-09-28T23:44:26.204Z [ERROR]: Error creating Paymob payment: Request failed with status code 401
+2024-09-28T23:44:26.205Z [ERROR]: Response data: {"detail":"incorrect credentials"}
+2024-09-28T23:44:26.206Z [ERROR]: Response status: 401
+2024-09-28T23:50:02.530Z [INFO]: Connected to Redis
+2024-09-28T23:50:02.890Z [INFO]: email transporter verified
+2024-09-28T23:50:03.279Z [INFO]: Connected to MongoDB
+2024-09-28T23:50:06.048Z [ERROR]: Error creating Paymob payment: Request failed with status code 401
+2024-09-28T23:50:06.049Z [ERROR]: Response data: {"detail":"incorrect credentials"}
+2024-09-28T23:50:06.050Z [ERROR]: Response status: 401
+2024-09-28T23:51:03.028Z [INFO]: Connected to Redis
+2024-09-28T23:51:03.440Z [INFO]: email transporter verified
+2024-09-28T23:51:03.855Z [INFO]: Connected to MongoDB
+2024-09-28T23:51:06.560Z [INFO]: Using Paymob API Key: ZXlKaGJHY2lPaUpJVXpVeE1pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SmpiR0Z6Y3lJNklrMWxjbU5vWVc1MElpd2ljSEp2Wm1sc1pWOXdheUk2T1RrNE1UWTRMQ0p1WVcxbElqb2lNVGN5TnpVMk5UTXhOUzQyTWpFek16Y2lmUS54QXNfSHdxT2NlTlFQMS11UGMxQkl2dGI5dlRuamRDWXFlWGItT0V3VVg5Yy14V09uYkNLb3diWG9VUFVUbDFVZGJCdTNiYjR1NzVnekFwaWRCQ2J2Zw==
+2024-09-28T23:51:07.768Z [ERROR]: Error creating Paymob payment: Request failed with status code 401
+2024-09-28T23:51:07.769Z [ERROR]: Response data: {"detail":"incorrect credentials"}
+2024-09-28T23:51:07.769Z [ERROR]: Response status: 401
+2024-09-28T23:51:59.530Z [INFO]: Connected to Redis
+2024-09-28T23:51:59.911Z [INFO]: email transporter verified
+2024-09-28T23:52:06.608Z [INFO]: Connected to Redis
+2024-09-28T23:52:07.064Z [INFO]: email transporter verified
+2024-09-28T23:52:07.405Z [INFO]: Connected to MongoDB
+2024-09-28T23:52:13.209Z [INFO]: Payment Details: Amount: 1000, Currency: EGP, Order ID: 66f896ad49903e6f7b8f808a, Customer ID: 66e82ea882a842bdd8875b31
+2024-09-28T23:52:13.211Z [INFO]: Using Paymob API Key: ZXlKaGJHY2lPaUpJVXpVeE1pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SmpiR0Z6Y3lJNklrMWxjbU5vWVc1MElpd2ljSEp2Wm1sc1pWOXdheUk2T1RrNE1UWTRMQ0p1WVcxbElqb2lNVGN5TnpVMk5UTXhOUzQyTWpFek16Y2lmUS54QXNfSHdxT2NlTlFQMS11UGMxQkl2dGI5dlRuamRDWXFlWGItT0V3VVg5Yy14V09uYkNLb3diWG9VUFVUbDFVZGJCdTNiYjR1NzVnekFwaWRCQ2J2Zw==
+2024-09-28T23:52:14.444Z [ERROR]: Error creating Paymob payment: Request failed with status code 401
+2024-09-28T23:52:14.445Z [ERROR]: Response data: {"detail":"incorrect credentials"}
+2024-09-28T23:52:14.446Z [ERROR]: Response status: 401
+2024-09-28T23:53:49.342Z [INFO]: Connected to Redis
+2024-09-28T23:53:49.753Z [INFO]: email transporter verified
+2024-09-28T23:53:50.296Z [INFO]: Connected to MongoDB
+2024-09-28T23:54:34.267Z [INFO]: Connected to Redis
+2024-09-28T23:54:34.697Z [INFO]: email transporter verified
+2024-09-28T23:54:35.074Z [INFO]: Connected to MongoDB
+2024-09-28T23:55:08.345Z [INFO]: Connected to Redis
+2024-09-28T23:55:08.615Z [INFO]: email transporter verified
+2024-09-28T23:55:09.026Z [INFO]: Connected to MongoDB
+2024-09-28T23:55:18.109Z [INFO]: Connected to Redis
+2024-09-28T23:55:18.526Z [INFO]: email transporter verified
+2024-09-28T23:55:18.997Z [INFO]: Connected to MongoDB
+2024-09-28T23:55:35.952Z [INFO]: Connected to Redis
+2024-09-28T23:55:36.395Z [INFO]: email transporter verified
+2024-09-28T23:55:36.640Z [INFO]: Connected to MongoDB
+2024-09-28T23:56:21.790Z [INFO]: Connected to Redis
+2024-09-28T23:56:36.440Z [INFO]: Connected to Redis
+2024-09-28T23:56:40.135Z [INFO]: Connected to Redis
+2024-09-28T23:56:40.476Z [INFO]: email transporter verified
+2024-09-28T23:56:40.778Z [INFO]: Connected to MongoDB
+2024-09-28T23:56:59.271Z [INFO]: Connected to Redis
+2024-09-28T23:56:59.629Z [INFO]: email transporter verified
+2024-09-28T23:57:00.090Z [INFO]: Connected to MongoDB
+2024-09-28T23:57:37.988Z [INFO]: Connected to Redis
+2024-09-28T23:57:38.387Z [INFO]: email transporter verified
+2024-09-28T23:57:38.890Z [INFO]: Connected to MongoDB
+2024-09-28T23:57:47.471Z [INFO]: Connected to Redis
+2024-09-28T23:57:47.916Z [INFO]: email transporter verified
+2024-09-28T23:57:48.272Z [INFO]: Connected to MongoDB
+2024-09-28T23:57:50.449Z [ERROR]: expired token or invalid
+Error: expired token or invalid
+    at D:\cours node.js\My-Github\E-Learning-API\src\middlewares\authentication.middleware.ts:17:34
+    at Generator.next (<anonymous>)
+    at D:\cours node.js\My-Github\E-Learning-API\src\middlewares\authentication.middleware.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (D:\cours node.js\My-Github\E-Learning-API\src\middlewares\authentication.middleware.ts:4:12)
+    at authenticationMiddleware (D:\cours node.js\My-Github\E-Learning-API\src\middlewares\authentication.middleware.ts:10:82)
+    at Layer.handle [as handle_request] (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\index.js:328:13)
+    at D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\index.js:346:12)
+2024-09-29T00:00:51.258Z [INFO]: Connected to Redis
+2024-09-29T00:00:51.616Z [INFO]: email transporter verified
+2024-09-29T00:00:52.223Z [INFO]: Connected to MongoDB
+2024-09-29T00:01:37.913Z [INFO]: Connected to Redis
+2024-09-29T00:01:38.257Z [INFO]: email transporter verified
+2024-09-29T00:01:38.732Z [INFO]: Connected to MongoDB
+2024-09-29T00:02:26.283Z [INFO]: Connected to Redis
+2024-09-29T00:02:26.679Z [INFO]: email transporter verified
+2024-09-29T00:02:45.528Z [INFO]: Connected to Redis
+2024-09-29T00:02:45.870Z [INFO]: email transporter verified
+2024-09-29T00:02:46.306Z [INFO]: Connected to MongoDB
+2024-09-29T00:02:51.068Z [INFO]: Connected to Redis
+2024-09-29T00:02:51.597Z [INFO]: email transporter verified
+2024-09-29T00:02:51.795Z [INFO]: Connected to MongoDB
+2024-09-29T00:02:59.677Z [ERROR]: User already enrolled in this course
+Error: User already enrolled in this course
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\payment\initiatePayment.controller.ts:28:41
+    at Generator.next (<anonymous>)
+    at fulfilled (D:\cours node.js\My-Github\E-Learning-API\src\controllers\payment\initiatePayment.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-09-29T00:04:31.792Z [INFO]: Connected to Redis
+2024-09-29T00:04:32.216Z [INFO]: email transporter verified
+2024-09-29T00:04:32.661Z [INFO]: Connected to MongoDB
+2024-09-29T00:07:49.675Z [INFO]: Connected to Redis
+2024-09-29T00:07:50.006Z [INFO]: email transporter verified
+2024-09-29T00:07:50.594Z [INFO]: Connected to MongoDB
+2024-09-29T00:08:14.732Z [INFO]: Connected to Redis
+2024-09-29T00:08:15.098Z [INFO]: email transporter verified
+2024-09-29T00:08:15.489Z [INFO]: Connected to MongoDB
+2024-09-29T00:08:19.447Z [INFO]: Connected to Redis
+2024-09-29T00:08:19.824Z [INFO]: email transporter verified
+2024-09-29T00:08:20.257Z [INFO]: Connected to MongoDB
+2024-09-29T00:09:07.096Z [INFO]: Connected to Redis
+2024-09-29T00:09:07.499Z [INFO]: email transporter verified
+2024-09-29T00:09:08.018Z [INFO]: Connected to MongoDB
+2024-09-29T00:09:19.396Z [INFO]: Connected to Redis
+2024-09-29T00:09:19.789Z [INFO]: email transporter verified
+2024-09-29T00:09:20.221Z [INFO]: Connected to MongoDB
+2024-09-29T00:09:33.106Z [INFO]: Connected to Redis
+2024-09-29T00:09:33.674Z [INFO]: email transporter verified
+2024-09-29T00:09:33.952Z [INFO]: Connected to MongoDB
+2024-09-29T00:09:38.751Z [INFO]: Connected to Redis
+2024-09-29T00:09:39.138Z [INFO]: email transporter verified
+2024-09-29T00:09:39.675Z [INFO]: Connected to MongoDB
+2024-09-29T00:09:48.341Z [INFO]: Connected to Redis
+2024-09-29T00:09:48.680Z [INFO]: email transporter verified
+2024-09-29T00:09:49.137Z [INFO]: Connected to MongoDB
+2024-09-29T00:10:00.015Z [INFO]: Connected to Redis
+2024-09-29T00:10:00.413Z [INFO]: email transporter verified
+2024-09-29T00:10:00.903Z [INFO]: Connected to MongoDB
+2024-09-29T00:10:16.765Z [INFO]: Connected to Redis
+2024-09-29T00:10:17.224Z [INFO]: email transporter verified
+2024-09-29T00:10:22.353Z [INFO]: Connected to Redis
+2024-09-29T00:10:22.811Z [INFO]: email transporter verified
+2024-09-29T00:10:23.052Z [INFO]: Connected to MongoDB
+2024-09-29T00:10:29.589Z [INFO]: Connected to Redis
+2024-09-29T00:10:29.940Z [INFO]: email transporter verified
+2024-09-29T00:10:30.349Z [INFO]: Connected to MongoDB
+2024-09-29T00:10:34.447Z [INFO]: Connected to Redis
+2024-09-29T00:10:34.905Z [INFO]: email transporter verified
+2024-09-29T00:10:35.282Z [INFO]: Connected to MongoDB
+2024-09-29T00:11:14.777Z [INFO]: Connected to Redis
+2024-09-29T00:11:15.141Z [INFO]: email transporter verified
+2024-09-29T00:11:15.654Z [INFO]: Connected to MongoDB
+2024-09-29T00:11:25.798Z [INFO]: Connected to Redis
+2024-09-29T00:11:26.200Z [INFO]: email transporter verified
+2024-09-29T00:11:26.700Z [INFO]: Connected to MongoDB
+2024-09-29T00:11:39.515Z [INFO]: Connected to Redis
+2024-09-29T00:11:39.852Z [INFO]: email transporter verified
+2024-09-29T00:11:40.214Z [INFO]: Connected to MongoDB
+2024-09-29T00:12:07.182Z [INFO]: Connected to Redis
+2024-09-29T00:12:07.577Z [INFO]: email transporter verified
+2024-09-29T00:12:07.903Z [INFO]: Connected to MongoDB
+2024-09-29T00:12:11.926Z [INFO]: Connected to Redis
+2024-09-29T00:12:12.406Z [INFO]: email transporter verified
+2024-09-29T00:12:12.853Z [INFO]: Connected to MongoDB
+2024-09-29T00:12:17.864Z [INFO]: Connected to Redis
+2024-09-29T00:12:21.851Z [INFO]: Connected to Redis
+2024-09-29T00:12:22.254Z [INFO]: email transporter verified
+2024-09-29T00:12:22.529Z [INFO]: Connected to MongoDB
+2024-09-29T00:12:29.463Z [INFO]: Connected to Redis
+2024-09-29T00:12:29.927Z [INFO]: email transporter verified
+2024-09-29T00:12:30.496Z [INFO]: Connected to MongoDB

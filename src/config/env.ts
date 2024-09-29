@@ -18,7 +18,7 @@ export const env = {
         sourceToken: process.env.SOURCE_TOKEN,
         sourceId: process.env.SOURCE_ID
     },
-    mail: { 
+    mail: {
         host: process.env.MAIL_HOST,
         service: process.env.MAIL_SERVICE,
         port: +(process.env.MAIL_PORT || 1) as number,
@@ -45,10 +45,18 @@ export const env = {
         cacheTempKey: process.env.CACHE_TEMPORARY_TOKEN_PREFIX,
         cacheTempExpire: + (process.env.CACHE_TEMPORARY_TOKEN_EXPIRE || 3600) as number
     },
-    stripe:{
+    stripe: {
         secretKey: process.env.STRIPE_SECRET_KEY,
         publicKey: process.env.STRIPE_PUBLISH_KEY,
         webhookSecret: process.env.STRIPE_WEBHOOK_SECRET
+    },
+    paymob: {
+        api_key: process.env.PAYMOB_API_KEY,
+        secret_Key: process.env.PAYMOB_SECRET_KEY,
+        Public_Key: process.env.PAYMOB_PUBLIC_KEY,
+        HMAC: process.env.PAYMOB_HMAC_SECRET,
+        baseUrl: process.env.PAYMOB_BASE_URL
+
     }
 }
 
@@ -66,6 +74,7 @@ const requiredEnvVars = [
     { key: 'CLOUDINARY_API_KEY', value: env.cloudinary.cloudinaryApiKey },
     { key: 'CLOUDINARY_CLOUD_NAME', value: env.cloudinary.cloudinaryName },
     { key: 'CLOUDINARY_API_SECRET', value: env.cloudinary.cloudinaryApiSecret },
+
     // Uncomment the following lines if you are using Firebase
 ];
 

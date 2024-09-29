@@ -2,10 +2,10 @@ import express from 'express';
 import morgan from 'morgan';
 import cors from 'cors'
 
+import { handleStripeWebhook } from './controllers/payment/handleWebhook.controller';
 import { authenticationMiddleware } from './middlewares/authentication.middleware';
 import { routeNotFoundMiddleware } from './middlewares/routeNotFound.middleware';
 import { ErrorHandlerMiddleware } from './middlewares/errorHandling.middleware';
-import { handleWebhook } from './controllers/payment/handleWebhook.controller';
 import { checkEnvVariables, env } from './config/env';
 import { apiRoutes } from './routes';
 import './config/redisClient.config'
@@ -15,7 +15,7 @@ checkEnvVariables();
 // Initialize Express app
 export const app = express();
 
-app.post('/webhook', express.raw({ type: 'application/json' }), handleWebhook);
+app.post('/webhook', express.raw({ type: 'application/json' }), handleStripeWebhook);
 
 // Add CORS policy
 app.use(
