@@ -44,6 +44,8 @@ export const confirmDeleteCourseHandler: RequestHandler<
         if (user.verificationCode?.reason !== VerifyReason.deleteCourse) {
             return next(new NotAllowedError('Invalid verification code'));
         }
+        user.verificationCode.reason = null;
+        await user.save();
 
         // Define the media path in Cloudinary for deletion
         const pathUrl = course.imageCover.public_id.split(`${course.folderId}`)[0] + course.folderId;

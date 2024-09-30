@@ -27651,3 +27651,1725 @@ Error: Unauthorized user
 2024-09-29T21:15:40.545Z [INFO]: Connected to Redis
 2024-09-29T21:15:40.870Z [INFO]: email transporter verified
 2024-09-29T21:15:41.358Z [INFO]: Connected to MongoDB
+2024-09-29T21:15:45.561Z [INFO]: Connected to Redis
+2024-09-29T21:15:45.980Z [INFO]: email transporter verified
+2024-09-29T21:15:46.277Z [INFO]: Connected to MongoDB
+2024-09-29T21:40:13.782Z [INFO]: Connected to Redis
+2024-09-29T21:40:14.057Z [INFO]: email transporter verified
+2024-09-29T21:40:14.758Z [INFO]: Connected to MongoDB
+2024-09-29T21:40:18.847Z [INFO]: Connected to Redis
+2024-09-29T21:40:19.362Z [INFO]: email transporter verified
+2024-09-29T21:40:19.732Z [INFO]: Connected to MongoDB
+2024-09-29T21:40:24.232Z [INFO]: Connected to Redis
+2024-09-29T21:40:24.619Z [INFO]: email transporter verified
+2024-09-29T21:40:24.944Z [INFO]: Connected to MongoDB
+2024-09-29T21:40:31.824Z [INFO]: Connected to Redis
+2024-09-29T21:40:32.421Z [INFO]: email transporter verified
+2024-09-29T21:40:32.821Z [INFO]: Connected to MongoDB
+2024-09-29T21:40:44.828Z [INFO]: Connected to Redis
+2024-09-29T21:40:45.561Z [INFO]: email transporter verified
+2024-09-29T21:40:45.834Z [INFO]: Connected to MongoDB
+2024-09-29T21:41:25.830Z [INFO]: Connected to Redis
+2024-09-29T21:41:26.301Z [INFO]: email transporter verified
+2024-09-29T21:41:26.670Z [INFO]: Connected to MongoDB
+2024-09-29T21:41:53.107Z [INFO]: Connected to Redis
+2024-09-29T21:41:53.453Z [INFO]: email transporter verified
+2024-09-29T21:41:54.141Z [INFO]: Connected to MongoDB
+2024-09-29T21:42:21.561Z [INFO]: Connected to Redis
+2024-09-29T21:42:21.987Z [INFO]: email transporter verified
+2024-09-29T21:42:22.270Z [INFO]: Connected to MongoDB
+2024-09-29T21:42:27.327Z [INFO]: Connected to Redis
+2024-09-29T21:42:27.892Z [INFO]: email transporter verified
+2024-09-29T21:42:28.201Z [INFO]: Connected to MongoDB
+2024-09-29T21:42:36.120Z [INFO]: Connected to Redis
+2024-09-29T21:42:36.529Z [INFO]: email transporter verified
+2024-09-29T21:42:36.937Z [INFO]: Connected to MongoDB
+2024-09-29T21:42:49.155Z [INFO]: Connected to Redis
+2024-09-29T21:42:49.544Z [INFO]: email transporter verified
+2024-09-29T21:42:49.866Z [INFO]: Connected to MongoDB
+2024-09-29T21:43:00.130Z [INFO]: Connected to Redis
+2024-09-29T21:43:00.469Z [INFO]: email transporter verified
+2024-09-29T21:43:00.813Z [INFO]: Connected to MongoDB
+2024-09-29T21:43:07.857Z [INFO]: Connected to Redis
+2024-09-29T21:43:08.269Z [INFO]: email transporter verified
+2024-09-29T21:43:08.623Z [INFO]: Connected to MongoDB
+2024-09-29T21:43:15.209Z [INFO]: Connected to Redis
+2024-09-29T21:43:15.562Z [INFO]: email transporter verified
+2024-09-29T21:43:16.022Z [INFO]: Connected to MongoDB
+2024-09-29T21:43:24.362Z [INFO]: Connected to Redis
+2024-09-29T21:43:24.741Z [INFO]: email transporter verified
+2024-09-29T21:43:25.121Z [INFO]: Connected to MongoDB
+2024-09-29T21:43:43.753Z [INFO]: Connected to Redis
+2024-09-29T21:43:44.178Z [INFO]: email transporter verified
+2024-09-29T21:43:44.425Z [INFO]: Connected to MongoDB
+2024-09-29T21:43:54.686Z [INFO]: Connected to Redis
+2024-09-29T21:43:55.332Z [INFO]: email transporter verified
+2024-09-29T21:43:55.541Z [INFO]: Connected to MongoDB
+2024-09-29T21:44:05.574Z [INFO]: Connected to Redis
+2024-09-29T21:44:05.921Z [INFO]: email transporter verified
+2024-09-29T21:44:06.620Z [INFO]: Connected to MongoDB
+2024-09-29T21:44:19.747Z [INFO]: Connected to Redis
+2024-09-29T21:44:20.268Z [INFO]: email transporter verified
+2024-09-29T21:44:20.667Z [INFO]: Connected to MongoDB
+2024-09-29T21:44:43.212Z [INFO]: Connected to Redis
+2024-09-29T21:44:43.557Z [INFO]: email transporter verified
+2024-09-29T21:44:44.243Z [INFO]: Connected to MongoDB
+2024-09-29T21:45:27.880Z [INFO]: Connected to Redis
+2024-09-29T21:45:28.341Z [INFO]: email transporter verified
+2024-09-29T21:45:37.103Z [INFO]: Connected to Redis
+2024-09-29T21:45:41.015Z [INFO]: Connected to Redis
+2024-09-29T21:45:41.575Z [INFO]: email transporter verified
+2024-09-29T21:45:42.010Z [INFO]: Connected to MongoDB
+2024-09-29T21:45:51.288Z [INFO]: Connected to Redis
+2024-09-29T21:45:51.812Z [INFO]: email transporter verified
+2024-09-29T21:45:52.276Z [INFO]: Connected to MongoDB
+2024-09-29T21:46:05.836Z [INFO]: Connected to Redis
+2024-09-29T21:46:06.205Z [INFO]: email transporter verified
+2024-09-29T21:46:26.688Z [INFO]: Connected to Redis
+2024-09-29T21:46:27.284Z [INFO]: email transporter verified
+2024-09-29T21:46:31.146Z [INFO]: Connected to Redis
+2024-09-29T21:46:31.549Z [INFO]: email transporter verified
+2024-09-29T21:46:31.924Z [INFO]: Connected to MongoDB
+2024-09-29T21:47:08.381Z [INFO]: Connected to Redis
+2024-09-29T21:47:12.293Z [INFO]: Connected to Redis
+2024-09-29T21:47:12.762Z [INFO]: email transporter verified
+2024-09-29T21:47:34.734Z [INFO]: Connected to Redis
+2024-09-29T21:47:35.149Z [INFO]: email transporter verified
+2024-09-29T21:47:35.482Z [INFO]: Connected to MongoDB
+2024-09-29T21:47:50.859Z [INFO]: Connected to Redis
+2024-09-29T21:47:51.200Z [INFO]: email transporter verified
+2024-09-29T21:48:10.542Z [INFO]: Connected to Redis
+2024-09-29T21:48:10.953Z [INFO]: email transporter verified
+2024-09-29T21:48:11.337Z [INFO]: Connected to MongoDB
+2024-09-29T21:50:45.100Z [INFO]: Connected to Redis
+2024-09-29T21:50:54.768Z [INFO]: Connected to Redis
+2024-09-29T21:50:55.166Z [INFO]: email transporter verified
+2024-09-29T21:50:55.487Z [INFO]: Connected to MongoDB
+2024-09-29T21:52:42.515Z [INFO]: Connected to Redis
+2024-09-29T21:52:42.932Z [INFO]: email transporter verified
+2024-09-29T21:52:43.327Z [INFO]: Connected to MongoDB
+2024-09-29T21:53:54.694Z [INFO]: Connected to Redis
+2024-09-29T21:53:55.216Z [INFO]: email transporter verified
+2024-09-29T21:53:55.609Z [INFO]: Connected to MongoDB
+2024-09-29T21:54:09.916Z [INFO]: Connected to Redis
+2024-09-29T21:54:10.291Z [INFO]: email transporter verified
+2024-09-29T21:54:10.584Z [INFO]: Connected to MongoDB
+2024-09-29T21:54:41.757Z [INFO]: Connected to Redis
+2024-09-29T21:54:42.107Z [INFO]: email transporter verified
+2024-09-29T21:54:42.823Z [INFO]: Connected to MongoDB
+2024-09-29T21:54:52.359Z [INFO]: Connected to Redis
+2024-09-29T21:54:53.385Z [INFO]: email transporter verified
+2024-09-29T21:54:53.895Z [INFO]: Connected to MongoDB
+2024-09-29T21:55:03.494Z [INFO]: Connected to Redis
+2024-09-29T21:55:04.252Z [INFO]: email transporter verified
+2024-09-29T21:55:05.728Z [INFO]: Connected to MongoDB
+2024-09-29T21:55:23.600Z [INFO]: Connected to Redis
+2024-09-29T21:55:23.952Z [INFO]: email transporter verified
+2024-09-29T21:55:24.267Z [INFO]: Connected to MongoDB
+2024-09-29T21:55:55.326Z [INFO]: Connected to Redis
+2024-09-29T21:55:55.600Z [INFO]: email transporter verified
+2024-09-29T21:55:55.950Z [INFO]: Connected to MongoDB
+2024-09-29T21:56:29.660Z [INFO]: Connected to Redis
+2024-09-29T21:56:30.077Z [INFO]: email transporter verified
+2024-09-29T21:56:30.370Z [INFO]: Connected to MongoDB
+2024-09-29T21:56:54.874Z [INFO]: Connected to Redis
+2024-09-29T21:56:55.388Z [INFO]: email transporter verified
+2024-09-29T21:56:55.542Z [INFO]: Connected to MongoDB
+2024-09-29T21:57:02.879Z [INFO]: Connected to Redis
+2024-09-29T21:57:03.268Z [INFO]: email transporter verified
+2024-09-29T21:57:11.524Z [INFO]: Connected to Redis
+2024-09-29T21:57:12.005Z [INFO]: email transporter verified
+2024-09-29T21:57:12.399Z [INFO]: Connected to MongoDB
+2024-09-29T21:57:29.676Z [INFO]: Connected to Redis
+2024-09-29T21:57:30.058Z [INFO]: email transporter verified
+2024-09-29T21:57:31.084Z [INFO]: Connected to MongoDB
+2024-09-29T21:58:00.426Z [INFO]: Connected to Redis
+2024-09-29T21:58:00.834Z [INFO]: email transporter verified
+2024-09-29T21:58:01.223Z [INFO]: Connected to MongoDB
+2024-09-29T21:58:06.751Z [INFO]: Connected to Redis
+2024-09-29T21:58:07.141Z [INFO]: email transporter verified
+2024-09-29T21:58:07.465Z [INFO]: Connected to MongoDB
+2024-09-29T21:58:23.577Z [INFO]: Connected to Redis
+2024-09-29T21:58:24.336Z [INFO]: email transporter verified
+2024-09-29T21:58:24.647Z [INFO]: Connected to MongoDB
+2024-09-29T22:01:18.356Z [INFO]: Connected to Redis
+2024-09-29T22:01:18.676Z [INFO]: email transporter verified
+2024-09-29T22:01:19.039Z [INFO]: Connected to MongoDB
+2024-09-29T22:03:50.731Z [INFO]: Connected to Redis
+2024-09-29T22:03:51.162Z [INFO]: email transporter verified
+2024-09-29T22:03:51.581Z [INFO]: Connected to MongoDB
+2024-09-29T22:04:21.826Z [INFO]: Connected to Redis
+2024-09-29T22:04:22.168Z [INFO]: email transporter verified
+2024-09-29T22:04:22.589Z [INFO]: Connected to MongoDB
+2024-09-29T22:04:41.873Z [INFO]: Connected to Redis
+2024-09-29T22:04:45.620Z [INFO]: Connected to Redis
+2024-09-29T22:04:46.084Z [INFO]: email transporter verified
+2024-09-29T22:04:47.281Z [INFO]: Connected to MongoDB
+2024-09-29T22:05:03.233Z [INFO]: Connected to Redis
+2024-09-29T22:05:03.735Z [INFO]: email transporter verified
+2024-09-29T22:05:04.052Z [INFO]: Connected to MongoDB
+2024-09-29T22:05:15.445Z [INFO]: Connected to Redis
+2024-09-29T22:05:15.846Z [INFO]: email transporter verified
+2024-09-29T22:05:16.556Z [INFO]: Connected to MongoDB
+2024-09-29T22:05:43.292Z [INFO]: Connected to Redis
+2024-09-29T22:05:43.946Z [INFO]: email transporter verified
+2024-09-29T22:05:44.475Z [INFO]: Connected to MongoDB
+2024-09-29T22:05:48.451Z [INFO]: Connected to Redis
+2024-09-29T22:05:53.847Z [INFO]: Connected to Redis
+2024-09-29T22:05:54.234Z [INFO]: email transporter verified
+2024-09-29T22:05:54.595Z [INFO]: Connected to MongoDB
+2024-09-29T22:05:58.953Z [INFO]: Connected to Redis
+2024-09-29T22:05:59.347Z [INFO]: email transporter verified
+2024-09-29T22:05:59.660Z [INFO]: Connected to MongoDB
+2024-09-29T22:06:08.364Z [INFO]: Connected to Redis
+2024-09-29T22:06:08.869Z [INFO]: email transporter verified
+2024-09-29T22:06:14.387Z [INFO]: Connected to Redis
+2024-09-29T22:06:14.781Z [INFO]: email transporter verified
+2024-09-29T22:06:15.087Z [INFO]: Connected to MongoDB
+2024-09-29T22:06:29.436Z [INFO]: Connected to Redis
+2024-09-29T22:06:29.743Z [INFO]: email transporter verified
+2024-09-29T22:06:33.341Z [INFO]: Connected to Redis
+2024-09-29T22:06:33.735Z [INFO]: email transporter verified
+2024-09-29T22:06:39.200Z [INFO]: Connected to MongoDB
+2024-09-29T22:07:06.186Z [INFO]: Connected to Redis
+2024-09-29T22:07:06.564Z [INFO]: email transporter verified
+2024-09-29T22:07:06.878Z [INFO]: Connected to MongoDB
+2024-09-29T22:07:30.011Z [INFO]: Connected to Redis
+2024-09-29T22:07:30.702Z [INFO]: email transporter verified
+2024-09-29T22:07:31.040Z [INFO]: Connected to MongoDB
+2024-09-29T22:07:40.087Z [INFO]: Connected to Redis
+2024-09-29T22:07:43.655Z [INFO]: Connected to Redis
+2024-09-29T22:07:44.122Z [INFO]: email transporter verified
+2024-09-29T22:07:44.374Z [INFO]: Connected to MongoDB
+2024-09-29T22:08:00.657Z [INFO]: Connected to Redis
+2024-09-29T22:08:01.014Z [INFO]: email transporter verified
+2024-09-29T22:08:01.364Z [INFO]: Connected to MongoDB
+2024-09-29T22:08:05.077Z [INFO]: Connected to Redis
+2024-09-29T22:08:05.479Z [INFO]: email transporter verified
+2024-09-29T22:08:05.864Z [INFO]: Connected to MongoDB
+2024-09-29T22:08:34.791Z [INFO]: Connected to Redis
+2024-09-29T22:08:35.192Z [INFO]: email transporter verified
+2024-09-29T22:08:35.670Z [INFO]: Connected to MongoDB
+2024-09-29T22:08:55.837Z [INFO]: Connected to Redis
+2024-09-29T22:08:56.263Z [INFO]: email transporter verified
+2024-09-29T22:08:56.662Z [INFO]: Connected to MongoDB
+2024-09-29T22:09:05.302Z [INFO]: Connected to Redis
+2024-09-29T22:09:05.695Z [INFO]: email transporter verified
+2024-09-29T22:09:06.012Z [INFO]: Connected to MongoDB
+2024-09-29T22:09:18.496Z [INFO]: Connected to Redis
+2024-09-29T22:09:22.441Z [INFO]: Connected to Redis
+2024-09-29T22:09:23.005Z [INFO]: email transporter verified
+2024-09-29T22:09:23.547Z [INFO]: Connected to MongoDB
+2024-09-29T22:09:50.601Z [INFO]: Connected to Redis
+2024-09-29T22:09:51.047Z [INFO]: email transporter verified
+2024-09-29T22:09:51.704Z [INFO]: Connected to MongoDB
+2024-09-29T22:10:01.651Z [INFO]: Connected to Redis
+2024-09-29T22:10:02.098Z [INFO]: email transporter verified
+2024-09-29T22:10:02.633Z [INFO]: Connected to MongoDB
+2024-09-29T22:10:12.053Z [INFO]: Connected to Redis
+2024-09-29T22:10:12.511Z [INFO]: email transporter verified
+2024-09-29T22:10:12.807Z [INFO]: Connected to MongoDB
+2024-09-29T22:10:27.681Z [INFO]: Connected to Redis
+2024-09-29T22:10:31.245Z [INFO]: Connected to Redis
+2024-09-29T22:10:31.624Z [INFO]: email transporter verified
+2024-09-29T22:10:31.950Z [INFO]: Connected to MongoDB
+2024-09-29T22:10:44.336Z [INFO]: Connected to Redis
+2024-09-29T22:10:44.671Z [INFO]: email transporter verified
+2024-09-29T22:10:45.081Z [INFO]: Connected to MongoDB
+2024-09-29T22:11:08.068Z [INFO]: Connected to Redis
+2024-09-29T22:11:08.405Z [INFO]: email transporter verified
+2024-09-29T22:11:08.784Z [INFO]: Connected to MongoDB
+2024-09-29T22:11:26.274Z [INFO]: Connected to Redis
+2024-09-29T22:11:26.684Z [INFO]: email transporter verified
+2024-09-29T22:11:32.021Z [INFO]: Connected to MongoDB
+2024-09-29T22:11:45.376Z [INFO]: Connected to Redis
+2024-09-29T22:11:45.707Z [INFO]: email transporter verified
+2024-09-29T22:11:51.726Z [INFO]: Connected to Redis
+2024-09-29T22:11:52.118Z [INFO]: email transporter verified
+2024-09-29T22:11:52.530Z [INFO]: Connected to MongoDB
+2024-09-29T22:11:58.409Z [INFO]: Connected to Redis
+2024-09-29T22:11:58.796Z [INFO]: email transporter verified
+2024-09-29T22:11:59.128Z [INFO]: Connected to MongoDB
+2024-09-29T22:12:14.586Z [INFO]: Connected to Redis
+2024-09-29T22:12:14.899Z [INFO]: email transporter verified
+2024-09-29T22:12:15.251Z [INFO]: Connected to MongoDB
+2024-09-29T22:12:23.459Z [INFO]: Connected to Redis
+2024-09-29T22:12:23.940Z [INFO]: email transporter verified
+2024-09-29T22:12:24.378Z [INFO]: Connected to MongoDB
+2024-09-29T22:12:33.912Z [INFO]: Connected to Redis
+2024-09-29T22:12:34.286Z [INFO]: email transporter verified
+2024-09-29T22:12:34.745Z [INFO]: Connected to MongoDB
+2024-09-29T22:13:26.297Z [INFO]: Connected to Redis
+2024-09-29T22:13:26.715Z [INFO]: email transporter verified
+2024-09-29T22:13:33.399Z [INFO]: Connected to Redis
+2024-09-29T22:13:37.069Z [INFO]: Connected to Redis
+2024-09-29T22:13:40.943Z [INFO]: Connected to Redis
+2024-09-29T22:13:41.455Z [INFO]: email transporter verified
+2024-09-29T22:13:42.088Z [INFO]: Connected to MongoDB
+2024-09-29T22:13:50.017Z [INFO]: Connected to Redis
+2024-09-29T22:13:50.306Z [INFO]: email transporter verified
+2024-09-29T22:13:50.740Z [INFO]: Connected to MongoDB
+2024-09-29T22:13:56.603Z [INFO]: Connected to Redis
+2024-09-29T22:13:56.927Z [INFO]: email transporter verified
+2024-09-29T22:13:57.305Z [INFO]: Connected to MongoDB
+2024-09-29T22:14:01.139Z [INFO]: Connected to Redis
+2024-09-29T22:14:01.820Z [INFO]: email transporter verified
+2024-09-29T22:14:02.005Z [INFO]: Connected to MongoDB
+2024-09-29T22:14:08.963Z [INFO]: Connected to Redis
+2024-09-29T22:14:09.473Z [INFO]: email transporter verified
+2024-09-29T22:14:09.827Z [INFO]: Connected to MongoDB
+2024-09-29T22:14:44.638Z [INFO]: Connected to Redis
+2024-09-29T22:14:45.114Z [INFO]: email transporter verified
+2024-09-29T22:14:45.680Z [INFO]: Connected to MongoDB
+2024-09-29T22:14:52.137Z [INFO]: Connected to Redis
+2024-09-29T22:14:59.211Z [INFO]: Connected to Redis
+2024-09-29T22:14:59.590Z [INFO]: email transporter verified
+2024-09-29T22:15:00.126Z [INFO]: Connected to MongoDB
+2024-09-29T22:15:04.229Z [INFO]: Connected to Redis
+2024-09-29T22:15:04.561Z [INFO]: email transporter verified
+2024-09-29T22:15:08.213Z [INFO]: Connected to Redis
+2024-09-29T22:15:08.648Z [INFO]: email transporter verified
+2024-09-29T22:15:09.074Z [INFO]: Connected to MongoDB
+2024-09-29T22:15:22.599Z [INFO]: Connected to Redis
+2024-09-29T22:15:22.936Z [INFO]: email transporter verified
+2024-09-29T22:15:23.225Z [INFO]: Connected to MongoDB
+2024-09-29T22:15:27.463Z [INFO]: Connected to Redis
+2024-09-29T22:15:34.271Z [INFO]: Connected to Redis
+2024-09-29T22:15:34.841Z [INFO]: email transporter verified
+2024-09-29T22:15:38.907Z [INFO]: Connected to Redis
+2024-09-29T22:15:39.236Z [INFO]: email transporter verified
+2024-09-29T22:15:39.595Z [INFO]: Connected to MongoDB
+2024-09-29T22:15:43.672Z [INFO]: Connected to Redis
+2024-09-29T22:15:44.238Z [INFO]: email transporter verified
+2024-09-29T22:15:49.675Z [INFO]: Connected to Redis
+2024-09-29T22:15:50.196Z [INFO]: email transporter verified
+2024-09-29T22:15:54.988Z [INFO]: Connected to Redis
+2024-09-29T22:15:55.331Z [INFO]: email transporter verified
+2024-09-29T22:15:58.935Z [INFO]: Connected to Redis
+2024-09-29T22:15:59.344Z [INFO]: email transporter verified
+2024-09-29T22:15:59.643Z [INFO]: Connected to MongoDB
+2024-09-29T22:16:04.490Z [INFO]: Connected to Redis
+2024-09-29T22:16:04.881Z [INFO]: email transporter verified
+2024-09-29T22:16:05.223Z [INFO]: Connected to MongoDB
+2024-09-29T22:16:09.677Z [INFO]: Connected to Redis
+2024-09-29T22:16:10.071Z [INFO]: email transporter verified
+2024-09-29T22:16:17.740Z [INFO]: Connected to Redis
+2024-09-29T22:16:18.313Z [INFO]: email transporter verified
+2024-09-29T22:16:41.696Z [INFO]: Connected to Redis
+2024-09-29T22:16:42.042Z [INFO]: email transporter verified
+2024-09-29T22:16:42.397Z [INFO]: Connected to MongoDB
+2024-09-29T22:16:47.629Z [INFO]: Connected to Redis
+2024-09-29T22:16:47.929Z [INFO]: email transporter verified
+2024-09-29T22:16:48.355Z [INFO]: Connected to MongoDB
+2024-09-29T22:17:00.647Z [INFO]: Connected to Redis
+2024-09-29T22:17:01.132Z [INFO]: email transporter verified
+2024-09-29T22:17:01.536Z [INFO]: Connected to MongoDB
+2024-09-29T22:17:09.133Z [INFO]: Connected to Redis
+2024-09-29T22:17:09.609Z [INFO]: email transporter verified
+2024-09-29T22:17:09.875Z [INFO]: Connected to MongoDB
+2024-09-29T22:17:34.016Z [INFO]: Connected to Redis
+2024-09-29T22:17:34.356Z [INFO]: email transporter verified
+2024-09-29T22:17:42.907Z [INFO]: Connected to Redis
+2024-09-29T22:17:43.298Z [INFO]: email transporter verified
+2024-09-29T22:17:48.797Z [INFO]: Connected to MongoDB
+2024-09-29T22:17:59.250Z [INFO]: Connected to Redis
+2024-09-29T22:17:59.610Z [INFO]: email transporter verified
+2024-09-29T22:18:05.297Z [INFO]: Connected to Redis
+2024-09-29T22:18:05.774Z [INFO]: email transporter verified
+2024-09-29T22:18:06.178Z [INFO]: Connected to MongoDB
+2024-09-29T22:18:12.144Z [INFO]: Connected to Redis
+2024-09-29T22:18:12.600Z [INFO]: email transporter verified
+2024-09-29T22:18:17.975Z [INFO]: Connected to MongoDB
+2024-09-29T22:18:21.999Z [INFO]: Connected to Redis
+2024-09-29T22:18:22.374Z [INFO]: email transporter verified
+2024-09-29T22:18:22.709Z [INFO]: Connected to MongoDB
+2024-09-29T22:18:38.246Z [INFO]: Connected to Redis
+2024-09-29T22:18:38.627Z [INFO]: email transporter verified
+2024-09-29T22:18:38.947Z [INFO]: Connected to MongoDB
+2024-09-29T22:18:45.108Z [INFO]: Connected to Redis
+2024-09-29T22:18:45.493Z [INFO]: email transporter verified
+2024-09-29T22:18:45.858Z [INFO]: Connected to MongoDB
+2024-09-29T22:19:27.871Z [INFO]: Connected to Redis
+2024-09-29T22:19:28.275Z [INFO]: email transporter verified
+2024-09-29T22:19:28.665Z [INFO]: Connected to MongoDB
+2024-09-29T22:20:12.008Z [INFO]: Connected to Redis
+2024-09-29T22:20:12.353Z [INFO]: email transporter verified
+2024-09-29T22:20:12.777Z [INFO]: Connected to MongoDB
+2024-09-29T22:20:22.327Z [INFO]: Connected to Redis
+2024-09-29T22:20:22.756Z [INFO]: email transporter verified
+2024-09-29T22:20:23.125Z [INFO]: Connected to MongoDB
+2024-09-29T22:22:11.239Z [INFO]: Connected to Redis
+2024-09-29T22:22:11.572Z [INFO]: email transporter verified
+2024-09-29T22:22:12.011Z [INFO]: Connected to MongoDB
+2024-09-29T22:22:16.264Z [INFO]: Connected to Redis
+2024-09-29T22:22:16.669Z [INFO]: email transporter verified
+2024-09-29T22:22:16.988Z [INFO]: Connected to MongoDB
+2024-09-29T22:22:20.994Z [INFO]: Connected to Redis
+2024-09-29T22:22:21.453Z [INFO]: email transporter verified
+2024-09-29T22:22:25.135Z [INFO]: Connected to Redis
+2024-09-29T22:22:25.649Z [INFO]: email transporter verified
+2024-09-29T22:22:25.842Z [INFO]: Connected to MongoDB
+2024-09-29T22:22:31.370Z [INFO]: Connected to Redis
+2024-09-29T22:22:31.714Z [INFO]: email transporter verified
+2024-09-29T22:22:36.823Z [INFO]: Connected to Redis
+2024-09-29T22:22:37.212Z [INFO]: email transporter verified
+2024-09-29T22:22:37.540Z [INFO]: Connected to MongoDB
+2024-09-29T22:22:50.892Z [INFO]: Connected to Redis
+2024-09-29T22:22:51.260Z [INFO]: email transporter verified
+2024-09-29T22:22:51.603Z [INFO]: Connected to MongoDB
+2024-09-29T22:23:02.527Z [INFO]: Connected to Redis
+2024-09-29T22:23:02.920Z [INFO]: email transporter verified
+2024-09-29T22:23:03.247Z [INFO]: Connected to MongoDB
+2024-09-29T22:23:14.643Z [INFO]: Connected to Redis
+2024-09-29T22:23:15.031Z [INFO]: email transporter verified
+2024-09-29T22:23:21.116Z [INFO]: Connected to Redis
+2024-09-29T22:23:27.411Z [INFO]: Connected to Redis
+2024-09-29T22:23:27.821Z [INFO]: email transporter verified
+2024-09-29T22:23:28.174Z [INFO]: Connected to MongoDB
+2024-09-29T22:23:38.710Z [INFO]: Connected to Redis
+2024-09-29T22:23:39.106Z [INFO]: email transporter verified
+2024-09-29T22:23:39.394Z [INFO]: Connected to MongoDB
+2024-09-29T22:23:47.109Z [INFO]: Connected to Redis
+2024-09-29T22:23:47.627Z [INFO]: email transporter verified
+2024-09-29T22:23:47.893Z [INFO]: Connected to MongoDB
+2024-09-29T22:23:55.423Z [INFO]: Connected to Redis
+2024-09-29T22:23:55.747Z [INFO]: email transporter verified
+2024-09-29T22:23:56.105Z [INFO]: Connected to MongoDB
+2024-09-29T22:24:05.432Z [INFO]: Connected to Redis
+2024-09-29T22:24:05.796Z [INFO]: email transporter verified
+2024-09-29T22:24:06.147Z [INFO]: Connected to MongoDB
+2024-09-29T22:24:55.181Z [INFO]: Connected to Redis
+2024-09-29T22:24:55.575Z [INFO]: email transporter verified
+2024-09-29T22:24:55.902Z [INFO]: Connected to MongoDB
+2024-09-29T22:25:00.527Z [INFO]: Connected to Redis
+2024-09-29T22:25:00.914Z [INFO]: email transporter verified
+2024-09-29T22:25:01.234Z [INFO]: Connected to MongoDB
+2024-09-29T22:25:05.318Z [INFO]: Connected to Redis
+2024-09-29T22:25:05.714Z [INFO]: email transporter verified
+2024-09-29T22:25:06.082Z [INFO]: Connected to MongoDB
+2024-09-29T22:25:14.097Z [INFO]: Connected to Redis
+2024-09-29T22:25:14.428Z [INFO]: email transporter verified
+2024-09-29T22:25:14.782Z [INFO]: Connected to MongoDB
+2024-09-29T22:25:22.083Z [INFO]: Connected to Redis
+2024-09-29T22:25:22.483Z [INFO]: email transporter verified
+2024-09-29T22:25:27.793Z [INFO]: Connected to Redis
+2024-09-29T22:25:28.175Z [INFO]: email transporter verified
+2024-09-29T22:25:28.639Z [INFO]: Connected to MongoDB
+2024-09-29T22:27:21.772Z [INFO]: Connected to Redis
+2024-09-29T22:27:22.150Z [INFO]: email transporter verified
+2024-09-29T22:27:22.450Z [INFO]: Connected to MongoDB
+2024-09-29T22:28:07.842Z [INFO]: Connected to Redis
+2024-09-29T22:28:08.178Z [INFO]: email transporter verified
+2024-09-29T22:28:08.623Z [INFO]: Connected to MongoDB
+2024-09-29T22:28:25.341Z [INFO]: Connected to Redis
+2024-09-29T22:28:25.777Z [INFO]: email transporter verified
+2024-09-29T22:28:26.206Z [INFO]: Connected to MongoDB
+2024-09-29T22:28:36.176Z [INFO]: Connected to Redis
+2024-09-29T22:28:36.569Z [INFO]: email transporter verified
+2024-09-29T22:28:36.896Z [INFO]: Connected to MongoDB
+2024-09-29T22:28:51.624Z [INFO]: Connected to Redis
+2024-09-29T22:28:51.962Z [INFO]: email transporter verified
+2024-09-29T22:28:52.398Z [INFO]: Connected to MongoDB
+2024-09-29T22:29:33.181Z [INFO]: Connected to Redis
+2024-09-29T22:29:33.587Z [INFO]: email transporter verified
+2024-09-29T22:29:34.306Z [INFO]: Connected to MongoDB
+2024-09-29T22:29:41.532Z [INFO]: Connected to Redis
+2024-09-29T22:29:41.974Z [INFO]: email transporter verified
+2024-09-29T22:29:42.239Z [INFO]: Connected to MongoDB
+2024-09-29T22:29:56.179Z [INFO]: Connected to Redis
+2024-09-29T22:29:56.547Z [INFO]: email transporter verified
+2024-09-29T22:29:56.875Z [INFO]: Connected to MongoDB
+2024-09-29T22:30:33.361Z [INFO]: Connected to Redis
+2024-09-29T22:30:33.718Z [INFO]: email transporter verified
+2024-09-29T22:30:34.337Z [INFO]: Connected to MongoDB
+2024-09-29T22:30:47.075Z [INFO]: Connected to Redis
+2024-09-29T22:30:47.455Z [INFO]: email transporter verified
+2024-09-29T22:30:47.844Z [INFO]: Connected to MongoDB
+2024-09-29T22:31:07.813Z [INFO]: Connected to Redis
+2024-09-29T22:31:08.172Z [INFO]: email transporter verified
+2024-09-29T22:31:08.514Z [INFO]: Connected to MongoDB
+2024-09-29T22:31:15.986Z [INFO]: Connected to Redis
+2024-09-29T22:31:16.404Z [INFO]: email transporter verified
+2024-09-29T22:31:16.731Z [INFO]: Connected to MongoDB
+2024-09-29T22:31:23.987Z [INFO]: Connected to Redis
+2024-09-29T22:31:24.319Z [INFO]: email transporter verified
+2024-09-29T22:31:24.744Z [INFO]: Connected to MongoDB
+2024-09-29T22:31:30.060Z [INFO]: Connected to Redis
+2024-09-29T22:31:30.440Z [INFO]: email transporter verified
+2024-09-29T22:31:30.785Z [INFO]: Connected to MongoDB
+2024-09-29T22:31:37.489Z [INFO]: Connected to Redis
+2024-09-29T22:31:38.170Z [INFO]: email transporter verified
+2024-09-29T22:31:38.387Z [INFO]: Connected to MongoDB
+2024-09-29T22:31:46.014Z [INFO]: Connected to Redis
+2024-09-29T22:31:46.426Z [INFO]: email transporter verified
+2024-09-29T22:31:46.709Z [INFO]: Connected to MongoDB
+2024-09-29T22:32:21.460Z [INFO]: Connected to Redis
+2024-09-29T22:32:21.738Z [INFO]: email transporter verified
+2024-09-29T22:32:22.054Z [INFO]: Connected to MongoDB
+2024-09-29T22:32:26.431Z [INFO]: Connected to Redis
+2024-09-29T22:32:26.815Z [INFO]: email transporter verified
+2024-09-29T22:32:27.146Z [INFO]: Connected to MongoDB
+2024-09-29T22:32:43.995Z [INFO]: Connected to Redis
+2024-09-29T22:32:44.321Z [INFO]: email transporter verified
+2024-09-29T22:32:44.690Z [INFO]: Connected to MongoDB
+2024-09-29T22:32:57.807Z [INFO]: Connected to Redis
+2024-09-29T22:32:58.260Z [INFO]: email transporter verified
+2024-09-29T22:32:58.538Z [INFO]: Connected to MongoDB
+2024-09-29T22:33:04.650Z [INFO]: Connected to Redis
+2024-09-29T22:33:04.989Z [INFO]: email transporter verified
+2024-09-29T22:33:19.215Z [INFO]: Connected to Redis
+2024-09-29T22:33:19.623Z [INFO]: email transporter verified
+2024-09-29T22:33:19.952Z [INFO]: Connected to MongoDB
+2024-09-29T22:33:33.322Z [INFO]: Connected to Redis
+2024-09-29T22:33:33.643Z [INFO]: email transporter verified
+2024-09-29T22:33:40.100Z [INFO]: Connected to Redis
+2024-09-29T22:33:40.490Z [INFO]: email transporter verified
+2024-09-29T22:33:40.956Z [INFO]: Connected to MongoDB
+2024-09-29T22:33:44.939Z [INFO]: Connected to Redis
+2024-09-30T00:17:10.751Z [INFO]: Connected to Redis
+2024-09-30T00:17:11.057Z [INFO]: email transporter verified
+2024-09-30T00:17:11.575Z [INFO]: Connected to MongoDB
+2024-09-30T00:17:44.459Z [ERROR]: expired token or invalid
+Error: expired token or invalid
+    at D:\cours node.js\My-Github\E-Learning-API\src\middlewares\authentication.middleware.ts:17:34
+    at Generator.next (<anonymous>)
+    at D:\cours node.js\My-Github\E-Learning-API\src\middlewares\authentication.middleware.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (D:\cours node.js\My-Github\E-Learning-API\src\middlewares\authentication.middleware.ts:4:12)
+    at authenticationMiddleware (D:\cours node.js\My-Github\E-Learning-API\src\middlewares\authentication.middleware.ts:10:82)
+    at Layer.handle [as handle_request] (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\index.js:328:13)
+    at D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\index.js:346:12)
+2024-09-30T00:18:00.801Z [ERROR]: unauthorized error
+Error: unauthorized error
+    at D:\cours node.js\My-Github\E-Learning-API\src\guards\isAuthorized.guard.ts:10:25
+    at Generator.next (<anonymous>)
+    at D:\cours node.js\My-Github\E-Learning-API\src\guards\isAuthorized.guard.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (D:\cours node.js\My-Github\E-Learning-API\src\guards\isAuthorized.guard.ts:4:12)
+    at D:\cours node.js\My-Github\E-Learning-API\src\guards\isAuthorized.guard.ts:7:30
+    at Layer.handle [as handle_request] (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\route.js:149:13)
+    at D:\cours node.js\My-Github\E-Learning-API\src\guards\isAuthenticated.guard.ts:7:5
+    at Generator.next (<anonymous>)
+2024-09-30T00:19:09.093Z [ERROR]: Course not found
+Error: Course not found
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\quiz\createQuiz.controller.ts:20:34
+    at Generator.next (<anonymous>)
+    at fulfilled (D:\cours node.js\My-Github\E-Learning-API\src\controllers\quiz\createQuiz.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-09-30T00:19:51.275Z [INFO]: Connected to Redis
+2024-09-30T00:19:51.682Z [INFO]: email transporter verified
+2024-09-30T00:19:52.170Z [INFO]: Connected to MongoDB
+2024-09-30T00:19:52.267Z [ERROR]: validation error
+Error: validation error
+    at validatorMiddleware (D:\cours node.js\My-Github\E-Learning-API\src\middlewares\validator.middleware.ts:12:40)
+    at Layer.handle [as handle_request] (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\route.js:149:13)
+    at middleware (D:\cours node.js\My-Github\E-Learning-API\node_modules\express-validator\lib\middlewares\check.js:16:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-09-30T00:24:54.379Z [INFO]: Connected to Redis
+2024-09-30T00:24:55.196Z [INFO]: email transporter verified
+2024-09-30T00:24:55.667Z [INFO]: Connected to MongoDB
+2024-09-30T00:25:34.802Z [INFO]: Connected to Redis
+2024-09-30T00:25:35.196Z [INFO]: email transporter verified
+2024-09-30T00:25:35.817Z [INFO]: Connected to MongoDB
+2024-09-30T00:25:44.037Z [INFO]: Connected to Redis
+2024-09-30T00:25:44.432Z [INFO]: email transporter verified
+2024-09-30T00:25:44.794Z [INFO]: Connected to MongoDB
+2024-09-30T00:31:02.892Z [INFO]: Connected to Redis
+2024-09-30T00:31:04.174Z [INFO]: email transporter verified
+2024-09-30T00:31:04.865Z [INFO]: Connected to MongoDB
+2024-09-30T00:31:42.134Z [INFO]: Connected to Redis
+2024-09-30T00:31:42.910Z [INFO]: email transporter verified
+2024-09-30T00:31:43.508Z [INFO]: Connected to MongoDB
+2024-09-30T00:31:59.236Z [INFO]: Connected to Redis
+2024-09-30T00:31:59.896Z [INFO]: email transporter verified
+2024-09-30T00:32:00.519Z [INFO]: Connected to MongoDB
+2024-09-30T00:32:04.085Z [INFO]: Connected to Redis
+2024-09-30T00:32:04.557Z [INFO]: email transporter verified
+2024-09-30T00:32:04.928Z [INFO]: Connected to MongoDB
+2024-09-30T00:32:30.633Z [INFO]: Connected to Redis
+2024-09-30T00:32:30.951Z [INFO]: email transporter verified
+2024-09-30T00:32:31.331Z [INFO]: Connected to MongoDB
+2024-09-30T00:32:49.107Z [INFO]: Connected to Redis
+2024-09-30T00:32:49.464Z [INFO]: email transporter verified
+2024-09-30T00:32:49.791Z [INFO]: Connected to MongoDB
+2024-09-30T00:33:40.997Z [INFO]: Connected to Redis
+2024-09-30T00:33:41.411Z [INFO]: email transporter verified
+2024-09-30T00:33:41.913Z [INFO]: Connected to MongoDB
+2024-09-30T00:33:54.488Z [INFO]: Connected to Redis
+2024-09-30T00:33:54.881Z [INFO]: email transporter verified
+2024-09-30T00:33:55.202Z [INFO]: Connected to MongoDB
+2024-09-30T00:34:12.565Z [INFO]: Connected to Redis
+2024-09-30T00:34:12.898Z [INFO]: email transporter verified
+2024-09-30T00:34:13.249Z [INFO]: Connected to MongoDB
+2024-09-30T00:34:25.298Z [INFO]: Connected to Redis
+2024-09-30T00:34:25.694Z [INFO]: email transporter verified
+2024-09-30T00:34:26.009Z [INFO]: Connected to MongoDB
+2024-09-30T00:36:05.446Z [INFO]: Connected to Redis
+2024-09-30T00:36:05.760Z [INFO]: email transporter verified
+2024-09-30T00:36:06.285Z [INFO]: Connected to MongoDB
+2024-09-30T00:36:32.430Z [INFO]: Connected to Redis
+2024-09-30T00:36:32.785Z [INFO]: email transporter verified
+2024-09-30T00:36:33.170Z [INFO]: Connected to MongoDB
+2024-09-30T00:36:39.195Z [INFO]: Connected to Redis
+2024-09-30T00:36:39.712Z [INFO]: email transporter verified
+2024-09-30T00:36:40.027Z [INFO]: Connected to MongoDB
+2024-09-30T00:37:46.739Z [ERROR]: Schema hasn't been registered for model "question".
+Use mongoose.model(name, schema)
+MissingSchemaError: Schema hasn't been registered for model "question".
+Use mongoose.model(name, schema)
+    at NativeConnection.Connection.model (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\connection.js:1221:13)
+    at _getModelFromConn (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\helpers\populate\getModelsMapForPopulate.js:569:15)
+    at addModelNamesToMap (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\helpers\populate\getModelsMapForPopulate.js:496:17)
+    at getModelsMapForPopulate (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\helpers\populate\getModelsMapForPopulate.js:200:7)
+    at populate (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\model.js:4208:21)
+    at _populate (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\model.js:4168:5)
+    at D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\model.js:4140:5
+    at new Promise (<anonymous>)
+    at Function.populate (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\model.js:4139:10)
+    at model.Query._find (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\query.js:2347:20)
+2024-09-30T00:38:24.787Z [INFO]: Connected to Redis
+2024-09-30T00:38:25.208Z [INFO]: email transporter verified
+2024-09-30T00:38:25.542Z [INFO]: Connected to MongoDB
+2024-09-30T00:38:29.069Z [INFO]: Connected to Redis
+2024-09-30T00:38:29.438Z [INFO]: email transporter verified
+2024-09-30T00:38:29.774Z [INFO]: Connected to MongoDB
+2024-09-30T00:39:56.532Z [ERROR]:  You are not enrolled in this course
+Error:  You are not enrolled in this course
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\quiz\getAllQuizzes.controller.ts:28:47
+    at Generator.next (<anonymous>)
+    at fulfilled (D:\cours node.js\My-Github\E-Learning-API\src\controllers\quiz\getAllQuizzes.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-09-30T00:40:35.625Z [INFO]: Connected to Redis
+2024-09-30T00:40:36.029Z [INFO]: email transporter verified
+2024-09-30T00:40:36.367Z [INFO]: Connected to MongoDB
+2024-09-30T00:41:16.917Z [INFO]: Connected to Redis
+2024-09-30T00:41:17.249Z [INFO]: email transporter verified
+2024-09-30T00:41:17.471Z [INFO]: Connected to MongoDB
+2024-09-30T00:41:21.705Z [INFO]: Connected to Redis
+2024-09-30T00:41:25.903Z [INFO]: Connected to Redis
+2024-09-30T00:41:26.525Z [INFO]: email transporter verified
+2024-09-30T00:41:26.687Z [INFO]: Connected to MongoDB
+2024-09-30T00:41:34.911Z [INFO]: Connected to Redis
+2024-09-30T00:41:35.231Z [INFO]: email transporter verified
+2024-09-30T00:41:56.507Z [INFO]: Connected to Redis
+2024-09-30T00:42:20.346Z [INFO]: Connected to Redis
+2024-09-30T00:42:20.713Z [INFO]: email transporter verified
+2024-09-30T00:42:21.020Z [INFO]: Connected to MongoDB
+2024-09-30T00:43:05.587Z [INFO]: Connected to Redis
+2024-09-30T00:43:05.982Z [INFO]: email transporter verified
+2024-09-30T00:43:09.700Z [INFO]: Connected to Redis
+2024-09-30T00:43:10.150Z [INFO]: email transporter verified
+2024-09-30T00:43:10.426Z [INFO]: Connected to MongoDB
+2024-09-30T00:43:24.393Z [INFO]: Connected to Redis
+2024-09-30T00:43:24.758Z [INFO]: email transporter verified
+2024-09-30T00:43:25.080Z [INFO]: Connected to MongoDB
+2024-09-30T00:45:49.911Z [INFO]: Connected to Redis
+2024-09-30T00:45:50.386Z [INFO]: email transporter verified
+2024-09-30T00:45:50.716Z [INFO]: Connected to MongoDB
+2024-09-30T00:46:09.737Z [INFO]: Connected to Redis
+2024-09-30T00:46:10.193Z [INFO]: email transporter verified
+2024-09-30T00:46:10.424Z [INFO]: Connected to MongoDB
+2024-09-30T00:46:45.956Z [INFO]: Connected to Redis
+2024-09-30T00:46:46.213Z [INFO]: email transporter verified
+2024-09-30T00:46:46.577Z [INFO]: Connected to MongoDB
+2024-09-30T00:47:37.497Z [INFO]: Connected to Redis
+2024-09-30T00:47:37.933Z [INFO]: email transporter verified
+2024-09-30T00:47:38.262Z [INFO]: Connected to MongoDB
+2024-09-30T00:48:00.935Z [INFO]: Connected to Redis
+2024-09-30T00:48:01.267Z [INFO]: email transporter verified
+2024-09-30T00:48:01.781Z [INFO]: Connected to MongoDB
+2024-09-30T00:49:00.801Z [INFO]: Connected to Redis
+2024-09-30T00:49:01.227Z [INFO]: email transporter verified
+2024-09-30T00:49:01.669Z [INFO]: Connected to MongoDB
+2024-09-30T00:49:22.407Z [INFO]: Connected to Redis
+2024-09-30T00:49:23.007Z [INFO]: email transporter verified
+2024-09-30T00:49:23.324Z [INFO]: Connected to MongoDB
+2024-09-30T00:49:28.392Z [INFO]: Connected to Redis
+2024-09-30T00:49:28.790Z [INFO]: email transporter verified
+2024-09-30T00:49:29.383Z [INFO]: Connected to MongoDB
+2024-09-30T00:49:40.530Z [INFO]: Connected to Redis
+2024-09-30T00:49:40.851Z [INFO]: email transporter verified
+2024-09-30T00:49:41.175Z [INFO]: Connected to MongoDB
+2024-09-30T00:49:46.668Z [INFO]: Connected to Redis
+2024-09-30T00:49:47.130Z [INFO]: email transporter verified
+2024-09-30T00:49:47.509Z [INFO]: Connected to MongoDB
+2024-09-30T00:50:09.295Z [INFO]: Connected to Redis
+2024-09-30T00:50:09.711Z [INFO]: email transporter verified
+2024-09-30T00:50:10.234Z [INFO]: Connected to MongoDB
+2024-09-30T00:50:51.470Z [INFO]: Connected to Redis
+2024-09-30T00:50:51.827Z [INFO]: email transporter verified
+2024-09-30T00:50:52.304Z [INFO]: Connected to MongoDB
+2024-09-30T00:51:04.166Z [INFO]: Connected to Redis
+2024-09-30T00:51:08.049Z [INFO]: Connected to Redis
+2024-09-30T00:51:08.398Z [INFO]: email transporter verified
+2024-09-30T00:51:08.717Z [INFO]: Connected to MongoDB
+2024-09-30T00:51:53.949Z [INFO]: Connected to Redis
+2024-09-30T00:51:54.185Z [INFO]: email transporter verified
+2024-09-30T00:51:54.589Z [INFO]: Connected to MongoDB
+2024-09-30T00:52:22.057Z [INFO]: Connected to Redis
+2024-09-30T00:52:22.461Z [INFO]: email transporter verified
+2024-09-30T00:52:22.820Z [INFO]: Connected to MongoDB
+2024-09-30T00:53:07.822Z [INFO]: Connected to Redis
+2024-09-30T00:53:08.201Z [INFO]: email transporter verified
+2024-09-30T00:53:08.530Z [INFO]: Connected to MongoDB
+2024-09-30T00:53:12.671Z [INFO]: Connected to Redis
+2024-09-30T00:53:13.139Z [INFO]: email transporter verified
+2024-09-30T00:53:13.388Z [INFO]: Connected to MongoDB
+2024-09-30T00:53:38.576Z [INFO]: Connected to Redis
+2024-09-30T00:53:38.926Z [INFO]: email transporter verified
+2024-09-30T00:53:39.253Z [INFO]: Connected to MongoDB
+2024-09-30T00:53:52.750Z [ERROR]: validation error
+Error: validation error
+    at validatorMiddleware (D:\cours node.js\My-Github\E-Learning-API\src\middlewares\validator.middleware.ts:12:40)
+    at Layer.handle [as handle_request] (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\route.js:149:13)
+    at middleware (D:\cours node.js\My-Github\E-Learning-API\node_modules\express-validator\lib\middlewares\check.js:16:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-09-30T00:54:43.183Z [ERROR]: validation error
+Error: validation error
+    at validatorMiddleware (D:\cours node.js\My-Github\E-Learning-API\src\middlewares\validator.middleware.ts:12:40)
+    at Layer.handle [as handle_request] (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\route.js:149:13)
+    at middleware (D:\cours node.js\My-Github\E-Learning-API\node_modules\express-validator\lib\middlewares\check.js:16:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-09-30T00:54:43.591Z [ERROR]: validation error
+Error: validation error
+    at validatorMiddleware (D:\cours node.js\My-Github\E-Learning-API\src\middlewares\validator.middleware.ts:12:40)
+    at Layer.handle [as handle_request] (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\route.js:149:13)
+    at middleware (D:\cours node.js\My-Github\E-Learning-API\node_modules\express-validator\lib\middlewares\check.js:16:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-09-30T00:54:46.000Z [ERROR]: validation error
+Error: validation error
+    at validatorMiddleware (D:\cours node.js\My-Github\E-Learning-API\src\middlewares\validator.middleware.ts:12:40)
+    at Layer.handle [as handle_request] (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\route.js:149:13)
+    at middleware (D:\cours node.js\My-Github\E-Learning-API\node_modules\express-validator\lib\middlewares\check.js:16:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-09-30T00:54:58.384Z [ERROR]: Course not found
+Error: Course not found
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\quiz\updateQuiz.controller.ts:38:38
+    at Generator.next (<anonymous>)
+    at fulfilled (D:\cours node.js\My-Github\E-Learning-API\src\controllers\quiz\updateQuiz.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-09-30T00:55:40.266Z [ERROR]: Course is same as previous
+Error: Course is same as previous
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\quiz\updateQuiz.controller.ts:40:80
+    at Generator.next (<anonymous>)
+    at fulfilled (D:\cours node.js\My-Github\E-Learning-API\src\controllers\quiz\updateQuiz.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-09-30T00:55:49.153Z [ERROR]: Unauthorized instructor
+Error: Unauthorized instructor
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\quiz\updateQuiz.controller.ts:41:79
+    at Generator.next (<anonymous>)
+    at fulfilled (D:\cours node.js\My-Github\E-Learning-API\src\controllers\quiz\updateQuiz.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-09-30T00:56:43.759Z [INFO]: Connected to Redis
+2024-09-30T00:56:44.141Z [INFO]: email transporter verified
+2024-09-30T00:56:44.538Z [INFO]: Connected to MongoDB
+2024-09-30T00:56:49.746Z [INFO]: Connected to Redis
+2024-09-30T00:56:50.135Z [INFO]: email transporter verified
+2024-09-30T00:56:50.453Z [INFO]: Connected to MongoDB
+2024-09-30T00:58:01.194Z [INFO]: Connected to Redis
+2024-09-30T00:58:01.552Z [INFO]: email transporter verified
+2024-09-30T00:58:01.906Z [INFO]: Connected to MongoDB
+2024-09-30T00:58:13.864Z [INFO]: Connected to Redis
+2024-09-30T00:58:14.255Z [INFO]: email transporter verified
+2024-09-30T00:58:14.606Z [INFO]: Connected to MongoDB
+2024-09-30T00:58:27.779Z [INFO]: Connected to Redis
+2024-09-30T00:59:16.866Z [INFO]: Connected to Redis
+2024-09-30T00:59:20.860Z [INFO]: Connected to Redis
+2024-09-30T00:59:21.231Z [INFO]: email transporter verified
+2024-09-30T00:59:21.560Z [INFO]: Connected to MongoDB
+2024-09-30T00:59:39.308Z [INFO]: Connected to Redis
+2024-09-30T00:59:39.756Z [INFO]: email transporter verified
+2024-09-30T00:59:48.204Z [INFO]: Connected to Redis
+2024-09-30T00:59:48.548Z [INFO]: email transporter verified
+2024-09-30T00:59:48.907Z [INFO]: Connected to MongoDB
+2024-09-30T01:00:05.257Z [INFO]: Connected to Redis
+2024-09-30T01:00:05.622Z [INFO]: email transporter verified
+2024-09-30T01:00:05.954Z [INFO]: Connected to MongoDB
+2024-09-30T01:00:12.695Z [INFO]: Connected to Redis
+2024-09-30T01:00:16.546Z [INFO]: Connected to Redis
+2024-09-30T01:00:16.940Z [INFO]: email transporter verified
+2024-09-30T01:00:22.674Z [INFO]: Connected to Redis
+2024-09-30T01:00:23.010Z [INFO]: email transporter verified
+2024-09-30T01:00:23.418Z [INFO]: Connected to MongoDB
+2024-09-30T01:00:28.795Z [INFO]: Connected to Redis
+2024-09-30T01:00:29.193Z [INFO]: email transporter verified
+2024-09-30T01:00:29.524Z [INFO]: Connected to MongoDB
+2024-09-30T01:00:43.450Z [INFO]: Connected to Redis
+2024-09-30T01:00:43.885Z [INFO]: email transporter verified
+2024-09-30T01:00:44.255Z [INFO]: Connected to MongoDB
+2024-09-30T01:00:51.034Z [INFO]: Connected to Redis
+2024-09-30T01:00:51.472Z [INFO]: email transporter verified
+2024-09-30T01:00:51.755Z [INFO]: Connected to MongoDB
+2024-09-30T01:00:57.077Z [INFO]: Connected to Redis
+2024-09-30T01:00:57.425Z [INFO]: email transporter verified
+2024-09-30T01:00:57.808Z [INFO]: Connected to MongoDB
+2024-09-30T01:01:11.801Z [INFO]: Connected to Redis
+2024-09-30T01:01:12.199Z [INFO]: email transporter verified
+2024-09-30T01:01:12.508Z [INFO]: Connected to MongoDB
+2024-09-30T01:01:24.278Z [INFO]: Connected to Redis
+2024-09-30T01:01:24.703Z [INFO]: email transporter verified
+2024-09-30T01:01:25.104Z [INFO]: Connected to MongoDB
+2024-09-30T01:01:45.039Z [INFO]: Connected to Redis
+2024-09-30T01:01:45.460Z [INFO]: email transporter verified
+2024-09-30T01:01:45.689Z [INFO]: Connected to MongoDB
+2024-09-30T01:01:49.797Z [INFO]: Connected to Redis
+2024-09-30T01:01:50.195Z [INFO]: email transporter verified
+2024-09-30T01:01:50.497Z [INFO]: Connected to MongoDB
+2024-09-30T01:02:11.202Z [INFO]: Connected to Redis
+2024-09-30T01:02:11.567Z [INFO]: email transporter verified
+2024-09-30T01:02:11.887Z [INFO]: Connected to MongoDB
+2024-09-30T01:02:16.997Z [INFO]: Connected to Redis
+2024-09-30T01:02:17.337Z [INFO]: email transporter verified
+2024-09-30T01:02:17.677Z [INFO]: Connected to MongoDB
+2024-09-30T01:02:36.554Z [INFO]: Connected to Redis
+2024-09-30T01:02:36.931Z [INFO]: email transporter verified
+2024-09-30T01:02:37.284Z [INFO]: Connected to MongoDB
+2024-09-30T01:03:00.813Z [INFO]: Connected to Redis
+2024-09-30T01:03:01.164Z [INFO]: email transporter verified
+2024-09-30T01:03:01.430Z [INFO]: Connected to MongoDB
+2024-09-30T01:03:16.137Z [INFO]: Connected to Redis
+2024-09-30T01:03:19.743Z [INFO]: Connected to Redis
+2024-09-30T01:03:20.134Z [INFO]: email transporter verified
+2024-09-30T01:03:20.452Z [INFO]: Connected to MongoDB
+2024-09-30T01:03:35.773Z [INFO]: Connected to Redis
+2024-09-30T01:03:36.129Z [INFO]: email transporter verified
+2024-09-30T01:03:36.557Z [INFO]: Connected to MongoDB
+2024-09-30T01:04:44.668Z [INFO]: Connected to Redis
+2024-09-30T01:04:45.081Z [INFO]: email transporter verified
+2024-09-30T01:04:45.507Z [INFO]: Connected to MongoDB
+2024-09-30T01:05:03.141Z [INFO]: Connected to Redis
+2024-09-30T01:05:03.597Z [INFO]: email transporter verified
+2024-09-30T01:05:03.857Z [INFO]: Connected to MongoDB
+2024-09-30T01:05:52.506Z [ERROR]: Quiz not found
+Error: Quiz not found
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\quiz\confirmDeleteQuiz.controller.ts:22:32
+    at Generator.next (<anonymous>)
+    at fulfilled (D:\cours node.js\My-Github\E-Learning-API\src\controllers\quiz\confirmDeleteQuiz.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-09-30T01:10:25.806Z [INFO]: Connected to Redis
+2024-09-30T01:10:26.158Z [INFO]: email transporter verified
+2024-09-30T01:10:34.530Z [INFO]: Connected to Redis
+2024-09-30T01:10:35.051Z [INFO]: email transporter verified
+2024-09-30T01:10:35.465Z [INFO]: Connected to MongoDB
+2024-09-30T01:13:20.713Z [INFO]: Connected to Redis
+2024-09-30T01:13:21.058Z [INFO]: email transporter verified
+2024-09-30T01:13:34.163Z [INFO]: Connected to Redis
+2024-09-30T01:13:34.604Z [INFO]: email transporter verified
+2024-09-30T01:13:35.206Z [INFO]: Connected to MongoDB
+2024-09-30T01:13:53.447Z [INFO]: Connected to Redis
+2024-09-30T01:13:53.788Z [INFO]: email transporter verified
+2024-09-30T01:13:54.126Z [INFO]: Connected to MongoDB
+2024-09-30T01:14:31.333Z [INFO]: Connected to Redis
+2024-09-30T01:14:31.899Z [INFO]: email transporter verified
+2024-09-30T01:14:42.586Z [INFO]: Connected to Redis
+2024-09-30T01:14:43.049Z [INFO]: email transporter verified
+2024-09-30T01:14:43.543Z [INFO]: Connected to MongoDB
+2024-09-30T01:15:01.407Z [INFO]: Connected to Redis
+2024-09-30T01:15:01.756Z [INFO]: email transporter verified
+2024-09-30T01:15:02.265Z [INFO]: Connected to MongoDB
+2024-09-30T01:15:11.453Z [INFO]: Connected to Redis
+2024-09-30T01:15:11.996Z [INFO]: email transporter verified
+2024-09-30T01:15:17.037Z [INFO]: Connected to MongoDB
+2024-09-30T01:15:23.011Z [INFO]: Connected to Redis
+2024-09-30T01:15:23.457Z [INFO]: email transporter verified
+2024-09-30T01:15:23.709Z [INFO]: Connected to MongoDB
+2024-09-30T01:16:19.926Z [ERROR]: Quiz not found
+Error: Quiz not found
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\quiz\confirmDeleteQuiz.controller.ts:22:32
+    at Generator.next (<anonymous>)
+    at fulfilled (D:\cours node.js\My-Github\E-Learning-API\src\controllers\quiz\confirmDeleteQuiz.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-09-30T01:16:40.686Z [ERROR]: Invalid verification code
+Error: Invalid verification code
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\quiz\confirmDeleteQuiz.controller.ts:33:25
+    at Generator.next (<anonymous>)
+    at fulfilled (D:\cours node.js\My-Github\E-Learning-API\src\controllers\quiz\confirmDeleteQuiz.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-09-30T01:17:22.832Z [INFO]: Connected to Redis
+2024-09-30T01:17:23.101Z [INFO]: email transporter verified
+2024-09-30T01:17:23.502Z [INFO]: Connected to MongoDB
+2024-09-30T01:18:02.013Z [INFO]: Connected to Redis
+2024-09-30T01:18:02.346Z [INFO]: email transporter verified
+2024-09-30T01:18:02.786Z [INFO]: Connected to MongoDB
+2024-09-30T01:19:15.789Z [INFO]: Connected to Redis
+2024-09-30T01:19:16.214Z [INFO]: email transporter verified
+2024-09-30T01:19:16.668Z [INFO]: Connected to MongoDB
+2024-09-30T01:19:41.221Z [INFO]: Connected to Redis
+2024-09-30T01:19:41.569Z [INFO]: email transporter verified
+2024-09-30T01:19:41.952Z [INFO]: Connected to MongoDB
+2024-09-30T01:19:46.660Z [INFO]: Connected to Redis
+2024-09-30T01:19:47.027Z [INFO]: email transporter verified
+2024-09-30T01:19:47.502Z [INFO]: Connected to MongoDB
+2024-09-30T01:19:54.560Z [INFO]: Connected to Redis
+2024-09-30T01:19:54.951Z [INFO]: email transporter verified
+2024-09-30T01:20:00.240Z [INFO]: Connected to Redis
+2024-09-30T01:20:00.597Z [INFO]: email transporter verified
+2024-09-30T01:20:00.959Z [INFO]: Connected to MongoDB
+2024-09-30T01:21:23.175Z [INFO]: Connected to Redis
+2024-09-30T01:21:23.584Z [INFO]: email transporter verified
+2024-09-30T01:21:23.978Z [INFO]: Connected to MongoDB
+2024-09-30T01:21:46.431Z [INFO]: Connected to Redis
+2024-09-30T01:21:46.866Z [INFO]: email transporter verified
+2024-09-30T01:21:47.309Z [INFO]: Connected to MongoDB
+2024-09-30T01:21:51.026Z [INFO]: Connected to Redis
+2024-09-30T01:21:51.399Z [INFO]: email transporter verified
+2024-09-30T01:21:51.879Z [INFO]: Connected to MongoDB
+2024-09-30T01:21:55.679Z [INFO]: Connected to Redis
+2024-09-30T01:21:56.035Z [INFO]: email transporter verified
+2024-09-30T01:21:56.345Z [INFO]: Connected to MongoDB
+2024-09-30T01:22:02.987Z [INFO]: Connected to Redis
+2024-09-30T01:22:03.383Z [INFO]: email transporter verified
+2024-09-30T01:22:03.720Z [INFO]: Connected to MongoDB
+2024-09-30T01:22:18.346Z [INFO]: Connected to Redis
+2024-09-30T01:22:18.705Z [INFO]: email transporter verified
+2024-09-30T01:22:19.187Z [INFO]: Connected to MongoDB
+2024-09-30T01:22:37.519Z [INFO]: Connected to Redis
+2024-09-30T01:22:37.851Z [INFO]: email transporter verified
+2024-09-30T01:22:38.274Z [INFO]: Connected to MongoDB
+2024-09-30T01:22:48.468Z [INFO]: Connected to Redis
+2024-09-30T01:22:48.981Z [INFO]: email transporter verified
+2024-09-30T01:22:49.319Z [INFO]: Connected to MongoDB
+2024-09-30T01:22:56.008Z [ERROR]: Quiz not found
+Error: Quiz not found
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\question\createQuestion.controller.ts:20:32
+    at Generator.next (<anonymous>)
+    at fulfilled (D:\cours node.js\My-Github\E-Learning-API\src\controllers\question\createQuestion.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-09-30T01:23:17.218Z [INFO]: Connected to Redis
+2024-09-30T01:23:17.560Z [INFO]: email transporter verified
+2024-09-30T01:23:17.894Z [INFO]: Connected to MongoDB
+2024-09-30T01:23:37.617Z [INFO]: Connected to Redis
+2024-09-30T01:23:37.991Z [INFO]: email transporter verified
+2024-09-30T01:23:38.318Z [INFO]: Connected to MongoDB
+2024-09-30T01:23:47.415Z [INFO]: Connected to Redis
+2024-09-30T01:23:47.758Z [INFO]: email transporter verified
+2024-09-30T01:23:48.267Z [INFO]: Connected to MongoDB
+2024-09-30T01:23:54.109Z [INFO]: Connected to Redis
+2024-09-30T01:23:54.553Z [INFO]: email transporter verified
+2024-09-30T01:23:54.825Z [INFO]: Connected to MongoDB
+2024-09-30T01:25:35.551Z [INFO]: Connected to Redis
+2024-09-30T01:25:35.983Z [INFO]: email transporter verified
+2024-09-30T01:25:36.476Z [INFO]: Connected to MongoDB
+2024-09-30T01:25:38.394Z [ERROR]: validation error
+Error: validation error
+    at validatorMiddleware (D:\cours node.js\My-Github\E-Learning-API\src\middlewares\validator.middleware.ts:12:40)
+    at Layer.handle [as handle_request] (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\route.js:149:13)
+    at middleware (D:\cours node.js\My-Github\E-Learning-API\node_modules\express-validator\lib\middlewares\check.js:16:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-09-30T01:27:15.968Z [INFO]: Connected to Redis
+2024-09-30T01:27:16.399Z [INFO]: email transporter verified
+2024-09-30T01:27:16.786Z [INFO]: Connected to MongoDB
+2024-09-30T01:27:26.216Z [ERROR]: validation error
+Error: validation error
+    at validatorMiddleware (D:\cours node.js\My-Github\E-Learning-API\src\middlewares\validator.middleware.ts:12:40)
+    at Layer.handle [as handle_request] (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\route.js:149:13)
+    at middleware (D:\cours node.js\My-Github\E-Learning-API\node_modules\express-validator\lib\middlewares\check.js:16:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-09-30T01:27:37.898Z [ERROR]: validation error
+Error: validation error
+    at validatorMiddleware (D:\cours node.js\My-Github\E-Learning-API\src\middlewares\validator.middleware.ts:12:40)
+    at Layer.handle [as handle_request] (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\route.js:149:13)
+    at middleware (D:\cours node.js\My-Github\E-Learning-API\node_modules\express-validator\lib\middlewares\check.js:16:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-09-30T01:27:56.994Z [ERROR]: validation error
+Error: validation error
+    at validatorMiddleware (D:\cours node.js\My-Github\E-Learning-API\src\middlewares\validator.middleware.ts:12:40)
+    at Layer.handle [as handle_request] (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\route.js:149:13)
+    at middleware (D:\cours node.js\My-Github\E-Learning-API\node_modules\express-validator\lib\middlewares\check.js:16:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-09-30T01:28:54.505Z [INFO]: Connected to Redis
+2024-09-30T01:28:54.863Z [INFO]: email transporter verified
+2024-09-30T01:28:55.296Z [INFO]: Connected to MongoDB
+2024-09-30T01:29:30.999Z [INFO]: Connected to Redis
+2024-09-30T01:29:31.295Z [INFO]: email transporter verified
+2024-09-30T01:29:31.692Z [INFO]: Connected to MongoDB
+2024-09-30T01:29:40.524Z [INFO]: Connected to Redis
+2024-09-30T01:29:40.933Z [INFO]: email transporter verified
+2024-09-30T01:29:41.255Z [INFO]: Connected to MongoDB
+2024-09-30T01:29:56.753Z [INFO]: Connected to Redis
+2024-09-30T01:29:57.195Z [INFO]: email transporter verified
+2024-09-30T01:29:57.497Z [INFO]: Connected to MongoDB
+2024-09-30T01:30:27.080Z [INFO]: Connected to Redis
+2024-09-30T01:30:27.480Z [INFO]: email transporter verified
+2024-09-30T01:30:27.817Z [INFO]: Connected to MongoDB
+2024-09-30T01:33:08.832Z [INFO]: Connected to Redis
+2024-09-30T01:33:09.623Z [INFO]: email transporter verified
+2024-09-30T01:33:10.082Z [INFO]: Connected to MongoDB
+2024-09-30T01:34:19.315Z [INFO]: Connected to Redis
+2024-09-30T01:34:19.651Z [INFO]: email transporter verified
+2024-09-30T01:34:20.253Z [INFO]: Connected to MongoDB
+2024-09-30T01:34:37.328Z [INFO]: Connected to Redis
+2024-09-30T01:34:37.712Z [INFO]: email transporter verified
+2024-09-30T01:34:38.156Z [INFO]: Connected to MongoDB
+2024-09-30T01:34:53.801Z [INFO]: Connected to Redis
+2024-09-30T01:34:54.146Z [INFO]: email transporter verified
+2024-09-30T01:34:54.615Z [INFO]: Connected to MongoDB
+2024-09-30T01:35:45.081Z [INFO]: Connected to Redis
+2024-09-30T01:35:45.474Z [INFO]: email transporter verified
+2024-09-30T01:36:00.509Z [INFO]: Connected to Redis
+2024-09-30T01:36:00.905Z [INFO]: email transporter verified
+2024-09-30T01:36:01.266Z [INFO]: Connected to MongoDB
+2024-09-30T01:38:03.993Z [ERROR]: validation error
+Error: validation error
+    at validatorMiddleware (D:\cours node.js\My-Github\E-Learning-API\src\middlewares\validator.middleware.ts:12:40)
+    at Layer.handle [as handle_request] (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\route.js:149:13)
+    at middleware (D:\cours node.js\My-Github\E-Learning-API\node_modules\express-validator\lib\middlewares\check.js:16:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-09-30T01:38:18.081Z [ERROR]: validation error
+Error: validation error
+    at validatorMiddleware (D:\cours node.js\My-Github\E-Learning-API\src\middlewares\validator.middleware.ts:12:40)
+    at Layer.handle [as handle_request] (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\route.js:149:13)
+    at middleware (D:\cours node.js\My-Github\E-Learning-API\node_modules\express-validator\lib\middlewares\check.js:16:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-09-30T01:39:20.786Z [ERROR]: validation error
+Error: validation error
+    at validatorMiddleware (D:\cours node.js\My-Github\E-Learning-API\src\middlewares\validator.middleware.ts:12:40)
+    at Layer.handle [as handle_request] (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\route.js:149:13)
+    at middleware (D:\cours node.js\My-Github\E-Learning-API\node_modules\express-validator\lib\middlewares\check.js:16:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-09-30T01:39:37.310Z [ERROR]: Unexpected token , in JSON at position 165
+SyntaxError: Unexpected token , in JSON at position 165
+    at JSON.parse (<anonymous>)
+    at parse (D:\cours node.js\My-Github\E-Learning-API\node_modules\body-parser\lib\types\json.js:92:19)
+    at D:\cours node.js\My-Github\E-Learning-API\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:203:9)
+    at invokeCallback (D:\cours node.js\My-Github\E-Learning-API\node_modules\raw-body\index.js:238:16)
+    at done (D:\cours node.js\My-Github\E-Learning-API\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (D:\cours node.js\My-Github\E-Learning-API\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:513:28)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+2024-09-30T01:39:49.255Z [ERROR]: Unexpected token , in JSON at position 195
+SyntaxError: Unexpected token , in JSON at position 195
+    at JSON.parse (<anonymous>)
+    at parse (D:\cours node.js\My-Github\E-Learning-API\node_modules\body-parser\lib\types\json.js:92:19)
+    at D:\cours node.js\My-Github\E-Learning-API\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:203:9)
+    at invokeCallback (D:\cours node.js\My-Github\E-Learning-API\node_modules\raw-body\index.js:238:16)
+    at done (D:\cours node.js\My-Github\E-Learning-API\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (D:\cours node.js\My-Github\E-Learning-API\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:513:28)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+2024-09-30T01:39:50.286Z [ERROR]: Unexpected token , in JSON at position 195
+SyntaxError: Unexpected token , in JSON at position 195
+    at JSON.parse (<anonymous>)
+    at parse (D:\cours node.js\My-Github\E-Learning-API\node_modules\body-parser\lib\types\json.js:92:19)
+    at D:\cours node.js\My-Github\E-Learning-API\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:203:9)
+    at invokeCallback (D:\cours node.js\My-Github\E-Learning-API\node_modules\raw-body\index.js:238:16)
+    at done (D:\cours node.js\My-Github\E-Learning-API\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (D:\cours node.js\My-Github\E-Learning-API\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:513:28)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+2024-09-30T01:40:17.895Z [ERROR]: expired token or invalid
+Error: expired token or invalid
+    at D:\cours node.js\My-Github\E-Learning-API\src\middlewares\authentication.middleware.ts:17:34
+    at Generator.next (<anonymous>)
+    at D:\cours node.js\My-Github\E-Learning-API\src\middlewares\authentication.middleware.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (D:\cours node.js\My-Github\E-Learning-API\src\middlewares\authentication.middleware.ts:4:12)
+    at authenticationMiddleware (D:\cours node.js\My-Github\E-Learning-API\src\middlewares\authentication.middleware.ts:10:82)
+    at Layer.handle [as handle_request] (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\index.js:328:13)
+    at D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\index.js:346:12)
+2024-09-30T01:42:46.389Z [INFO]: Connected to Redis
+2024-09-30T01:42:46.667Z [INFO]: email transporter verified
+2024-09-30T01:42:47.154Z [INFO]: Connected to MongoDB
+2024-09-30T01:42:56.907Z [INFO]: Connected to Redis
+2024-09-30T01:42:57.306Z [INFO]: email transporter verified
+2024-09-30T01:42:57.680Z [INFO]: Connected to MongoDB
+2024-09-30T01:50:14.255Z [INFO]: Connected to Redis
+2024-09-30T01:50:17.849Z [INFO]: Connected to Redis
+2024-09-30T01:50:23.358Z [INFO]: Connected to Redis
+2024-09-30T01:50:23.752Z [INFO]: email transporter verified
+2024-09-30T01:50:24.059Z [INFO]: Connected to MongoDB
+2024-09-30T01:51:12.237Z [INFO]: Connected to Redis
+2024-09-30T01:51:12.569Z [INFO]: email transporter verified
+2024-09-30T01:51:13.072Z [INFO]: Connected to MongoDB
+2024-09-30T01:52:06.872Z [INFO]: Connected to Redis
+2024-09-30T01:52:07.306Z [INFO]: email transporter verified
+2024-09-30T01:52:07.581Z [INFO]: Connected to MongoDB
+2024-09-30T01:52:18.145Z [INFO]: Connected to Redis
+2024-09-30T01:52:18.583Z [INFO]: email transporter verified
+2024-09-30T01:52:18.858Z [INFO]: Connected to MongoDB
+2024-09-30T01:52:45.714Z [INFO]: Connected to Redis
+2024-09-30T01:52:46.066Z [INFO]: email transporter verified
+2024-09-30T01:52:46.404Z [INFO]: Connected to MongoDB
+2024-09-30T01:52:59.355Z [INFO]: Connected to Redis
+2024-09-30T01:52:59.705Z [INFO]: email transporter verified
+2024-09-30T01:53:00.470Z [INFO]: Connected to MongoDB
+2024-09-30T01:54:03.347Z [INFO]: Connected to Redis
+2024-09-30T01:54:03.746Z [INFO]: email transporter verified
+2024-09-30T01:54:04.349Z [INFO]: Connected to MongoDB
+2024-09-30T01:54:12.733Z [INFO]: Connected to Redis
+2024-09-30T01:54:13.121Z [INFO]: email transporter verified
+2024-09-30T01:54:13.579Z [INFO]: Connected to MongoDB
+2024-09-30T01:54:28.464Z [INFO]: Connected to Redis
+2024-09-30T01:54:28.842Z [INFO]: email transporter verified
+2024-09-30T01:54:29.233Z [INFO]: Connected to MongoDB
+2024-09-30T01:56:43.109Z [INFO]: Connected to Redis
+2024-09-30T01:56:43.460Z [INFO]: email transporter verified
+2024-09-30T01:56:43.906Z [INFO]: Connected to MongoDB
+2024-09-30T01:56:53.471Z [INFO]: Connected to Redis
+2024-09-30T01:57:00.326Z [INFO]: Connected to Redis
+2024-09-30T01:57:00.738Z [INFO]: email transporter verified
+2024-09-30T01:57:01.229Z [INFO]: Connected to MongoDB
+2024-09-30T01:57:11.671Z [INFO]: Connected to Redis
+2024-09-30T01:57:25.678Z [INFO]: Connected to Redis
+2024-09-30T01:57:26.019Z [INFO]: email transporter verified
+2024-09-30T01:57:26.324Z [INFO]: Connected to MongoDB
+2024-09-30T01:57:39.214Z [INFO]: Connected to Redis
+2024-09-30T01:57:39.614Z [INFO]: email transporter verified
+2024-09-30T01:57:40.255Z [INFO]: Connected to MongoDB
+2024-09-30T01:57:51.412Z [INFO]: Connected to Redis
+2024-09-30T01:57:51.856Z [INFO]: email transporter verified
+2024-09-30T01:57:52.265Z [INFO]: Connected to MongoDB
+2024-09-30T01:58:50.952Z [INFO]: Connected to Redis
+2024-09-30T01:58:51.290Z [INFO]: email transporter verified
+2024-09-30T01:58:51.690Z [INFO]: Connected to MongoDB
+2024-09-30T01:58:56.756Z [INFO]: Connected to Redis
+2024-09-30T01:59:46.744Z [INFO]: Connected to Redis
+2024-09-30T01:59:47.114Z [INFO]: email transporter verified
+2024-09-30T01:59:47.419Z [INFO]: Connected to MongoDB
+2024-09-30T02:00:21.551Z [INFO]: Connected to Redis
+2024-09-30T02:00:25.177Z [INFO]: Connected to Redis
+2024-09-30T02:00:25.642Z [INFO]: email transporter verified
+2024-09-30T02:00:25.896Z [INFO]: Connected to MongoDB
+2024-09-30T02:00:54.439Z [INFO]: Connected to Redis
+2024-09-30T02:01:00.178Z [INFO]: Connected to Redis
+2024-09-30T02:01:00.570Z [INFO]: email transporter verified
+2024-09-30T02:01:01.196Z [INFO]: Connected to MongoDB
+2024-09-30T02:01:18.950Z [INFO]: Connected to Redis
+2024-09-30T02:01:19.370Z [INFO]: email transporter verified
+2024-09-30T02:01:19.827Z [INFO]: Connected to MongoDB
+2024-09-30T02:02:37.298Z [INFO]: Connected to Redis
+2024-09-30T02:03:26.797Z [INFO]: Connected to Redis
+2024-09-30T02:03:33.115Z [INFO]: Connected to Redis
+2024-09-30T02:03:33.580Z [INFO]: email transporter verified
+2024-09-30T02:03:33.837Z [INFO]: Connected to MongoDB
+2024-09-30T02:06:49.033Z [INFO]: Connected to Redis
+2024-09-30T02:06:49.422Z [INFO]: email transporter verified
+2024-09-30T02:06:50.110Z [INFO]: Connected to MongoDB
+2024-09-30T02:08:29.638Z [INFO]: Connected to Redis
+2024-09-30T02:08:29.995Z [INFO]: email transporter verified
+2024-09-30T02:08:30.658Z [INFO]: Connected to MongoDB
+2024-09-30T02:08:36.581Z [INFO]: Connected to Redis
+2024-09-30T02:08:37.046Z [INFO]: email transporter verified
+2024-09-30T02:08:37.663Z [INFO]: Connected to MongoDB
+2024-09-30T02:08:53.763Z [INFO]: Connected to Redis
+2024-09-30T02:08:54.236Z [INFO]: email transporter verified
+2024-09-30T02:09:11.569Z [INFO]: Connected to Redis
+2024-09-30T02:09:11.951Z [INFO]: email transporter verified
+2024-09-30T02:09:12.218Z [INFO]: Connected to MongoDB
+2024-09-30T02:09:50.765Z [INFO]: Connected to Redis
+2024-09-30T02:09:51.330Z [INFO]: email transporter verified
+2024-09-30T02:09:51.538Z [INFO]: Connected to MongoDB
+2024-09-30T02:10:00.901Z [INFO]: Connected to Redis
+2024-09-30T02:10:01.477Z [INFO]: email transporter verified
+2024-09-30T02:10:01.665Z [INFO]: Connected to MongoDB
+2024-09-30T02:10:02.687Z [ERROR]: validation error
+Error: validation error
+    at validatorMiddleware (D:\cours node.js\My-Github\E-Learning-API\src\middlewares\validator.middleware.ts:12:40)
+    at Layer.handle [as handle_request] (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\route.js:149:13)
+    at middleware (D:\cours node.js\My-Github\E-Learning-API\node_modules\express-validator\lib\middlewares\check.js:16:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-09-30T02:10:20.660Z [ERROR]: validation error
+Error: validation error
+    at validatorMiddleware (D:\cours node.js\My-Github\E-Learning-API\src\middlewares\validator.middleware.ts:12:40)
+    at Layer.handle [as handle_request] (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\route.js:149:13)
+    at middleware (D:\cours node.js\My-Github\E-Learning-API\node_modules\express-validator\lib\middlewares\check.js:16:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-09-30T02:10:25.584Z [ERROR]: validation error
+Error: validation error
+    at validatorMiddleware (D:\cours node.js\My-Github\E-Learning-API\src\middlewares\validator.middleware.ts:12:40)
+    at Layer.handle [as handle_request] (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\route.js:149:13)
+    at middleware (D:\cours node.js\My-Github\E-Learning-API\node_modules\express-validator\lib\middlewares\check.js:16:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-09-30T02:12:11.131Z [INFO]: Connected to Redis
+2024-09-30T02:12:11.524Z [INFO]: email transporter verified
+2024-09-30T02:12:11.921Z [INFO]: Connected to MongoDB
+2024-09-30T02:12:27.504Z [INFO]: Connected to Redis
+2024-09-30T02:12:27.899Z [INFO]: email transporter verified
+2024-09-30T02:12:28.188Z [INFO]: Connected to MongoDB
+2024-09-30T02:12:49.668Z [INFO]: Connected to Redis
+2024-09-30T02:12:50.107Z [INFO]: email transporter verified
+2024-09-30T02:12:55.657Z [INFO]: Connected to MongoDB
+2024-09-30T02:13:03.492Z [ERROR]: validation error
+Error: validation error
+    at validatorMiddleware (D:\cours node.js\My-Github\E-Learning-API\src\middlewares\validator.middleware.ts:12:40)
+    at Layer.handle [as handle_request] (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\route.js:149:13)
+    at middleware (D:\cours node.js\My-Github\E-Learning-API\node_modules\express-validator\lib\middlewares\check.js:16:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-09-30T02:13:07.299Z [ERROR]: validation error
+Error: validation error
+    at validatorMiddleware (D:\cours node.js\My-Github\E-Learning-API\src\middlewares\validator.middleware.ts:12:40)
+    at Layer.handle [as handle_request] (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\route.js:149:13)
+    at middleware (D:\cours node.js\My-Github\E-Learning-API\node_modules\express-validator\lib\middlewares\check.js:16:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-09-30T02:13:32.155Z [INFO]: Connected to Redis
+2024-09-30T02:13:32.436Z [INFO]: email transporter verified
+2024-09-30T02:13:32.923Z [INFO]: Connected to MongoDB
+2024-09-30T02:13:37.942Z [ERROR]: validation error
+Error: validation error
+    at validatorMiddleware (D:\cours node.js\My-Github\E-Learning-API\src\middlewares\validator.middleware.ts:12:40)
+    at Layer.handle [as handle_request] (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\route.js:149:13)
+    at middleware (D:\cours node.js\My-Github\E-Learning-API\node_modules\express-validator\lib\middlewares\check.js:16:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-09-30T02:14:29.340Z [INFO]: Connected to Redis
+2024-09-30T02:14:29.669Z [INFO]: email transporter verified
+2024-09-30T02:14:30.433Z [INFO]: Connected to MongoDB
+2024-09-30T02:15:10.917Z [INFO]: Connected to Redis
+2024-09-30T02:15:11.373Z [INFO]: email transporter verified
+2024-09-30T02:15:11.816Z [INFO]: Connected to MongoDB
+2024-09-30T02:15:12.782Z [ERROR]: Question text is same as previous
+Error: Question text is same as previous
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\question\updateQuestion.controller.ts:29:69
+    at Generator.next (<anonymous>)
+    at fulfilled (D:\cours node.js\My-Github\E-Learning-API\src\controllers\question\updateQuestion.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-09-30T02:16:54.029Z [ERROR]: Correct option is not in options
+Error: Correct option is not in options
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\question\updateQuestion.controller.ts:39:72
+    at Generator.next (<anonymous>)
+    at fulfilled (D:\cours node.js\My-Github\E-Learning-API\src\controllers\question\updateQuestion.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-09-30T02:17:23.502Z [INFO]: Connected to Redis
+2024-09-30T02:17:23.905Z [INFO]: email transporter verified
+2024-09-30T02:17:24.234Z [INFO]: Connected to MongoDB
+2024-09-30T02:17:28.553Z [INFO]: Connected to Redis
+2024-09-30T02:17:29.087Z [INFO]: email transporter verified
+2024-09-30T02:17:29.428Z [INFO]: Connected to MongoDB
+2024-09-30T02:17:32.613Z [ERROR]: Correct Answer is not in options
+Error: Correct Answer is not in options
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\question\updateQuestion.controller.ts:39:72
+    at Generator.next (<anonymous>)
+    at fulfilled (D:\cours node.js\My-Github\E-Learning-API\src\controllers\question\updateQuestion.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-09-30T02:17:54.437Z [ERROR]: Correct Answer is not in options
+Error: Correct Answer is not in options
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\question\updateQuestion.controller.ts:39:72
+    at Generator.next (<anonymous>)
+    at fulfilled (D:\cours node.js\My-Github\E-Learning-API\src\controllers\question\updateQuestion.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-09-30T02:18:10.164Z [ERROR]: Correct Answer is not in options
+Error: Correct Answer is not in options
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\question\updateQuestion.controller.ts:39:72
+    at Generator.next (<anonymous>)
+    at fulfilled (D:\cours node.js\My-Github\E-Learning-API\src\controllers\question\updateQuestion.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-09-30T02:18:44.695Z [INFO]: Connected to Redis
+2024-09-30T02:18:45.019Z [INFO]: email transporter verified
+2024-09-30T02:18:45.486Z [INFO]: Connected to MongoDB
+2024-09-30T02:18:49.401Z [INFO]: Connected to Redis
+2024-09-30T02:18:57.749Z [INFO]: Connected to Redis
+2024-09-30T02:18:58.127Z [INFO]: email transporter verified
+2024-09-30T02:18:58.459Z [INFO]: Connected to MongoDB
+2024-09-30T02:19:12.274Z [ERROR]: Unexpected token } in JSON at position 54
+SyntaxError: Unexpected token } in JSON at position 54
+    at JSON.parse (<anonymous>)
+    at parse (D:\cours node.js\My-Github\E-Learning-API\node_modules\body-parser\lib\types\json.js:92:19)
+    at D:\cours node.js\My-Github\E-Learning-API\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:203:9)
+    at invokeCallback (D:\cours node.js\My-Github\E-Learning-API\node_modules\raw-body\index.js:238:16)
+    at done (D:\cours node.js\My-Github\E-Learning-API\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (D:\cours node.js\My-Github\E-Learning-API\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:513:28)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+2024-09-30T02:19:15.986Z [ERROR]: Correct Answer is not in options
+Error: Correct Answer is not in options
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\question\updateQuestion.controller.ts:47:68
+    at Generator.next (<anonymous>)
+    at fulfilled (D:\cours node.js\My-Github\E-Learning-API\src\controllers\question\updateQuestion.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-09-30T02:19:21.761Z [ERROR]: Correct option is same as previous
+Error: Correct option is same as previous
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\question\updateQuestion.controller.ts:41:71
+    at Generator.next (<anonymous>)
+    at fulfilled (D:\cours node.js\My-Github\E-Learning-API\src\controllers\question\updateQuestion.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-09-30T02:19:46.339Z [INFO]: Connected to Redis
+2024-09-30T02:19:46.754Z [INFO]: email transporter verified
+2024-09-30T02:19:47.014Z [INFO]: Connected to MongoDB
+2024-09-30T02:20:33.640Z [INFO]: Connected to Redis
+2024-09-30T02:20:33.973Z [INFO]: email transporter verified
+2024-09-30T02:20:34.314Z [INFO]: Connected to MongoDB
+2024-09-30T02:20:43.664Z [INFO]: Connected to Redis
+2024-09-30T02:20:44.047Z [INFO]: email transporter verified
+2024-09-30T02:20:44.506Z [INFO]: Connected to MongoDB
+2024-09-30T02:20:53.937Z [INFO]: Connected to Redis
+2024-09-30T02:20:54.469Z [INFO]: email transporter verified
+2024-09-30T02:20:54.656Z [INFO]: Connected to MongoDB
+2024-09-30T02:21:19.785Z [INFO]: Connected to Redis
+2024-09-30T02:21:34.749Z [INFO]: Connected to Redis
+2024-09-30T02:21:35.128Z [INFO]: email transporter verified
+2024-09-30T02:21:35.615Z [INFO]: Connected to MongoDB
+2024-09-30T02:22:37.112Z [INFO]: Connected to Redis
+2024-09-30T02:22:37.520Z [INFO]: email transporter verified
+2024-09-30T02:22:38.005Z [INFO]: Connected to MongoDB
+2024-09-30T02:25:11.211Z [INFO]: Connected to Redis
+2024-09-30T02:25:11.551Z [INFO]: email transporter verified
+2024-09-30T02:25:17.093Z [INFO]: Connected to MongoDB
+2024-09-30T02:25:31.268Z [INFO]: Connected to Redis
+2024-09-30T02:25:31.725Z [INFO]: email transporter verified
+2024-09-30T02:25:31.956Z [INFO]: Connected to MongoDB
+2024-09-30T02:26:27.205Z [INFO]: Connected to Redis
+2024-09-30T02:26:27.581Z [INFO]: email transporter verified
+2024-09-30T02:26:27.962Z [INFO]: Connected to MongoDB
+2024-09-30T02:26:57.085Z [INFO]: Connected to Redis
+2024-09-30T02:26:57.816Z [INFO]: email transporter verified
+2024-09-30T02:27:02.302Z [INFO]: Connected to Redis
+2024-09-30T02:27:02.667Z [INFO]: email transporter verified
+2024-09-30T02:27:03.018Z [INFO]: Connected to MongoDB
+2024-09-30T02:27:14.115Z [INFO]: Connected to Redis
+2024-09-30T02:27:14.750Z [INFO]: email transporter verified
+2024-09-30T02:27:15.009Z [INFO]: Connected to MongoDB
+2024-09-30T02:27:22.208Z [INFO]: Connected to Redis
+2024-09-30T02:27:22.608Z [INFO]: email transporter verified
+2024-09-30T02:27:22.915Z [INFO]: Connected to MongoDB
+2024-09-30T02:27:41.741Z [INFO]: Connected to Redis
+2024-09-30T02:27:42.123Z [INFO]: email transporter verified
+2024-09-30T02:27:42.627Z [INFO]: Connected to MongoDB
+2024-09-30T02:29:23.935Z [INFO]: Connected to Redis
+2024-09-30T02:29:24.311Z [INFO]: email transporter verified
+2024-09-30T02:29:24.775Z [INFO]: Connected to MongoDB
+2024-09-30T02:29:34.832Z [INFO]: Connected to Redis
+2024-09-30T02:29:35.233Z [INFO]: email transporter verified
+2024-09-30T02:29:35.736Z [INFO]: Connected to MongoDB
+2024-09-30T02:29:49.902Z [INFO]: Connected to Redis
+2024-09-30T02:29:50.271Z [INFO]: email transporter verified
+2024-09-30T02:29:50.705Z [INFO]: Connected to MongoDB
+2024-09-30T02:32:06.856Z [ERROR]: Invalid verification code
+Error: Invalid verification code
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\question\confirmDeleteQuestion.controller.ts:37:25
+    at Generator.next (<anonymous>)
+    at fulfilled (D:\cours node.js\My-Github\E-Learning-API\src\controllers\question\confirmDeleteQuestion.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-09-30T02:32:22.939Z [ERROR]: Question not found
+Error: Question not found
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\question\confirmDeleteQuestion.controller.ts:23:36
+    at Generator.next (<anonymous>)
+    at fulfilled (D:\cours node.js\My-Github\E-Learning-API\src\controllers\question\confirmDeleteQuestion.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-09-30T02:32:32.771Z [ERROR]: Invalid verification code
+Error: Invalid verification code
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\question\confirmDeleteQuestion.controller.ts:37:25
+    at Generator.next (<anonymous>)
+    at fulfilled (D:\cours node.js\My-Github\E-Learning-API\src\controllers\question\confirmDeleteQuestion.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-09-30T02:33:50.678Z [INFO]: Connected to Redis
+2024-09-30T02:33:50.925Z [INFO]: email transporter verified
+2024-09-30T02:33:51.271Z [INFO]: Connected to MongoDB
+2024-09-30T02:33:57.086Z [INFO]: Connected to Redis
+2024-09-30T02:33:57.515Z [INFO]: email transporter verified
+2024-09-30T02:33:57.958Z [INFO]: Connected to MongoDB
+2024-09-30T09:51:56.366Z [INFO]: Connected to Redis
+2024-09-30T09:51:56.729Z [INFO]: email transporter verified
+2024-09-30T09:51:57.064Z [INFO]: Connected to MongoDB
+2024-09-30T09:52:00.714Z [ERROR]: expired token or invalid
+Error: expired token or invalid
+    at D:\cours node.js\My-Github\E-Learning-API\src\middlewares\authentication.middleware.ts:17:34
+    at Generator.next (<anonymous>)
+    at D:\cours node.js\My-Github\E-Learning-API\src\middlewares\authentication.middleware.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (D:\cours node.js\My-Github\E-Learning-API\src\middlewares\authentication.middleware.ts:4:12)
+    at authenticationMiddleware (D:\cours node.js\My-Github\E-Learning-API\src\middlewares\authentication.middleware.ts:10:82)
+    at Layer.handle [as handle_request] (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\index.js:328:13)
+    at D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\index.js:346:12)
+2024-09-30T09:52:31.342Z [ERROR]: Cannot destructure property '_id' of 'req.user' as it is undefined.
+TypeError: Cannot destructure property '_id' of 'req.user' as it is undefined.
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\question\getQuestionById.controller.ts:31:17
+    at Generator.next (<anonymous>)
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\question\getQuestionById.controller.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (D:\cours node.js\My-Github\E-Learning-API\src\controllers\question\getQuestionById.controller.ts:4:12)
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\question\getQuestionById.controller.ts:29:30
+    at D:\cours node.js\My-Github\E-Learning-API\src\middlewares\errorHandling.middleware.ts:82:9
+    at Layer.handle [as handle_request] (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\route.js:149:13)
+    at D:\cours node.js\My-Github\E-Learning-API\src\guards\isAuthorized.guard.ts:11:9
+2024-09-30T09:52:57.601Z [INFO]: Connected to Redis
+2024-09-30T09:52:58.134Z [INFO]: email transporter verified
+2024-09-30T09:52:58.860Z [INFO]: Connected to MongoDB
+2024-09-30T09:52:59.594Z [ERROR]: Question not found
+Error: Question not found
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\question\getQuestionById.controller.ts:34:36
+    at Generator.next (<anonymous>)
+    at fulfilled (D:\cours node.js\My-Github\E-Learning-API\src\controllers\question\getQuestionById.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-09-30T09:52:59.764Z [ERROR]: Question not found
+Error: Question not found
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\question\getQuestionById.controller.ts:34:36
+    at Generator.next (<anonymous>)
+    at fulfilled (D:\cours node.js\My-Github\E-Learning-API\src\controllers\question\getQuestionById.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-09-30T09:53:34.229Z [ERROR]: Cannot populate path `quizId` because it is not in your schema. Set the `strictPopulate` option to false to override.
+StrictPopulateError: Cannot populate path `quizId` because it is not in your schema. Set the `strictPopulate` option to false to override.
+    at getModelsMapForPopulate (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\helpers\populate\getModelsMapForPopulate.js:50:12)
+    at populate (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\model.js:4208:21)
+    at _populate (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\model.js:4168:5)
+    at D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\model.js:4140:5
+    at new Promise (<anonymous>)
+    at Function.populate (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\model.js:4139:10)
+    at D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\query.js:2546:11
+    at D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\query.js:3217:21
+    at processTicksAndRejections (node:internal/process/task_queues:77:11)
+2024-09-30T09:54:04.525Z [INFO]: Connected to Redis
+2024-09-30T09:54:04.930Z [INFO]: email transporter verified
+2024-09-30T09:54:05.571Z [INFO]: Connected to MongoDB
+2024-09-30T09:54:09.723Z [ERROR]: Cannot populate path `quizId` because it is not in your schema. Set the `strictPopulate` option to false to override.
+StrictPopulateError: Cannot populate path `quizId` because it is not in your schema. Set the `strictPopulate` option to false to override.
+    at getModelsMapForPopulate (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\helpers\populate\getModelsMapForPopulate.js:50:12)
+    at populate (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\model.js:4208:21)
+    at _populate (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\model.js:4168:5)
+    at D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\model.js:4140:5
+    at new Promise (<anonymous>)
+    at Function.populate (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\model.js:4139:10)
+    at D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\query.js:2546:11
+    at D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\query.js:3217:21
+    at processTicksAndRejections (node:internal/process/task_queues:77:11)
+2024-09-30T09:54:11.370Z [ERROR]: Cannot populate path `quizId` because it is not in your schema. Set the `strictPopulate` option to false to override.
+StrictPopulateError: Cannot populate path `quizId` because it is not in your schema. Set the `strictPopulate` option to false to override.
+    at getModelsMapForPopulate (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\helpers\populate\getModelsMapForPopulate.js:50:12)
+    at populate (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\model.js:4208:21)
+    at _populate (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\model.js:4168:5)
+    at D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\model.js:4140:5
+    at new Promise (<anonymous>)
+    at Function.populate (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\model.js:4139:10)
+    at D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\query.js:2546:11
+    at D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\query.js:3217:21
+    at processTicksAndRejections (node:internal/process/task_queues:77:11)
+2024-09-30T09:55:09.344Z [INFO]: Connected to Redis
+2024-09-30T09:55:09.772Z [INFO]: email transporter verified
+2024-09-30T09:55:10.118Z [INFO]: Connected to MongoDB
+2024-09-30T09:55:14.472Z [INFO]: Connected to Redis
+2024-09-30T09:55:14.986Z [INFO]: email transporter verified
+2024-09-30T09:55:15.308Z [INFO]: Connected to MongoDB
+2024-09-30T09:55:53.077Z [INFO]: Connected to Redis
+2024-09-30T09:55:53.420Z [INFO]: email transporter verified
+2024-09-30T09:55:53.882Z [INFO]: Connected to MongoDB
+2024-09-30T09:56:16.267Z [INFO]: Connected to Redis
+2024-09-30T09:56:16.946Z [INFO]: email transporter verified
+2024-09-30T09:56:17.660Z [INFO]: Connected to MongoDB
+2024-09-30T09:56:36.976Z [INFO]: Connected to Redis
+2024-09-30T09:56:37.575Z [INFO]: email transporter verified
+2024-09-30T09:56:38.114Z [INFO]: Connected to MongoDB
+2024-09-30T09:56:45.222Z [INFO]: Connected to Redis
+2024-09-30T09:56:45.613Z [INFO]: email transporter verified
+2024-09-30T09:56:46.487Z [INFO]: Connected to MongoDB
+2024-09-30T09:56:53.383Z [INFO]: Connected to Redis
+2024-09-30T09:56:53.812Z [INFO]: email transporter verified
+2024-09-30T09:56:54.122Z [INFO]: Connected to MongoDB
+2024-09-30T09:57:01.076Z [INFO]: Connected to Redis
+2024-09-30T09:57:01.421Z [INFO]: email transporter verified
+2024-09-30T09:57:02.020Z [INFO]: Connected to MongoDB
+2024-09-30T09:57:09.122Z [INFO]: Connected to Redis
+2024-09-30T09:57:09.469Z [INFO]: email transporter verified
+2024-09-30T09:57:09.951Z [INFO]: Connected to MongoDB
+2024-09-30T09:57:38.017Z [INFO]: Connected to Redis
+2024-09-30T09:57:38.430Z [INFO]: email transporter verified
+2024-09-30T09:57:38.712Z [INFO]: Connected to MongoDB
+2024-09-30T09:59:07.136Z [INFO]: Connected to Redis
+2024-09-30T09:59:07.542Z [INFO]: email transporter verified
+2024-09-30T09:59:08.152Z [INFO]: Connected to MongoDB
+2024-09-30T09:59:25.032Z [INFO]: Connected to Redis
+2024-09-30T09:59:25.416Z [INFO]: email transporter verified
+2024-09-30T09:59:25.947Z [INFO]: Connected to MongoDB
+2024-09-30T09:59:32.684Z [INFO]: Connected to Redis
+2024-09-30T09:59:33.158Z [INFO]: email transporter verified
+2024-09-30T09:59:33.442Z [INFO]: Connected to MongoDB
+2024-09-30T09:59:54.719Z [INFO]: Connected to Redis
+2024-09-30T09:59:55.124Z [INFO]: email transporter verified
+2024-09-30T09:59:55.612Z [INFO]: Connected to MongoDB
+2024-09-30T10:00:05.617Z [INFO]: Connected to Redis
+2024-09-30T10:00:06.113Z [INFO]: email transporter verified
+2024-09-30T10:00:06.416Z [INFO]: Connected to MongoDB
+2024-09-30T10:00:15.607Z [INFO]: Connected to Redis
+2024-09-30T10:00:16.283Z [INFO]: email transporter verified
+2024-09-30T10:00:16.619Z [INFO]: Connected to MongoDB
+2024-09-30T10:00:25.280Z [INFO]: Connected to Redis
+2024-09-30T10:00:25.659Z [INFO]: email transporter verified
+2024-09-30T10:00:25.999Z [INFO]: Connected to MongoDB
+2024-09-30T10:00:41.100Z [INFO]: Connected to Redis
+2024-09-30T10:00:41.453Z [INFO]: email transporter verified
+2024-09-30T10:00:41.923Z [INFO]: Connected to MongoDB
+2024-09-30T10:01:22.765Z [INFO]: Connected to Redis
+2024-09-30T10:01:23.251Z [INFO]: email transporter verified
+2024-09-30T10:01:31.381Z [INFO]: Connected to Redis
+2024-09-30T10:01:31.781Z [INFO]: email transporter verified
+2024-09-30T10:01:32.175Z [INFO]: Connected to MongoDB
+2024-09-30T10:01:49.871Z [INFO]: Connected to Redis
+2024-09-30T10:01:50.217Z [INFO]: email transporter verified
+2024-09-30T10:01:50.552Z [INFO]: Connected to MongoDB
+2024-09-30T10:02:27.562Z [ERROR]: Schema hasn't been registered for model "question".
+Use mongoose.model(name, schema)
+MissingSchemaError: Schema hasn't been registered for model "question".
+Use mongoose.model(name, schema)
+    at NativeConnection.Connection.model (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\connection.js:1221:13)
+    at _getModelFromConn (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\helpers\populate\getModelsMapForPopulate.js:569:15)
+    at addModelNamesToMap (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\helpers\populate\getModelsMapForPopulate.js:496:17)
+    at getModelsMapForPopulate (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\helpers\populate\getModelsMapForPopulate.js:200:7)
+    at populate (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\model.js:4208:21)
+    at _populate (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\model.js:4168:5)
+    at D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\model.js:4140:5
+    at new Promise (<anonymous>)
+    at Function.populate (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\model.js:4139:10)
+    at model.Query._find (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\query.js:2347:20)
+2024-09-30T10:02:55.493Z [INFO]: Connected to Redis
+2024-09-30T10:02:55.830Z [INFO]: email transporter verified
+2024-09-30T10:02:56.242Z [INFO]: Connected to MongoDB
+2024-09-30T10:05:19.616Z [INFO]: Connected to Redis
+2024-09-30T10:05:20.224Z [INFO]: email transporter verified
+2024-09-30T10:05:20.719Z [INFO]: Connected to MongoDB
+2024-09-30T10:05:36.010Z [INFO]: Connected to Redis
+2024-09-30T10:05:36.442Z [INFO]: email transporter verified
+2024-09-30T10:05:36.815Z [INFO]: Connected to MongoDB
+2024-09-30T10:05:52.209Z [INFO]: Connected to Redis
+2024-09-30T10:05:52.542Z [INFO]: email transporter verified
+2024-09-30T10:05:53.114Z [INFO]: Connected to MongoDB
+2024-09-30T10:06:40.309Z [ERROR]: Schema hasn't been registered for model "question".
+Use mongoose.model(name, schema)
+MissingSchemaError: Schema hasn't been registered for model "question".
+Use mongoose.model(name, schema)
+    at NativeConnection.Connection.model (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\connection.js:1221:13)
+    at _getModelFromConn (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\helpers\populate\getModelsMapForPopulate.js:569:15)
+    at addModelNamesToMap (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\helpers\populate\getModelsMapForPopulate.js:496:17)
+    at getModelsMapForPopulate (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\helpers\populate\getModelsMapForPopulate.js:200:7)
+    at populate (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\model.js:4208:21)
+    at _populate (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\model.js:4168:5)
+    at D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\model.js:4140:5
+    at new Promise (<anonymous>)
+    at Function.populate (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\model.js:4139:10)
+    at model.Query._find (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\query.js:2347:20)
+2024-09-30T10:08:37.492Z [INFO]: Connected to Redis
+2024-09-30T10:08:37.844Z [INFO]: email transporter verified
+2024-09-30T10:08:38.801Z [INFO]: Connected to MongoDB
+2024-09-30T10:08:40.243Z [ERROR]: Schema hasn't been registered for model "question".
+Use mongoose.model(name, schema)
+MissingSchemaError: Schema hasn't been registered for model "question".
+Use mongoose.model(name, schema)
+    at NativeConnection.Connection.model (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\connection.js:1221:13)
+    at _getModelFromConn (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\helpers\populate\getModelsMapForPopulate.js:569:15)
+    at addModelNamesToMap (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\helpers\populate\getModelsMapForPopulate.js:496:17)
+    at getModelsMapForPopulate (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\helpers\populate\getModelsMapForPopulate.js:200:7)
+    at populate (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\model.js:4208:21)
+    at _populate (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\model.js:4168:5)
+    at D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\model.js:4140:5
+    at new Promise (<anonymous>)
+    at Function.populate (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\model.js:4139:10)
+    at model.Query._find (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\query.js:2347:20)
+2024-09-30T10:09:49.543Z [INFO]: Connected to Redis
+2024-09-30T10:09:50.018Z [INFO]: email transporter verified
+2024-09-30T10:09:50.334Z [INFO]: Connected to MongoDB
+2024-09-30T10:09:51.700Z [ERROR]: Schema hasn't been registered for model "question".
+Use mongoose.model(name, schema)
+MissingSchemaError: Schema hasn't been registered for model "question".
+Use mongoose.model(name, schema)
+    at NativeConnection.Connection.model (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\connection.js:1221:13)
+    at _getModelFromConn (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\helpers\populate\getModelsMapForPopulate.js:569:15)
+    at addModelNamesToMap (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\helpers\populate\getModelsMapForPopulate.js:496:17)
+    at getModelsMapForPopulate (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\helpers\populate\getModelsMapForPopulate.js:200:7)
+    at populate (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\model.js:4208:21)
+    at _populate (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\model.js:4168:5)
+    at D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\model.js:4140:5
+    at new Promise (<anonymous>)
+    at Function.populate (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\model.js:4139:10)
+    at model.Query._find (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\query.js:2347:20)
+2024-09-30T10:10:04.798Z [ERROR]: Schema hasn't been registered for model "question".
+Use mongoose.model(name, schema)
+MissingSchemaError: Schema hasn't been registered for model "question".
+Use mongoose.model(name, schema)
+    at NativeConnection.Connection.model (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\connection.js:1221:13)
+    at _getModelFromConn (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\helpers\populate\getModelsMapForPopulate.js:569:15)
+    at addModelNamesToMap (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\helpers\populate\getModelsMapForPopulate.js:496:17)
+    at getModelsMapForPopulate (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\helpers\populate\getModelsMapForPopulate.js:200:7)
+    at populate (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\model.js:4208:21)
+    at _populate (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\model.js:4168:5)
+    at D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\model.js:4140:5
+    at new Promise (<anonymous>)
+    at Function.populate (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\model.js:4139:10)
+    at model.Query._find (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\query.js:2347:20)
+2024-09-30T10:15:47.234Z [INFO]: Connected to Redis
+2024-09-30T10:15:47.624Z [INFO]: email transporter verified
+2024-09-30T10:15:47.950Z [INFO]: Connected to MongoDB
+2024-09-30T10:15:52.125Z [INFO]: Connected to Redis
+2024-09-30T10:15:52.544Z [INFO]: email transporter verified
+2024-09-30T10:15:52.832Z [INFO]: Connected to MongoDB
+2024-09-30T10:15:57.659Z [ERROR]: unauthorized error
+Error: unauthorized error
+    at D:\cours node.js\My-Github\E-Learning-API\src\guards\isAuthorized.guard.ts:10:25
+    at Generator.next (<anonymous>)
+    at D:\cours node.js\My-Github\E-Learning-API\src\guards\isAuthorized.guard.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (D:\cours node.js\My-Github\E-Learning-API\src\guards\isAuthorized.guard.ts:4:12)
+    at D:\cours node.js\My-Github\E-Learning-API\src\guards\isAuthorized.guard.ts:7:30
+    at Layer.handle [as handle_request] (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\route.js:149:13)
+    at D:\cours node.js\My-Github\E-Learning-API\src\guards\isAuthenticated.guard.ts:7:5
+    at Generator.next (<anonymous>)
+2024-09-30T10:16:28.033Z [ERROR]: unauthorized error
+Error: unauthorized error
+    at D:\cours node.js\My-Github\E-Learning-API\src\guards\isAuthorized.guard.ts:10:25
+    at Generator.next (<anonymous>)
+    at D:\cours node.js\My-Github\E-Learning-API\src\guards\isAuthorized.guard.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (D:\cours node.js\My-Github\E-Learning-API\src\guards\isAuthorized.guard.ts:4:12)
+    at D:\cours node.js\My-Github\E-Learning-API\src\guards\isAuthorized.guard.ts:7:30
+    at Layer.handle [as handle_request] (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\cours node.js\My-Github\E-Learning-API\node_modules\express\lib\router\route.js:149:13)
+    at D:\cours node.js\My-Github\E-Learning-API\src\guards\isAuthenticated.guard.ts:7:5
+    at Generator.next (<anonymous>)
+2024-09-30T10:18:57.241Z [ERROR]: Schema hasn't been registered for model "question".
+Use mongoose.model(name, schema)
+MissingSchemaError: Schema hasn't been registered for model "question".
+Use mongoose.model(name, schema)
+    at NativeConnection.Connection.model (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\connection.js:1221:13)
+    at _getModelFromConn (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\helpers\populate\getModelsMapForPopulate.js:569:15)
+    at addModelNamesToMap (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\helpers\populate\getModelsMapForPopulate.js:496:17)
+    at getModelsMapForPopulate (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\helpers\populate\getModelsMapForPopulate.js:200:7)
+    at populate (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\model.js:4208:21)
+    at _populate (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\model.js:4168:5)
+    at D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\model.js:4140:5
+    at new Promise (<anonymous>)
+    at Function.populate (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\model.js:4139:10)
+    at model.Query._find (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\query.js:2347:20)
+2024-09-30T10:20:09.596Z [ERROR]: Schema hasn't been registered for model "question".
+Use mongoose.model(name, schema)
+MissingSchemaError: Schema hasn't been registered for model "question".
+Use mongoose.model(name, schema)
+    at NativeConnection.Connection.model (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\connection.js:1221:13)
+    at _getModelFromConn (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\helpers\populate\getModelsMapForPopulate.js:569:15)
+    at addModelNamesToMap (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\helpers\populate\getModelsMapForPopulate.js:496:17)
+    at getModelsMapForPopulate (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\helpers\populate\getModelsMapForPopulate.js:200:7)
+    at populate (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\model.js:4208:21)
+    at _populate (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\model.js:4168:5)
+    at D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\model.js:4140:5
+    at new Promise (<anonymous>)
+    at Function.populate (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\model.js:4139:10)
+    at model.Query._find (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\query.js:2347:20)
+2024-09-30T10:21:14.406Z [INFO]: Connected to Redis
+2024-09-30T10:21:14.752Z [INFO]: email transporter verified
+2024-09-30T10:21:15.337Z [INFO]: Connected to MongoDB
+2024-09-30T10:21:17.119Z [ERROR]: Schema hasn't been registered for model "question".
+Use mongoose.model(name, schema)
+MissingSchemaError: Schema hasn't been registered for model "question".
+Use mongoose.model(name, schema)
+    at NativeConnection.Connection.model (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\connection.js:1221:13)
+    at _getModelFromConn (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\helpers\populate\getModelsMapForPopulate.js:569:15)
+    at addModelNamesToMap (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\helpers\populate\getModelsMapForPopulate.js:496:17)
+    at getModelsMapForPopulate (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\helpers\populate\getModelsMapForPopulate.js:200:7)
+    at populate (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\model.js:4208:21)
+    at _populate (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\model.js:4168:5)
+    at D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\model.js:4140:5
+    at new Promise (<anonymous>)
+    at Function.populate (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\model.js:4139:10)
+    at model.Query._find (D:\cours node.js\My-Github\E-Learning-API\node_modules\mongoose\lib\query.js:2347:20)
+2024-09-30T10:23:47.452Z [INFO]: Connected to Redis
+2024-09-30T10:23:47.851Z [INFO]: email transporter verified
+2024-09-30T10:23:48.260Z [INFO]: Connected to MongoDB
+2024-09-30T10:24:33.363Z [INFO]: Connected to Redis
+2024-09-30T10:24:33.771Z [INFO]: email transporter verified
+2024-09-30T10:24:34.179Z [INFO]: Connected to MongoDB
+2024-09-30T10:24:41.902Z [ERROR]: Quiz not found
+Error: Quiz not found
+    at D:\cours node.js\My-Github\E-Learning-API\src\controllers\quiz\getQuizById.controller.ts:27:32
+    at Generator.next (<anonymous>)
+    at fulfilled (D:\cours node.js\My-Github\E-Learning-API\src\controllers\quiz\getQuizById.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-09-30T10:25:14.981Z [INFO]: Connected to Redis
+2024-09-30T10:25:15.427Z [INFO]: email transporter verified
+2024-09-30T10:25:15.836Z [INFO]: Connected to MongoDB
+2024-09-30T10:25:23.219Z [INFO]: Connected to Redis
+2024-09-30T10:25:23.674Z [INFO]: email transporter verified
+2024-09-30T10:25:23.950Z [INFO]: Connected to MongoDB
+2024-09-30T10:25:45.737Z [INFO]: Connected to Redis
+2024-09-30T10:25:46.085Z [INFO]: email transporter verified
+2024-09-30T10:25:46.488Z [INFO]: Connected to MongoDB
+2024-09-30T10:25:56.204Z [INFO]: Connected to Redis
+2024-09-30T10:25:56.605Z [INFO]: email transporter verified
+2024-09-30T10:25:57.000Z [INFO]: Connected to MongoDB
+2024-09-30T10:26:11.874Z [INFO]: Connected to Redis
+2024-09-30T10:26:12.274Z [INFO]: email transporter verified
+2024-09-30T10:26:12.675Z [INFO]: Connected to MongoDB
+2024-09-30T10:26:31.550Z [INFO]: Connected to Redis
+2024-09-30T10:26:31.916Z [INFO]: email transporter verified
+2024-09-30T10:26:32.231Z [INFO]: Connected to MongoDB
+2024-09-30T10:26:48.849Z [INFO]: Connected to Redis
+2024-09-30T10:26:49.225Z [INFO]: email transporter verified
+2024-09-30T10:26:49.527Z [INFO]: Connected to MongoDB
+2024-09-30T10:26:55.357Z [INFO]: Connected to Redis
+2024-09-30T10:26:55.732Z [INFO]: email transporter verified
+2024-09-30T10:27:04.501Z [INFO]: Connected to Redis
+2024-09-30T10:27:04.878Z [INFO]: email transporter verified
+2024-09-30T10:27:05.263Z [INFO]: Connected to MongoDB
+2024-09-30T10:27:11.143Z [INFO]: Connected to Redis
+2024-09-30T10:27:11.544Z [INFO]: email transporter verified
+2024-09-30T10:27:11.957Z [INFO]: Connected to MongoDB
+2024-09-30T10:27:26.551Z [INFO]: Connected to Redis
+2024-09-30T10:27:26.893Z [INFO]: email transporter verified
+2024-09-30T10:27:27.681Z [INFO]: Connected to MongoDB
+2024-09-30T10:27:33.210Z [INFO]: Connected to Redis
+2024-09-30T10:27:33.608Z [INFO]: email transporter verified
+2024-09-30T10:27:34.174Z [INFO]: Connected to MongoDB
+2024-09-30T10:27:50.532Z [INFO]: Connected to Redis
+2024-09-30T10:27:50.918Z [INFO]: email transporter verified
+2024-09-30T10:27:51.288Z [INFO]: Connected to MongoDB
+2024-09-30T10:28:01.020Z [INFO]: Connected to Redis
+2024-09-30T10:28:01.410Z [INFO]: email transporter verified
+2024-09-30T10:28:01.934Z [INFO]: Connected to MongoDB
+2024-09-30T10:28:06.747Z [INFO]: Connected to Redis
+2024-09-30T10:28:07.155Z [INFO]: email transporter verified
+2024-09-30T10:28:07.511Z [INFO]: Connected to MongoDB
+2024-09-30T10:28:12.167Z [INFO]: Connected to Redis
+2024-09-30T10:28:12.562Z [INFO]: email transporter verified
+2024-09-30T10:28:12.867Z [INFO]: Connected to MongoDB
+2024-09-30T10:28:24.665Z [INFO]: Connected to Redis
+2024-09-30T10:28:25.107Z [INFO]: email transporter verified
+2024-09-30T10:28:25.614Z [INFO]: Connected to MongoDB
+2024-09-30T10:28:56.457Z [INFO]: Connected to Redis
+2024-09-30T10:28:56.902Z [INFO]: email transporter verified
+2024-09-30T10:29:02.618Z [INFO]: Connected to MongoDB
+2024-09-30T10:29:07.167Z [INFO]: Connected to Redis
+2024-09-30T10:29:07.645Z [INFO]: email transporter verified
+2024-09-30T10:29:07.932Z [INFO]: Connected to MongoDB
+2024-09-30T10:29:15.955Z [INFO]: Connected to Redis
+2024-09-30T10:29:16.358Z [INFO]: email transporter verified
+2024-09-30T10:29:16.701Z [INFO]: Connected to MongoDB
+2024-09-30T10:29:38.663Z [INFO]: Connected to Redis
+2024-09-30T10:29:39.028Z [INFO]: email transporter verified
+2024-09-30T10:29:39.539Z [INFO]: Connected to MongoDB
+2024-09-30T10:29:53.025Z [INFO]: Connected to Redis
+2024-09-30T10:29:53.445Z [INFO]: email transporter verified
+2024-09-30T10:29:53.781Z [INFO]: Connected to MongoDB
+2024-09-30T10:30:03.036Z [INFO]: Connected to Redis
+2024-09-30T10:30:03.436Z [INFO]: email transporter verified
+2024-09-30T10:30:03.849Z [INFO]: Connected to MongoDB
+2024-09-30T10:30:11.570Z [INFO]: Connected to Redis
+2024-09-30T10:30:11.952Z [INFO]: email transporter verified
+2024-09-30T10:30:12.360Z [INFO]: Connected to MongoDB

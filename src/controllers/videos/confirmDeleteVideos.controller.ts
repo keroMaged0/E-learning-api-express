@@ -35,7 +35,8 @@ export const confirmDeleteVideosHandler: RequestHandler<unknown, SuccessResponse
             return next(new NotFoundError('Unauthorized instructor'));
         if (user.verificationCode?.reason !== VerifyReason.deleteVideo)
             return next(new NotAllowedError('Invalid verification code'));
-
+        user.verificationCode.reason = null;
+        await user.save();
 
         // Construct the media path for deletion from Cloudinary
         const mediaPath = video.url.public_id.split(`${video.folderId}`)[0] + video.folderId;

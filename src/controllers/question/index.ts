@@ -1,0 +1,7 @@
+export * from './getQuestionResults.controller'
+export * from './confirmDeleteQuestion.controller'
+export * from './createQuestion.controller'
+export * from './deleteQuestion.controller'
+export * from './getAllQuestionsSpecificQuiz.controller'
+export * from './getQuestionById.controller'
+export * from './updateQuestion.controller'

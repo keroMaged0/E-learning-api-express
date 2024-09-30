@@ -38,6 +38,8 @@ export const confirmDeleteLessonsHandler: RequestHandler<unknown, SuccessRespons
         if (user.verificationCode?.reason !== VerifyReason.deleteLesson) {
             return next(new NotAllowedError('Invalid verification code'));
         }
+        user.verificationCode.reason = null;
+        await user.save();
 
         // Delete media associated with the lesson from Cloudinary
         const mediaPath = lesson.imageCover.public_id.split(`${lesson.folderId}`)[0] + lesson.folderId ;

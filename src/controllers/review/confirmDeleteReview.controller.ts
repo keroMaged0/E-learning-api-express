@@ -43,6 +43,8 @@ export const confirmDeleteReviewHandler: RequestHandler<
         if (user.verificationCode?.reason !== VerifyReason.deleteReview) {
             return next(new NotAllowedError('Invalid verification code'));
         }
+        user.verificationCode.reason = null;
+        await user.save();
 
         await review.deleteOne({ _id: reviewId });
 

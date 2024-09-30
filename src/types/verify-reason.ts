@@ -1,12 +1,14 @@
 /* eslint-disable no-unused-vars */
 export enum VerifyReason {
-  signup = 'signup',
-  updatePassword = 'update-password',
   updatePasswordVerified = 'update-password-verified',
   updatePhoneNumber = 'update-phone-number',
+  updatePassword = 'update-password',
+  deleteQuestion = 'delete-question',
   deleteCourse = 'delete-course',
   deleteLesson = 'delete-lesson',
-  deleteVideo= 'delete-video',
   deleteReview = 'delete-review',
+  deleteVideo= 'delete-video',
+  deleteQuiz = 'delete-quiz',
+  signup = 'signup',
 
 }

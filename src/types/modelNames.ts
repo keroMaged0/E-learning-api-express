@@ -2,13 +2,15 @@ import { Types } from "mongoose";
 
 
 export enum MODELS {
-    users = 'users',
+    enrolledCourse = 'enrolledCourse',
+    question = 'question',
+    payment = 'payment',
+    review = 'review',
     course = 'course',
     lesson = 'lesson',
     video = 'video',
-    review = 'review',
-    payment = 'payment',
-    enrolledCourse = 'enrolledCourse',
+    users = 'users',
+    quiz = 'quiz',
 }
 
 
