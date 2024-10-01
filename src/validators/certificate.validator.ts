@@ -1,4 +1,4 @@
-import { body } from "express-validator"
+import { body, param } from "express-validator"
 import { validatorMiddleware } from "../middlewares/validator.middleware"
 
 
@@ -21,26 +21,46 @@ const createCertificateValidator = [
       .withMessage('Title is required')
       .isString()
       .isLength({ min: 5, max: 100 }),
-   
-      validatorMiddleware
+
+   validatorMiddleware
 ]
 
-/*************** Download certificate validator ***************/
-const downloadCertificateValidator = []
-
-/*************** Get certificate validator ***************/
-const getCertificateValidator = []
 
 /*************** Update certificate validator ***************/
-const updateCertificateValidator = []
+const updateCertificateValidator = [
+   param('certificateId')
+      .isMongoId()
+      .withMessage('Invalid certificate ID')
+      .notEmpty()
+      .withMessage('Certificate ID is required'),
 
-/*************** Delete certificate validator ***************/
-const deleteCertificateValidator = []
+   body('courseId')
+      .isMongoId()
+      .withMessage('Invalid course ID')
+      .optional(),
+
+   body('userId')
+      .isMongoId()
+      .withMessage('Invalid course ID')
+      .optional(),
+
+   body('title')
+      .isString()
+      .isLength({ min: 5, max: 100 })
+      .optional(),
+
+      body().custom((value, { req }) => {
+         if (!req.body.title &&!req.body.courseId &&!req.body.userId) {
+            throw new Error('At least one field must be updated')
+         }
+         return true
+      }),
+
+   validatorMiddleware
+]
+
 
 export {
    createCertificateValidator,
-   downloadCertificateValidator,
-   getCertificateValidator,
    updateCertificateValidator,
-   deleteCertificateValidator
 }

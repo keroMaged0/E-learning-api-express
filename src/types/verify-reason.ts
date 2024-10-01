@@ -8,6 +8,7 @@ export enum VerifyReason {
   deleteLesson = 'delete-lesson',
   deleteReview = 'delete-review',
   deleteVideo= 'delete-video',
+  deleteCertificate= 'delete-certificate',
   deleteQuiz = 'delete-quiz',
   signup = 'signup',
 

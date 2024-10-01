@@ -13,13 +13,19 @@ import { mailTransporter } from "../../utils/mail";
 import { Users } from "../../models/user.models";
 
 /**
- * Handler to generate a certificate PDF for a specific user and course.
- * It retrieves the necessary information from the database, generates the PDF,
- * uploads it to Cloudinary, and sends a confirmation email to the user.
- * 
- * @param req - The request object containing certificate ID and user information.
- * @param res - The response object to send the result back to the client.
- * @param next - The next middleware function to handle errors.
+ * Handler to generate and send a certificate PDF for a specific user.
+ *
+ * This handler retrieves the certificate and course information, 
+ * validates the instructor's authorization, generates a PDF certificate,
+ * uploads it to Cloudinary, and sends the certificate link to the user via email.
+ *
+ * @param {Request} req - The request object containing the certificate ID in the route parameters.
+ * @param {Response} res - The response object used to send the success message.
+ * @param {NextFunction} next - The next middleware function to call in case of an error.
+ *
+ * @returns {Promise<void>} - A promise that resolves to void.
+ *
+ * @throws {NotFoundError} - Throws an error if the certificate, course, or user is not found.
  */
 export const generateCertificatePDFHandler: RequestHandler<unknown, SuccessResponse> = catchError(
     async (req, res, next) => {

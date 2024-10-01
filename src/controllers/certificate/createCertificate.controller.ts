@@ -3,20 +3,34 @@ import { RequestHandler } from "express";
 import { checkEnrolledCourse } from "../enrolledCourse/checkEnrolledCourse.controller";
 import { catchError } from "../../middlewares/errorHandling.middleware";
 import { Certificate } from "../../models/certificate.models";
+import { NotFoundError } from "../../errors/notFoundError";
+import { ConflictError } from "../../errors/conflictError";
 import { SuccessResponse } from "../../types/response";
 import { Users } from "../../models/user.models";
-import { NotFoundError } from "../../errors/notFoundError";
 import { SystemRoles } from "../../types/roles";
-import { ConflictError } from "../../errors/conflictError";
 
-
+/**
+ * Handler to create a new certificate for a user.
+ *
+ * This handler checks if a certificate already exists for the given course and user. 
+ * If it does not exist, it verifies the user's enrollment in the course and creates 
+ * a new certificate.
+ *
+ * @param {Request} req - The request object containing the certificate data in the body.
+ * @param {Response} res - The response object used to send the created certificate.
+ * @param {NextFunction} next - The next middleware function to call in case of an error.
+ *
+ * @returns {Promise<void>} - A promise that resolves to void.
+ *
+ * @throws {ConflictError} - Throws an error if the certificate already exists.
+ * @throws {NotFoundError} - Throws an error if the user or the enrolled course is not found.
+ */
 export const createCertificateHandler: RequestHandler<
     unknown,
     SuccessResponse
 > = catchError(
     async (req, res, next) => {
         const { title, courseId, userId } = req.body;
-        const { _id } = req.loggedUser;
 
         // check if certificate is already exists
         const existsCertificate = await Certificate.findOne({ courseId, userId });
