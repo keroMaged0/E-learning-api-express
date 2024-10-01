@@ -1,7 +1,7 @@
 import mongoose, { Schema } from "mongoose";
 
 import { ICommonModel, MODELS } from "../types/modelNames";
-import { IImageCover } from "../types/imageCover";
+import { IMediaURL } from "../types/imageCover";
 
 export interface ILesson extends ICommonModel {
     title: string;
@@ -9,7 +9,7 @@ export interface ILesson extends ICommonModel {
     duration: string;
     videoId: mongoose.Schema.Types.ObjectId[];
     courseId: mongoose.Schema.Types.ObjectId;
-    imageCover: IImageCover;
+    imageCover: IMediaURL;
     folderId: string;
     instructorId: mongoose.Schema.Types.ObjectId;
     recourses: string[];

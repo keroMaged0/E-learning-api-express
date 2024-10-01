@@ -2,7 +2,7 @@ import mongoose, { Schema } from "mongoose";
 
 import { ICommonModel, MODELS } from "../types/modelNames";
 import { SystemRoles } from "../types/roles";
-import { IImageCover } from "../types/imageCover";
+import { IMediaURL } from "../types/imageCover";
 
 export interface IUser extends ICommonModel<IUser> {
     id: string;
@@ -19,7 +19,7 @@ export interface IUser extends ICommonModel<IUser> {
     accessToken: string | null;
     phoneNumber: string;
     folderId: number;
-    profileImage: IImageCover;
+    profileImage: IMediaURL;
     isVerified: boolean;
     bornAt: Date;
     role: SystemRoles;

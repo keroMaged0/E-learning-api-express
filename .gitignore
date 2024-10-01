@@ -5,6 +5,9 @@ dist/
 package-lock.json
 project.log
 
+
+dump.rdb
+
 # TypeScript
 *.tsbuildinfo
 

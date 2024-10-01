@@ -10,12 +10,14 @@ import { reviewRoutes } from './review.routes';
 import { usersRoutes } from './users.routes';
 import { authRoutes } from './auth.routes';
 import { quizRoutes } from './quiz.routes';
+import { certificateRoutes } from './certificate.routes';
 
 
 const router = Router();
 
 /*************** routes handlers ***************/
 router.use('/enrolledCourse', enrolledCourseRouter);
+router.use('/certificate', certificateRoutes);
 router.use('/question', questionRoutes);
 router.use('/payment', paymentsRoutes);
 router.use('/courses', coursesRoutes);

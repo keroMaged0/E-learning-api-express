@@ -1,3 +1,5 @@
+import { Readable } from "stream";
+import { env } from "../config/env";
 import { logger } from "../config/logger";
 import { formatDuration } from "../controllers/videos";
 import { ConflictError } from "../errors/conflictError";
@@ -6,8 +8,28 @@ import { cloudinaryConnection } from "../services/cloudinary";
 
 /*************** upload image ***************/
 export const uploadImageToCloudinary = async (file: Express.Multer.File, pathUrl: string, newPublicId?: string) => {
-    return await cloudinaryConnection().uploader.upload(file.path, { folder: pathUrl, public_id: newPublicId });
+    try {
+        return await cloudinaryConnection().uploader.upload(file.path, { folder: pathUrl, public_id: newPublicId });
+    } catch (error) {
+        logger.error('Error uploading image:', error)
+        throw error;
+    }
 };
+
+/*************** update image ***************/
+export const updateImage = async (req, query, oldPublicId, next) => {
+    if (!req.file) return next(new NotFoundError('Cover image is required'));
+
+    if (query.imageCover.public_id !== oldPublicId) {
+        return next(new ConflictError(`Old public ID does not match the ${query} cover image public ID`));
+    }
+
+    const newPublicId = oldPublicId.split(`${query.folderId}/imageCover/`)[1];
+    const pathUrl = oldPublicId.split(`${newPublicId}`)[0]
+
+    const { secure_url } = await uploadImageToCloudinary(req.file, pathUrl, newPublicId);
+    query.imageCover.secure_url = secure_url;
+}
 
 /*************** upload video ***************/
 export const uploadVideoToCloudinary = async (file: Express.Multer.File, pathUrl: string, newPublicId?: string) => {
@@ -34,11 +56,55 @@ export const uploadVideoToCloudinary = async (file: Express.Multer.File, pathUrl
         return result;
 
     } catch (error) {
-        console.error('Error uploading video:', error);
+        logger.error('Error uploading video:', error)
         throw error;
-
     }
 }
+
+/*************** update video ***************/
+export const updateVideo = async (req, query, oldPublicId, next) => {
+    if (!req.file) return next(new NotFoundError('Video file is required'));
+
+    if (query.url.public_id !== oldPublicId) {
+        return next(new ConflictError(`Old public ID does not match the ${query} video public ID`));
+    }
+
+    const newPublicId = oldPublicId.split(`${query.folderId}/`)[1];
+    const pathUrl = oldPublicId.split(`${newPublicId}`)[0]
+
+    const { secure_url, duration }: any = await uploadVideoToCloudinary(req.file, pathUrl, newPublicId);
+
+    const format = await formatDuration(duration)
+    query.video.duration = format; // Update video duration
+    query.video.url.secure_url = secure_url; // Update video URL
+}
+
+/*************** upload PDF ***************/
+export const uploadPDFToCloudinary = async (pdfPath) => {
+    try {
+        const result = await cloudinaryConnection().uploader.upload(pdfPath, {
+            resource_type: 'raw',
+            access_control: [
+                { access_type: 'anonymous' }
+            ]
+        }, (error, result) => {
+            if (error) {
+                logger.error(`Failed to upload PDF: ${error.message}`);
+                throw error;
+            }
+        });
+        return {
+            secure_url: result.secure_url,
+            public_id: result.public_id,
+        };
+
+    } catch (error) {
+        console.error('Error uploading PDF:', error);
+        throw error;
+    }
+};
+
+
 
 /*************** delete media ***************/
 export const DeleteMedia = async (pathUrl: string) => {
@@ -78,36 +144,5 @@ export const DeleteMedia = async (pathUrl: string) => {
 }
 
 
-/*************** update image ***************/
-export const updateImage = async (req, query, oldPublicId, next) => {
-    if (!req.file) return next(new NotFoundError('Cover image is required'));
 
-    if (query.imageCover.public_id !== oldPublicId) {
-        return next(new ConflictError(`Old public ID does not match the ${query} cover image public ID`));
-    }
 
-    const newPublicId = oldPublicId.split(`${query.folderId}/imageCover/`)[1];
-    const pathUrl = oldPublicId.split(`${newPublicId}`)[0]
-
-    const { secure_url } = await uploadImageToCloudinary(req.file, pathUrl, newPublicId);
-    query.imageCover.secure_url = secure_url;
-}
-
-/*************** update video ***************/
-
-export const updateVideo = async (req, query, oldPublicId, next) => {
-    if (!req.file) return next(new NotFoundError('Video file is required'));
-
-    if (query.url.public_id !== oldPublicId) {
-        return next(new ConflictError(`Old public ID does not match the ${query} video public ID`));
-    }
-
-    const newPublicId = oldPublicId.split(`${query.folderId}/`)[1];
-    const pathUrl = oldPublicId.split(`${newPublicId}`)[0]
-
-    const { secure_url, duration }: any = await uploadVideoToCloudinary(req.file, pathUrl, newPublicId);
-
-    const format = await formatDuration(duration)
-    query.video.duration = format; // Update video duration
-    query.video.url.secure_url = secure_url; // Update video URL
-}

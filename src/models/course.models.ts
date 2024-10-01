@@ -1,6 +1,6 @@
 import mongoose, {  ObjectId, Schema } from "mongoose";
 import { ICommonModel, MODELS } from "../types/modelNames";
-import { IImageCover } from "../types/imageCover";
+import { IMediaURL } from "../types/imageCover";
 
 export interface ICourse extends ICommonModel<ICourse> {
     description: string;
@@ -12,7 +12,7 @@ export interface ICourse extends ICommonModel<ICourse> {
     instructorId: ObjectId;
     lessonsId: ObjectId[]; // array of ObjectId for lessons
     ratingId: ObjectId[];
-    imageCover: IImageCover;
+    imageCover: IMediaURL;
     verificationCode: {
         code: string | null;
         expireAt: Date | null;
