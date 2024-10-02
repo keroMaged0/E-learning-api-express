@@ -8,7 +8,7 @@ export interface IEnrolledCourse extends ICommonModel {
     paymentId: mongoose.Types.ObjectId;
 }
 
-export const EnrolledCorseSchema = new Schema<IEnrolledCourse>(
+export const EnrolledCourseSchema = new Schema<IEnrolledCourse>(
     {
         userId: {
             type: Schema.Types.ObjectId,
@@ -33,4 +33,4 @@ export const EnrolledCorseSchema = new Schema<IEnrolledCourse>(
     }
 )
 
-export const EnrolledCourse = mongoose.model<IEnrolledCourse>(MODELS.enrolledCourse, EnrolledCorseSchema)
+export const EnrolledCourse = mongoose.model<IEnrolledCourse>(MODELS.enrolledCourse, EnrolledCourseSchema)
