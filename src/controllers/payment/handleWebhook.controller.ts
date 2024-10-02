@@ -1,6 +1,6 @@
 import Stripe from 'stripe';
 
-import { EnrolledCourse } from '../../models/enrolledCourse.models';
+// import { EnrolledCourse } from '../../models/enrolledCourse.models';
 import { Payment } from '../../models/payment.models';
 import { env } from '../../config/env';
 
