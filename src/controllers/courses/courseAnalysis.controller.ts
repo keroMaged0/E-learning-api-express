@@ -48,7 +48,6 @@ export const getCourseStatistics: RequestHandler<unknown, SuccessResponse> = cat
             },
         ]);
 
-
         // Determine hours and minutes
         const hours = Math.floor(totalHours / 60);
         const minutes = Math.round(totalHours % 60);
