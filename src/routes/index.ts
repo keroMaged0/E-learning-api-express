@@ -1,6 +1,6 @@
 import { Router } from 'express';
 
-import { enrolledCourseRouter } from './enrolledCourse.routes';
+// import { enrolledCourseRouter } from './enrolledCourse.routes';
 import { certificateRoutes } from './certificate.routes';
 import { chatRoomRoutes } from './chatRoom.routes';
 import { chatMessageRoutes } from './chatMessage.routes';
@@ -18,7 +18,7 @@ import { quizRoutes } from './quiz.routes';
 const router = Router();
 
 /*************** routes handlers ***************/
-router.use('/enrolledCourse', enrolledCourseRouter);
+// router.use('/enrolledCourse', enrolledCourseRouter);
 router.use('/certificate', certificateRoutes);
 router.use('chatRoom/message', chatMessageRoutes);
 router.use('/chatRoom', chatRoomRoutes);

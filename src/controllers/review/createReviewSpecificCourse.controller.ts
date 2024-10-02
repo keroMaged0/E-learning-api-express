@@ -1,7 +1,7 @@
 import { RequestHandler } from "express";
 
 import { catchError } from "../../middlewares/errorHandling.middleware";
-import { EnrolledCourse } from "../../models/enrolledCourse.models";
+// import { EnrolledCourse } from "../../models/enrolledCourse.models";
 import { NotAllowedError } from "../../errors/notAllowedError";
 import { SuccessResponse } from "../../types/response";
 import { Reviews } from "../../models/review.models";
@@ -37,10 +37,10 @@ export const createReviewSpecificCourseHandler: RequestHandler<
 
 
         // Check if user have permission to review the entity
-        const enrolled = await EnrolledCourse.findOne({ userId: _id, courseId });
-        if (!enrolled) {
-            return next(new NotAllowedError('You are not allowed to review this course'));
-        }
+        // const enrolled = await EnrolledCourse.findOne({ userId: _id, courseId });
+        // if (!enrolled) {
+        //     return next(new NotAllowedError('You are not allowed to review this course'));
+        // }
 
         // Check if user already reviewed the entity
         const reviewExist = await Reviews.findOne({

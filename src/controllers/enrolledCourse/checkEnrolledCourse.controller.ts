@@ -1,4 +1,4 @@
-import { EnrolledCourse } from "../../models/enrolledCourse.models";
+// import { EnrolledCourse } from "../../models/enrolledCourse.models";
 import { NotFoundError } from "../../errors/notFoundError";
 import { Courses } from "../../models/course.models";
 import { Users } from "../../models/user.models";
@@ -28,8 +28,8 @@ export const checkEnrolledCourse = async ({ courseId, userId, next }) => {
 
     // If the user is a student, check if they are enrolled in the course
     if (user.role === SystemRoles.student) {
-        const enrolledCourses = EnrolledCourse.findOne({ userId, courseId });
-        if (!enrolledCourses) return next(new NotFoundError('Course not found'));
+        // const enrolledCourses = EnrolledCourse.findOne({ userId, courseId });
+        // if (!enrolledCourses) return next(new NotFoundError('Course not found'));
     }
 
     // If the user is a teacher, check if they are the instructor of the course

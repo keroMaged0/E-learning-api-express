@@ -1,7 +1,7 @@
 import { RequestHandler } from "express";
 
 import { catchError } from "../../middlewares/errorHandling.middleware";
-import { EnrolledCourse } from "../../models/enrolledCourse.models";
+// import { EnrolledCourse } from "../../models/enrolledCourse.models";
 import { NotAllowedError } from "../../errors/notAllowedError";
 import { SuccessResponse } from "../../types/response";
 import { Lessons } from "../../models/lesson.models";
@@ -52,8 +52,8 @@ export const getAllCommentsSpecificVideoHandler: RequestHandler<
             if (course?.instructorId.toString() !== _id.toString()) return next(new NotAllowedError('You are not allowed to view comments this video'));
         }
         if (user.role === SystemRoles.student) {
-            const enrolledCourse = await EnrolledCourse.findOne({ userId: _id, courseId: course._id });
-            if (!enrolledCourse) return next(new NotAllowedError('You are not allowed to view comments this video'));
+            // const enrolledCourse = await EnrolledCourse.findOne({ userId: _id, courseId: course._id });
+            // if (!enrolledCourse) return next(new NotAllowedError('You are not allowed to view comments this video'));
         }
 
         const reviews = await Reviews.find({ entityType: 'video', entityId: videoId })

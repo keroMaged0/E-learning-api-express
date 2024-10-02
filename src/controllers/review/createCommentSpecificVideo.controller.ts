@@ -1,7 +1,7 @@
 import { RequestHandler } from "express";
 
 import { catchError } from "../../middlewares/errorHandling.middleware";
-import { EnrolledCourse } from "../../models/enrolledCourse.models";
+// import { EnrolledCourse } from "../../models/enrolledCourse.models";
 import { NotAllowedError } from "../../errors/notAllowedError";
 import { SuccessResponse } from "../../types/response";
 import { Reviews } from "../../models/review.models";
@@ -45,11 +45,11 @@ export const createCommentSpecificVideoHandler: RequestHandler<
         const course = await Courses.findById(lesson.courseId);
         if (!course) return next(new NotAllowedError('Course not found'));
 
-        // Check if user have permission to review the entity
-        const enrolled = await EnrolledCourse.findOne({ userId: _id, courseId: course._id });
-        if (!enrolled) {
-            return next(new NotAllowedError('You are not allowed to comment this video'));
-        }
+        // // Check if user have permission to review the entity
+        // const enrolled = await EnrolledCourse.findOne({ userId: _id, courseId: course._id });
+        // if (!enrolled) {
+        //     return next(new NotAllowedError('You are not allowed to comment this video'));
+        // }
 
         const review = new Reviews({
             userId: _id,

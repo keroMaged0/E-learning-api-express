@@ -7,7 +7,7 @@ import { Reviews } from "../../models/review.models";
 import { Courses } from "../../models/course.models";
 import { Lessons } from "../../models/lesson.models";
 import { Videos } from "../../models/video.models";
-import { EnrolledCourse } from "../../models/enrolledCourse.models";
+// import { EnrolledCourse } from "../../models/enrolledCourse.models";
 
 /**
  * Handler to retrieve statistics for a specific course.
@@ -31,8 +31,12 @@ export const getCourseStatistics: RequestHandler<unknown, SuccessResponse> = cat
 
 
         // Fetch statistics
-        const [totalEnrollments, totalLessons, totalVideos] = await Promise.all([
-            EnrolledCourse.countDocuments({ courseId: courseId }),
+        const [
+            // totalEnrollments,
+             totalLessons,
+              totalVideos
+        ] = await Promise.all([
+            // EnrolledCourse.countDocuments({ courseId: courseId }),
             Lessons.countDocuments({ courseId }),
             Videos.countDocuments({ lessonId: { $in: course.lessonsId } }),
         ]);
@@ -72,7 +76,7 @@ export const getCourseStatistics: RequestHandler<unknown, SuccessResponse> = cat
             status: true,
             message: 'Data retrieved successfully',
             data: {
-                totalEnrollments,
+                // totalEnrollments,
                 totalLessons,
                 totalVideos,
                 totalDuration,

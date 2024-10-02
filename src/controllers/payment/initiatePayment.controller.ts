@@ -5,7 +5,7 @@ import { SuccessResponse } from "../../types/response";
 import { Users } from "../../models/user.models";
 import { NotFoundError } from "../../errors/notFoundError";
 import { Courses } from "../../models/course.models";
-import { EnrolledCourse } from "../../models/enrolledCourse.models";
+// import { EnrolledCourse } from "../../models/enrolledCourse.models";
 import { PaymentGateway } from "../../services/PaymentGateway";
 import { Payment } from "../../models/payment.models";
 
@@ -41,8 +41,8 @@ export const initiatePaymentHandler: RequestHandler<unknown, SuccessResponse> = 
         if (!course) return next(new NotFoundError('Course not found'));
 
         // Verify if the user is already enrolled in the course
-        const enrolledCourse = await EnrolledCourse.findOne({ userId: user._id, courseId });
-        if (enrolledCourse) return next(new NotFoundError('User already enrolled in this course'));
+        // const enrolledCourse = await EnrolledCourse.findOne({ userId: user._id, courseId });
+        // if (enrolledCourse) return next(new NotFoundError('User already enrolled in this course'));
 
 
         // Validate payment method
