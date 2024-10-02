@@ -1,4 +1,4 @@
-import { ErrorResponse, ValidationErrorResponse } from "types/response";
+import { ErrorResponse, ValidationErrorResponse } from "../types/response";
 
 
 
