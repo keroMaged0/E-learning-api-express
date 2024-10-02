@@ -18,12 +18,12 @@ router.get("/user",
     controller.getEnrolledCoursesHandler
 );
 
-// //Handler to get enrolled course By Id for a user
-// router.get("/user/:courseId",
-//     isAuthenticated,
-//     isAuthorized(SystemRoles.student),
-//     controller.getEnrolledCourseByIdHandler
-// );
+//Handler to get enrolled course By Id for a user
+router.get("/user/:courseId",
+    isAuthenticated,
+    isAuthorized(SystemRoles.student),
+    controller.getEnrolledCourseByIdHandler
+);
 
 
 export const enrolledCourseRouter = router;   
