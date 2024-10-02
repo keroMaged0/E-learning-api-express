@@ -10,20 +10,17 @@ export interface IEnrolledCourse extends ICommonModel {
 export const EnrolledCourseSchema = new Schema<IEnrolledCourse>(
     {
         userId: {
-            type: mongoose.Types.ObjectId,
+            type: Schema.Types.ObjectId,
             ref: MODELS.users,
-            required: true
         },
-        courseId: {
-            type: mongoose.Types.ObjectId,
-            ref: MODELS.course,
-            required: true
-        },
-        paymentId: {
-            type: mongoose.Types.ObjectId,
-            ref: MODELS.payment,
-            required: true
-        }
+        // courseId: {
+        //     type: mongoose.Types.ObjectId,
+        //     ref: MODELS.course,
+        // },
+        // paymentId: {
+        //     type: mongoose.Types.ObjectId,
+        //     ref: MODELS.payment,
+        // }
     },
     {
         timestamps: true,
