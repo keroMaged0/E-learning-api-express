@@ -1,29 +1,33 @@
-import mongoose, { Schema } from "mongoose";
+import mongoose, { ObjectId, Schema } from "mongoose";
 import { ICommonModel, MODELS } from "../types/modelNames";
 
 export interface IEnrolledCourse extends ICommonModel {
-    userId: mongoose.Types.ObjectId;
-    courseId: mongoose.Types.ObjectId;
-    paymentId: mongoose.Types.ObjectId;
+    userId: ObjectId;
+    courseId: ObjectId;
+    paymentId: ObjectId;
 }
 
 export const EnrolledCourseSchema = new Schema<IEnrolledCourse>(
     {
         userId: {
-            type: Schema.Types.ObjectId,
+            type: mongoose.Types.ObjectId,
             ref: MODELS.users,
             required: true
         },
         courseId: {
-            type: Schema.Types.ObjectId,
+            type: mongoose.Types.ObjectId,
             ref: MODELS.course,
             required: true
         },
         paymentId: {
-            type: Schema.Types.ObjectId,
+            type: mongoose.Types.ObjectId,
             ref: MODELS.payment,
             required: true
         }
+    },
+    {
+        timestamps: true,
+        collection: MODELS.enrolledCourse
     }
 )
 
