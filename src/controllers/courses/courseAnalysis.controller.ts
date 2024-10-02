@@ -1,12 +1,13 @@
 import { RequestHandler } from "express";
+
 import { catchError } from "../../middlewares/errorHandling.middleware";
 import { NotFoundError } from "../../errors/notFoundError";
 import { SuccessResponse } from "../../types/response";
+import { Reviews } from "../../models/review.models";
 import { Courses } from "../../models/course.models";
 import { Lessons } from "../../models/lesson.models";
 import { Videos } from "../../models/video.models";
 import { EnrolledCourse } from "../../models/enrolledCourse.models";
-import { Reviews } from "../../models/review.models";
 
 /**
  * Handler to retrieve statistics for a specific course.
@@ -30,9 +31,8 @@ export const getCourseStatistics: RequestHandler<unknown, SuccessResponse> = cat
 
 
         // Fetch statistics
-        const [totalEnrollments, completedEnrollments, totalLessons, totalVideos] = await Promise.all([
-            EnrolledCourse.countDocuments({ courseId }),
-            EnrolledCourse.countDocuments({ courseId, completed: true }),
+        const [totalEnrollments, totalLessons, totalVideos] = await Promise.all([
+            EnrolledCourse.countDocuments({ courseId: courseId }),
             Lessons.countDocuments({ courseId }),
             Videos.countDocuments({ lessonId: { $in: course.lessonsId } }),
         ]);
@@ -47,7 +47,7 @@ export const getCourseStatistics: RequestHandler<unknown, SuccessResponse> = cat
                 }
             },
         ]);
-        
+
 
         // Determine hours and minutes
         const hours = Math.floor(totalHours / 60);
@@ -74,7 +74,6 @@ export const getCourseStatistics: RequestHandler<unknown, SuccessResponse> = cat
             message: 'Data retrieved successfully',
             data: {
                 totalEnrollments,
-                completedEnrollments,
                 totalLessons,
                 totalVideos,
                 totalDuration,
