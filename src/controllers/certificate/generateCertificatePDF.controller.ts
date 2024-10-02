@@ -50,7 +50,7 @@ export const generateCertificatePDFHandler: RequestHandler<unknown, SuccessRespo
         if (!user) return next(new NotFoundError('User not found'));
 
         // Create a temporary PDF file path
-        const dirPath = path.resolve(__dirname, 'PDFs');
+        const dirPath = path.resolve(__dirname, '../../../PDFs');
         const filePath = path.resolve(dirPath, `${user._id}.pdf`);
 
         // Generate the certificate PDF

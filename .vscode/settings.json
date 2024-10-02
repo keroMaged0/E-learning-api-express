@@ -7,5 +7,6 @@
         "paymob",
         "streamifier",
         "totp"
-    ]
+    ],
+    "CodeGPT.apiKey": "CodeGPT Plus Beta"
 }

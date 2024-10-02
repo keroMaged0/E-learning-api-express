@@ -3,7 +3,7 @@ import { catchError } from "../../middlewares/errorHandling.middleware";
 import { SuccessResponse } from "../../types/response";
 
 
-export const confirmCompletionHandler:RequestHandler<
+export const Handler:RequestHandler<
     unknown,
     SuccessResponse
 > = catchError(
