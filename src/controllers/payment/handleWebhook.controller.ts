@@ -1,6 +1,5 @@
 import Stripe from 'stripe';
 
-// import { EnrolledCourse } from '../../models/enrolledCourse.models';
 import { Payment } from '../../models/payment.models';
 import { env } from '../../config/env';
 
@@ -56,15 +55,7 @@ const handleCheckoutSessionCompleted = async (session: Stripe.Checkout.Session) 
 
     const paymentId = session.metadata.paymentId;
     const payment = await Payment.findById(paymentId);
-    // const good =  await EnrolledCourse.create({
-    //     userId: session.metadata.userId,
-    //     courseId: payment?.courseId,
-    //     paymentId: session.metadata.paymentId
-    // })
-
-    // console.log('====================================');
-    // console.log(good);
-    // console.log('====================================');
+   
 
     if (!payment) {
         console.log(`Payment not found for paymentId ${paymentId}`);
