@@ -4,7 +4,6 @@
     "module": "commonjs",
     "target": "ES2016",
     "outDir": "./dist",
-    "baseUrl": "./src",
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,

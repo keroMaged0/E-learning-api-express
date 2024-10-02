@@ -2,7 +2,7 @@ import { Types } from "mongoose";
 
 
 export enum MODELS {
-    enrolledCourse = 'enrolledCourse',
+    enrolled = 'enrolled',
     chatMessage = 'chatMessage',
     certificate = 'certificate',
     question = 'question',

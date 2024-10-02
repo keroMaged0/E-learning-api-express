@@ -2,7 +2,7 @@ import { RequestHandler } from "express";
 import { catchError } from "../../middlewares/errorHandling.middleware";
 
 import { SuccessResponse } from "../../types/response";
-import { Enrolled } from "models/enrolledCourse.models";
+import { Enrolled } from "../../models/enrolled.model";
 
 
 /**
