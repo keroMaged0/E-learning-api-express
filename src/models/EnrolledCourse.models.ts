@@ -28,4 +28,4 @@ export const EnrolledCourseSchema = new Schema<IEnrolledCourse>(
     }
 )
 
-export const EnrolledCourse = mongoose.model<IEnrolledCourse>(MODELS.enrolledCourse, EnrolledCourseSchema)
+export const Enrolled = mongoose.model<IEnrolledCourse>(MODELS.enrolledCourse, EnrolledCourseSchema)

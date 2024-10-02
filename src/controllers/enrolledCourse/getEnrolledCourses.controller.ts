@@ -1,8 +1,8 @@
 import { RequestHandler } from "express";
 import { catchError } from "../../middlewares/errorHandling.middleware";
 
-import { EnrolledCourse } from "../../models/enrolledCourse.models";
 import { SuccessResponse } from "../../types/response";
+import { Enrolled } from "models/enrolledCourse.models";
 
 
 /**
@@ -25,7 +25,7 @@ export const getEnrolledCoursesHandler: RequestHandler<
     async (req, res, next) => {
         const { _id } = req.loggedUser;
 
-        const enrolled = await EnrolledCourse.find({ userId: _id })
+        const enrolled = await Enrolled.find({ userId: _id })
             .populate({
                 path: 'courseId',
                 populate: {
