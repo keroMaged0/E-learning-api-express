@@ -1,14 +1,12 @@
 import { RequestHandler } from "express";
 
-import { SuccessResponse } from "../../types/response";
 import { catchError } from "../../middlewares/errorHandling.middleware";
-import { Users } from "../../models/user.models";
+import { uploadImageToCloudinary } from "../../utils/uploadMedia";
 import { NotFoundError } from "../../errors/notFoundError";
 import { ConflictError } from "../../errors/conflictError";
-import { cloudinaryConnection } from "../../services/cloudinary";
+import { SuccessResponse } from "../../types/response";
+import { Users } from "../../models/user.models";
 import { env } from "../../config/env";
-import { generateCode } from "../../utils/random";
-import { uploadImageToCloudinary } from "../../utils/uploadMedia";
 
 export const updateProfileHandler: RequestHandler<
     unknown,

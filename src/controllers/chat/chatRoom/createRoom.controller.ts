@@ -5,7 +5,7 @@ import { NotFoundError } from "../../../errors/notFoundError";
 import { ChatRoom } from "../../../models/chatRoom.models";
 import { SuccessResponse } from "../../../types/response";
 import { Courses } from "../../../models/course.models";
-// import { EnrolledCourse } from "../../../models/enrolledCourse.models";
+import { Enrolled } from "../../../models/enrolled.model";
 import { io } from "../../../socket";
 
 
@@ -28,14 +28,10 @@ export const createRoomHandler: RequestHandler<
 
         const participants: string[] = [];
 
-        // const allEnrolled = await EnrolledCourse.find({ courseId })
-        // console.log('====================================');
-        // console.log(allEnrolled);
-        // console.log('====================================');
-
-        // for (const participant of allEnrolled) {
-        //     participants.push(participant.userId.toString())
-        // }
+        const allEnrolled = await Enrolled.find({ courseId });
+        for (const participant of allEnrolled) {
+            participants.push(participant.userId.toString())
+        }
 
         const chatRoom = await ChatRoom.create({ courseId, participants });
 

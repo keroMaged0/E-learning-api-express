@@ -1,4 +1,5 @@
 import { RequestHandler } from "express";
+
 import { catchError } from "../../middlewares/errorHandling.middleware";
 import { cloudinaryConnection } from "../../services/cloudinary";
 import { NotAllowedError } from "../../errors/notAllowedError";

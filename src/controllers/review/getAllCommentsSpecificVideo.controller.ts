@@ -1,7 +1,6 @@
 import { RequestHandler } from "express";
 
 import { catchError } from "../../middlewares/errorHandling.middleware";
-// import { EnrolledCourse } from "../../models/enrolledCourse.models";
 import { NotAllowedError } from "../../errors/notAllowedError";
 import { SuccessResponse } from "../../types/response";
 import { Lessons } from "../../models/lesson.models";
@@ -10,6 +9,7 @@ import { Courses } from "../../models/course.models";
 import { Videos } from "../../models/video.models";
 import { Users } from "../../models/user.models";
 import { SystemRoles } from "../../types/roles";
+import { Enrolled } from "../../models/enrolled.model";
 
 /**
  * Handler to retrieve all comments for a specific video.
@@ -52,8 +52,8 @@ export const getAllCommentsSpecificVideoHandler: RequestHandler<
             if (course?.instructorId.toString() !== _id.toString()) return next(new NotAllowedError('You are not allowed to view comments this video'));
         }
         if (user.role === SystemRoles.student) {
-            // const enrolledCourse = await EnrolledCourse.findOne({ userId: _id, courseId: course._id });
-            // if (!enrolledCourse) return next(new NotAllowedError('You are not allowed to view comments this video'));
+            const enrolledCourse = await Enrolled.findOne({ userId: _id, courseId: course._id });
+            if (!enrolledCourse) return next(new NotAllowedError('You are not allowed to view comments this video'));
         }
 
         const reviews = await Reviews.find({ entityType: 'video', entityId: videoId })
