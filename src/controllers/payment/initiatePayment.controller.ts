@@ -44,7 +44,6 @@ export const initiatePaymentHandler: RequestHandler<unknown, SuccessResponse> = 
         const enrolledCourse = await Enrolled.findOne({ userId: user._id, courseId });
         if (enrolledCourse) return next(new NotFoundError('User already enrolled in this course'));
 
-
         // Validate payment method
         if (paymentMethod !== 'stripe') {
             return res.status(400).json({ message: "Invalid payment method" });

@@ -33,4 +33,4 @@ router.use('/auth', authRoutes);
 router.use('/quiz', quizRoutes);
 
 
-export const apiRoutes = router;
+export const    apiRoutes = router;

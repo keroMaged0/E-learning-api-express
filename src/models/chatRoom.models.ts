@@ -18,6 +18,6 @@ const chatRoomSchema = new Schema<IChatRoom>({
             ref: MODELS.users
         }
     ],
-})
+}, { timestamps: true})
 
 export const ChatRoom = mongoose.model<IChatRoom>(MODELS.chatRoom, chatRoomSchema);

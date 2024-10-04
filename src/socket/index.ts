@@ -1,35 +1,34 @@
-import { Server } from "socket.io";
-import http from 'http';
+// import { Server, Socket } from "socket.io";
+// import http from 'http';
 
-import { app } from "../app";
+// import { io } from "../config/socket";
+
+// import { app } from "../app";
+
+// // create server 
+// const server = http.createServer(app);
+// const io = new Server(server, {
+//     cors: {
+//         origin: '*',
+//         credentials: true,
+//     },
+// });
 
 
-// create server 
-const server = http.createServer(app);
-const io = new Server(server, {
-    cors: {
-        origin: '*',
-        credentials: true,
-    },
-});
+// let globalSocket: Socket;
+// // setup socket events
+// io.on("connection", (socket) => {
+//     console.log('User connected:', socket.id);
 
-io.on("connection", (socket) => {
-    console.log('====================================');
-    console.log('connected', socket.id);
-    console.log('====================================');
+//     globalSocket = socket;
 
-    io.on("disconnect", () => {
-        console.log('user disconnected', socket.id);
-    });
+//     socket.on('disconnect', () => {
+//         console.log('User disconnected:', socket.id);
+//     });
+// });
 
-    socket.on("joinRoom", (room) => {
-        console.log("joining room", room);
-        socket.join(room);
-    });
 
-});
-
-export {
-    server,
-    io
-}
+// export {
+//     server,
+//     globalSocket
+// }

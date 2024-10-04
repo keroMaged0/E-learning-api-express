@@ -1,6 +1,6 @@
 import { NotFoundError } from "../../errors/notFoundError";
-import { Courses } from "../../models/course.models";
 import { Enrolled } from "../../models/enrolled.model";
+import { Courses } from "../../models/course.models";
 import { Users } from "../../models/user.models";
 import { SystemRoles } from "../../types/roles";
 

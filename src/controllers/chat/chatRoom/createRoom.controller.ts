@@ -1,49 +1,30 @@
-import { RequestHandler } from "express";
-
-import { catchError } from "../../../middlewares/errorHandling.middleware";
 import { NotFoundError } from "../../../errors/notFoundError";
+import { SOCKET_EVENTS } from "../../../types/socketEvents";
 import { ChatRoom } from "../../../models/chatRoom.models";
-import { SuccessResponse } from "../../../types/response";
-import { Courses } from "../../../models/course.models";
-import { Enrolled } from "../../../models/enrolled.model";
-import { io } from "../../../socket";
+import { getIo } from "../../../utils/initSocketIo";
+import { logger } from "../../../config/logger";
 
-
-export const createRoomHandler: RequestHandler<
-    unknown,
-    SuccessResponse
-> = catchError(
-    async (req, res, next) => {
-        const { courseId } = req.body;
-        const { _id } = req.loggedUser;
-
+export const createRoomHandler = async ({ courseId, instructorId, next }) => {
+    try {
+        // Check if room already exists
         const roomExists = await ChatRoom.findOne({ courseId });
         if (roomExists) return next(new NotFoundError('Room already exists'));
 
-        const course = await Courses.findById(courseId);
-        if (!course) return next(new NotFoundError('Course not found'));
-        if (course.instructorId.toString() !== _id.toString()) {
-            return next(new NotFoundError('Unauthorized instructor'));
-        }
-
-        const participants: string[] = [];
-
-        const allEnrolled = await Enrolled.find({ courseId });
-        for (const participant of allEnrolled) {
-            participants.push(participant.userId.toString())
-        }
-
-        const chatRoom = await ChatRoom.create({ courseId, participants });
-
-        io.emit('chatRoomCreated', chatRoom);
-
-        return res.status(201).json({
-            status: true,
-            message: 'Room created',
-            data: chatRoom
+        // Create a new room 
+        await ChatRoom.create({
+            courseId: courseId,
+            participants: [instructorId],
         });
 
+        // Emit socket event to create a new room for the course
+        const courseRoom = `course_${courseId}`;
+        await getIo().emit(SOCKET_EVENTS.createRoom, courseRoom);
 
+    } catch (error) {
+        logger.error(error)
+        next(error);
     }
-)
+}
+
+
 

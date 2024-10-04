@@ -1,7 +1,6 @@
 import { RequestHandler } from "express";
 
 import { catchError } from "../../middlewares/errorHandling.middleware";
-import { cloudinaryConnection } from "../../services/cloudinary";
 import { NotAllowedError } from "../../errors/notAllowedError";
 import { NotFoundError } from "../../errors/notFoundError";
 import { VerifyReason } from "../../types/verify-reason";
@@ -10,8 +9,8 @@ import { Courses } from "../../models/course.models";
 import { Lessons } from "../../models/lesson.models";
 import { Videos } from "../../models/video.models";
 import { Users } from "../../models/user.models";
-import { logger } from "../../config/logger";
 import { DeleteMedia } from "../../utils/uploadMedia";
+import { ChatRoom } from "../../models/chatRoom.models";
 
 /**
  * Handler to confirm the deletion of a course.
@@ -56,6 +55,7 @@ export const confirmDeleteCourseHandler: RequestHandler<
         await course.deleteOne({ _id: courseId });
         await Lessons.deleteMany({ courseId: courseId });
         await Videos.deleteMany({ lessonId: { $in: course.lessonsId } });
+        await ChatRoom.deleteOne({ courseId })
 
         // Return success response confirming deletion
         res.status(200).json({

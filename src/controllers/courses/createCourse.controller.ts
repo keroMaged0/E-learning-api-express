@@ -2,6 +2,7 @@ import { RequestHandler } from "express";
 
 import { catchError } from "../../middlewares/errorHandling.middleware";
 import { deleteAllCacheKeys } from "../../services/redisCache.service";
+import { uploadImageToCloudinary } from "../../utils/uploadMedia";
 import { ConflictError } from "../../errors/conflictError";
 import { NotFoundError } from "../../errors/notFoundError";
 import { SuccessResponse } from "../../types/response";
@@ -9,7 +10,7 @@ import { findUser } from "../../services/user.service";
 import { Courses } from "../../models/course.models";
 import { generateCode } from "../../utils/random";
 import { env } from "../../config/env";
-import { uploadImageToCloudinary } from "../../utils/uploadMedia";
+import { createRoomHandler } from "../chat/chatRoom";
 
 /**
  * Handler to create a new course.
@@ -54,6 +55,9 @@ export const createCourseHandler: RequestHandler<
             folderId,
             instructorId: user._id,
         });
+
+        // Create a chat room for the course
+        await createRoomHandler({ courseId: course._id, instructorId: _id, next })
 
         // Clear related cache keys for courses
         await deleteAllCacheKeys(cacheKey);

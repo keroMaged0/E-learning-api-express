@@ -5,8 +5,7 @@ import { ConflictError } from "../../errors/conflictError";
 import { NotFoundError } from "../../errors/notFoundError";
 import { SuccessResponse } from "../../types/response";
 import { Courses } from "../../models/course.models";
-import { env } from "../../config/env";
-import { updateImage, uploadImageToCloudinary } from "../../utils/uploadMedia";
+import { updateImage } from "../../utils/uploadMedia";
 
 /**
  * Handler to update an existing course.

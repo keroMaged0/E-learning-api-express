@@ -15,6 +15,7 @@ checkEnvVariables();
 // Initialize Express app
 export const app = express();
 
+// Handle Stripe webhook
 app.post('/webhook', express.raw({ type: 'application/json' }), handleStripeWebhook);
 
 // Add CORS policy
@@ -24,6 +25,7 @@ app.use(
         credentials: true,
     }),
 );
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
@@ -50,8 +52,8 @@ if (env.environment === 'development') {
     )
 }
 
+// Authentication middleware
 app.use(authenticationMiddleware);
-
 
 app.get('/success', (req, res) => {
     const { session_id } = req.query;
