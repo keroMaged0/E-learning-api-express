@@ -1,3 +1,4 @@
+// Import necessary modules
 import http from 'http';
 
 import socketController from './controllers/socket/socket.controller';
@@ -8,27 +9,30 @@ import { env } from './config/env';
 import './types/customDefinition';
 import { app } from './app';
 
+
 /*************** Start App ***************/
 const start = async () => {
-    // connect to DB
+    // Connect to MongoDB
     await connectMongoDB(env.mongoDb.url);
 
-    // verify mail transporter
+    // Verify mail transporter
     mailTransporter.verifyTransporter();
 
-    // create server 
+    // Create HTTP server
     const server = http.createServer(app);
 
-    // create socket server
-    const io = initIo(server)
+    // Initialize socket server
+    const io = initIo(server);
     io.on('connection', (socket) => {
+        // Handle socket connections
         socketController(socket);
     });
 
-    // start server
+    // Start the server
     server.listen(env.port, () => {
         console.log(`Server is running on port ${env.port} in ${env.environment} mode.`);
     });
 }
 
-start()
+// Start the application
+start();

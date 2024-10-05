@@ -16,12 +16,9 @@ export const addParticipantHandler = async ({ courseId, userId }) => {
         room.participants.push(userId);
         await room.save();
 
-        getIo().join(`course_${courseId}`);
-        getIo().of('/chat').to(`course_${courseId}`).emit(SOCKET_EVENTS.participantAdded, {
-            roomId: room._id,
-            participantId: userId,
-            message: `User ${userId} has been added to the chat room`
-        })
+        getIo().to(courseId).emit(SOCKET_EVENTS.userJoin, { userId, courseId });
+
+        logger.info(`User ${userId} has been added to the room with courseId: ${courseId}`);
 
     } catch (error) {
         logger.error(error);

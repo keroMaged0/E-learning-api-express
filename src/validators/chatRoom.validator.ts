@@ -1,28 +1,28 @@
-import { body } from "express-validator"
+import { body, param } from "express-validator"
 
 import { validatorMiddleware } from "../middlewares/validator.middleware"
 
-/*************** Sign up Validator ***************/
-const createRoomMessageValidator = [
-    body('courseId')
-        .isString()
-        .withMessage('course id must be string')
+
+/*************** Remove Participant Validator ***************/
+const removeParticipantValidator = [
+    param('roomId')
+        .isMongoId()
+        .withMessage('Room id is required'),
+
+
+    body('userId')
+        .isMongoId()
+        .withMessage('User id is required')
         .notEmpty()
-        .withMessage('course id is required'),
+        .withMessage('User id is required'),
 
     validatorMiddleware
 ]
 
-/*************** Sign in Validator ***************/
-const updateRoomMessageValidator = [
-
-    validatorMiddleware
-]
 
 
 
 export {
-    createRoomMessageValidator,
-    updateRoomMessageValidator,
+    removeParticipantValidator
 
 }

@@ -19,7 +19,7 @@ const router = Router();
 
 /*************** routes handlers ***************/
 router.use('/enrolledCourse', enrolledCourseRouter);
-router.use('chatRoom/message', chatMessageRoutes);
+router.use('/chatRoom/message', chatMessageRoutes);
 router.use('/certificate', certificateRoutes);
 router.use('/chatRoom', chatRoomRoutes);
 router.use('/question', questionRoutes);
@@ -33,4 +33,4 @@ router.use('/auth', authRoutes);
 router.use('/quiz', quizRoutes);
 
 
-export const    apiRoutes = router;
+export const apiRoutes = router;

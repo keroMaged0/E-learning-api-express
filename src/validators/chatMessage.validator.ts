@@ -5,6 +5,11 @@ import { SystemRoles } from "../types/roles"
 
 /*************** Sign up Validator ***************/
 const createChatMessageValidator = [
+    body('content')
+        .isString()
+        .withMessage('Content must be a string')
+        .notEmpty()
+        .withMessage('Content is required'),
 
     validatorMiddleware
 ]

@@ -1,8 +1,8 @@
 import { NotFoundError } from "../../../errors/notFoundError";
-import { SOCKET_EVENTS } from "../../../types/socketEvents";
 import { ChatRoom } from "../../../models/chatRoom.models";
 import { getIo } from "../../../utils/initSocketIo";
 import { logger } from "../../../config/logger";
+import { SOCKET_EVENTS } from "../../../types/socketEvents";
 
 export const createRoomHandler = async ({ courseId, instructorId, next }) => {
     try {
@@ -16,13 +16,15 @@ export const createRoomHandler = async ({ courseId, instructorId, next }) => {
             participants: [instructorId],
         });
 
-        // Emit socket event to create a new room for the course
-        const courseRoom = `course_${courseId}`;
-        await getIo().emit(SOCKET_EVENTS.createRoom, courseRoom);
+        getIo().to(courseId).emit(SOCKET_EVENTS.message, `Welcome to the course ${courseId}`);
+        // getIo().emit(SOCKET_EVENTS.message, `Welcome to the course ${courseId}`);
+        // getIo().of("/").adapter.rooms.set(courseId, new Set([instructorId]));
 
+        return true;
     } catch (error) {
         logger.error(error)
         next(error);
+        return false;
     }
 }
 

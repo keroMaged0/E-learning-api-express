@@ -55,17 +55,6 @@ if (env.environment === 'development') {
 // Authentication middleware
 app.use(authenticationMiddleware);
 
-app.get('/success', (req, res) => {
-    const { session_id } = req.query;
-
-    if (!session_id) {
-        return res.status(400).send('Session ID is missing');
-    }
-
-    res.status(200).json({ message: 'Payment successful' });
-})
-
-
 // API routes
 app.use('/api/v1', apiRoutes);
 

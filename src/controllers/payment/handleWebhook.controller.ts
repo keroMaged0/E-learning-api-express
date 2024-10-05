@@ -1,8 +1,8 @@
 import Stripe from 'stripe';
 
 import handleStripeEvent from './stripe/handleEvent.controller';
-import { env } from '../../config/env';
 import { logger } from '../../config/logger';
+import { env } from '../../config/env';
 
 
 /*************** stripe webhook ***************/

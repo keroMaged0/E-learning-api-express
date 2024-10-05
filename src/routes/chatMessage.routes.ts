@@ -12,36 +12,36 @@ const router = Router()
 //  * Defines routes for managing chatMessage.
 //  */
 
-// // Handler to send a new message
-// router.post('/',
-//     isAuthenticated,
-//     isAuthorized(SystemRoles.teacher, SystemRoles.student),
-//     validation.createChatMessageValidator,
-//     controller.sendMessageHandler
-// )
+// Handler to send a new message
+router.post('/',
+    isAuthenticated,
+    isAuthorized(SystemRoles.teacher, SystemRoles.student),
+    // validation.createChatMessageValidator,
+    controller.sendMessageHandler
+)
 
-// // Handler to get all messages of a specific chatRoom
-// router.get('/ChatRoom/:chatRoomId',
-//     isAuthenticated,
-//     isAuthorized(SystemRoles.teacher, SystemRoles.student),
-//     controller.getAllMessagesSpecificChatRoomHandler
-// )
+// Handler to get all messages of a specific chatRoom
+router.get('/:chatRoomId',
+    isAuthenticated,
+    isAuthorized(SystemRoles.teacher, SystemRoles.student),
+    controller.getAllMessagesSpecificChatRoomHandler
+)
 
-// router.route('/:messageId')
-//     // Handler to update a message
-//     .patch(
-//         isAuthenticated,
-//         isAuthorized(SystemRoles.teacher, SystemRoles.student),
-//         validation.updateChatMessageValidator,
-//         controller.editMessageHandler
-//     )
+router.route('/:messageId')
+    // Handler to update a message
+    .patch(
+        isAuthenticated,
+        isAuthorized(SystemRoles.teacher, SystemRoles.student),
+        // validation.updateChatMessageValidator,
+        controller.editMessageHandler
+    )
 
-//     // Handler to delete a message
-//     .delete(
-//         isAuthenticated,
-//         isAuthorized(SystemRoles.teacher, SystemRoles.student),
-//         controller.deleteMessageHandler
-//     )
+    // Handler to delete a message
+    .delete(
+        isAuthenticated,
+        isAuthorized(SystemRoles.teacher, SystemRoles.student),
+        controller.deleteMessageHandler
+    )
 
 
 

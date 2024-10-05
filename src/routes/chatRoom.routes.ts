@@ -18,11 +18,12 @@ router.route('/:roomId')
         isAuthorized(SystemRoles.teacher, SystemRoles.student),
         controller.getRoomByIdHandler
     )
-    // // Handler to remove a participant from a chat room
-    // .delete(
-    //     isAuthenticated,
-    //     isAuthorized(SystemRoles.teacher),
-    //     controller.removeParticipantHandler
-    // )
+    // Handler to remove a participant from a chat room
+    .delete(
+        isAuthenticated,
+        isAuthorized(SystemRoles.teacher),
+        // validation.removeParticipantValidator,
+        controller.removeParticipantHandler
+    )
 
 export const chatRoomRoutes = router;

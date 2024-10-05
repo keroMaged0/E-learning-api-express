@@ -10,7 +10,6 @@ interface IChatMessage extends ICommonModel {
 const chatMessageSchema = new Schema<IChatMessage>({
     chatRoomId: {
         type: Schema.Types.ObjectId,
-        required: true,
         ref: 'ChatRoom'
     },
     senderId: {
