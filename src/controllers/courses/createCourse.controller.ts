@@ -59,7 +59,6 @@ export const createCourseHandler: RequestHandler<
         // Create a chat room for the course
         await createRoomHandler({ courseId: course._id, instructorId: _id, next })
 
-
         // Clear related cache keys for courses
         await deleteAllCacheKeys(cacheKey);
 

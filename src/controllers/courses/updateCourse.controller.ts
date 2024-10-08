@@ -27,6 +27,7 @@ export const updateCourseHandler: RequestHandler<
         const { _id } = req.loggedUser;
         const { title, description, price, oldPublicId } = req.body;
 
+        // Check if the course exists and the instructor is authorized
         const course = await Courses.findById({ _id: courseId });
         if (!course) return next(new NotFoundError('Course not found'));
         if (course.instructorId.toString() !== _id.toString())

@@ -1,11 +1,11 @@
 import { Router } from 'express';
 
-import { isAuthenticated } from '../guards/isAuthenticated.guard';
-import { isAuthorized } from '../guards/isAuthorized.guard';
-import * as validation from '../validators/course.validator'
-import * as controller from '../controllers/courses'
-import { SystemRoles } from '../types/roles';
 import { uploadDiskStorage } from '../middlewares/multer.middleware';
+import { isAuthenticated } from '../guards/isAuthenticated.guard';
+import * as validation from '../validators/course.validator';
+import { isAuthorized } from '../guards/isAuthorized.guard';
+import * as controller from '../controllers/courses';
+import { SystemRoles } from '../types/roles';
 
 const router = Router();
 

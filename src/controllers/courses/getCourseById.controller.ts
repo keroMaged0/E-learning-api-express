@@ -24,8 +24,8 @@ export const getCourseByIdHandler: RequestHandler<
 
         const course = await Courses.findById(courseId).populate([
             { path: 'instructorId', select: 'name' },
-            { path: 'lessonsId', select: 'title duration' }, 
-            // { path: 'ratingId', select: 'rating' } // Uncomment if needed
+            { path: 'lessonsId', select: 'title duration' },
+            { path: 'ratingId' }
         ]);
         if (!course) return next(new NotFoundError('Course not found'));
 

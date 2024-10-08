@@ -1,14 +1,12 @@
 import { RequestHandler } from "express";
 
 import { catchError } from "../../middlewares/errorHandling.middleware";
+import { sendVerifyCode } from "../auth/utils/verifyCode.utils";
 import { NotFoundError } from "../../errors/notFoundError";
 import { VerifyReason } from "../../types/verify-reason";
 import { SuccessResponse } from "../../types/response";
 import { Courses } from "../../models/course.models";
-import { mailTransporter } from "../../utils/mail";
-import { generateCode } from "../../utils/random";
 import { Users } from "../../models/user.models";
-import { hashCode } from "../../utils/crypto";
 
 /**
  * Handler to initiate the deletion of a course.
@@ -39,22 +37,11 @@ export const deleteCourseHandler: RequestHandler<
         }
 
         // Generate a verification code for deletion confirmation
-        const code = generateCode();
-        user.verificationCode = {
-            code: hashCode(code),
-            expireAt: new Date(Date.now() + 10 * 60 * 1000), // 10 minutes expiration
+        await sendVerifyCode({
+            user,
             reason: VerifyReason.deleteCourse,
-            tempEmail: null,
-        };
-
-        // Send the verification code via email
-        await mailTransporter.sendMail({
-            to: user.email,
-            subject: `Verification code to delete ${course.title} course`,
-            html: `Verification code: <strong>${code}</strong>`,
-        });
-
-        await user.save();
+            subject: `Verification code to delete ${course.title} course`
+        })
 
         res.status(200).json({
             status: true,

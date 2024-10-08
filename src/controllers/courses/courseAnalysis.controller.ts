@@ -24,11 +24,11 @@ export const getCourseStatistics: RequestHandler<unknown, SuccessResponse> = cat
         const { _id } = req.loggedUser;
         const { courseId } = req.params;
 
+        // Fetch course details and check authorization
         const course = await Courses.findById(courseId);
         if (!course) return next(new NotFoundError('Course not found'));
         if (_id.toString() !== course.instructorId.toString())
             return next(new NotFoundError('Unauthorized instructor'));
-
 
         // Fetch statistics
         const [

@@ -44,7 +44,7 @@ export const getAllCoursesHandler: RequestHandler<
             const courses = await apiFeature.query.populate([
                 { path: 'instructorId', select: 'name' },
                 { path: 'lessonsId' },
-                // { path: 'ratingId', select: 'rating' } // Uncomment if needed
+                { path: 'ratingId'} 
             ]);
 
             // Cache the retrieved courses for future requests
