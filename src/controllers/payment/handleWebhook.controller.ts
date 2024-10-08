@@ -1,8 +1,8 @@
 import Stripe from 'stripe';
 
 import handleStripeEvent from './stripe/handleEvent.controller';
-import { logger } from '../../config/logger';
 import { env } from '../../config/env';
+import { logger } from '../../config/logger';
 
 
 /*************** stripe webhook ***************/
@@ -10,11 +10,11 @@ export const handleStripeWebhook = async (request, response) => {
     try {
         const sig = request.headers['stripe-signature'];
         if (!sig) {
+            logger.error('Missing Stripe signature');
             return response.status(400).send('Missing Stripe signature');
         }
 
         let stripeEvent;
-
         try {
             stripeEvent = Stripe.webhooks.constructEvent(
                 request.body,

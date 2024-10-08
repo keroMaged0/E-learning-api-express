@@ -6,12 +6,20 @@ import { NotFoundError } from "../../errors/notFoundError";
 import { Users } from "../../models/user.models";
 import { RequestHandler } from "express";
 
-
+/**
+ * Generates a two-factor authentication (2FA) secret for the user and sends a QR code image for setup.
+ *
+ * @param {Request} req - Express request object containing the logged user's ID in the headers.
+ * @param {Response} res - Express response object to return the QR code as an image.
+ * @param {Function} next - Middleware function to handle any errors.
+ * @returns {Promise<void>} - Sends a PNG image of the QR code for 2FA setup or an error if user is not found.
+ */
 export const generate2faHandler: RequestHandler = catchError(
     async (req, res, next) => {
-
+        // get user id from headers
         const { _id } = req.loggedUser
 
+        // check if user exists
         const user = await Users.findById(_id)
         if (!user) return next(new NotFoundError('User not found'))
 

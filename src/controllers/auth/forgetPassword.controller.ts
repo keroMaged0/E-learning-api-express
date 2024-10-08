@@ -11,6 +11,7 @@ import { hashPassword } from "../../utils/bcrypt";
 import { generateCode } from "../../utils/random";
 import { Users } from "../../models/user.models";
 import { hashCode } from "../../utils/crypto";
+import { sendVerifyCode } from "./utils/verifyCode.utils";
 
 
 /*************** Forget Password handlers ***************/
@@ -20,34 +21,26 @@ export const forgetPasswordHandler: RequestHandler<
     { email: string }
 > = catchError(
     async (req, res, next) => {
+        // destruct required data
         const { email } = req.body;
 
+        // check if user exist
         const user = await Users.findOne({ email });
         if (!user) return next(new NotFoundError('user not found'));
 
         if (!user.isVerified) return next(new NotAllowedError('user not verified'));
 
-        const code = generateCode();
-
-        user.verificationCode = {
-            code: hashCode(code),
-            expireAt: new Date(Date.now() + 10 * 60 * 1000),
+        // generate verification code and send to user email
+        const expireAt = await sendVerifyCode({
+            user,
             reason: VerifyReason.updatePasswordVerified,
-            tempEmail: null,
-        };
-
-        await user.save();
-
-        await mailTransporter.sendMail({
-            to: user.email,
-            subject: 'verification code To Reset Password',
-            html: `verification code <bold>${code}</bold>`,
-        });
+            subject: 'verification code To Reset Password'
+        })
 
         res.status(200).json({
             status: true,
             message: 'Code sent Successfully',
-            data: {},
+            data: { expireAt },
         });
     }
 )

@@ -30,7 +30,7 @@ router.post('/verificationCode/verify',
 // resend code to email route handlers
 router.post('/verificationCode/resend',
     validation.resendVerificationCodeValidator,
-    controller.resendVerificationCodeHandlerL,
+    controller.resendVerificationCodeHandler,
 )
 
 // two factor authentication route handlers
@@ -79,13 +79,6 @@ router.route('/forgetPassword')
         controller.updateForgetPasswordHandler
     )
 
-
-// logout route handlers
-router.get('/logout',
-    isAuthenticated,
-    isAuthorized(SystemRoles.student, SystemRoles.teacher),
-    controller.logoutHandler,
-)
 
 export const authRoutes = router;
 

@@ -11,8 +11,10 @@ const signupValidator = [
         trim(),
 
     body('email')
-        .notEmpty().withMessage('Email is required')
-        .isEmail().withMessage('Invalid email format'),
+        .notEmpty()
+        .withMessage('Email is required')
+        .isEmail()
+        .withMessage('Invalid email format'),
 
     body('password')
         .isString().
@@ -48,7 +50,7 @@ const signupValidator = [
         .optional()
         .isIn(Object.values(SystemRoles))
         .withMessage('Role must be one of the predefined roles (admin, student, teacher).'),
-    
+
 
     validatorMiddleware
 ]
@@ -90,9 +92,9 @@ const resendVerificationCodeValidator = [
 /*************** Enable 2FA Validator ***************/
 const enable2faValidator = [
     body('totp')
-        .exists({ checkFalsy: true }) // Ensure that 'totp' exists and is not falsy (null, undefined, empty string)
-        .withMessage('TOTP is required') // Custom error message if the field is missing
-        .isLength({ min: 6, max: 6 }) // Assuming TOTP is always 6 digits
+        .exists({ checkFalsy: true }) 
+        .withMessage('TOTP is required') 
+        .isLength({ min: 6, max: 6 }) 
         .isNumeric()
         .withMessage('TOTP must be a 6-digit numeric value'),
 
@@ -102,15 +104,15 @@ const enable2faValidator = [
 /*************** Login 2FA Validator ***************/
 const login2faValidator = [
     body('totp')
-        .exists({ checkFalsy: true }) // Ensure that 'totp' exists and is not falsy (null, undefined, empty string)
-        .withMessage('TOTP is required') // Custom error message if the field is missing
-        .isLength({ min: 6, max: 6 }) // Assuming TOTP is always 6 digits
+        .exists({ checkFalsy: true }) 
+        .withMessage('TOTP is required') 
+        .isLength({ min: 6, max: 6 }) 
         .isNumeric()
         .withMessage('TOTP must be a 6-digit numeric value'),
 
     body('tempToken')
         .exists({ checkFalsy: true }) // Ensure that 'tempToken' exists and is not falsy
-        .withMessage('Temporary Token is required') // Custom error message if the field is missing
+        .withMessage('Temporary Token is required') 
         .isUUID()
         .withMessage('Temporary Token must be a valid UUID'),
 
@@ -121,7 +123,7 @@ const login2faValidator = [
 const refreshTokenValidator = [
     body('refreshToken')
         .exists({ checkFalsy: true }) // Ensure that'refreshToken' exists and is not falsy
-        .withMessage('Refresh Token is required'),// Custom error message if the field is missing
+        .withMessage('Refresh Token is required'),
     validatorMiddleware
 ]
 

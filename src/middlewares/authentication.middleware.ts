@@ -20,13 +20,14 @@ export const authenticationMiddleware: RequestHandler = async (req, res, next) =
     const user = await Users.findOne({ accessToken: token });
     if (!user) return next();
 
-    // token payload
+    // create payload for logged user
     const payload = {
         _id: user._id as Types.ObjectId,
         role: user.role,
         isVerified: user.isVerified,
     };
 
+    // set logged user to request
     req.loggedUser = payload;
 
     next();

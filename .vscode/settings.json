@@ -4,8 +4,11 @@
         "excloude",
         "fieldname",
         "Fildes",
+        "keyuri",
         "Logtail",
+        "otplib",
         "paymob",
+        "qrcode",
         "Retrive",
         "streamifier",
         "totp"

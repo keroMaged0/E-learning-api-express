@@ -1,29 +1,37 @@
 import { RequestHandler } from "express";
+
 import { catchError } from "../../middlewares/errorHandling.middleware";
+import { NotAllowedError } from "../../errors/notAllowedError";
+import { NotFoundError } from "../../errors/notFoundError";
+import { sendVerifyCode } from "./utils/verifyCode.utils";
 import { SuccessResponse } from "../../types/response";
 import { Users } from "../../models/user.models";
-import { NotFoundError } from "../../errors/notFoundError";
-import { NotAllowedError } from "../../errors/notAllowedError";
-import { generateCode } from "../../utils/random";
-import { hashCode } from "../../utils/crypto";
-import { mailTransporter } from "../../utils/mail";
 
-export const resendVerificationCodeHandlerL: RequestHandler<
+/**
+ * Handles resending the verification code to the user's email if the cooldown period has passed.
+ *
+ * @param {Request} req - Express request object containing the user's email.
+ * @param {Response} res - Express response object to return the response to the client.
+ * @param {Function} next - Middleware function to handle any errors.
+ * @returns {Promise<void>} - Sends a JSON response with either the remaining cooldown time or success message.
+ */
+export const resendVerificationCodeHandler: RequestHandler<
     unknown,
     SuccessResponse
 > = catchError(
     async (req, res, next) => {
+        // destruct email from request body
         const { email } = req.body;
 
-        const user = await Users.findOne({
-            email: email,
-        });
+        // check if the user exists
+        const user = await Users.findOne({ email });
         if (!user) return next(new NotFoundError('user not found'));
 
         const currentTime = Date.now();
         const expireTime = new Date(user.verificationCode?.expireAt || '0').getTime();
         const remainingTimeToResendInSec = Math.floor((expireTime - currentTime) / 1000);
 
+        // check time to resend code again
         if (currentTime < expireTime)
             return res.status(200).json({
                 status: false,
@@ -34,23 +42,10 @@ export const resendVerificationCodeHandlerL: RequestHandler<
             });
         if (!user.verificationCode?.reason) return next(new NotAllowedError('not found reason to send code'));
 
-        const expireAt = new Date(Date.now() + 10 * 60 * 1000);
-        const code = generateCode();
+        const reason = user.verificationCode?.reason;
 
-        user.verificationCode = {
-            code: hashCode(code),
-            expireAt,
-            reason: user.verificationCode.reason,
-            tempEmail: user.verificationCode.tempEmail,
-        };
-
-        await user.save();
-
-        await mailTransporter.sendMail({
-            to: user.email,
-            subject: 'Verify your 8aya account',
-            html: `verification code <bold>${code}</bold>`,
-        });
+        // generate code and send it to the user
+        const expireAt = await sendVerifyCode({ user, reason, subject: 'Verify your account' });
 
         res.status(200).json({
             status: true,

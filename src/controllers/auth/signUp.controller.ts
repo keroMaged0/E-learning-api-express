@@ -35,7 +35,7 @@ export const signUpHandler: RequestHandler<
             password: hashedPassword,
             verificationCode: {
                 code: hashCode(code),
-                expireAt: new Date(Date.now() + 60 * 60 * 1000),  // Expires in 1 hour
+                expireAt: new Date(Date.now() + 1 * 60 * 1000),  // Expires in 1 minutes
                 reason: VerifyReason.signup,
             }
         });

@@ -1,45 +1,37 @@
 import { RequestHandler } from "express";
-import crypto from "crypto";
 
-import { generateAccessToken, generateRefreshToken } from "../../utils/token";
+import { generateAccessToken, generateRefreshToken, generateTempToken } from "../../utils/token";
 import { catchError } from "../../middlewares/errorHandling.middleware";
 import { NotAllowedError } from "../../errors/notAllowedError";
 import { NotFoundError } from "../../errors/notFoundError";
 import { SuccessResponse } from "../../types/response";
 import { comparePassword } from "../../utils/bcrypt";
 import { Users } from "../../models/user.models";
-import { setCache } from "../../services/redisCache.service";
-import { env } from "../../config/env";
-import { logger } from "../../config/logger";
 
 
-export const generateTempToken = async (userId: string): Promise<{ token: string; expiresInSeconds: number }> => {
-    const tempToken = crypto.randomUUID();
-    const cacheKey = `${env.redis.cacheTempKey}${tempToken}`;
-    const expiresInSeconds = env.redis.cacheTempExpire;
-
-    try {
-        await setCache(cacheKey, userId, expiresInSeconds);
-        return { token: tempToken, expiresInSeconds };
-    } catch (error) {
-        logger.error('Failed to store temporary token in cache:', error)
-        throw new Error('Failed to generate temporary token');
-    }
-
-}
-
+/**
+ * Handles user sign-in by validating user credentials, generating tokens, and returning authentication details.
+ *
+ * @param {Request} req - Express request object containing user credentials (email and password).
+ * @param {Response} res - Express response object for sending the response to the client.
+ * @param {Function} next - Middleware function to handle errors.
+ * @returns {Promise<void>} - Sends a JSON response with authentication tokens or error messages.
+ */
 export const signInHandler: RequestHandler<
     unknown,
     SuccessResponse,
     { email: string; password: string }
 > = catchError(
     async (req, res, next) => {
+        // check if user exist
         const user = await Users.findOne({ email: req.body.email })
         if (!user) return next(new NotFoundError());
 
+        // check if password is correct
         const isMatch = await comparePassword(req.body.password, user?.password || '')
         if (!isMatch) return next(new NotFoundError('password mismatch or not correct email'));
 
+        // check if user is verified
         if (!user.isVerified) return next(new NotAllowedError('please verify your Email and try again'));
 
         // check if user two-factor authentication is enabled
@@ -52,7 +44,6 @@ export const signInHandler: RequestHandler<
                     token: tempTokenData,
                 },
             });
-
         }
 
         // create token

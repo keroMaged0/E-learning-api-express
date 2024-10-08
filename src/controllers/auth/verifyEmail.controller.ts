@@ -1,78 +1,56 @@
 import { RequestHandler } from "express";
+
 import { catchError } from "../../middlewares/errorHandling.middleware";
+import { checkVerifyCode, signUpReason } from "./utils/verifyCode.utils";
+import { NotFoundError } from "../../errors/notFoundError";
+import { VerifyReason } from "../../types/verify-reason";
 import { SuccessResponse } from "../../types/response";
 import { Users } from "../../models/user.models";
-import { NotFoundError } from "../../errors/notFoundError";
-import { hashCode } from "../../utils/crypto";
-import { NotAllowedError } from "../../errors/notAllowedError";
-import { SystemRoles } from "../../types/roles";
-import { generateAccessToken } from "../../utils/token";
-import { VerifyReason } from "../../types/verify-reason";
 
-const isExpired = (date: Date) => {
-    const currentTime = Date.now();
-    const expireTime = date.getTime();
-    return currentTime > expireTime;
-};
 
+/**
+ * Handles email verification by validating the verification code and processing according to the verification reason.
+ *
+ * @param {Request} req - Express request object containing the user's email and verification code.
+ * @param {Response} res - Express response object to return the response to the client.
+ * @param {Function} next - Middleware function to handle any errors.
+ * @returns {Promise<void>} - Sends a JSON response with a success message and token if verification is successful.
+ */
 export const verifyEmailHandler: RequestHandler<
     unknown,
     SuccessResponse
 > = catchError(
     async (req, res, next) => {
+        // destruct required data from body
         let { email, code } = req.body;
 
+        // check if the user exists
         const user = await Users.findOne({ email })
         if (!user) return next(new NotFoundError('user not found'));
 
-        if (!user.verificationCode.reason) return next(new NotFoundError('no response to verification code'));
-        if (user.verificationCode.code !== hashCode(code)) return next(new NotAllowedError('invalid verification code'));
-
-        if (isExpired(new Date(user.verificationCode.expireAt || 0))) return next(new NotAllowedError('expired verification code'));
+        // check if the verification code is valid
+        await checkVerifyCode({ user, code, next });
 
         user.verificationCode.expireAt = null;
 
-        let responsedData: any = {};
+        let responseData: any = {};
 
-        if (user.verificationCode?.reason === 'signup') {
-            if (user.role === SystemRoles.admin)
-                user.role = SystemRoles.student;
+        const reason = user.verificationCode?.reason
 
-            const token = generateAccessToken();
-            user.verificationCode.code = null;
-            user.verificationCode.expireAt = null;
-            user.verificationCode.reason = null;
-            user.isVerified = true;
-            user.token = token;
+        // check the reason for the verification code
+        if (reason === VerifyReason.signup) {
+            const token = await signUpReason(user)
+            responseData = token
+        } 
 
-            responsedData = {
-                token: {
-                    access: token,
-                },
-            };
-        } else if (user.verificationCode?.reason === 'update-password') {
-            user.verificationCode.code = null;
-            user.verificationCode.expireAt = null;
-            user.verificationCode.reason = VerifyReason.updatePasswordVerified;
-
-        } else if (user.verificationCode?.reason === VerifyReason.updatePhoneNumber) {
-            user.email = user.verificationCode.tempEmail!;
-            user.verificationCode.tempEmail = null;
-            user.token = null;
-            await user.save();
-            return res.status(200).json({
-                message: 'email updated successfully',
-                status: true,
-                data: {},
-            });
-        }
-        user.isVerified = true;
         await user.save();
+
         return res.status(200).json({
             message: 'Verified successfully',
             status: true,
-            data: responsedData,
+            data: responseData,
         });
 
     }
 )
+

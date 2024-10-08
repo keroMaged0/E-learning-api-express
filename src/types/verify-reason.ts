@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 export enum VerifyReason {
   updatePasswordVerified = 'update-password-verified',
-  updatePhoneNumber = 'update-phone-number',
+  updateEmail = 'update-email',
   updatePassword = 'update-password',
   deleteQuestion = 'delete-question',
   deleteCourse = 'delete-course',

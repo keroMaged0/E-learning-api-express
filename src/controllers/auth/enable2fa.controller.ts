@@ -1,21 +1,31 @@
-import { authenticator } from "otplib";
-import { NotFoundError } from "../../errors/notFoundError";
-import { catchError } from "../../middlewares/errorHandling.middleware";
-import { Users } from "../../models/user.models";
-import { NotAllowedError } from "../../errors/notAllowedError";
 import { RequestHandler } from "express";
-import { SuccessResponse } from "../../types/response";
+import { authenticator } from "otplib";
 
+import { catchError } from "../../middlewares/errorHandling.middleware";
+import { NotAllowedError } from "../../errors/notAllowedError";
+import { NotFoundError } from "../../errors/notFoundError";
+import { SuccessResponse } from "../../types/response";
+import { Users } from "../../models/user.models";
+
+
+/**
+ * Enables Two-Factor Authentication (2FA) for the user after verifying the provided TOTP (Time-based One-Time Password).
+ *
+ * @param {Request} req - Express request object containing the logged user's ID and TOTP in the request body.
+ * @param {Response} res - Express response object to send a success message if 2FA is enabled.
+ * @param {Function} next - Middleware function to handle errors.
+ * @returns {Promise<void>} - Sends a success message if TOTP is valid, otherwise throws an error if user not found or TOTP is invalid.
+ */
 export const enable2faHandler: RequestHandler<
     unknown,
     SuccessResponse
 > = catchError(
     async (req, res, next) => {
+        // destruct required data
         const { _id } = req.loggedUser
         const { totp } = req.body;
 
-        if (!totp) return next(new NotFoundError('totp is required'))
-
+        // check if user exists
         const user = await Users.findById(_id)
         if (!user) return next(new NotFoundError('User not found'))
 
@@ -23,6 +33,7 @@ export const enable2faHandler: RequestHandler<
         const verified = authenticator.check(totp, user['2faSecret'] as string)
         if (!verified) return next(new NotAllowedError('Invalid TOTP'))
 
+        // update user 2fa status
         user['2faEnabled'] = true;
 
         await user.save();
