@@ -4,6 +4,7 @@ import { catchError } from "../../middlewares/errorHandling.middleware";
 import { NotFoundError } from "../../errors/notFoundError";
 import { SuccessResponse } from "../../types/response";
 import { Reviews } from "../../models/review.models";
+import { findReview } from "../../services/entities/review.service";
 
 /**
  * Handler to fetch all reviews for a specific course.
@@ -26,9 +27,9 @@ export const getAllReviewsSpecificCourseHandler: RequestHandler<
 > = catchError(
     async (req, res, next) => {
         const { courseId } = req.params;
-        
-        const reviews = await Reviews.find({ entityType: 'course', entityId: courseId });
-        if (!reviews) return next(new NotFoundError('Reviews not found'));
+
+        // Find all reviews for the course
+        const reviews = await findReview({ entityType: 'course', entityId: courseId }, next);
 
         res.status(200).json({
             status: true,

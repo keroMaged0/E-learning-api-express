@@ -3,6 +3,7 @@ import { RequestHandler } from "express";
 import { catchError } from "../../middlewares/errorHandling.middleware";
 import { SuccessResponse } from "../../types/response";
 import { Reviews } from "../../models/review.models";
+import { findReview } from "../../services/entities/review.service";
 
 
 /**
@@ -27,8 +28,8 @@ export const getAllReviewsSpecificUserHandler: RequestHandler<
     async (req, res, next) => {
         const { _id } = req.loggedUser;
 
-        const reviews = await Reviews.find({ userId: _id })
-        if (!reviews) return next(new Error('Reviews not found'));
+        // Find all reviews for the user
+        const reviews = await findReview({ userId: _id }, next)
 
         return res.status(200).json({
             status: true,

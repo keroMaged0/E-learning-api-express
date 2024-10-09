@@ -35,7 +35,6 @@ export const createReviewSpecificCourseHandler: RequestHandler<
         const { rating } = req.body;
         const { courseId } = req.params;
 
-
         // Check if user have permission to review the entity
         const enrolled = await Enrolled.findOne({ userId: _id, courseId });
         if (!enrolled) {
@@ -57,7 +56,6 @@ export const createReviewSpecificCourseHandler: RequestHandler<
             entityId: courseId,
             rating,
         });
-
 
         res.status(200).json({
             status: true,

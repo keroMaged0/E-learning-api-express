@@ -1,14 +1,11 @@
 import { RequestHandler } from "express";
 
+import { sendVerifyCode } from "../../services/entities/verifyCode.service";
 import { catchError } from "../../middlewares/errorHandling.middleware";
-import { NotFoundError } from "../../errors/notFoundError";
+import { findReview } from "../../services/entities/review.service";
+import { findUserById } from "../../services/entities/user.service";
 import { VerifyReason } from "../../types/verify-reason";
 import { SuccessResponse } from "../../types/response";
-import { Reviews } from "../../models/review.models";
-import { mailTransporter } from "../../utils/mail";
-import { generateCode } from "../../utils/random";
-import { Users } from "../../models/user.models";
-import { hashCode } from "../../utils/crypto";
 
 /**
  * Handler to delete a specific review by its ID for the logged-in user.
@@ -33,33 +30,23 @@ export const deleteReviewHandler: RequestHandler<
         const { reviewId } = req.params;
         const { _id } = req.loggedUser;
 
-        const review = await Reviews.findOne({ _id: reviewId, userId: _id });
-        if (!review) return next(new NotFoundError('Review not found'));
+        // Check if the review exists
+        await findReview({ _id: reviewId, userId: _id }, next);
 
-        const user = await Users.findById(_id);
-        if (!user) return next(new NotFoundError('User not found'));
+        // Check if the user is enrolled in the course 
+        const user = await findUserById(_id, next);
 
-        const code = generateCode();
-        user.verificationCode = {
-            code: hashCode(code),
-            expireAt: new Date(Date.now() + 10 * 60 * 1000), // 10 minutes expiration
+        // Generate a verification code for deletion confirmation
+        const expireAt = await sendVerifyCode({
+            user,
             reason: VerifyReason.deleteReview,
-            tempEmail: null,
-        };
-
-        // Send the verification code via email
-        await mailTransporter.sendMail({
-            to: user.email,
             subject: `Verification code to delete your review`,
-            html: `Verification code: <strong>${code}</strong>`,
-        });
-
-        await user.save();
+        })
 
         res.status(200).json({
             status: true,
             message: 'Check your email to confirm review deletion',
-            data: null,
+            data: expireAt,
         });
     }
 )

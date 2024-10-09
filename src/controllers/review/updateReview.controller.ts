@@ -5,6 +5,7 @@ import { NotFoundError } from "../../errors/notFoundError";
 import { SuccessResponse } from "../../types/response";
 import { Reviews } from "../../models/review.models";
 import { MODELS } from "../../types/modelNames";
+import { findReview } from "../../services/entities/review.service";
 
 /**
  * Handler to update a specific review by its ID for the logged-in user.
@@ -31,8 +32,8 @@ export const updateReviewHandler: RequestHandler<
         const { _id } = req.loggedUser;
         const { rating, comment } = req.body;
 
-        const review = await Reviews.findOne({ _id: reviewId, userId: _id })
-        if (!review) return next(new NotFoundError('Review not found'));
+        // Check if the review exists
+        const review = await findReview({ _id: reviewId, userId: _id }, next)
 
         if (review.entityType === MODELS.course) {
             if (!comment) return next(new NotFoundError('Comment not found'));

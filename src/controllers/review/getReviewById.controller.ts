@@ -4,6 +4,7 @@ import { catchError } from "../../middlewares/errorHandling.middleware";
 import { NotAllowedError } from "../../errors/notAllowedError";
 import { SuccessResponse } from "../../types/response";
 import { Reviews } from "../../models/review.models";
+import { findReview } from "../../services/entities/review.service";
 
 /**
  * Handler to retrieve a specific review by its ID for the logged-in user.
@@ -28,8 +29,8 @@ export const getReviewByIdHandler: RequestHandler<
         const { reviewId } = req.params;
         const { _id } = req.loggedUser;
 
-        const review = await Reviews.findOne({ userId: _id, _id: reviewId })
-        if (!review) return next(new NotAllowedError('Unauthorized user'));
+        // Check if the review exists
+        const review = await findReview({ userId: _id, _id: reviewId }, next)
 
         return res.status(200).json({
             status: true,

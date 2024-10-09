@@ -1,13 +1,13 @@
 import { RequestHandler } from "express";
 
 import { catchError } from "../../middlewares/errorHandling.middleware";
+import { findLessonById } from "../../services/entities/lesson.service";
+import { findCourseById } from "../../services/entities/course.service";
+import { findVideoById } from "../../services/entities/video.service";
 import { NotAllowedError } from "../../errors/notAllowedError";
 import { Enrolled } from "../../models/enrolled.model";
 import { SuccessResponse } from "../../types/response";
 import { Reviews } from "../../models/review.models";
-import { Courses } from "../../models/course.models";
-import { Lessons } from "../../models/lesson.models";
-import { Videos } from "../../models/video.models";
 import { MODELS } from "../../types/modelNames";
 
 /**
@@ -36,14 +36,14 @@ export const createCommentSpecificVideoHandler: RequestHandler<
         const { comment } = req.body;
         const { videoId } = req.params;
 
-        const video = await Videos.findById(videoId);
-        if (!video) return next(new NotAllowedError('Video not found'));
+        // Check if the video exists
+        const video = await findVideoById(videoId, next);
 
-        const lesson = await Lessons.findById(video.lessonId);
-        if (!lesson) return next(new NotAllowedError('Lesson not found'));
+        // Check if the lesson exists
+        const lesson = await findLessonById(video.lessonId, next);
 
-        const course = await Courses.findById(lesson.courseId);
-        if (!course) return next(new NotAllowedError('Course not found'));
+        // Check if the course exists
+        const course = await findCourseById(lesson.courseId, next);
 
         // Check if user have permission to review the entity
         const enrolled = await Enrolled.findOne({ userId: _id, courseId: course._id });

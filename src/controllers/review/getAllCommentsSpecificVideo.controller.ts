@@ -10,6 +10,10 @@ import { Videos } from "../../models/video.models";
 import { Users } from "../../models/user.models";
 import { SystemRoles } from "../../types/roles";
 import { Enrolled } from "../../models/enrolled.model";
+import { findVideoById } from "../../services/entities/video.service";
+import { findLessonById } from "../../services/entities/lesson.service";
+import { findCourseById } from "../../services/entities/course.service";
+import { findUserById } from "../../services/entities/user.service";
 
 /**
  * Handler to retrieve all comments for a specific video.
@@ -37,17 +41,17 @@ export const getAllCommentsSpecificVideoHandler: RequestHandler<
         const { videoId } = req.params;
         const { _id } = req.loggedUser;
 
-        const video = await Videos.findById(videoId);
-        if (!video) return next(new NotAllowedError('Video not found'));
+        // Check if the video exists
+        const video = await findVideoById(videoId, next);
 
-        const lesson = await Lessons.findById(video.lessonId);
-        if (!lesson) return next(new NotAllowedError('Lesson not found'));
+        // Check if the lesson exists
+        const lesson = await findLessonById(video.lessonId, next);
 
-        const course = await Courses.findById(lesson.courseId);
-        if (!course) return next(new NotAllowedError('Course not found'));
+        // Check if the course exists
+        const course = await findCourseById(lesson.courseId, next);
 
-        const user = await Users.findById(_id)
-        if (!user) return next(new NotAllowedError('User not found'));
+        // Check if the user has permission to view the comments
+        const user = await findUserById(_id, next)
         if (user.role === SystemRoles.teacher) {
             if (course?.instructorId.toString() !== _id.toString()) return next(new NotAllowedError('You are not allowed to view comments this video'));
         }

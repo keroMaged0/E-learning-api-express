@@ -1,12 +1,13 @@
 import { RequestHandler } from "express";
 
 import { catchError } from "../../middlewares/errorHandling.middleware";
+import { findReview } from "../../services/entities/review.service";
+import { findUserById } from "../../services/entities/user.service";
 import { NotAllowedError } from "../../errors/notAllowedError";
 import { NotFoundError } from "../../errors/notFoundError";
 import { VerifyReason } from "../../types/verify-reason";
 import { SuccessResponse } from "../../types/response";
-import { Reviews } from "../../models/review.models";
-import { Users } from "../../models/user.models";
+
 
 /**
  * Handler to confirm the deletion of a specific review by its ID for the logged-in user.
@@ -31,12 +32,11 @@ export const confirmDeleteReviewHandler: RequestHandler<
         const { reviewId } = req.params;
         const { _id } = req.loggedUser;
 
-        const review = await Reviews.findOne({ _id: reviewId, userId: _id });
-        if (!review) return next(new NotFoundError('Review not found'));
+        // Check if the review exists
+        const review = await findReview({ _id: reviewId, userId: _id }, next);
 
         // Ensure the instructor exists and is authorized to delete the course
-        const user = await Users.findById({ _id: review.userId });
-        if (!user) return next(new NotFoundError('User not found'));
+        const user = await findUserById(review.userId, next);
         if (user._id.toString() !== _id.toString()) {
             return next(new NotFoundError('Unauthorized instructor'));
         }
