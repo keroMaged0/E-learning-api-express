@@ -1,9 +1,9 @@
 import { RequestHandler } from "express";
 
 import { catchError } from "../../middlewares/errorHandling.middleware";
+import { NotFoundError } from "../../errors/notFoundError";
 import { SuccessResponse } from "../../types/response";
 import { Videos } from "../../models/video.models";
-import { NotFoundError } from "../../errors/notFoundError";
 
 /**
  * Handler function to retrieve a video by its ID.

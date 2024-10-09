@@ -8,6 +8,7 @@ import { SuccessResponse } from "../../types/response";
 import { updateVideo } from "../../utils/uploadMedia";
 import { Lessons } from "../../models/lesson.models";
 import { Videos } from "../../models/video.models";
+import { findVideoById } from "../../services/entities/video.service";
 
 /**
  * Handler function to update an existing video.
@@ -26,8 +27,8 @@ export const updateVideosHandler: RequestHandler<unknown, SuccessResponse> = cat
 
         const cacheKeys = ['allLessons-*', 'allCourses-*', 'allVideos-*']; // Define cache keys for invalidation
 
-        const video = await Videos.findById(videoId);
-        if (!video) return next(new NotFoundError('Video not found'));
+        // Check if the video exists and the instructor is authorized
+        const video = await findVideoById(videoId, next);
         if (video.instructorId.toString() !== _id.toString()) return next(new NotFoundError('Not authorized'));
 
         // Handle video update

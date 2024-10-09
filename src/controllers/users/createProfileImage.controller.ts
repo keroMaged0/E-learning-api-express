@@ -1,11 +1,11 @@
 import { RequestHandler } from "express";
 
 import { catchError } from "../../middlewares/errorHandling.middleware";
+import { findUserById } from "../../services/entities/user.service";
 import { uploadImageToCloudinary } from "../../utils/uploadMedia";
 import { NotFoundError } from "../../errors/notFoundError";
 import { SuccessResponse } from "../../types/response";
 import { generateCode } from "../../utils/random";
-import { Users } from "../../models/user.models";
 import { env } from "../../config/env";
 
 /**
@@ -31,8 +31,7 @@ export const createProfileImageHandler: RequestHandler<
         if (!req.file) return next(new NotFoundError('profile image is required'));
 
         // check if the user exists
-        const user = await Users.findById(_id)
-        if (!user) return next(new NotFoundError('User not found'))
+        const user = await findUserById(_id, next)
 
         // Generate a unique folder ID for the profile image
         const folderId = generateCode()

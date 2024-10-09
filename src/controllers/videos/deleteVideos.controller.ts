@@ -1,14 +1,12 @@
 import { RequestHandler } from "express";
 
 import { catchError } from "../../middlewares/errorHandling.middleware";
-import { SuccessResponse } from "../../types/response";
-import { generateCode } from "../../utils/random";
-import { hashCode } from "../../utils/crypto";
-import { VerifyReason } from "../../types/verify-reason";
-import { mailTransporter } from "../../utils/mail";
-import { Videos } from "../../models/video.models";
+import { sendVerifyCode } from "../../services/entities/verifyCode.service";
+import { findVideoById } from "../../services/entities/video.service";
+import { findUserById } from "../../services/entities/user.service";
 import { NotFoundError } from "../../errors/notFoundError";
-import { Users } from "../../models/user.models";
+import { VerifyReason } from "../../types/verify-reason";
+import { SuccessResponse } from "../../types/response";
 
 /**
  * Handler function to delete a video.
@@ -22,52 +20,30 @@ import { Users } from "../../models/user.models";
  */
 export const deleteVideosHandler: RequestHandler<unknown, SuccessResponse> = catchError(
     async (req, res, next) => {
-        const { videoId } = req.params; 
-        const { _id } = req.loggedUser; 
+        const { videoId } = req.params;
+        const { _id } = req.loggedUser;
 
-        const video = await Videos.findById(videoId);
-        if (!video) return next(new NotFoundError('Video not found'));
+        // Check if the video exists
+        const video = await findVideoById(videoId, next);
 
-        const user = await Users.findById(video.instructorId);
-        if (!user) return next(new NotFoundError('User not found'));
+        // Check if the user is the instructor of the video
+        const user = await findUserById(video.instructorId, next);
         if (user._id.toString() !== _id.toString()) {
             return next(new NotFoundError('Unauthorized instructor'));
         }
 
         // Generate and send verification code to the user
-        await generateAndSendVerificationCode(user, video.title);
-        
+        const expireAt = await sendVerifyCode({
+            user,
+            reason: VerifyReason.deleteVideo,
+            subject: `Verification Code to Delete Video: ${video.title}`,
+        })
+
         res.status(200).json({
             status: true,
             message: 'Check your email to confirm video deletion',
-            data: null,
+            data: expireAt,
         });
     }
 );
 
-/**
- * Generate a verification code and send it to the user's email.
- * @param {User} user - The user object to send the verification code to.
- * @param {string} videoTitle - The title of the video being deleted.
- * @returns {Promise<void>} - A promise that resolves to void.
- */
-const generateAndSendVerificationCode = async (user, videoTitle: string) => {
-    const code = generateCode(); 
-
-    // Set the verification code details in the user's object
-    user.verificationCode = {
-        code: hashCode(code), 
-        expireAt: new Date(Date.now() + 10 * 60 * 1000), 
-        reason: VerifyReason.deleteVideo, 
-        tempEmail: null,
-    };
-
-    // Send verification code to the user's email
-    await mailTransporter.sendMail({
-        to: user.email,
-        subject: `Verification Code to Delete Video: ${videoTitle}`,
-        html: `Your verification code is <strong>${code}</strong>`, 
-    });
-
-    await user.save();
-};

@@ -2,12 +2,12 @@ import { RequestHandler } from "express";
 
 import { catchError } from "../../middlewares/errorHandling.middleware";
 import { deleteAllCacheKeys } from "../../services/redisCache.service";
-import { NotFoundError } from "../../errors/notFoundError";
+import { findLesson } from "../../services/entities/lesson.service";
+import { uploadVideoToCloudinary } from "../../utils/uploadMedia";
 import { SuccessResponse } from "../../types/response";
 import { Lessons } from "../../models/lesson.models";
 import { Videos } from "../../models/video.models";
 import { generateCode } from "../../utils/random";
-import { uploadVideoToCloudinary } from "../../utils/uploadMedia";
 
 /**
  * Handler function to create a new video associated with a lesson.
@@ -27,8 +27,7 @@ export const createVideosHandler: RequestHandler<unknown, SuccessResponse> = cat
         const cacheKeys = ['allLessons-*', 'allCourses-*', 'allVideos-*']; // Cache keys to invalidate
 
         // Find the lesson by instructor ID
-        const lesson = await Lessons.findOne({ instructorId: _id, _id: lessonId });
-        if (!lesson) return next(new NotFoundError('Lesson not found'));
+        const lesson = await findLesson({ instructorId: _id, _id: lessonId }, next);
 
         const folderId = generateCode();
         const pathUrl = lesson.imageCover.public_id.split(`${lesson.folderId}/imageCover`)[0] + `${lesson.folderId}/videos/${folderId}`;

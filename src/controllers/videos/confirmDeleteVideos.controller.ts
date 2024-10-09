@@ -9,6 +9,9 @@ import { SuccessResponse } from "../../types/response";
 import { Videos } from "../../models/video.models";
 import { Users } from "../../models/user.models";
 import { logger } from "../../config/logger";
+import { findVideoById } from "../../services/entities/video.service";
+import { findUserById } from "../../services/entities/user.service";
+import { clearVerifyCode } from "../../services/entities/verifyCode.service";
 
 /**
  * Handler function to confirm the deletion of a video.
@@ -27,17 +30,18 @@ export const confirmDeleteVideosHandler: RequestHandler<unknown, SuccessResponse
         const { videoId } = req.params;
         const { _id: instructorId } = req.loggedUser;
 
-        const video = await Videos.findById(videoId);
-        if (!video) return next(new NotFoundError('Video not found'));
+        // Check if the video exists
+        const video = await findVideoById(videoId, next);
 
-        const user = await Users.findById(video.instructorId);
-        if (!user) return next(new NotFoundError('User not found'));
+        // Check if the instructor is authorized to delete the video
+        const user = await findUserById(video.instructorId, next);
         if (user._id.toString() !== instructorId.toString())
             return next(new NotFoundError('Unauthorized instructor'));
         if (user.verificationCode?.reason !== VerifyReason.deleteVideo)
             return next(new NotAllowedError('Invalid verification code'));
-        user.verificationCode.reason = null;
-        await user.save();
+
+        // Clear the verification code from the user
+        await clearVerifyCode(user)
 
         // Construct the media path for deletion from Cloudinary
         const mediaPath = video.url.public_id.split(`${video.folderId}`)[0] + video.folderId;
