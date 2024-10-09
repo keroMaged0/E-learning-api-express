@@ -28,6 +28,7 @@ const QuizSchema = new Schema<IQuiz>({
             ref: MODELS.question,
         }
     ],
+    
 });
 
 export const Quiz = model<IQuiz>('Quiz', QuizSchema);

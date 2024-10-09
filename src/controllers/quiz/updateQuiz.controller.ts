@@ -1,10 +1,11 @@
 import { RequestHandler } from "express";
 
 import { catchError } from "../../middlewares/errorHandling.middleware";
+import { findCourseById } from "../../services/entities/course.service";
+import { findQuizById } from "../../services/entities/quiz.service";
 import { NotFoundError } from "../../errors/notFoundError";
 import { SuccessResponse } from "../../types/response";
 import { Courses } from "../../models/course.models";
-import { Quiz } from "../../models/quiz.models";
 
 /**
  * Handler to update a quiz.
@@ -30,11 +31,11 @@ export const updateQuizHandler: RequestHandler<
         const { _id } = req.loggedUser;
         const { quizId } = req.params;
 
-        const quiz = await Quiz.findById(quizId);
-        if (!quiz) return next(new NotFoundError('Quiz not found'));
+        // Check if the quiz exists
+        const quiz = await findQuizById(quizId, next);
 
-        const course = await Courses.findById(quiz.courseId)
-        if (!course) return next(new NotFoundError('Course not found'));
+        // Check if the course exists
+        const course = await findCourseById(quiz.courseId, next)
 
         // Check if the logged user is the instructor of the course
         if (course.instructorId.toString() !== _id.toString()) return next(new NotFoundError('Unauthorized instructor'));

@@ -1,10 +1,9 @@
 import { RequestHandler } from "express";
 
 import { catchError } from "../../middlewares/errorHandling.middleware";
+import { findCourseById } from "../../services/entities/course.service";
 import { UnauthorizedError } from "../../errors/UnauthorizedError";
-import { NotFoundError } from "../../errors/notFoundError";
 import { SuccessResponse } from "../../types/response";
-import { Courses } from "../../models/course.models";
 import { Quiz } from "../../models/quiz.models";
 
 /**
@@ -30,8 +29,7 @@ export const createQuizHandler: RequestHandler<
         const { title, description, courseId } = req.body;
         const { _id } = req.loggedUser;
 
-        const course = await Courses.findById(courseId);
-        if (!course) return next(new NotFoundError('Course not found'));
+        const course = await findCourseById(courseId, next);
 
         // Check if the logged user is the instructor of the course
         if (_id.toString() !== course.instructorId.toString()) {

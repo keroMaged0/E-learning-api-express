@@ -27,6 +27,7 @@ router.get('/course/:courseId',
     controller.getAllQuizzesSpecificCourseHandler
 );
 
+
 router.route('/:quizId')
     // Handler to get a quiz by its ID
     .get(
