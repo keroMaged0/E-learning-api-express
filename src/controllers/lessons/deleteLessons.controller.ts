@@ -1,14 +1,12 @@
 import { RequestHandler } from "express";
 
 import { catchError } from "../../middlewares/errorHandling.middleware";
+import { sendVerifyCode } from "../auth/utils/verifyCode.utils";
 import { NotFoundError } from "../../errors/notFoundError";
 import { VerifyReason } from "../../types/verify-reason";
 import { SuccessResponse } from "../../types/response";
 import { Lessons } from "../../models/lesson.models";
-import { mailTransporter } from "../../utils/mail";
-import { generateCode } from "../../utils/random";
 import { Users } from "../../models/user.models";
-import { hashCode } from "../../utils/crypto";
 
 /**
  * Handler to delete a lesson by sending a verification email to the instructor.
@@ -33,7 +31,11 @@ export const deleteLessonsHandler: RequestHandler<unknown, SuccessResponse> = ca
         }
 
         // Generate and send verification code to the user's email
-        await generateAndSendVerificationCode(user, lesson.title);
+        await sendVerifyCode({
+            user,
+            reason:VerifyReason.deleteLesson,
+            subject: `Verification Code to Delete Lesson: ${lesson.title}`,
+        })
         
         res.status(200).json({
             status: true,
@@ -42,29 +44,3 @@ export const deleteLessonsHandler: RequestHandler<unknown, SuccessResponse> = ca
         });
     }
 );
-
-/**
- * Generates a verification code, hashes it, and sends it to the user's email.
- * @param {User} user - The user object of the instructor.
- * @param {string} lessonTitle - The title of the lesson to be deleted.
- * @throws {Error} - Throws an error if sending email fails.
- */
-const generateAndSendVerificationCode = async (user, lessonTitle: string) => {
-    const code = generateCode();
-
-    // Store the hashed verification code and its expiry time
-    user.verificationCode = {
-        code: hashCode(code),
-        expireAt: new Date(Date.now() + 10 * 60 * 1000), 
-        reason: VerifyReason.deleteLesson,
-        tempEmail: null,
-    };
-
-    await mailTransporter.sendMail({
-        to: user.email,
-        subject: `Verification Code to Delete Lesson: ${lessonTitle}`,
-        html: `Your verification code is <strong>${code}</strong>`,
-    });
-
-    await user.save();
-};

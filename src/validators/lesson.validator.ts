@@ -10,7 +10,6 @@ const createLessonsValidator = [
         .isLength({ min: 5, max: 100 })
         .withMessage('Title should be between 5 and 100 characters long'),
 
-
     body('content')
         .isString()
         .isLength({ min: 5 })
@@ -21,11 +20,11 @@ const createLessonsValidator = [
         .notEmpty()
         .withMessage('Course ID is required'),
 
-    body('resourses')
+    body('recourses')
         .isArray()
-        .withMessage('Resourses should be an array')
+        .withMessage('recourses should be an array')
         .custom((arr) => arr.every(item => typeof item === 'string'))
-        .withMessage('Each resourse should be a string')
+        .withMessage('Each recourses should be a string')
         .optional(),
     validatorMiddleware
 ]

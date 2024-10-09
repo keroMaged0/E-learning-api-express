@@ -9,6 +9,7 @@
         "otplib",
         "paymob",
         "qrcode",
+        "resourses",
         "Retrive",
         "streamifier",
         "totp"

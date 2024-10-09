@@ -4,9 +4,9 @@ import { catchError } from "../../middlewares/errorHandling.middleware";
 import { getData, setCache } from "../../services/redisCache.service";
 import { NotFoundError } from "../../errors/notFoundError";
 import { SuccessResponse } from "../../types/response";
-import { ApiFeature } from "../../utils/apiFeature";
 import { Lessons } from "../../models/lesson.models";
 import { Courses } from "../../models/course.models";
+import { ApiFeature } from "../../utils/apiFeature";
 
 /**
  * Handler to retrieve all lessons with pagination, sorting, and filtering.
