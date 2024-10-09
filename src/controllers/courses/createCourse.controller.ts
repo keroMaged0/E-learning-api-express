@@ -2,6 +2,7 @@ import { RequestHandler } from "express";
 
 import { catchError } from "../../middlewares/errorHandling.middleware";
 import { deleteAllCacheKeys } from "../../services/redisCache.service";
+import { findUserById } from "../../services/entities/user.service";
 import { uploadImageToCloudinary } from "../../utils/uploadMedia";
 import { ConflictError } from "../../errors/conflictError";
 import { NotFoundError } from "../../errors/notFoundError";
@@ -10,7 +11,6 @@ import { Courses } from "../../models/course.models";
 import { createRoomHandler } from "../chat/chatRoom";
 import { generateCode } from "../../utils/random";
 import { env } from "../../config/env";
-import { findUserById } from "../../services/entities/user.service";
 
 /**
  * Handler to create a new course.
@@ -30,6 +30,7 @@ export const createCourseHandler: RequestHandler<
         const { _id } = req.loggedUser;
         const cacheKey = 'allCourses-*';
 
+        // Check if the user exists
         const user = await findUserById(_id, next);
 
         // Check for a unique course title for the user

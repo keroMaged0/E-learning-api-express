@@ -1,6 +1,7 @@
 import { RequestHandler } from "express";
 
 import { catchError } from "../../middlewares/errorHandling.middleware";
+import { findCourseById } from "../../services/entities/course.service";
 import { ConflictError } from "../../errors/conflictError";
 import { NotFoundError } from "../../errors/notFoundError";
 import { SuccessResponse } from "../../types/response";
@@ -28,11 +29,9 @@ export const updateCourseHandler: RequestHandler<
         const { title, description, price, oldPublicId } = req.body;
 
         // Check if the course exists and the instructor is authorized
-        const course = await Courses.findById({ _id: courseId });
-        if (!course) return next(new NotFoundError('Course not found'));
+        const course = await findCourseById(courseId, next);
         if (course.instructorId.toString() !== _id.toString())
             return next(new NotFoundError('Unauthorized instructor'));
-
 
         // Handle cover image update
         if (oldPublicId) {

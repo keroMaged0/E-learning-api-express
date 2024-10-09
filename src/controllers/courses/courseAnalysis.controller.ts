@@ -1,11 +1,11 @@
 import { RequestHandler } from "express";
 
 import { catchError } from "../../middlewares/errorHandling.middleware";
+import { findCourseById } from "../../services/entities/course.service";
 import { NotFoundError } from "../../errors/notFoundError";
 import { Enrolled } from "../../models/enrolled.model";
 import { SuccessResponse } from "../../types/response";
 import { Reviews } from "../../models/review.models";
-import { Courses } from "../../models/course.models";
 import { Lessons } from "../../models/lesson.models";
 import { Videos } from "../../models/video.models";
 
@@ -25,16 +25,15 @@ export const getCourseStatistics: RequestHandler<unknown, SuccessResponse> = cat
         const { courseId } = req.params;
 
         // Fetch course details and check authorization
-        const course = await Courses.findById(courseId);
-        if (!course) return next(new NotFoundError('Course not found'));
+        const course = await findCourseById(courseId, next);
         if (_id.toString() !== course.instructorId.toString())
             return next(new NotFoundError('Unauthorized instructor'));
 
         // Fetch statistics
         const [
             totalEnrollments,
-             totalLessons,
-              totalVideos
+            totalLessons,
+            totalVideos
         ] = await Promise.all([
             Enrolled.countDocuments({ courseId: courseId }),
             Lessons.countDocuments({ courseId }),

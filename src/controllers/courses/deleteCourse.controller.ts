@@ -2,11 +2,11 @@ import { RequestHandler } from "express";
 
 import { sendVerifyCode } from "../../services/entities/verifyCode.service";
 import { catchError } from "../../middlewares/errorHandling.middleware";
+import { findCourseById } from "../../services/entities/course.service";
+import { findUserById } from "../../services/entities/user.service";
 import { NotFoundError } from "../../errors/notFoundError";
 import { VerifyReason } from "../../types/verify-reason";
 import { SuccessResponse } from "../../types/response";
-import { Courses } from "../../models/course.models";
-import { Users } from "../../models/user.models";
 
 /**
  * Handler to initiate the deletion of a course.
@@ -26,12 +26,11 @@ export const deleteCourseHandler: RequestHandler<
         const { courseId } = req.params;
         const { _id } = req.loggedUser;
 
-        const course = await Courses.findById(courseId);
-        if (!course) return next(new NotFoundError('Course not found'));
+        // Check if the course exists
+        const course = await findCourseById(courseId, next);
 
         // Ensure the instructor exists and is authorized to delete the course
-        const user = await Users.findById({ _id: course.instructorId });
-        if (!user) return next(new NotFoundError('User not found'));
+        const user = await findUserById(course.instructorId, next);
         if (user._id.toString() !== _id.toString()) {
             return next(new NotFoundError('Unauthorized instructor'));
         }
