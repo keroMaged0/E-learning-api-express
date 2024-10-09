@@ -1,17 +1,14 @@
 import { RequestHandler } from "express";
 
+import { findQuestionById } from "../../services/entities/question.service";
+import { sendVerifyCode } from "../../services/entities/verifyCode.service";
 import { catchError } from "../../middlewares/errorHandling.middleware";
+import { findCourseById } from "../../services/entities/course.service";
+import { findQuizById } from "../../services/entities/quiz.service";
+import { findUserById } from "../../services/entities/user.service";
 import { NotAllowedError } from "../../errors/notAllowedError";
-import { NotFoundError } from "../../errors/notFoundError";
 import { VerifyReason } from "../../types/verify-reason";
-import { Question } from "../../models/question.models";
 import { SuccessResponse } from "../../types/response";
-import { Courses } from "../../models/course.models";
-import { mailTransporter } from "../../utils/mail";
-import { generateCode } from "../../utils/random";
-import { Users } from "../../models/user.models";
-import { Quiz } from "../../models/quiz.models";
-import { hashCode } from "../../utils/crypto";
 
 /**
  * Handler to delete a question by its ID.
@@ -37,46 +34,33 @@ export const deleteQuestionHandler: RequestHandler<
         const { questionId } = req.params;
         const { _id } = req.loggedUser;
 
-        const question = await Question.findById(questionId);
-        if (!question) return next(new NotFoundError('Question not found'));
+        // Check if the question exists
+        const question = await findQuestionById(questionId, next);
 
-        const quiz = await Quiz.findById(question.quizId);
-        if (!quiz) return next(new NotFoundError('Quiz not found'));
+        // Check if the quiz exists
+        const quiz = await findQuizById(question.quizId, next);
 
-        const course = await Courses.findById(quiz.courseId)
-        if (!course) return next(new NotFoundError('Course not found'));
+        // Check if the course exists
+        const course = await findCourseById(quiz.courseId, next)
 
-        const user = await Users.findById(_id);
-        if (!user) return next(new NotFoundError('User not found'));
+        // Check if the user exists
+        const user = await findUserById(_id, next);
 
         // Check if the user is the instructor of the course
         if (course?.instructorId.toString() !== _id.toString())
             return next(new NotAllowedError('You are not allowed to delete this quiz'));
 
         // Generate a verification code for deletion confirmation
-        const code = generateCode();
-        user.verificationCode = {
-            code: hashCode(code),
-            expireAt: new Date(Date.now() + 10 * 60 * 1000), // 10 minutes expiration
+        const expireAt = await sendVerifyCode({
+            user,
             reason: VerifyReason.deleteQuestion,
-            tempEmail: null,
-        };
-
-        // Send the verification code to the user's email
-        await mailTransporter.sendMail({
-            to: user.email,
             subject: `Verification code to delete ${question.questionText} your question`,
-            html: `Verification code: <strong>${code}</strong>`,
-        });
-
-        await user.save();
+        })
 
         res.status(200).json({
             status: true,
             message: 'Check your email to confirm question deletion',
-            data: null,
+            data: expireAt,
         });
-
-
     }
 )

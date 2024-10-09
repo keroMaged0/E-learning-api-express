@@ -1,14 +1,14 @@
 import { RequestHandler } from "express";
 
+import { findQuestionById } from "../../services/entities/question.service";
 import { catchError } from "../../middlewares/errorHandling.middleware";
+import { findCourseById } from "../../services/entities/course.service";
+import { findUserById } from "../../services/entities/user.service";
+import { findQuizById } from "../../services/entities/quiz.service";
 import { NotAllowedError } from "../../errors/notAllowedError";
 import { NotFoundError } from "../../errors/notFoundError";
 import { VerifyReason } from "../../types/verify-reason";
 import { SuccessResponse } from "../../types/response";
-import { Question } from "../../models/question.models";
-import { Courses } from "../../models/course.models";
-import { Users } from "../../models/user.models";
-import { Quiz } from "../../models/quiz.models";
 
 /**
  * Handler to confirm the deletion of a question after the user provides a valid verification code.
@@ -33,17 +33,16 @@ export const ConfirmDeleteQuestionHandler: RequestHandler<
         const { questionId } = req.params;
         const { _id } = req.loggedUser;
 
-        const question = await Question.findById(questionId);
-        if (!question) return next(new NotFoundError('Question not found'));
+        // Check if the question exists
+        const question = await findQuestionById(questionId, next);
 
-        const quiz = await Quiz.findById(question.quizId);
-        if (!quiz) return next(new NotFoundError('Quiz not found'));
+        // Check if the quiz exists
+        const quiz = await findQuizById(question.quizId, next);
 
-        const course = await Courses.findById(quiz.courseId)
-        if (!course) return next(new NotFoundError('Course not found'));
+        // Check if the course exists
+        await findCourseById(quiz.courseId, next)
 
-        const user = await Users.findById(_id);
-        if (!user) return next(new NotFoundError('User not found'));
+        const user = await findUserById(_id, next);
 
         // Check if the user is authorized to delete the question
         if (user._id.toString() !== _id.toString()) {

@@ -1,11 +1,10 @@
 import { RequestHandler } from "express";
 
 import { checkEnrolledCourse } from "../enrolledCourse/checkEnrolledCourse.controller";
+import { findQuestionById } from "../../services/entities/question.service";
 import { catchError } from "../../middlewares/errorHandling.middleware";
-import { NotFoundError } from "../../errors/notFoundError";
-import { Question } from "../../models/question.models";
+import { findQuizById } from "../../services/entities/quiz.service";
 import { SuccessResponse } from "../../types/response";
-import { Quiz } from "../../models/quiz.models";
 
 /**
  * Handler to fetch a specific question by its ID.
@@ -30,11 +29,11 @@ export const getQuestionByIdHandler: RequestHandler<
         const { questionId } = req.params;
         const { _id } = req.loggedUser;
 
-        const question = await Question.findById(questionId);
-        if (!question) return next(new NotFoundError('Question not found'));
+        // Check if the question exists
+        const question = await findQuestionById(questionId, next);
 
-        const quiz = await Quiz.findById(question.quizId)
-        if (!quiz) return next(new NotFoundError('Quiz not found'));
+        // Check if the quiz exists
+        const quiz = await findQuizById(question.quizId, next);
 
         // Check if the user is enrolled in the course or is the instructor
         await checkEnrolledCourse({ courseId: quiz.courseId, userId: _id, next });

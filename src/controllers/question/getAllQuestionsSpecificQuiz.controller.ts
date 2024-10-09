@@ -2,10 +2,10 @@ import { RequestHandler } from "express";
 
 import { checkEnrolledCourse } from "../enrolledCourse/checkEnrolledCourse.controller";
 import { catchError } from "../../middlewares/errorHandling.middleware";
+import { findQuizById } from "../../services/entities/quiz.service";
 import { NotFoundError } from "../../errors/notFoundError";
 import { Question } from "../../models/question.models";
 import { SuccessResponse } from "../../types/response";
-import { Quiz } from "../../models/quiz.models";
 
 /**
  * Handler function to retrieve all questions for a specific quiz.
@@ -30,12 +30,13 @@ export const getAllQuestionsSpecificQuizHandler: RequestHandler<
         const { _id } = req.loggedUser;
         const { quizId } = req.params;
 
-        const quiz = await Quiz.findById(quizId);
-        if (!quiz) return next(new NotFoundError('Quiz not found'));
+        // Check if the quiz exists
+        const quiz = await findQuizById(quizId,next);
 
         // Check if the user is enrolled in the course or is the instructor
         await checkEnrolledCourse({ courseId: quiz.courseId, userId: _id, next });
 
+        // Retrieve all questions related to the quiz
         const questions = await Question.find({ quizId });
         if (!questions) return next(new NotFoundError('Questions not found'));
 

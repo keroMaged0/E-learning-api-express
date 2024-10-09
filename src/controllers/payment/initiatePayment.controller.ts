@@ -1,13 +1,13 @@
 import { RequestHandler } from "express";
 
 import { catchError } from "../../middlewares/errorHandling.middleware";
-import { SuccessResponse } from "../../types/response";
-import { Users } from "../../models/user.models";
-import { NotFoundError } from "../../errors/notFoundError";
-import { Courses } from "../../models/course.models";
+import { findCourseById } from "../../services/entities/course.service";
 import { PaymentGateway } from "../../services/paymentGateway.service";
-import { Payment } from "../../models/payment.models";
+import { findUserById } from "../../services/entities/user.service";
+import { NotFoundError } from "../../errors/notFoundError";
 import { Enrolled } from "../../models/enrolled.model";
+import { SuccessResponse } from "../../types/response";
+import { Payment } from "../../models/payment.models";
 
 /**
  * Handler function to initiate payment for a course enrollment.
@@ -32,13 +32,11 @@ export const initiatePaymentHandler: RequestHandler<unknown, SuccessResponse> = 
         if (paymentExist) return res.status(400).json({ message: "Payment already processed" });
 
         // Verify the user exists and is verified
-        const user = await Users.findById(_id);
-        if (!user) return next(new NotFoundError('User not found'));
+        const user = await findUserById(_id, next);
         if (!user.isVerified) return next(new NotFoundError('User is not verified'));
 
         // Check if the course exists
-        const course = await Courses.findById(courseId);
-        if (!course) return next(new NotFoundError('Course not found'));
+        const course = await findCourseById(courseId,next);
 
         // Verify if the user is already enrolled in the course
         const enrolledCourse = await Enrolled.findOne({ userId: user._id, courseId });

@@ -1,10 +1,11 @@
 import { RequestHandler } from "express";
 
 import { catchError } from "../../middlewares/errorHandling.middleware";
+import { findCourseById } from "../../services/entities/course.service";
+import { findQuizById } from "../../services/entities/quiz.service";
 import { NotFoundError } from "../../errors/notFoundError";
 import { Question } from "../../models/question.models";
 import { SuccessResponse } from "../../types/response";
-import { Courses } from "../../models/course.models";
 import { Quiz } from "../../models/quiz.models";
 
 /**
@@ -31,11 +32,11 @@ export const createQuestionHandler: RequestHandler<
         const { quizId, questionText, options, correctAnswer } = req.body;
         const { _id } = req.loggedUser;
 
-        const quiz = await Quiz.findById(quizId);
-        if (!quiz) return next(new NotFoundError('Quiz not found'));
+        // Check if the quiz exists
+        const quiz = await findQuizById(quizId, next);
 
-        const course = await Courses.findById(quiz.courseId)
-        if (!course) return next(new NotFoundError('Course not found'));
+        // Check if the course exists
+        const course = await findCourseById(quiz.courseId, next)
 
         // Check if the logged-in instructor is authorized to add a question to this course
         if (course.instructorId.toString() !== _id.toString()) {
