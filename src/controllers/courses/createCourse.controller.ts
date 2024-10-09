@@ -6,11 +6,11 @@ import { uploadImageToCloudinary } from "../../utils/uploadMedia";
 import { ConflictError } from "../../errors/conflictError";
 import { NotFoundError } from "../../errors/notFoundError";
 import { SuccessResponse } from "../../types/response";
-import { findUser } from "../../services/user.service";
 import { Courses } from "../../models/course.models";
 import { createRoomHandler } from "../chat/chatRoom";
 import { generateCode } from "../../utils/random";
 import { env } from "../../config/env";
+import { findUserById } from "../../services/entities/user.service";
 
 /**
  * Handler to create a new course.
@@ -30,7 +30,7 @@ export const createCourseHandler: RequestHandler<
         const { _id } = req.loggedUser;
         const cacheKey = 'allCourses-*';
 
-        const user = await findUser(_id);
+        const user = await findUserById(_id, next);
 
         // Check for a unique course title for the user
         const isUniqueTitle = await Courses.findOne({ instructorId: _id, title: req.body.title });
@@ -58,6 +58,7 @@ export const createCourseHandler: RequestHandler<
 
         // Create a chat room for the course
         await createRoomHandler({ courseId: course._id, instructorId: _id, next })
+
 
         // Clear related cache keys for courses
         await deleteAllCacheKeys(cacheKey);

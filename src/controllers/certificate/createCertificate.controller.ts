@@ -2,11 +2,11 @@ import { RequestHandler } from "express";
 
 import { checkEnrolledCourse } from "../enrolledCourse/checkEnrolledCourse.controller";
 import { catchError } from "../../middlewares/errorHandling.middleware";
+import { findUserById } from "../../services/entities/user.service";
 import { Certificate } from "../../models/certificate.models";
 import { NotFoundError } from "../../errors/notFoundError";
 import { ConflictError } from "../../errors/conflictError";
 import { SuccessResponse } from "../../types/response";
-import { Users } from "../../models/user.models";
 import { SystemRoles } from "../../types/roles";
 
 /**
@@ -36,10 +36,11 @@ export const createCertificateHandler: RequestHandler<
         const existsCertificate = await Certificate.findOne({ courseId, userId });
         if (existsCertificate) return next(new ConflictError('Conflict Certificate already exists'));
 
-        const user = await Users.findById(userId);
-        if (!user) return next(new NotFoundError('User not found'));
+        // Check if the user is not a teacher
+        const user = await findUserById(userId, next);
         if (user.role === SystemRoles.teacher) return next(new NotFoundError('Unauthorized user'));
 
+        // Check if the user is enrolled in the course
         await checkEnrolledCourse({ courseId, userId, next })
 
         // Create and save the certificate

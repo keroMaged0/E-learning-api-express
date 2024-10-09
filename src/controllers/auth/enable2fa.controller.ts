@@ -3,9 +3,8 @@ import { authenticator } from "otplib";
 
 import { catchError } from "../../middlewares/errorHandling.middleware";
 import { NotAllowedError } from "../../errors/notAllowedError";
-import { NotFoundError } from "../../errors/notFoundError";
 import { SuccessResponse } from "../../types/response";
-import { Users } from "../../models/user.models";
+import { findUserById } from "../../services/entities/user.service";
 
 
 /**
@@ -26,8 +25,8 @@ export const enable2faHandler: RequestHandler<
         const { totp } = req.body;
 
         // check if user exists
-        const user = await Users.findById(_id)
-        if (!user) return next(new NotFoundError('User not found'))
+        const user = await findUserById(_id, next)
+
 
         // verify TOTP
         const verified = authenticator.check(totp, user['2faSecret'] as string)

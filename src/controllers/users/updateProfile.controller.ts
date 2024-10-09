@@ -1,11 +1,11 @@
 import { RequestHandler } from "express";
 
 import { catchError } from "../../middlewares/errorHandling.middleware";
+import { findUserById } from "../../services/entities/user.service";
 import { uploadImageToCloudinary } from "../../utils/uploadMedia";
 import { NotFoundError } from "../../errors/notFoundError";
 import { ConflictError } from "../../errors/conflictError";
 import { SuccessResponse } from "../../types/response";
-import { Users } from "../../models/user.models";
 import { env } from "../../config/env";
 
 /**
@@ -27,8 +27,8 @@ export const updateProfileHandler: RequestHandler<
         const { name, gender, oldPublicId } = req.body;
         const { _id } = req.loggedUser
 
-        const user = await Users.findById(_id)
-        if (!user) return next(new NotFoundError('User not found'))
+        // check if the user exists
+        const user = await findUserById(_id, next)
 
         // Update the user's name if provided
         if (name) {

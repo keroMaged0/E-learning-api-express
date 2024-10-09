@@ -2,16 +2,14 @@ import { RequestHandler } from "express";
 
 import { generateAccessToken, generateRefreshToken } from "../../utils/token";
 import { catchError } from "../../middlewares/errorHandling.middleware";
+import { sendVerifyCode } from "../../services/entities/verifyCode.service";
+import { findUser } from "../../services/entities/user.service";
 import { NotAllowedError } from "../../errors/notAllowedError";
 import { NotFoundError } from "../../errors/notFoundError";
 import { VerifyReason } from "../../types/verify-reason";
 import { SuccessResponse } from "../../types/response";
-import { mailTransporter } from "../../utils/mail";
 import { hashPassword } from "../../utils/bcrypt";
-import { generateCode } from "../../utils/random";
 import { Users } from "../../models/user.models";
-import { hashCode } from "../../utils/crypto";
-import { sendVerifyCode } from "./utils/verifyCode.utils";
 
 
 /*************** Forget Password handlers ***************/
@@ -25,8 +23,7 @@ export const forgetPasswordHandler: RequestHandler<
         const { email } = req.body;
 
         // check if user exist
-        const user = await Users.findOne({ email });
-        if (!user) return next(new NotFoundError('user not found'));
+        const user = await findUser(email, next)
 
         if (!user.isVerified) return next(new NotAllowedError('user not verified'));
 

@@ -4,7 +4,7 @@ import { logger } from "../config/logger";
 import { formatDuration } from "../controllers/videos";
 import { ConflictError } from "../errors/conflictError";
 import { NotFoundError } from "../errors/notFoundError";
-import { cloudinaryConnection } from "../services/cloudinary";
+import { cloudinaryConnection } from "../services/cloudinary.service";
 
 /*************** upload image ***************/
 export const uploadImageToCloudinary = async (file: Express.Multer.File, pathUrl: string, newPublicId?: string) => {

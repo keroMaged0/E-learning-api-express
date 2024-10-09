@@ -2,9 +2,8 @@ import { RequestHandler } from "express";
 
 import { generateAccessToken, generateRefreshToken, isValidRefreshToken } from "../../utils/token";
 import { catchError } from "../../middlewares/errorHandling.middleware";
-import { NotFoundError } from "../../errors/notFoundError";
+import { findUser } from "../../services/entities/user.service";
 import { SuccessResponse } from "../../types/response";
-import { Users } from "../../models/user.models";
 
 
 /**
@@ -29,10 +28,9 @@ export const refreshTokenHandler: RequestHandler<
         if (!isValidRefreshToken) return res.status(423).json({ message: 'token expired' });
         isValidRefreshToken(refreshToken);
 
-        const user = await Users.findOne({ refreshToken })
-        if (!user) return next(new NotFoundError('user not found'));
+        const user = await findUser(refreshToken, next)
 
-        // create token
+        // create tokens
         const userAccessToken = await generateAccessToken();
         const userRefreshToken = await generateRefreshToken();
 

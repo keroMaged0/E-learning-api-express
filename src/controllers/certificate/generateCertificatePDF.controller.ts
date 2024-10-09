@@ -2,15 +2,15 @@ import { RequestHandler } from "express";
 import path from "path";
 import fs from "fs";
 
+import { findCertificateById } from "../../services/entities/certificate.service";
+import { findCourseById } from "../../services/entities/course.service";
+import { findUserById } from "../../services/entities/user.service";
 import { catchError } from "../../middlewares/errorHandling.middleware";
 import { uploadPDFToCloudinary } from "../../utils/uploadMedia";
-import { Certificate } from "../../models/certificate.models";
 import { NotFoundError } from "../../errors/notFoundError";
 import { SuccessResponse } from "../../types/response";
-import { Courses } from "../../models/course.models";
 import { createCertificate } from "../../utils/pdf";
 import { mailTransporter } from "../../utils/mail";
-import { Users } from "../../models/user.models";
 
 /**
  * Handler to generate and send a certificate PDF for a specific user.
@@ -32,22 +32,20 @@ export const generateCertificatePDFHandler: RequestHandler<unknown, SuccessRespo
         const { certificateId } = req.params;
         const { _id } = req.loggedUser;
 
-        const certificate = await Certificate.findById(certificateId);
-        if (!certificate) return next(new NotFoundError('Certificate not found'));
+        // Check if the certificate exists
+        const certificate = await findCertificateById(certificateId, next);
 
-        const course = await Courses.findById(certificate.courseId);
-        if (!course) return next(new NotFoundError('Course not found'));
+        // Check if the course exists
+        const course = await findCourseById(certificate.courseId, next);
 
         // Validate instructor authorization
-        const instructor = await Users.findById(_id);
-        if (!instructor) return next(new NotFoundError('Unauthorized instructor'));
+        const instructor = await findUserById(_id, next);
         if (instructor._id.toString() !== _id.toString()) {
             return next(new NotFoundError('Unauthorized instructor'));
         }
 
         // Retrieve the user for whom the certificate is generated
-        const user = await Users.findById(certificate.userId);
-        if (!user) return next(new NotFoundError('User not found'));
+        const user = await findUserById(certificate.userId, next);
 
         // Create a temporary PDF file path
         const dirPath = path.resolve(__dirname, '../../../PDFs');

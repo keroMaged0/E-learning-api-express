@@ -1,11 +1,10 @@
 import { RequestHandler } from "express";
 
 import { catchError } from "../../middlewares/errorHandling.middleware";
+import { findUserById } from "../../services/entities/user.service";
 import { comparePassword, hashPassword } from "../../utils/bcrypt";
 import { NotAllowedError } from "../../errors/notAllowedError";
-import { NotFoundError } from "../../errors/notFoundError";
 import { SuccessResponse } from "../../types/response";
-import { Users } from "../../models/user.models";
 
 /**
  * Handles updating a user's password.
@@ -27,8 +26,7 @@ export const updatePasswordHandler: RequestHandler<
         const { password, newPassword } = req.body;
 
         // check if user exist
-        const user = await Users.findById(_id)
-        if (!user) return next(new NotFoundError('User not found'))
+        const user = await findUserById(_id, next)
 
         // check if password is correct
         const isMatch = await comparePassword(password, user.password)

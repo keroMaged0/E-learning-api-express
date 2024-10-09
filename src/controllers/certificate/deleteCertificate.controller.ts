@@ -1,15 +1,13 @@
 import { RequestHandler } from "express";
 
+import { findCertificateById } from "../../services/entities/certificate.service";
+import { sendVerifyCode } from "../../services/entities/verifyCode.service";
 import { catchError } from "../../middlewares/errorHandling.middleware";
-import { Certificate } from "../../models/certificate.models";
+import { findCourseById } from "../../services/entities/course.service";
+import { findUserById } from "../../services/entities/user.service";
 import { NotFoundError } from "../../errors/notFoundError";
 import { VerifyReason } from "../../types/verify-reason";
 import { SuccessResponse } from "../../types/response";
-import { Courses } from "../../models/course.models";
-import { mailTransporter } from "../../utils/mail";
-import { generateCode } from "../../utils/random";
-import { Users } from "../../models/user.models";
-import { hashCode } from "../../utils/crypto";
 
 /**
  * Handler to initiate the deletion of a certificate.
@@ -24,7 +22,7 @@ import { hashCode } from "../../utils/crypto";
  * @returns {Promise<void>} - A promise that resolves to void.
  *
  * @throws {NotFoundError} - Throws an error if the certificate, course, or user is not found, 
- *                           or if the user is unauthorized.
+ * or if the user is unauthorized.
  */
 export const deleteCertificateHandler: RequestHandler<
     unknown,
@@ -34,45 +32,30 @@ export const deleteCertificateHandler: RequestHandler<
         const { certificateId } = req.params;
         const { _id } = req.loggedUser
 
-        const certificate = await Certificate.findById(certificateId);
-        if (!certificate) return next(new NotFoundError('Certificate not found'));
+        // Check if the certificate exists
+        const certificate = await findCertificateById(certificateId, next);
 
-        const course = await Courses.findById(certificate.courseId);
-        if (!course) return next(new NotFoundError('Course not found'));
+        // Check if the course exists
+        const course = await findCourseById(certificate.courseId, next)
 
-        const user = await Users.findById(_id);
-        if (!user) return next(new NotFoundError('User not found'));
-
-        // Check if the user is authorized (instructor of the course)
+        // Ensure the instructor exists and is authorized to delete the course
+        const user = await findUserById(_id, next)
         if (course.instructorId.toString() !== user._id.toString()) {
             return next(new NotFoundError('Unauthorized instructor'));
         }
 
         // Generate a verification code for the deletion confirmation
-        const code = generateCode();
-        user.verificationCode = {
-            code: hashCode(code),
-            expireAt: new Date(Date.now() + 10 * 60 * 1000), // 10 minutes expiration
+        const expireAt = await sendVerifyCode({
+            user,
             reason: VerifyReason.deleteCertificate,
-            tempEmail: null,
-        };
-
-        // Send the verification code via email to the user
-        await mailTransporter.sendMail({
-            to: user.email,
-            subject: `Verification code to delete your certificate`,
-            html: `Verification code: <strong>${code}</strong>`,
-        });
-
-        await user.save();
+            subject: `Verification code to delete your certificate`
+        })
 
         res.status(200).json({
             status: true,
             message: 'Check your email to confirm review deletion',
-            data: null,
+            data: expireAt,
         });
-
-
     }
 )
 

@@ -1,7 +1,7 @@
 import { RequestHandler } from "express";
 
 import { catchError } from "../../middlewares/errorHandling.middleware";
-import { cloudinaryConnection } from "../../services/cloudinary";
+import { cloudinaryConnection } from "../../services/cloudinary.service";
 import { NotAllowedError } from "../../errors/notAllowedError";
 import { NotFoundError } from "../../errors/notFoundError";
 import { VerifyReason } from "../../types/verify-reason";

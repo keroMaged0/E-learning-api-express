@@ -1,12 +1,12 @@
 import { RequestHandler } from "express";
 
 import { checkEnrolledCourse } from "../enrolledCourse/checkEnrolledCourse.controller";
+import { findCertificateById } from "../../services/entities/certificate.service";
 import { catchError } from "../../middlewares/errorHandling.middleware";
-import { Certificate } from "../../models/certificate.models";
-import { NotFoundError } from "../../errors/notFoundError";
+import { findUserById } from "../../services/entities/user.service";
 import { SuccessResponse } from "../../types/response";
-import { Users } from "../../models/user.models";
 import { SystemRoles } from "../../types/roles";
+
 
 
 /**
@@ -32,11 +32,11 @@ export const getCertificateByIdHandler: RequestHandler<
         const { certificateId } = req.params;
         const { _id } = req.loggedUser;
 
-        const certificate = await Certificate.findById(certificateId);
-        if (!certificate) return next(new NotFoundError('Certificate not found'));
-
-        const user = await Users.findById(_id);
-        if (!user) return next(new NotFoundError('User not found'));
+        // Check if the certificate exists
+        const certificate = await findCertificateById(certificateId, next);
+        
+        // Check if the user exists
+        const user = await findUserById(_id,next);
 
         // Check if instructor is authorized to access the certificate
         if (user.role === SystemRoles.teacher) {

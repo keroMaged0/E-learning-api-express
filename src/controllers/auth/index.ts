@@ -7,5 +7,4 @@ export * from './login2fa.controller';
 export * from './refreshToken.controller';
 export * from './changePassword.controller';
 export * from './forgetPassword.controller';
-export * from './logout.controller';
 export * from './resendVerificationCode.controller'

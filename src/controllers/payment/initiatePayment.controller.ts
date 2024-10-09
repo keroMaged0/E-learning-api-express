@@ -5,7 +5,7 @@ import { SuccessResponse } from "../../types/response";
 import { Users } from "../../models/user.models";
 import { NotFoundError } from "../../errors/notFoundError";
 import { Courses } from "../../models/course.models";
-import { PaymentGateway } from "../../services/PaymentGateway";
+import { PaymentGateway } from "../../services/paymentGateway.service";
 import { Payment } from "../../models/payment.models";
 import { Enrolled } from "../../models/enrolled.model";
 

@@ -1,11 +1,11 @@
 import { RequestHandler } from "express";
 
 import { catchError } from "../../middlewares/errorHandling.middleware";
+import { sendVerifyCode } from "../../services/entities/verifyCode.service";
+import { findUser } from "../../services/entities/user.service";
 import { NotAllowedError } from "../../errors/notAllowedError";
-import { NotFoundError } from "../../errors/notFoundError";
-import { sendVerifyCode } from "./utils/verifyCode.utils";
 import { SuccessResponse } from "../../types/response";
-import { Users } from "../../models/user.models";
+
 
 /**
  * Handles resending the verification code to the user's email if the cooldown period has passed.
@@ -24,8 +24,7 @@ export const resendVerificationCodeHandler: RequestHandler<
         const { email } = req.body;
 
         // check if the user exists
-        const user = await Users.findOne({ email });
-        if (!user) return next(new NotFoundError('user not found'));
+        const user = await findUser(email, next)
 
         const currentTime = Date.now();
         const expireTime = new Date(user.verificationCode?.expireAt || '0').getTime();

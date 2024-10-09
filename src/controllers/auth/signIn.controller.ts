@@ -2,11 +2,11 @@ import { RequestHandler } from "express";
 
 import { generateAccessToken, generateRefreshToken, generateTempToken } from "../../utils/token";
 import { catchError } from "../../middlewares/errorHandling.middleware";
+import { findUser } from "../../services/entities/user.service";
 import { NotAllowedError } from "../../errors/notAllowedError";
 import { NotFoundError } from "../../errors/notFoundError";
 import { SuccessResponse } from "../../types/response";
 import { comparePassword } from "../../utils/bcrypt";
-import { Users } from "../../models/user.models";
 
 
 /**
@@ -23,12 +23,13 @@ export const signInHandler: RequestHandler<
     { email: string; password: string }
 > = catchError(
     async (req, res, next) => {
+        const { email, password } = req.body;
+
         // check if user exist
-        const user = await Users.findOne({ email: req.body.email })
-        if (!user) return next(new NotFoundError());
+        const user = await findUser(email, next)
 
         // check if password is correct
-        const isMatch = await comparePassword(req.body.password, user?.password || '')
+        const isMatch = await comparePassword(password, user?.password || '')
         if (!isMatch) return next(new NotFoundError('password mismatch or not correct email'));
 
         // check if user is verified

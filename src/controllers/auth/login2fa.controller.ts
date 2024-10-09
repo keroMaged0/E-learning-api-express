@@ -2,12 +2,12 @@ import { RequestHandler } from "express";
 import { authenticator } from "otplib";
 
 import { catchError } from "../../middlewares/errorHandling.middleware";
+import { findUserById } from "../../services/entities/user.service";
 import { NotAllowedError } from "../../errors/notAllowedError";
 import { getData } from "../../services/redisCache.service";
 import { NotFoundError } from "../../errors/notFoundError";
 import { generateAccessToken } from "../../utils/token";
 import { SuccessResponse } from "../../types/response";
-import { Users } from "../../models/user.models";
 import { env } from "../../config/env";
 
 
@@ -35,8 +35,7 @@ export const login2faHandler: RequestHandler<
         if (!userId) return next(new NotFoundError('User not found'));
 
         // check if user exists
-        const user = await Users.findById({ _id: userId })
-        if (!user) return next(new NotFoundError('User not found'))
+        const user = await findUserById(userId, next)
 
         // verify TOTP
         const verified = authenticator.check(totp, user['2faSecret'] as string)

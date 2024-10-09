@@ -1,10 +1,9 @@
+import { RequestHandler } from "express";
 import { authenticator } from "otplib";
 import qrcode from "qrcode";
 
 import { catchError } from "../../middlewares/errorHandling.middleware";
-import { NotFoundError } from "../../errors/notFoundError";
-import { Users } from "../../models/user.models";
-import { RequestHandler } from "express";
+import { findUserById } from "../../services/entities/user.service";
 
 /**
  * Generates a two-factor authentication (2FA) secret for the user and sends a QR code image for setup.
@@ -20,8 +19,7 @@ export const generate2faHandler: RequestHandler = catchError(
         const { _id } = req.loggedUser
 
         // check if user exists
-        const user = await Users.findById(_id)
-        if (!user) return next(new NotFoundError('User not found'))
+        const user = await findUserById(_id, next)
 
         // generate secret key
         const secret = authenticator.generateSecret();

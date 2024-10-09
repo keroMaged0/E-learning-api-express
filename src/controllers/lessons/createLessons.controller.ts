@@ -3,9 +3,9 @@ import { RequestHandler } from "express";
 import { catchError } from "../../middlewares/errorHandling.middleware";
 import { deleteAllCacheKeys } from "../../services/redisCache.service";
 import { uploadImageToCloudinary } from "../../utils/uploadMedia";
+import { findUser } from "../../services/entities/user.service";
 import { ConflictError } from "../../errors/conflictError";
 import { NotFoundError } from "../../errors/notFoundError";
-import { findUser } from "../../services/user.service";
 import { SuccessResponse } from "../../types/response";
 import { Courses } from "../../models/course.models";
 import { Lessons } from "../../models/lesson.models";
@@ -29,7 +29,7 @@ export const createLessonsHandler: RequestHandler<
         const { _id } = req.loggedUser;
         const cacheKeys = ['allLessons-*', 'allCourses-*']; // Cache keys to delete 
 
-        const user = await findUser(_id);
+        const user = await findUser(_id, next);
         if (!user) return next(new NotFoundError('User not found'));
 
         const course = await Courses.findOne({ instructorId: user._id, _id: courseId });

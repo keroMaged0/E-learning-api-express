@@ -1,8 +1,8 @@
 import { RequestHandler } from "express";
 
 import { checkEnrolledCourse } from "../enrolledCourse/checkEnrolledCourse.controller";
+import { findCertificateById } from "../../services/entities/certificate.service";
 import { catchError } from "../../middlewares/errorHandling.middleware";
-import { Certificate } from "../../models/certificate.models";
 import { NotFoundError } from "../../errors/notFoundError";
 import { SuccessResponse } from "../../types/response";
 
@@ -30,22 +30,22 @@ export const updateCertificateHandler: RequestHandler<
         const { title, userId, courseId } = req.body;
         const { _id } = req.loggedUser
 
-        const certificate = await Certificate.findById(certificateId);
-        if (!certificate) return next(new NotFoundError('Certificate not found'));
+        // Check if the certificate exists
+        const certificate = await findCertificateById(certificateId,next);
 
+        // Check if the user is authorized to update the certificate
         await checkEnrolledCourse({ courseId: certificate.courseId, userId: _id, next });
 
         // Update the title if provided and different from the current one
         if (title) {
             if (title === certificate.title) return next(new NotFoundError('Title is same as previous one'));
-
             certificate.title = title;
         }
 
         // Update the userId if provided and different from the current one
         if (userId) {
             if (userId === certificate.userId.toString()) return next(new NotFoundError('User ID is same as previous one'));
-
+            
             await checkEnrolledCourse({ courseId: certificate.courseId, userId, next });
 
             certificate.userId = userId;

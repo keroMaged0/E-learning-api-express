@@ -1,13 +1,15 @@
 import { RequestHandler } from "express";
 
+import { findCertificateById } from "../../services/entities/certificate.service";
+import { clearVerifyCode } from "../../services/entities/verifyCode.service";
 import { catchError } from "../../middlewares/errorHandling.middleware";
+import { findCourseById } from "../../services/entities/course.service";
+import { findUserById } from "../../services/entities/user.service";
 import { NotAllowedError } from "../../errors/notAllowedError";
-import { Certificate } from "../../models/certificate.models";
 import { NotFoundError } from "../../errors/notFoundError";
 import { VerifyReason } from "../../types/verify-reason";
 import { SuccessResponse } from "../../types/response";
-import { Courses } from "../../models/course.models";
-import { Users } from "../../models/user.models";
+
 
 /**
  * Handler to confirm the deletion of a certificate.
@@ -33,24 +35,25 @@ export const ConfirmDeleteCertificateHandler: RequestHandler<
         const { certificateId } = req.params;
         const { _id } = req.loggedUser;
 
-        const certificate = await Certificate.findById(certificateId);
-        if (!certificate) return next(new NotFoundError('Certificate not found'));
+        // check if the certificate exists
+        const certificate = await findCertificateById(certificateId, next)
 
-        const course = await Courses.findById(certificate.courseId);
-        if (!course) return next(new NotFoundError('Course not found'));
+        // check if the course exists
+        const course = await findCourseById(certificate.courseId, next)
 
         // Ensure the instructor exists and is authorized to delete the course
-        const user = await Users.findById({_id: course.instructorId});
-        if (!user) return next(new NotFoundError('User not found'));
-        if (user._id.toString() !== _id.toString()) {
+        const user = await findUserById(course.instructorId, next)
+        if (user._id.toString() !== _id.toString())
             return next(new NotFoundError('Unauthorized instructor'));
-        }
-        if (user.verificationCode?.reason !== VerifyReason.deleteCertificate) {
-            return next(new NotAllowedError('Invalid verification code'));
-        }
-        user.verificationCode.reason = null;
-        await user.save();
 
+        // check if the verification code is valid
+        if (user.verificationCode?.reason !== VerifyReason.deleteCertificate)
+            return next(new NotAllowedError('Invalid verification code'));
+
+        // clear the verification code from the user
+        await clearVerifyCode(user);
+
+        // delete the certificate from the database
         await certificate.deleteOne({ _id: certificateId });
 
         res.status(200).json({

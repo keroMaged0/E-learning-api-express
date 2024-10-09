@@ -1,7 +1,7 @@
 import { RequestHandler } from "express";
 
+import { sendVerifyCode } from "../../services/entities/verifyCode.service";
 import { catchError } from "../../middlewares/errorHandling.middleware";
-import { sendVerifyCode } from "../auth/utils/verifyCode.utils";
 import { NotFoundError } from "../../errors/notFoundError";
 import { VerifyReason } from "../../types/verify-reason";
 import { SuccessResponse } from "../../types/response";

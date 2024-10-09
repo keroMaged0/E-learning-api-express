@@ -1,10 +1,11 @@
-import { NotAllowedError } from "../../../errors/notAllowedError";
-import { NotFoundError } from "../../../errors/notFoundError";
-import { generateAccessToken } from "../../../utils/token";
-import { mailTransporter } from "../../../utils/mail";
-import { generateCode } from "../../../utils/random";
-import { SystemRoles } from "../../../types/roles";
-import { hashCode } from "../../../utils/crypto";
+import { NotAllowedError } from "../../errors/notAllowedError";
+import { NotFoundError } from "../../errors/notFoundError";
+import { generateAccessToken } from "../../utils/token";
+import { mailTransporter } from "../../utils/mail";
+import { generateCode } from "../../utils/random";
+import { SystemRoles } from "../../types/roles";
+import { hashCode } from "../../utils/crypto";
+
 
 /*************** Check Verify Code Expire ***************/
 const isExpired = (date: Date) => {
@@ -64,11 +65,12 @@ const sendVerifyCode = async ({ user, reason, subject }) => {
 }
 
 /*************** Check verify Code ***************/
-const clearVerifyCode = async (user: any, res: any) => {
-
+const clearVerifyCode = async (user: any) => {
+    user.verificationCode.code = null;
+    user.verificationCode.expireAt = null;
+    user.verificationCode.reason = null;
+    await user.save();
 }
-
-
 
 
 
