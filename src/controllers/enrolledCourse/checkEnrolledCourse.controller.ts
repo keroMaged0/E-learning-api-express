@@ -1,7 +1,7 @@
+import { findCourseById } from "../../services/entities/course.service";
+import { findUserById } from "../../services/entities/user.service";
 import { NotFoundError } from "../../errors/notFoundError";
 import { Enrolled } from "../../models/enrolled.model";
-import { Courses } from "../../models/course.models";
-import { Users } from "../../models/user.models";
 import { SystemRoles } from "../../types/roles";
 
 /**
@@ -20,11 +20,11 @@ import { SystemRoles } from "../../types/roles";
  * @throws {NotFoundError} - Throws an error if the course or user is not found, or if the user is not authorized.
  */
 export const checkEnrolledCourse = async ({ courseId, userId, next }) => {
-    const course = await Courses.findById(courseId)
-    if (!course) return next(new NotFoundError('Course not found'));
+    // Check if the course exists
+    const course = await findCourseById(courseId, next);
 
-    const user = await Users.findById(userId);
-    if (!user) return next(new NotFoundError('User not found'));
+    // Check if the user exists
+    const user = await findUserById(userId, next);
 
     // If the user is a student, check if they are enrolled in the course
     if (user.role === SystemRoles.student) {
