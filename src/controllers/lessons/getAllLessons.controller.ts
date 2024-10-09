@@ -1,11 +1,10 @@
 import { RequestHandler } from "express";
 
 import { catchError } from "../../middlewares/errorHandling.middleware";
+import { findCourseById } from "../../services/entities/course.service";
 import { getData, setCache } from "../../services/redisCache.service";
-import { NotFoundError } from "../../errors/notFoundError";
 import { SuccessResponse } from "../../types/response";
 import { Lessons } from "../../models/lesson.models";
-import { Courses } from "../../models/course.models";
 import { ApiFeature } from "../../utils/apiFeature";
 
 /**
@@ -35,8 +34,9 @@ export const getAllLessonsHandler: RequestHandler<
             });
         }
 
-        const course = await Courses.findById(courseId);
-        if (!course) return next(new NotFoundError('Course not found'));
+           // Check if the course exists
+           const course = await findCourseById(courseId, next);
+
 
         const apiFeature = new ApiFeature(Lessons.find({ courseId: course._id }), req.query)
             .paginate()

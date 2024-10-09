@@ -1,12 +1,13 @@
 import { RequestHandler } from "express";
 
 import { catchError } from "../../middlewares/errorHandling.middleware";
+import { findLessonById } from "../../services/entities/lesson.service";
+import { findCourseById } from "../../services/entities/course.service";
 import { ConflictError } from "../../errors/conflictError";
 import { NotFoundError } from "../../errors/notFoundError";
 import { SuccessResponse } from "../../types/response";
-import { Lessons } from "../../models/lesson.models";
-import { Courses } from "../../models/course.models";
 import { updateImage } from "../../utils/uploadMedia";
+import { Lessons } from "../../models/lesson.models";
 
 /**
  * Handler to update an existing lesson.
@@ -23,11 +24,13 @@ export const updateLessonsHandler: RequestHandler<unknown, SuccessResponse> = ca
         const { _id } = req.loggedUser;
         const { title, courseId, oldPublicId } = req.body;
 
-        const lesson = await Lessons.findById(lessonId);
-        if (!lesson) return next(new NotFoundError('Lesson not found'));
+        // Check if the lesson exists
+        const lesson = await findLessonById(lessonId, next);
 
-        const course = await Courses.findById(lesson.courseId);
-        if (!course) return next(new NotFoundError('Course not found'));
+        // Check if the course exists
+        await findCourseById(lesson.courseId, next);
+
+        // Check if the instructor is authorized to update the lesson
         if (lesson.instructorId.toString() !== _id.toString()) {
             return next(new NotFoundError('Unauthorized instructor'));
         }
@@ -50,8 +53,7 @@ export const updateLessonsHandler: RequestHandler<unknown, SuccessResponse> = ca
         if (courseId) {
             if (lesson.courseId.toString() === courseId) return next(new ConflictError('Course ID is the same as the old Course ID'));
 
-            const newCourse = await Courses.findById(courseId);
-            if (!newCourse) return next(new NotFoundError('Course not found'));
+            const newCourse = await findCourseById(courseId, next);
             if (newCourse.instructorId.toString() !== _id.toString()) return next(new NotFoundError('Unauthorized instructor'));
 
             // Update course lessons

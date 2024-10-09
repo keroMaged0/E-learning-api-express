@@ -2,9 +2,10 @@ import { RequestHandler } from "express";
 
 import { catchError } from "../../middlewares/errorHandling.middleware";
 import { deleteAllCacheKeys } from "../../services/redisCache.service";
+import { findCourse } from "../../services/entities/course.service";
+import { findLesson } from "../../services/entities/lesson.service";
 import { uploadImageToCloudinary } from "../../utils/uploadMedia";
 import { findUser } from "../../services/entities/user.service";
-import { ConflictError } from "../../errors/conflictError";
 import { NotFoundError } from "../../errors/notFoundError";
 import { SuccessResponse } from "../../types/response";
 import { Courses } from "../../models/course.models";
@@ -29,15 +30,15 @@ export const createLessonsHandler: RequestHandler<
         const { _id } = req.loggedUser;
         const cacheKeys = ['allLessons-*', 'allCourses-*']; // Cache keys to delete 
 
+        // Check if the user exists
         const user = await findUser(_id, next);
         if (!user) return next(new NotFoundError('User not found'));
 
-        const course = await Courses.findOne({ instructorId: user._id, _id: courseId });
-        if (!course) return next(new NotFoundError('Course not found'));
+        // Check if the course exists 
+        const course = await findCourse({ instructorId: user._id, _id: courseId }, next);
 
         // Check if the lesson title is unique for the instructor
-        const isUniqueTitle = await Lessons.findOne({ instructorId: user._id, title: title, courseId: course._id });
-        if (isUniqueTitle) return next(new ConflictError('Title already exists'));
+        await findLesson({ instructorId: user._id, title: title, courseId: course._id }, next);
 
         // Validate the cover image presence
         if (req.file.fieldname !== 'coverImage') return next(new NotFoundError('Image cover not found'));

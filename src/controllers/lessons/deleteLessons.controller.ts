@@ -2,11 +2,11 @@ import { RequestHandler } from "express";
 
 import { sendVerifyCode } from "../../services/entities/verifyCode.service";
 import { catchError } from "../../middlewares/errorHandling.middleware";
+import { findLessonById } from "../../services/entities/lesson.service";
+import { findUserById } from "../../services/entities/user.service";
 import { NotFoundError } from "../../errors/notFoundError";
 import { VerifyReason } from "../../types/verify-reason";
 import { SuccessResponse } from "../../types/response";
-import { Lessons } from "../../models/lesson.models";
-import { Users } from "../../models/user.models";
 
 /**
  * Handler to delete a lesson by sending a verification email to the instructor.
@@ -21,11 +21,11 @@ export const deleteLessonsHandler: RequestHandler<unknown, SuccessResponse> = ca
         const { lessonId } = req.params;
         const { _id } = req.loggedUser;
 
-        const lesson = await Lessons.findById(lessonId);
-        if (!lesson) return next(new NotFoundError('Lesson not found'));
+        // Check if the lesson exists
+        const lesson = await findLessonById(lessonId,next);
 
-        const user = await Users.findById(lesson.instructorId);
-        if (!user) return next(new NotFoundError('User not found'));
+        // Check if the user is the instructor of the lesson
+        const user = await findUserById(lesson.instructorId,next);
         if (user._id.toString() !== _id.toString()) {
             return next(new NotFoundError('Unauthorized instructor'));
         }

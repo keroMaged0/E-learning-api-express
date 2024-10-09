@@ -2,16 +2,15 @@ import { RequestHandler } from "express";
 
 import { catchError } from "../../middlewares/errorHandling.middleware";
 import { cloudinaryConnection } from "../../services/cloudinary.service";
+import { findLessonById } from "../../services/entities/lesson.service";
+import { findUserById } from "../../services/entities/user.service";
 import { NotAllowedError } from "../../errors/notAllowedError";
 import { NotFoundError } from "../../errors/notFoundError";
 import { VerifyReason } from "../../types/verify-reason";
 import { SuccessResponse } from "../../types/response";
-import { Courses } from "../../models/course.models";
 import { Lessons } from "../../models/lesson.models";
 import { Videos } from "../../models/video.models";
-import { Users } from "../../models/user.models";
 import { logger } from "../../config/logger";
-import { env } from "../../config/env";
 
 /**
  * Handler to confirm lesson deletion by verifying the instructor's code.
@@ -27,11 +26,11 @@ export const confirmDeleteLessonsHandler: RequestHandler<unknown, SuccessRespons
         const { lessonId } = req.params;
         const { _id: instructorId } = req.loggedUser;
 
-        const lesson = await Lessons.findById(lessonId);
-        if (!lesson) return next(new NotFoundError('Lesson not found'));
+        // Check if the lesson exists
+        const lesson = await findLessonById(lessonId, next);
 
-        const user = await Users.findById(lesson.instructorId);
-        if (!user) return next(new NotFoundError('User not found'));
+        // Check if the instructor is authorized to delete the lesson
+        const user = await findUserById(lesson.instructorId,next);
         if (user._id.toString() !== instructorId.toString()) {
             return next(new NotFoundError('Unauthorized instructor'));
         }
@@ -42,8 +41,8 @@ export const confirmDeleteLessonsHandler: RequestHandler<unknown, SuccessRespons
         await user.save();
 
         // Delete media associated with the lesson from Cloudinary
-        const mediaPath = lesson.imageCover.public_id.split(`${lesson.folderId}`)[0] + lesson.folderId ;
-     
+        const mediaPath = lesson.imageCover.public_id.split(`${lesson.folderId}`)[0] + lesson.folderId;
+
         await deleteLessonMedia(mediaPath);
 
         // Delete the lesson and any related videos

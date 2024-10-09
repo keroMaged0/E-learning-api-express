@@ -1,10 +1,10 @@
 import { RequestHandler } from "express";
 
 import { catchError } from "../../middlewares/errorHandling.middleware";
+import { findCourse } from "../../services/entities/course.service";
 import { NotFoundError } from "../../errors/notFoundError";
 import { SuccessResponse } from "../../types/response";
 import { Lessons } from "../../models/lesson.models";
-import { Courses } from "../../models/course.models";
 
 /**
  * Handler to retrieve a lesson by its ID.
@@ -22,9 +22,9 @@ export const getLessonsByIdHandler: RequestHandler<
     async (req, res, next) => {
         const { lessonId } = req.params;
 
+
         // Check if the course exists with the provided lessonId
-        const course = await Courses.findOne({ lessonsId: { $in: [lessonId] } });
-        if (!course) return next(new NotFoundError('Course not found'));
+        await findCourse({ lessonsId: { $in: [lessonId] } }, next);
 
         // Retrieve the lesson by ID and populate instructor information
         const lesson = await Lessons.findById(lessonId).populate([
