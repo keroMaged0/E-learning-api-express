@@ -1,0 +1,16 @@
+# Folders
+node_modules
+dist.vercel
+
+# Git files
+.git
+.gitignore
+
+# IDE files
+.todo
+
+# Docker files
+Dockerfile
+
+# NPM files
+package-lock.json

@@ -1,8 +1,8 @@
-import { createTransport, Transporter } from 'nodemailer';
-import SMTPTransport from 'nodemailer/lib/smtp-transport';
+import { createTransport, Transporter } from "nodemailer";
+import SMTPTransport from "nodemailer/lib/smtp-transport";
 
-import { env } from '../config/env';
-import { logger } from '../config/logger';
+import { env } from "../config/env";
+import { logger } from "../utils/logger";
 
 export interface IMail {
   to: string;
@@ -12,6 +12,7 @@ export interface IMail {
 
 class MailTransporter {
   transporter: Transporter<SMTPTransport.SentMessageInfo>;
+  
   constructor() {
     this.transporter = createTransport({
       service: env.mail.service,
@@ -19,9 +20,9 @@ class MailTransporter {
       port: env.mail.port!,
       auth: {
         user: env.mail.user,
-        pass: env.mail.pass
+        pass: env.mail.pass,
       },
-      secure: env.environment === 'production',
+      secure: env.environment === "production",
       // tls: {
       //   rejectUnauthorized: false,
       // },
@@ -33,7 +34,7 @@ class MailTransporter {
       if (error) {
         logger.error(error);
       } else {
-        logger.info('email transporter verified', success);
+        logger.info("email transporter verified", success);
       }
     });
   }

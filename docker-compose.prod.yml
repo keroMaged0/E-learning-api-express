@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  mongo:
+    image: mongo:8.0
+    container_name: mongo-prod
+    restart: unless-stopped
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: produser
+      MONGO_INITDB_ROOT_PASSWORD: prodpass
+    volumes:
+      - mongo_data:/data/db
+    command: mongod --auth
+
+  redis:
+    image: redis:7
+    container_name: redis-prod
+    restart: unless-stopped
+    volumes:
+      - redis_data:/data
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile.prod
+    container_name: e-learning-api
+    ports:
+      - "4000:4000"
+    env_file:
+      - .env
+    depends_on:
+      - mongo
+      - redis
+
+volumes:
+  mongo_data:
+  redis_data:

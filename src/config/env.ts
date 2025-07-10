@@ -14,7 +14,6 @@ export const env = {
         paper: process.env.BCRYPT_PAPER,
     },
     winston: {
-
         sourceToken: process.env.SOURCE_TOKEN,
         sourceId: process.env.SOURCE_ID
     },
