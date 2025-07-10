@@ -3,7 +3,7 @@ import Stripe from "stripe";
 import { createEnrolledCourseHandler } from "../../enrolledCourse/createEnrolledCourse.controller";
 import { addParticipantHandler } from "../../chat/chatRoom";
 import { Payment } from "../../../models/payment.models";
-import { logger } from "../../../config/logger";
+import { logger } from "../../../utils/logger";
 
 /*************** Handle success payment intent ***************/
 const handleCheckoutSessionCompleted = async (session: Stripe.Checkout.Session) => {

@@ -1,6 +1,6 @@
 import { Readable } from "stream";
 import { env } from "../config/env";
-import { logger } from "../config/logger";
+import { logger } from "../utils/logger";
 import { formatDuration } from "../controllers/videos";
 import { ConflictError } from "../errors/conflictError";
 import { NotFoundError } from "../errors/notFoundError";

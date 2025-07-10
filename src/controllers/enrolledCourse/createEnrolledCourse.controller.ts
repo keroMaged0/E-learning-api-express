@@ -1,4 +1,4 @@
-import { logger } from "../../config/logger";
+import { logger } from "../../utils/logger";
 import { Enrolled } from "../../models/enrolled.model";
 
 export const createEnrolledCourseHandler = async ({ userId, courseId, paymentId }) => {

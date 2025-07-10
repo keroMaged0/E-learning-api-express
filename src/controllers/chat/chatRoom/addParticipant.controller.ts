@@ -1,7 +1,7 @@
 import { SOCKET_EVENTS } from "../../../types/socketEvents";
 import { ChatRoom } from "../../../models/chatRoom.models";
 import { getIo } from "../../../utils/initSocketIo";
-import { logger } from "../../../config/logger";
+import { logger } from "../../../utils/logger";
 
 export const addParticipantHandler = async ({ courseId, userId }) => {
     try {

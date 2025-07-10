@@ -10,7 +10,7 @@ import { VerifyReason } from "../../types/verify-reason";
 import { SuccessResponse } from "../../types/response";
 import { Lessons } from "../../models/lesson.models";
 import { Videos } from "../../models/video.models";
-import { logger } from "../../config/logger";
+import { logger } from "../../utils/logger";
 
 /**
  * Handler to confirm lesson deletion by verifying the instructor's code.

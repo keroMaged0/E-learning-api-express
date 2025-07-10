@@ -1,6 +1,6 @@
 import Redis from 'ioredis';
 import { env } from './env';
-import { logger } from './logger';
+import { logger } from '../utils/logger';
 
 // create new client 
 const client = new Redis({

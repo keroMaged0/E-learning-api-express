@@ -1,7 +1,7 @@
 import Stripe from "stripe";
 
 import { Payment } from "../../../models/payment.models";
-import { logger } from "../../../config/logger";
+import { logger } from "../../../utils/logger";
 
 /*************** Handle failed payment intent ***************/
 const handleFailurePaymentIntent = async (paymentIntent: Stripe.PaymentIntent) => {

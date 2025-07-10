@@ -1,7 +1,7 @@
 import { NotFoundError } from "../../../errors/notFoundError";
 import { ChatRoom } from "../../../models/chatRoom.models";
 import { getIo } from "../../../utils/initSocketIo";
-import { logger } from "../../../config/logger";
+import { logger } from "../../../utils/logger";
 import { SOCKET_EVENTS } from "../../../types/socketEvents";
 
 export const createRoomHandler = async ({ courseId, instructorId, next }) => {

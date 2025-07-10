@@ -8,7 +8,7 @@ import { VerifyReason } from "../../types/verify-reason";
 import { SuccessResponse } from "../../types/response";
 import { Videos } from "../../models/video.models";
 import { Users } from "../../models/user.models";
-import { logger } from "../../config/logger";
+import { logger } from "../../utils/logger";
 import { findVideoById } from "../../services/entities/video.service";
 import { findUserById } from "../../services/entities/user.service";
 import { clearVerifyCode } from "../../services/entities/verifyCode.service";

@@ -5,7 +5,7 @@ import { getData, setCache } from "../../services/redisCache.service";
 import { SuccessResponse } from "../../types/response";
 import { Courses } from "../../models/course.models";
 import { ApiFeature } from "../../utils/apiFeature";
-import { logger } from "../../config/logger";
+import { logger } from "../../utils/logger";
 
 /**
  * Handler to retrieve all courses with pagination, sorting, and filtering. 

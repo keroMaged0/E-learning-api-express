@@ -2,7 +2,7 @@ import Stripe from "stripe";
 
 import handleCheckoutSessionCompleted from "./handleCheckoutSessionCompleted.controller";
 import handleFailurePaymentIntent from "./handleFailureChecoutSession.controller";
-import { logger } from "../../../config/logger";
+import { logger } from "../../../utils/logger";
 
 /*************** Handle Stripe events ***************/
 const handleStripeEvent = async (event: Stripe.Event) => {
