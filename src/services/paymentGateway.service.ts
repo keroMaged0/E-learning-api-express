@@ -1,6 +1,6 @@
 import Stripe from 'stripe';
 
-import { logger } from '../config/logger';
+import { logger } from '../utils/logger';
 import { env } from '../config/env';
 
 // Initialize Stripe with the secret key from environment variables

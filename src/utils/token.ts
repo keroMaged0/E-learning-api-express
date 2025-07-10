@@ -1,7 +1,7 @@
 import { sign, verify } from 'jsonwebtoken';
 import { env } from '../config/env';
 import { setCache } from '../services/redisCache.service';
-import { logger } from '../config/logger';
+import { logger } from '../utils/logger';
 
 
 /*************** generate access Token ***************/
